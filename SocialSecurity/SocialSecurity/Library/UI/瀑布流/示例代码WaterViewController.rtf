@@ -1,0 +1,112 @@
+{\rtf1\ansi\ansicpg936\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset134 PingFangSC-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green116\blue0;\red0\green0\blue0;\red100\green56\blue32;
+\red196\green26\blue22;\red170\green13\blue145;\red28\green0\blue207;}
+{\*\expandedcolortbl;;\csgenericrgb\c0\c45600\c0;\csgenericrgb\c0\c0\c0;\csgenericrgb\c39100\c22000\c12500;
+\csgenericrgb\c77000\c10200\c8600;\csgenericrgb\c66500\c5200\c56900;\csgenericrgb\c11000\c0\c81000;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab543
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \CocoaLigature0 //\cf3 \
+\cf2 //  XHLWaterViewController.m\cf3 \
+\cf2 //  TestCollectionLayout\cf3 \
+\cf2 //\cf3 \
+\cf2 //  Created by xhl on 16/6/15.\cf3 \
+\cf2 //  Copyright \'a9 2016
+\f1 \'c4\'ea
+\f0  xhl. All rights reserved.\cf3 \
+\cf2 //\cf3 \
+\
+\cf4 #import \cf5 "XHLWaterViewController.h"\cf4 \
+#import \cf5 "XHLWaterLayout.h"\cf4 \
+\cf3 \
+\cf6 @interface\cf3  XHLWaterViewController ()<UICollectionViewDataSource,XHLWaterLayoutDelegate,UICollectionViewDelegate>\
+\
+\cf6 @end\cf3 \
+\
+\cf6 @implementation\cf3  XHLWaterViewController\
+\
+\
+\cf6 static\cf3  NSString * XHLCellId = \cf5 @"cellId"\cf3 ;\
+\
+- (\cf6 void\cf3 )viewDidLoad \{\
+    [\cf6 super\cf3  viewDidLoad];\
+    \
+    \cf2 // 
+\f1 \'b4\'b4\'bd\'a8\'b2\'bc\'be\'d6
+\f0 \cf3 \
+    XHLWaterLayout *layout = [[XHLWaterLayout alloc] init];\
+    layout.delegate = \cf6 self\cf3 ;\
+    \cf2 // 
+\f1 \'b4\'b4\'bd\'a8
+\f0 CollectionView\cf3 \
+    UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:\cf6 self\cf3 .view.bounds collectionViewLayout:layout];\
+    collectionView.dataSource = \cf6 self\cf3 ;\
+    collectionView.delegate   = \cf6 self\cf3 ;\
+    collectionView.showsVerticalScrollIndicator = \cf6 NO\cf3 ;\
+    collectionView.backgroundColor = [UIColor whiteColor];\
+    [\cf6 self\cf3 .view addSubview:collectionView];\
+    \
+    \cf2 // 
+\f1 \'d7\'a2\'b2\'e1
+\f0 \cf3 \
+    [collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:XHLCellId];\
+\}\
+\
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section\
+\{\
+    \
+    \cf6 return\cf3  \cf7 100\cf3 ;\
+\}\
+\
+\
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath\
+\{\
+    UICollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:XHLCellId forIndexPath:indexPath];\
+    cell.backgroundColor = [UIColor yellowColor];\
+    NSInteger tag = \cf7 10\cf3 ;\
+    UILabel *label = (UILabel *)[cell.contentView viewWithTag:tag];\
+    \cf6 if\cf3  (label == \cf6 nil\cf3 ) \{\
+        label = [[UILabel alloc] init];\
+        label.tag = tag;\
+        label.font = [UIFont systemFontOfSize:\cf7 15\cf3 ];\
+        [cell.contentView addSubview:label];\
+    \}\
+    \
+    label.text = [NSString stringWithFormat:\cf5 @"
+\f1 \'b5\'da
+\f0 %@
+\f1 \'b8\'f6
+\f0 item"\cf3 ,\cf7 @(\cf3 indexPath.row\cf7 )\cf3 ];\
+    [label sizeToFit];\
+    \
+    \cf6 return\cf3  cell;\
+\}\
+\
+- (CGFloat)waterLayout:(UICollectionViewLayout *)waterLayout itemWidth:(CGFloat)itemWidth indexPath:(NSIndexPath *)indexPath\
+\{\
+    \cf6 return\cf3  \cf7 40\cf3  + arc4random_uniform(\cf7 100\cf3 );\
+\}\
+\
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView\
+\{\
+    \cf6 return\cf3  \cf7 2\cf3 ;\
+\}\
+\
+\
+- (UIEdgeInsets)edgeInsetsInWaterflowLayout:(UICollectionViewLayout*)layout\
+\{\
+    \cf6 return\cf3  UIEdgeInsetsMake(\cf7 10\cf3 , \cf7 10\cf3 , \cf7 10\cf3 , \cf7 10\cf3 );\
+\}\
+\
+- (\cf6 void\cf3 )collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath\
+\{\
+    NSLog(\cf5 @"
+\f1 \'b5\'e3\'bb\'f7\'c1\'cb\'b5\'da
+\f0 %@item"\cf3 ,\cf7 @(\cf3 indexPath.row\cf7 )\cf3 );\
+\}\
+\
+\
+\cf6 @end\cf3 \
+}

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="QrCodeView" customModule="Logistics" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="asJ-HG-Yue">
+                    <rect key="frame" x="87" y="233.5" width="200" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="Ao0-SK-tZj"/>
+                        <constraint firstAttribute="width" constant="200" id="djl-Ea-XgX"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="长按保存二维码" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="COv-af-KsN">
+                    <rect key="frame" x="132.5" y="441.5" width="110" height="20"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="Irm-Hq-N1X"/>
+                        <constraint firstAttribute="width" constant="110" id="dbf-Uz-sOW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uTW-D2-6v6">
+                    <rect key="frame" x="87" y="233.5" width="200" height="200"/>
+                    <connections>
+                        <action selector="click:" destination="iN0-l3-epB" eventType="touchUpInside" id="zw1-1V-oYb"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="uTW-D2-6v6" firstAttribute="trailing" secondItem="asJ-HG-Yue" secondAttribute="trailing" id="MFz-LS-YY9"/>
+                <constraint firstItem="COv-af-KsN" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="NZo-xO-uFR"/>
+                <constraint firstItem="COv-af-KsN" firstAttribute="top" secondItem="asJ-HG-Yue" secondAttribute="bottom" constant="8" id="WBe-1d-Ryl"/>
+                <constraint firstItem="uTW-D2-6v6" firstAttribute="top" secondItem="asJ-HG-Yue" secondAttribute="top" id="Xhp-dx-hGv"/>
+                <constraint firstItem="asJ-HG-Yue" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="hYU-Xh-pPZ"/>
+                <constraint firstItem="asJ-HG-Yue" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="kzO-gO-6nC"/>
+                <constraint firstItem="uTW-D2-6v6" firstAttribute="leading" secondItem="asJ-HG-Yue" secondAttribute="leading" id="oGj-Hz-4zF"/>
+                <constraint firstItem="uTW-D2-6v6" firstAttribute="bottom" secondItem="asJ-HG-Yue" secondAttribute="bottom" id="rcv-Y7-WmH"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="imageView" destination="asJ-HG-Yue" id="uWX-pW-6K3"/>
+                <outlet property="qrButton" destination="uTW-D2-6v6" id="66P-7s-JO4"/>
+            </connections>
+        </view>
+    </objects>
+</document>

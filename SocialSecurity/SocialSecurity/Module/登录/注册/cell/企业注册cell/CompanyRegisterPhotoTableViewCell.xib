@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="152" id="KGk-i7-Jjw" customClass="CompanyRegisterPhotoTableViewCell" customModule="Logistics" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="152"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="151.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g0v-X3-7gc">
+                        <rect key="frame" x="32" y="4" width="256" height="100"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_mustupload" translatesAutoresizingMaskIntoConstraints="NO" id="biw-tR-C6r">
+                                <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="DKK-BJ-3Yl"/>
+                                    <constraint firstAttribute="width" secondItem="biw-tR-C6r" secondAttribute="height" multiplier="1:1" id="ZIA-hj-n4f"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_addpic" translatesAutoresizingMaskIntoConstraints="NO" id="jay-Hl-VFB">
+                                <rect key="frame" x="108" y="20" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="SRa-eg-F1Z"/>
+                                    <constraint firstAttribute="height" constant="40" id="v2u-nJ-GVz"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点击上传门店照片" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JUm-4n-xQB">
+                                <rect key="frame" x="78.5" y="60" width="99" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="2SN-oH-KSg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.67000000000000004" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jay-Hl-VFB" firstAttribute="centerX" secondItem="g0v-X3-7gc" secondAttribute="centerX" id="3HU-DX-Ahg"/>
+                            <constraint firstAttribute="height" constant="100" id="BPE-kf-3Yc"/>
+                            <constraint firstItem="JUm-4n-xQB" firstAttribute="top" secondItem="jay-Hl-VFB" secondAttribute="bottom" id="YB7-Q7-wJq"/>
+                            <constraint firstItem="biw-tR-C6r" firstAttribute="top" secondItem="g0v-X3-7gc" secondAttribute="top" id="hhg-0U-rFs"/>
+                            <constraint firstItem="biw-tR-C6r" firstAttribute="leading" secondItem="g0v-X3-7gc" secondAttribute="leading" id="rQn-7U-RUi"/>
+                            <constraint firstItem="jay-Hl-VFB" firstAttribute="centerY" secondItem="g0v-X3-7gc" secondAttribute="centerY" constant="-10" id="yAi-fr-4uB"/>
+                            <constraint firstItem="JUm-4n-xQB" firstAttribute="centerX" secondItem="g0v-X3-7gc" secondAttribute="centerX" id="zxK-xp-gMb"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jy4-8n-wpP">
+                        <rect key="frame" x="32" y="4" width="256" height="100"/>
+                    </imageView>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QqX-dI-hRc">
+                        <rect key="frame" x="263" y="4" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="nR8-lj-bV0"/>
+                            <constraint firstAttribute="width" constant="25" id="pUQ-8q-ipz"/>
+                        </constraints>
+                        <state key="normal" image="main_MyApps_Delete"/>
+                        <connections>
+                            <action selector="deleteBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="pLV-cQ-dnx"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="QqX-dI-hRc" firstAttribute="trailing" secondItem="jy4-8n-wpP" secondAttribute="trailing" id="5uY-Gp-SiP"/>
+                    <constraint firstItem="jy4-8n-wpP" firstAttribute="bottom" secondItem="g0v-X3-7gc" secondAttribute="bottom" id="CPo-sl-tbj"/>
+                    <constraint firstItem="QqX-dI-hRc" firstAttribute="top" secondItem="jy4-8n-wpP" secondAttribute="top" id="Nd8-Y0-nu0"/>
+                    <constraint firstItem="jy4-8n-wpP" firstAttribute="top" secondItem="g0v-X3-7gc" secondAttribute="top" id="Xfl-fb-8gl"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="g0v-X3-7gc" secondAttribute="bottom" constant="4" id="fC7-QG-22n"/>
+                    <constraint firstAttribute="trailing" secondItem="g0v-X3-7gc" secondAttribute="trailing" constant="32" id="fLF-fL-hr3"/>
+                    <constraint firstItem="jy4-8n-wpP" firstAttribute="leading" secondItem="g0v-X3-7gc" secondAttribute="leading" id="hIw-Li-v7R"/>
+                    <constraint firstItem="g0v-X3-7gc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="32" id="sKy-E0-YSb"/>
+                    <constraint firstItem="g0v-X3-7gc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="t5Z-JP-SZN"/>
+                    <constraint firstItem="jy4-8n-wpP" firstAttribute="trailing" secondItem="g0v-X3-7gc" secondAttribute="trailing" id="zcf-MM-GJh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentLabel" destination="JUm-4n-xQB" id="vna-0H-viP"/>
+                <outlet property="deleteBtn" destination="QqX-dI-hRc" id="ccT-Vv-v6X"/>
+                <outlet property="mustImageView" destination="biw-tR-C6r" id="gvz-Wh-igX"/>
+                <outlet property="selectImage" destination="jy4-8n-wpP" id="C1g-hh-T3u"/>
+            </connections>
+            <point key="canvasLocation" x="73" y="189"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_addpic" width="44" height="44"/>
+        <image name="icon_mustupload" width="60" height="60"/>
+        <image name="main_MyApps_Delete" width="24" height="24"/>
+    </resources>
+</document>

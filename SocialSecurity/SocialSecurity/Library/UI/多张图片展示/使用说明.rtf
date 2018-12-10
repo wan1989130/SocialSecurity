@@ -1,0 +1,44 @@
+{\rtf1\ansi\ansicpg936\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red170\green13\blue145;\red63\green110\blue116;
+\red92\green38\blue153;\red38\green71\blue75;\red28\green0\blue207;}
+{\*\expandedcolortbl;;\csgenericrgb\c0\c0\c0;\csgenericrgb\c66500\c5200\c56900;\csgenericrgb\c24700\c43100\c45600;
+\csgenericrgb\c35900\c14900\c60100;\csgenericrgb\c14900\c27800\c29400;\csgenericrgb\c11000\c0\c81000;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww22560\viewh12740\viewkind0
+\deftab890
+\pard\tx890\pardeftab890\pardirnatural\partightenfactor0
+
+\f0\fs36 \cf2 \CocoaLigature0     \cf3 fileprivate\cf2  \cf3 func\cf2  initPhotoBrowserView() \{\
+        \cf3 if\cf2  \cf4 photoBrowserView\cf2  == \cf3 nil\cf2  \{\
+\pard\tx97\tx890\tx10720\tx10800\tx10800\tx10800\tx10800\pardeftab890\pardirnatural\partightenfactor0
+\cf2             \cf4 photoBrowserView\cf2  = \cf4 PhotoBrowserView\cf2 (frame: \cf5 CGRect\cf2 .\cf5 zero\cf2 )\
+\pard\tx890\pardeftab890\pardirnatural\partightenfactor0
+\cf2             \cf4 photoBrowserView\cf2 .\cf6 drawInView\cf2 (\cf4 imageContainer\cf2 )\
+            \cf4 photoBrowserView\cf2 .\cf4 delegate\cf2  = \cf3 self\cf2 \
+        \}\
+        \
+        \cf3 let\cf2  rowCount:\cf5 Int\cf2  = \cf7 4\cf2 \
+        \cf3 let\cf2  margin:\cf5 CGFloat\cf2  = \cf7 8\cf2 \
+        \cf4 photoBrowserView\cf2 .\cf4 rowCount\cf2  = rowCount\
+        \cf4 photoBrowserView\cf2 .\cf4 margin\cf2  = margin\
+        \
+        \cf3 let\cf2  height = (\cf4 ScreenWidth\cf2  - \cf5 CGFloat\cf2 (rowCount * \cf7 2\cf2 ) * margin - \cf7 48\cf2 ) / \cf5 CGFloat\cf2 (rowCount) + margin *  \cf7 2\cf2 \
+        \
+        \cf3 if\cf2  \cf4 currentUser\cf2 .\cf4 userType\cf2  == .\cf6 teacher\cf2  \{\
+            \cf4 photoBrowserView\cf2 .\cf6 update\cf2 (imageArr: \cf4 images\cf2 , hasAddImageView: \cf3 false\cf2 )\
+        \}\
+        \cf3 else\cf2 \{\
+            \cf4 photoBrowserView\cf2 .\cf6 update\cf2 (imageArr: \cf4 images\cf2 , hasAddImageView: \cf3 true\cf2 )\
+        \}\
+        \
+        \cf4 photoBrowserView\cf2 .\cf6 updateAddImage\cf2  \{ (images) \cf3 in\cf2 \
+            \cf3 self\cf2 .\cf4 images\cf2  = images\
+            \cf3 self\cf2 .\cf6 initPhotoBrowserView\cf2 ()\
+        \}\
+        \cf4 photoBrowserView\cf2 .\cf6 updateDeleteImage\cf2  \{ (images) \cf3 in\cf2 \
+            \cf3 self\cf2 .\cf4 images\cf2  = images\
+            \cf3 self\cf2 .\cf6 initPhotoBrowserView\cf2 ()\
+        \}\
+        \cf4 imageContainerHeightConstraint\cf2 .\cf5 constant\cf2  = \cf5 CGFloat\cf2 (\cf4 images\cf2 .\cf5 count\cf2  / rowCount) * height + height\
+    \}\
+}

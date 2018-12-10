@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SendGoodsPhotoViewController" customModule="LogisticsManagerProject" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="qE5-S2-Di5" id="qCH-Dk-KTL"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="qE5-S2-Di5">
+                    <rect key="frame" x="5" y="0.0" width="365" height="667"/>
+                    <color key="backgroundColor" red="0.90588235294117647" green="0.90588235294117647" blue="0.90588235294117647" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="zDZ-UX-lYm">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k7Z-V9-wkM">
+                    <rect key="frame" x="157.5" y="577" width="60" height="60"/>
+                    <subviews>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Mo-bx-xaX">
+                            <rect key="frame" x="10" y="10" width="40" height="40"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="M2D-om-8P0"/>
+                                <constraint firstAttribute="height" constant="40" id="YXX-ws-xD3"/>
+                            </constraints>
+                            <state key="normal" image="take_photo"/>
+                            <connections>
+                                <action selector="takePhotoClick:" destination="-1" eventType="touchUpInside" id="VfA-dZ-FLo"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="0iR-ab-42I"/>
+                        <constraint firstAttribute="width" constant="60" id="7Hk-mW-1UI"/>
+                        <constraint firstItem="9Mo-bx-xaX" firstAttribute="centerY" secondItem="k7Z-V9-wkM" secondAttribute="centerY" id="SxT-Ch-bzU"/>
+                        <constraint firstItem="9Mo-bx-xaX" firstAttribute="centerX" secondItem="k7Z-V9-wkM" secondAttribute="centerX" id="j7A-Fm-276"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="30"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="qE5-S2-Di5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="DtS-vq-sDK"/>
+                <constraint firstItem="k7Z-V9-wkM" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="WHV-ZZ-Fke"/>
+                <constraint firstItem="qE5-S2-Di5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="5" id="aYi-G8-HkX"/>
+                <constraint firstAttribute="bottom" secondItem="k7Z-V9-wkM" secondAttribute="bottom" constant="30" id="o3x-39-QFn"/>
+                <constraint firstAttribute="trailing" secondItem="qE5-S2-Di5" secondAttribute="trailing" constant="5" id="r6h-vC-Jms"/>
+                <constraint firstAttribute="bottom" secondItem="qE5-S2-Di5" secondAttribute="bottom" id="uif-UU-aQZ"/>
+            </constraints>
+            <point key="canvasLocation" x="122.40000000000001" y="143.47826086956522"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="take_photo" width="37" height="37"/>
+    </resources>
+</document>

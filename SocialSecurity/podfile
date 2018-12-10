@@ -1,0 +1,31 @@
+
+platform :ios, '8.0'
+use_frameworks!
+
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/aliyun/aliyun-specs.git'
+target ‘SocialSecurity’ do
+    pod 'FMDB'
+    pod 'AFNetworking'              #AFNetworking
+    pod 'MJExtension'               #MJ
+    pod 'AlamofireObjectMapper'     #解析
+    pod 'MJRefresh'
+    pod 'GTMBase64'                 #Base64解析
+    pod 'SDWebImage'                #SDWebImage
+    pod 'IQKeyboardManager'         #键盘
+    pod 'MBProgressHUD'             #弹出提示
+    pod 'SKPhotoBrowser'
+    pod 'OLGhostAlertView'          #弹出提示
+    pod 'Reachability'              #网络状态监测
+    pod 'SDCycleScrollView'
+	pod 'ZYQAssetPickerController'
+        pod 'TZImagePickerController'
+        pod "ESPullToRefresh" #下啦刷新
+        pod 'Charts'   
+#          pod 'YYKit'
+#    pod 'WHC_Layout'
+#    pod 'AlicloudPush', '~> 1.9.8'
+end
+
+
+

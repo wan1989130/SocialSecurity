@@ -1,0 +1,6 @@
+framework module OLGhostAlertView {
+  umbrella header "OLGhostAlertView-umbrella.h"
+
+  export *
+  module * { export * }
+}

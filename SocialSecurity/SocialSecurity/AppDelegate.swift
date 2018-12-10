@@ -15,7 +15,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        SQLiteManager.sharedTools
+        
+        //创建window
+        loadWindow()
+        
+        //初始化网络请求组件
+        initBaseClient()
+        
+        //根据应用版本及登录状态跳转至相应页面
+        self.performToTargetVCAccordingToVersionAndLoginStatus()
+        
+        
+        
+        
+        //隐藏键盘工具条
+        keyManager()
+        
+        //        UITableView.appearance().estimatedRowHeight = UIScreen.main.bounds.size.height
+        
+        UITabBar.appearance().backgroundImage=UIImage()
+        UITabBar.appearance().backgroundColor = UIColor.white
+        //ios12.1tabBar 中的图标及文字出现位置偏移动画
+        //https://blog.csdn.net/longge_li/article/details/83654333
+        UITabBar.appearance().isTranslucent = false
+        //skphoto内存缓存图片
+        //                SKCache.sharedCache.removeAllImages()
         return true
     }
 

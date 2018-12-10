@@ -1,0 +1,63 @@
+{\rtf1\ansi\ansicpg936\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fnil\fcharset0 Menlo-Italic;\f1\fnil\fcharset134 PingFangSC-Regular;\f2\fnil\fcharset0 Menlo-Regular;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red170\green13\blue145;\red38\green71\blue75;
+\red63\green110\blue116;\red92\green38\blue153;\red28\green0\blue207;\red196\green26\blue22;\red46\green13\blue110;
+}
+{\*\expandedcolortbl;;\csgenericrgb\c0\c0\c0;\csgenericrgb\c66500\c5200\c56900;\csgenericrgb\c14900\c27800\c29400;
+\csgenericrgb\c24700\c43100\c45600;\csgenericrgb\c35900\c14900\c60100;\csgenericrgb\c11000\c0\c81000;\csgenericrgb\c77000\c10200\c8600;\csgenericrgb\c18100\c5200\c43100;
+}
+\paperw11900\paperh16840\margl1440\margr1440\vieww28300\viewh16200\viewkind0
+\deftab543
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f0\i\fs22 \cf2 \CocoaLigature0 \
+\cf3 fileprivate\cf2  \cf3 func\cf2  initMenuView()\{\
+	\cf4 loadRightBarButtonItem\cf2 ()\
+	\cf3 let\cf2  menuView = \cf5 MenuView\cf2 (frame: \cf6 CGRect\cf2 (x: \cf7 0\cf2 , y: \cf7 0\cf2 , width: \cf5 ScreenWidth\cf2 , height: \cf5 ScreenHeight\cf2 ))\
+	menuView.\cf5 titleArray\cf2  = [\cf8 "
+\f1\i0 \'b9\'ab\'b9\'b2
+\f0\i "\cf2 ,\cf8 "
+\f1\i0 \'b9\'ab\'b9\'b2
+\f0\i "\cf2 ,\cf8 "
+\f1\i0 \'b9\'ab\'b9\'b2
+\f0\i "\cf2 ,\cf8 "
+\f1\i0 \'b9\'ab\'b9\'b2
+\f0\i "\cf2 ,\cf8 "
+\f1\i0 \'b9\'ab\'b9\'b2
+\f0\i "\cf2 ,\cf8 "
+\f1\i0 \'b9\'ab\'b9\'b2
+\f0\i "\cf2 ,\cf8 "
+\f1\i0 \'b9\'ab\'b9\'b2
+\f0\i "\cf2 ,\cf8 "
+\f1\i0 \'b9\'ab\'b9\'b2
+\f0\i "\cf2 ,\cf8 "
+\f1\i0 \'b9\'ab\'b9\'b2\'c6\'c0\'d3\'ef\'bf\'e2
+\f0\i "\cf2 ,\cf8 "
+\f1\i0 \'b8\'f6\'c8\'cb\'c6\'c0\'d3\'ef\'bf\'e2
+\f0\i "\cf2 ]\
+	menuView.\cf5 delegate\cf2  = \cf3 self\cf2 \
+	\cf3 self\cf2 .\cf6 view\cf2 .\cf9 addSubview\cf2 (menuView)\
+\}\
+    
+\f2\i0 \
+\
+\cf3  XXX:\cf5 MenuViewProtocol\cf2 \{\
+    \
+    \cf3 func\cf2  menuView(forIndex index: \cf6 Int\cf2 ) -> \cf6 UIView\cf2  \{\
+        \cf9 print\cf2 (\cf8 "index = \cf2 \\\cf8 (\cf2 index\cf8 )"\cf2 )\
+        \cf3 if\cf2  index == \cf7 0\cf2  \{\
+            \cf3 let\cf2  firstVc = \cf5 SendWordLibPublicViewController\cf2 ()\
+            firstVc.\cf5 evaluateRowBlock\cf2  = \cf5 evaluateRowBlock\cf2 \
+            \cf3 self\cf2  .\cf9 addChildViewController\cf2 (firstVc)\
+            \cf3 return\cf2  firstVc.\cf6 view\cf2 \
+        \}\cf3 else\cf2  \cf3 if\cf2  index == \cf7 1\cf2 \{\
+            \cf3 let\cf2  secondVc = \cf5 SendWordLibPrivateViewController\cf2 ()\
+            secondVc.\cf5 evaluateRowBlock\cf2  = \cf5 evaluateRowBlock\cf2 \
+            \cf3 self\cf2  .\cf9 addChildViewController\cf2 (secondVc)\
+            \cf3 return\cf2  secondVc.\cf6 view\cf2 \
+        \}\
+        \cf3 return\cf2  \cf6 UIView\cf2 ()  \
+        \
+    \}\
+\}}
