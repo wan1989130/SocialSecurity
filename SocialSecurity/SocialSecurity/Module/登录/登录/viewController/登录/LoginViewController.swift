@@ -70,10 +70,10 @@ class LoginViewController: BaseViewController {
     
     @IBAction func loginButtonClicked(_ sender: UIButton) {
         closeKeyboard()
-//           self.showMainTab()
-        if !checkFun(){
-            return
-        }
+           self.showMainTab()
+//        if !checkFun(){
+//            return
+//        }
         self.showMainTab()
 //        let parameter:NSMutableDictionary = [
 //            "loginName":userNameTextField.text!,

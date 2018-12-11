@@ -41,3 +41,5 @@
 
 #import "JZLocationConverter.h"
 #import "BRPickerView.h"
+//部分切圆角
+#import "JQRadiusView.h"

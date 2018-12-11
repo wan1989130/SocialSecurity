@@ -12,23 +12,18 @@ class BaseTabBarViewController: UITabBarController {
 
     func setupTabBar(){
         //首页
-        let firstVC = DeliverGoodsViewController(nibName: "DeliverGoodsViewController", bundle: nil)
-        addChildViewController(firstVC, title: "发货管理", image: "nav1_normal", selectedImage: "nav1_hover")
+        let firstVC = YwjbViewController(nibName: "YwjbViewController", bundle: nil)
+        addChildViewController(firstVC, title: "业务经办", image: "nav1_normal", selectedImage: "nav1_hover")
         
         //综合查询
         let secondVC = ComprehensiveQueryListViewController(nibName: "ComprehensiveQueryListViewController", bundle: nil)
-        addChildViewController(secondVC, title: "综合查询", image: "nav2_normal", selectedImage: "nav2_hover")
+        addChildViewController(secondVC, title: "政策指南", image: "nav2_normal", selectedImage: "nav2_hover")
         
         //通讯录
         let thirdVC = AddressListViewController(nibName: "AddressListViewController", bundle: nil)
-        addChildViewController(thirdVC, title: "通讯录", image: "nav3_normal", selectedImage: "nav3_hover")
+        addChildViewController(thirdVC, title: "个人中心", image: "nav3_normal", selectedImage: "nav3_hover")
         
-        //分析统计
-        let fourVC = AnalysisViewController(nibName: "AnalysisViewController", bundle: nil)
-        addChildViewController(fourVC, title: "分析统计", image: "nav4_normal", selectedImage: "nav4_hover")
-        //资讯信息
-        let fivewVC = InformationMessageViewController(nibName: "InformationMessageViewController", bundle: nil)
-        addChildViewController(fivewVC, title: "资讯信息", image: "nav5_normal", selectedImage: "nav5_hover")
+      
         
         
 

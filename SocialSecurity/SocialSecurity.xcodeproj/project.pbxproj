@@ -314,6 +314,18 @@
 		E316147221B7631F00CF09B2 /* NSMutableDictionary+LH.m in Sources */ = {isa = PBXBuildFile; fileRef = E316134B21B7631F00CF09B2 /* NSMutableDictionary+LH.m */; };
 		E316147321B7631F00CF09B2 /* NSData+LH.m in Sources */ = {isa = PBXBuildFile; fileRef = E316134C21B7631F00CF09B2 /* NSData+LH.m */; };
 		E316147421B7631F00CF09B2 /* UIColor+LH.m in Sources */ = {isa = PBXBuildFile; fileRef = E316134D21B7631F00CF09B2 /* UIColor+LH.m */; };
+		E31EF63321BFD7A900E1C3E4 /* MSDataProvider+Ywjb.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31EF63221BFD7A900E1C3E4 /* MSDataProvider+Ywjb.swift */; };
+		E31EF63A21BFD80900E1C3E4 /* YwjbDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31EF63921BFD80900E1C3E4 /* YwjbDataController.swift */; };
+		E31EF63D21BFD81800E1C3E4 /* YwjbViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31EF63B21BFD81800E1C3E4 /* YwjbViewController.swift */; };
+		E31EF63E21BFD81800E1C3E4 /* YwjbViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E31EF63C21BFD81800E1C3E4 /* YwjbViewController.xib */; };
+		E31EF64221BFD92E00E1C3E4 /* ApplyBannerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31EF64021BFD92D00E1C3E4 /* ApplyBannerTableViewCell.swift */; };
+		E31EF64321BFD92E00E1C3E4 /* ApplyBannerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E31EF64121BFD92E00E1C3E4 /* ApplyBannerTableViewCell.xib */; };
+		E31EF64A21BFD99700E1C3E4 /* ApplyViewControllerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31EF64621BFD99700E1C3E4 /* ApplyViewControllerCollectionViewCell.swift */; };
+		E31EF64C21BFD99700E1C3E4 /* ApplyViewControllerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E31EF64821BFD99700E1C3E4 /* ApplyViewControllerCollectionViewCell.xib */; };
+		E31EF64F21BFDA2700E1C3E4 /* ApplyCollectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E31EF64D21BFDA2700E1C3E4 /* ApplyCollectionTableViewCell.xib */; };
+		E31EF65021BFDA2700E1C3E4 /* ApplyCollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31EF64E21BFDA2700E1C3E4 /* ApplyCollectionTableViewCell.swift */; };
+		E31EF65221BFDA5A00E1C3E4 /* ApplyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31EF65121BFDA5A00E1C3E4 /* ApplyModel.swift */; };
+		E31EF69721BFF5D700E1C3E4 /* JQRadiusView.m in Sources */ = {isa = PBXBuildFile; fileRef = E31EF69621BFF5D700E1C3E4 /* JQRadiusView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -717,6 +729,19 @@
 		E316134B21B7631F00CF09B2 /* NSMutableDictionary+LH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+LH.m"; sourceTree = "<group>"; };
 		E316134C21B7631F00CF09B2 /* NSData+LH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+LH.m"; sourceTree = "<group>"; };
 		E316134D21B7631F00CF09B2 /* UIColor+LH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+LH.m"; sourceTree = "<group>"; };
+		E31EF63221BFD7A900E1C3E4 /* MSDataProvider+Ywjb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MSDataProvider+Ywjb.swift"; sourceTree = "<group>"; };
+		E31EF63921BFD80900E1C3E4 /* YwjbDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YwjbDataController.swift; sourceTree = "<group>"; };
+		E31EF63B21BFD81800E1C3E4 /* YwjbViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YwjbViewController.swift; sourceTree = "<group>"; };
+		E31EF63C21BFD81800E1C3E4 /* YwjbViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YwjbViewController.xib; sourceTree = "<group>"; };
+		E31EF64021BFD92D00E1C3E4 /* ApplyBannerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplyBannerTableViewCell.swift; sourceTree = "<group>"; };
+		E31EF64121BFD92E00E1C3E4 /* ApplyBannerTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ApplyBannerTableViewCell.xib; sourceTree = "<group>"; };
+		E31EF64621BFD99700E1C3E4 /* ApplyViewControllerCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplyViewControllerCollectionViewCell.swift; sourceTree = "<group>"; };
+		E31EF64821BFD99700E1C3E4 /* ApplyViewControllerCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ApplyViewControllerCollectionViewCell.xib; sourceTree = "<group>"; };
+		E31EF64D21BFDA2700E1C3E4 /* ApplyCollectionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ApplyCollectionTableViewCell.xib; sourceTree = "<group>"; };
+		E31EF64E21BFDA2700E1C3E4 /* ApplyCollectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplyCollectionTableViewCell.swift; sourceTree = "<group>"; };
+		E31EF65121BFDA5A00E1C3E4 /* ApplyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplyModel.swift; sourceTree = "<group>"; };
+		E31EF69521BFF5D700E1C3E4 /* JQRadiusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JQRadiusView.h; sourceTree = "<group>"; };
+		E31EF69621BFF5D700E1C3E4 /* JQRadiusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JQRadiusView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -854,6 +879,7 @@
 		E316114B21B7631E00CF09B2 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				E31EF69421BFF5D700E1C3E4 /* JQRadiusView */,
 				E316114C21B7631E00CF09B2 /* 多张图片展示 */,
 				E316115021B7631E00CF09B2 /* 选择地址滚轮 */,
 				E316116821B7631E00CF09B2 /* 弹出式选择列表 */,
@@ -1795,6 +1821,7 @@
 		E316128D21B7631E00CF09B2 /* 应用 */ = {
 			isa = PBXGroup;
 			children = (
+				E31EF63121BFD77000E1C3E4 /* 业务经办 */,
 				E316128E21B7631E00CF09B2 /* 咨询信息 */,
 				E31612A321B7631E00CF09B2 /* 通讯录 */,
 				E31612B121B7631E00CF09B2 /* 发货管理 */,
@@ -2423,6 +2450,81 @@
 			path = SRC;
 			sourceTree = "<group>";
 		};
+		E31EF63121BFD77000E1C3E4 /* 业务经办 */ = {
+			isa = PBXGroup;
+			children = (
+				E31EF63221BFD7A900E1C3E4 /* MSDataProvider+Ywjb.swift */,
+				E31EF63421BFD7C500E1C3E4 /* 首页 */,
+			);
+			path = "业务经办";
+			sourceTree = "<group>";
+		};
+		E31EF63421BFD7C500E1C3E4 /* 首页 */ = {
+			isa = PBXGroup;
+			children = (
+				E31EF63821BFD7F300E1C3E4 /* model */,
+				E31EF63721BFD7E900E1C3E4 /* cell */,
+				E31EF63621BFD7E200E1C3E4 /* controller */,
+			);
+			path = "首页";
+			sourceTree = "<group>";
+		};
+		E31EF63621BFD7E200E1C3E4 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				E31EF63921BFD80900E1C3E4 /* YwjbDataController.swift */,
+				E31EF63B21BFD81800E1C3E4 /* YwjbViewController.swift */,
+				E31EF63C21BFD81800E1C3E4 /* YwjbViewController.xib */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		E31EF63721BFD7E900E1C3E4 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				E31EF64421BFD97300E1C3E4 /* 模块cell */,
+				E31EF63F21BFD91C00E1C3E4 /* 轮播图 */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		E31EF63821BFD7F300E1C3E4 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				E31EF65121BFDA5A00E1C3E4 /* ApplyModel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		E31EF63F21BFD91C00E1C3E4 /* 轮播图 */ = {
+			isa = PBXGroup;
+			children = (
+				E31EF64021BFD92D00E1C3E4 /* ApplyBannerTableViewCell.swift */,
+				E31EF64121BFD92E00E1C3E4 /* ApplyBannerTableViewCell.xib */,
+			);
+			path = "轮播图";
+			sourceTree = "<group>";
+		};
+		E31EF64421BFD97300E1C3E4 /* 模块cell */ = {
+			isa = PBXGroup;
+			children = (
+				E31EF64E21BFDA2700E1C3E4 /* ApplyCollectionTableViewCell.swift */,
+				E31EF64D21BFDA2700E1C3E4 /* ApplyCollectionTableViewCell.xib */,
+				E31EF64621BFD99700E1C3E4 /* ApplyViewControllerCollectionViewCell.swift */,
+				E31EF64821BFD99700E1C3E4 /* ApplyViewControllerCollectionViewCell.xib */,
+			);
+			path = "模块cell";
+			sourceTree = "<group>";
+		};
+		E31EF69421BFF5D700E1C3E4 /* JQRadiusView */ = {
+			isa = PBXGroup;
+			children = (
+				E31EF69521BFF5D700E1C3E4 /* JQRadiusView.h */,
+				E31EF69621BFF5D700E1C3E4 /* JQRadiusView.m */,
+			);
+			path = JQRadiusView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2569,6 +2671,7 @@
 				E316137921B7631F00CF09B2 /* area.json in Resources */,
 				E31613CD21B7631F00CF09B2 /* PersonMessageButtonTableViewCell.xib in Resources */,
 				E31613C621B7631F00CF09B2 /* ConfirmLoginSelectStrOrSchoolTableViewCell.xib in Resources */,
+				E31EF64321BFD92E00E1C3E4 /* ApplyBannerTableViewCell.xib in Resources */,
 				E316135921B7631F00CF09B2 /* README.md in Resources */,
 				E316135621B7631F00CF09B2 /* BRPickerView.bundle in Resources */,
 				E31613BB21B7631F00CF09B2 /* db.sql in Resources */,
@@ -2584,9 +2687,11 @@
 				E316144421B7631F00CF09B2 /* ComprehensiveQueryDetailViewController.xib in Resources */,
 				E316140121B7631F00CF09B2 /* InformationMessageListViewController.xib in Resources */,
 				E316138C21B7631F00CF09B2 /* PublishSourceHeaderView.xib in Resources */,
+				E31EF63E21BFD81800E1C3E4 /* YwjbViewController.xib in Resources */,
 				E316135D21B7631F00CF09B2 /* PoPSelectListView.xib in Resources */,
 				E31613D721B7631F00CF09B2 /* CompanyRegisterTipTableViewCell.xib in Resources */,
 				E316144521B7631F00CF09B2 /* GetPersonMessageDetailTableViewCell.xib in Resources */,
+				E31EF64C21BFD99700E1C3E4 /* ApplyViewControllerCollectionViewCell.xib in Resources */,
 				E31613A321B7631F00CF09B2 /* MenuView示例代码.rtf in Resources */,
 				E3160F7B21B761FC00CF09B2 /* Main.storyboard in Resources */,
 				E316134E21B7631F00CF09B2 /* 使用说明.rtf in Resources */,
@@ -2604,6 +2709,7 @@
 				E316137D21B7631F00CF09B2 /* CompanyRegisterSuccessView.xib in Resources */,
 				E316141521B7631F00CF09B2 /* DeliverGoodsViewController.xib in Resources */,
 				E31613E421B7631F00CF09B2 /* PersonRegisterViewController.xib in Resources */,
+				E31EF64F21BFDA2700E1C3E4 /* ApplyCollectionTableViewCell.xib in Resources */,
 				E31613A221B7631F00CF09B2 /* HSPopupSelectDayView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2727,6 +2833,7 @@
 				E31613EB21B7631F00CF09B2 /* StudentModel.swift in Sources */,
 				E31613AD21B7631F00CF09B2 /* NSObject+SBJson.m in Sources */,
 				E316144221B7631F00CF09B2 /* ComprehensiveQueryDetailDataController.swift in Sources */,
+				E31EF63D21BFD81800E1C3E4 /* YwjbViewController.swift in Sources */,
 				E316143A21B7631F00CF09B2 /* FilterModel.swift in Sources */,
 				E31613B421B7631F00CF09B2 /* SBJsonStreamWriter.m in Sources */,
 				E31613B221B7631F00CF09B2 /* SBJsonStreamParserState.m in Sources */,
@@ -2742,6 +2849,7 @@
 				E316140B21B7631F00CF09B2 /* MSDataProvider+AddressList.swift in Sources */,
 				E316139E21B7631F00CF09B2 /* TYBaseAnimation.m in Sources */,
 				E316142421B7631F00CF09B2 /* DeliverGoodsSaveModel.swift in Sources */,
+				E31EF69721BFF5D700E1C3E4 /* JQRadiusView.m in Sources */,
 				E31613E521B7631F00CF09B2 /* PersonRegisterViewController.swift in Sources */,
 				E316146521B7631F00CF09B2 /* UIView+LH.swift in Sources */,
 				E316145A21B7631F00CF09B2 /* Config.swift in Sources */,
@@ -2765,6 +2873,7 @@
 				E316140021B7631F00CF09B2 /* InformationMessageListViewController.swift in Sources */,
 				E316136B21B7631F00CF09B2 /* HSRightBarButtonItemMenu.swift in Sources */,
 				E31613B321B7631F00CF09B2 /* SBJsonWriter.m in Sources */,
+				E31EF63321BFD7A900E1C3E4 /* MSDataProvider+Ywjb.swift in Sources */,
 				E316147121B7631F00CF09B2 /* NSString+LH.m in Sources */,
 				E316146C21B7631F00CF09B2 /* UIImage+LH.m in Sources */,
 				E316145121B7631F00CF09B2 /* BaseModel.swift in Sources */,
@@ -2774,6 +2883,7 @@
 				E31613C221B7631F00CF09B2 /* ConfirmLoginPwdTableViewCell.swift in Sources */,
 				E3070FA321BE88B100E33BB1 /* ForgetPwdDataController.swift in Sources */,
 				E31613D521B7631F00CF09B2 /* CompanyRegisterTipTableViewCell.swift in Sources */,
+				E31EF65021BFDA2700E1C3E4 /* ApplyCollectionTableViewCell.swift in Sources */,
 				E316136521B7631F00CF09B2 /* MXSCycleScrollView.m in Sources */,
 				E31613E821B7631F00CF09B2 /* SelectCompanyViewController.swift in Sources */,
 				E31613D421B7631F00CF09B2 /* CompanyRegisterInputTableViewCell.swift in Sources */,
@@ -2786,6 +2896,7 @@
 				E316142121B7631F00CF09B2 /* AreaDataModel.swift in Sources */,
 				E31613D621B7631F00CF09B2 /* CompanyRegisterPhotoTableViewCell.swift in Sources */,
 				E316145C21B7631F00CF09B2 /* MSPlistController.swift in Sources */,
+				E31EF64A21BFD99700E1C3E4 /* ApplyViewControllerCollectionViewCell.swift in Sources */,
 				E31613A421B7631F00CF09B2 /* MenuView.swift in Sources */,
 				E316138E21B7631F00CF09B2 /* WSDatePickerView.m in Sources */,
 				E316140D21B7631F00CF09B2 /* AddressListViewController.swift in Sources */,
@@ -2838,8 +2949,10 @@
 				E31613B821B7631F00CF09B2 /* SBJsonTokeniser.m in Sources */,
 				E316136621B7631F00CF09B2 /* RBCustomDatePickerView.m in Sources */,
 				E316145621B7631F00CF09B2 /* BaseViewController.swift in Sources */,
+				E31EF64221BFD92E00E1C3E4 /* ApplyBannerTableViewCell.swift in Sources */,
 				E316136C21B7631F00CF09B2 /* HSRightBarButtonItemMenuItem.swift in Sources */,
 				E31613CB21B7631F00CF09B2 /* PersonMessagePhotoTableViewCell.swift in Sources */,
+				E31EF63A21BFD80900E1C3E4 /* YwjbDataController.swift in Sources */,
 				E316138721B7631F00CF09B2 /* UIViewController+LeftSlide.m in Sources */,
 				E316145321B7631F00CF09B2 /* BaseTermsModel.swift in Sources */,
 				E3160F7821B761FC00CF09B2 /* ViewController.swift in Sources */,
@@ -2853,6 +2966,7 @@
 				E316146A21B7631F00CF09B2 /* UIImageView+LH.swift in Sources */,
 				E31613EC21B7631F00CF09B2 /* SchoolModel.swift in Sources */,
 				E316143421B7631F00CF09B2 /* AnalysisViewController.swift in Sources */,
+				E31EF65221BFDA5A00E1C3E4 /* ApplyModel.swift in Sources */,
 				E316136721B7631F00CF09B2 /* LHImageCompressor.m in Sources */,
 				E316144021B7631F00CF09B2 /* ComprehensiveQueryListTableViewCell.swift in Sources */,
 				E316142221B7631F00CF09B2 /* SendAndGetPersonMessageDataModel.swift in Sources */,
