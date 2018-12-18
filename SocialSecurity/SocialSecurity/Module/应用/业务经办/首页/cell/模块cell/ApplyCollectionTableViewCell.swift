@@ -7,13 +7,18 @@
 //
 
 import UIKit
-
+@objc protocol ApplyCollectionIndexClickProtocol {
+    func collectionIndexClick(index:Int)
+}
 class ApplyCollectionTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var statusView: UIView!
+    @IBOutlet weak var statusViewHeight: NSLayoutConstraint!
     @IBOutlet var collectionView: UICollectionView!
     var delegate:BaseViewController!
     var dataArray:Array<ApplyToolModel> = [ApplyToolModel]()
     @IBOutlet weak var oneLabel: UILabel!
+    var pro:ApplyCollectionIndexClickProtocol!
     override func awakeFromNib() {
         super.awakeFromNib()
         self.backgroundColor = UIColor.clear
@@ -48,10 +53,10 @@ extension ApplyCollectionTableViewCell{
     fileprivate func initUI(){
         
         let layout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize(width:(ScreenWidth - 4)/3,height:(ScreenWidth - 4)/3)
+        layout.itemSize = CGSize(width:(ScreenWidth)/3,height:(ScreenWidth)/3)
         //列间距,行间距,偏移
-        layout.minimumInteritemSpacing = 1
-        layout.minimumLineSpacing = 1
+        layout.minimumInteritemSpacing = 0
+        layout.minimumLineSpacing = 0
         //        layout.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10)
         collectionView.collectionViewLayout = layout
         collectionView.delegate = self
@@ -81,14 +86,19 @@ extension ApplyCollectionTableViewCell:UICollectionViewDelegate,UICollectionView
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ApplyViewControllerCollectionViewCell", for: indexPath) as! ApplyViewControllerCollectionViewCell
         cell.update(model: dataArray[indexPath.row])
-        
+        if indexPath.row > 2{
+            cell.topLabel.isHidden = true
+        }else{
+            cell.topLabel.isHidden = false
+        }
+        if indexPath.row % 3 > 0{
+            cell.leftLabel.isHidden = true
+        }else{
+            cell.leftLabel.isHidden = false
+        }
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let model = dataArray[indexPath.row]
-        
-        
-      
+        pro.collectionIndexClick(index: indexPath.row)
     }
-    
 }

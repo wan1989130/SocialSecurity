@@ -74,16 +74,25 @@ extension YwjbViewController:UITableViewDelegate,UITableViewDataSource{
             let cell = ApplyCollectionTableViewCell.loadCell(tableView)
             cell.initCell(delegate: self, dataArray: dataController.toolArray)
             cell.backgroundColor = UIColor.clear
+            cell.pro = self
+//            cell.statusView.removeAllSubviews()
+//           cell.statusViewHeight.constant = 0
             return cell
         }
+        
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.section == 0{
             return ScreenWidth * 480 / 1080
         }else {
-            let height = ((ScreenWidth - 4) / 3) * CGFloat(ceil(Double((4)) / 3)) + 1
-            return height + 61 + 0.01
+            let height = ((ScreenWidth) / 3) * CGFloat(ceil(Double((4)) / 3))
+            return height + 60 + 0.01
         }
         
+    }
+}
+extension YwjbViewController:ApplyCollectionIndexClickProtocol{
+    func collectionIndexClick(index: Int) {
+        print(index)
     }
 }

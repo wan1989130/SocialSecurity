@@ -10,6 +10,10 @@ import UIKit
 
 class ApplyViewControllerCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var rightLabel: UILabel!
+    @IBOutlet weak var leftLabel: UILabel!
+    @IBOutlet weak var topLabel: UILabel!
+    @IBOutlet weak var bottomLabel: UILabel!
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var iconImageView: UIImageView!
     override func awakeFromNib() {
@@ -22,5 +26,6 @@ class ApplyViewControllerCollectionViewCell: UICollectionViewCell {
         nameLabel.text = model.text
         iconImageView.image = UIImage(named: "default_head_photo")
     }
+
 
 }

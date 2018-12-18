@@ -320,12 +320,34 @@
 		E31EF63E21BFD81800E1C3E4 /* YwjbViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E31EF63C21BFD81800E1C3E4 /* YwjbViewController.xib */; };
 		E31EF64221BFD92E00E1C3E4 /* ApplyBannerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31EF64021BFD92D00E1C3E4 /* ApplyBannerTableViewCell.swift */; };
 		E31EF64321BFD92E00E1C3E4 /* ApplyBannerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E31EF64121BFD92E00E1C3E4 /* ApplyBannerTableViewCell.xib */; };
-		E31EF64A21BFD99700E1C3E4 /* ApplyViewControllerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31EF64621BFD99700E1C3E4 /* ApplyViewControllerCollectionViewCell.swift */; };
-		E31EF64C21BFD99700E1C3E4 /* ApplyViewControllerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E31EF64821BFD99700E1C3E4 /* ApplyViewControllerCollectionViewCell.xib */; };
 		E31EF64F21BFDA2700E1C3E4 /* ApplyCollectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E31EF64D21BFDA2700E1C3E4 /* ApplyCollectionTableViewCell.xib */; };
 		E31EF65021BFDA2700E1C3E4 /* ApplyCollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31EF64E21BFDA2700E1C3E4 /* ApplyCollectionTableViewCell.swift */; };
 		E31EF65221BFDA5A00E1C3E4 /* ApplyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31EF65121BFDA5A00E1C3E4 /* ApplyModel.swift */; };
 		E31EF69721BFF5D700E1C3E4 /* JQRadiusView.m in Sources */ = {isa = PBXBuildFile; fileRef = E31EF69621BFF5D700E1C3E4 /* JQRadiusView.m */; };
+		E3848B4021C8D00100B9AC27 /* MSDataProvider+Grzx.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3848B3F21C8D00100B9AC27 /* MSDataProvider+Grzx.swift */; };
+		E3848B4721C8D03000B9AC27 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3848B4521C8D03000B9AC27 /* MineViewController.swift */; };
+		E3848B4821C8D03000B9AC27 /* MineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3848B4621C8D03000B9AC27 /* MineViewController.xib */; };
+		E3848B4A21C8D04200B9AC27 /* MineDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3848B4921C8D04200B9AC27 /* MineDataController.swift */; };
+		E3848B4F21C8D17200B9AC27 /* MinePhotoHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3848B4D21C8D17200B9AC27 /* MinePhotoHeaderTableViewCell.swift */; };
+		E3848B5021C8D17200B9AC27 /* MinePhotoHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3848B4E21C8D17200B9AC27 /* MinePhotoHeaderTableViewCell.xib */; };
+		E3848B5321C8D17C00B9AC27 /* MineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3848B5121C8D17C00B9AC27 /* MineTableViewCell.swift */; };
+		E3848B5421C8D17C00B9AC27 /* MineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3848B5221C8D17C00B9AC27 /* MineTableViewCell.xib */; };
+		E3848B6021C8D7F500B9AC27 /* MineMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3848B5E21C8D7F500B9AC27 /* MineMessageViewController.swift */; };
+		E3848B6121C8D7F500B9AC27 /* MineMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3848B5F21C8D7F500B9AC27 /* MineMessageViewController.xib */; };
+		E3848B6321C8D82100B9AC27 /* MineMessageDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3848B6221C8D82100B9AC27 /* MineMessageDataController.swift */; };
+		E3848B6521C8D9F700B9AC27 /* updateNickNameDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3848B6421C8D9F700B9AC27 /* updateNickNameDataController.swift */; };
+		E3848B6821C8DA0700B9AC27 /* updateNickNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3848B6621C8DA0700B9AC27 /* updateNickNameViewController.swift */; };
+		E3848B6921C8DA0700B9AC27 /* updateNickNameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3848B6721C8DA0700B9AC27 /* updateNickNameViewController.xib */; };
+		E3848B7021C911FE00B9AC27 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3848B6E21C911FE00B9AC27 /* AboutUsViewController.swift */; };
+		E3848B7121C911FE00B9AC27 /* AboutUsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3848B6F21C911FE00B9AC27 /* AboutUsViewController.xib */; };
+		E3848B7521C9126400B9AC27 /* FeedBackDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3848B7421C9126400B9AC27 /* FeedBackDataController.swift */; };
+		E3848B7821C9127500B9AC27 /* FeedBackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3848B7621C9127500B9AC27 /* FeedBackViewController.swift */; };
+		E3848B7921C9127500B9AC27 /* FeedBackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3848B7721C9127500B9AC27 /* FeedBackViewController.xib */; };
+		E3848B7D21C912E900B9AC27 /* UpdatePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3848B7B21C912E900B9AC27 /* UpdatePasswordViewController.swift */; };
+		E3848B7E21C912E900B9AC27 /* UpdatePasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3848B7C21C912E900B9AC27 /* UpdatePasswordViewController.xib */; };
+		E3848B8021C912FB00B9AC27 /* UpdatePasswordDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3848B7F21C912FB00B9AC27 /* UpdatePasswordDataController.swift */; };
+		E38CA3FB21C0943800455B81 /* ApplyViewControllerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38CA3F921C0943800455B81 /* ApplyViewControllerCollectionViewCell.swift */; };
+		E38CA3FC21C0943800455B81 /* ApplyViewControllerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E38CA3FA21C0943800455B81 /* ApplyViewControllerCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -735,13 +757,35 @@
 		E31EF63C21BFD81800E1C3E4 /* YwjbViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YwjbViewController.xib; sourceTree = "<group>"; };
 		E31EF64021BFD92D00E1C3E4 /* ApplyBannerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplyBannerTableViewCell.swift; sourceTree = "<group>"; };
 		E31EF64121BFD92E00E1C3E4 /* ApplyBannerTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ApplyBannerTableViewCell.xib; sourceTree = "<group>"; };
-		E31EF64621BFD99700E1C3E4 /* ApplyViewControllerCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplyViewControllerCollectionViewCell.swift; sourceTree = "<group>"; };
-		E31EF64821BFD99700E1C3E4 /* ApplyViewControllerCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ApplyViewControllerCollectionViewCell.xib; sourceTree = "<group>"; };
 		E31EF64D21BFDA2700E1C3E4 /* ApplyCollectionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ApplyCollectionTableViewCell.xib; sourceTree = "<group>"; };
 		E31EF64E21BFDA2700E1C3E4 /* ApplyCollectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplyCollectionTableViewCell.swift; sourceTree = "<group>"; };
 		E31EF65121BFDA5A00E1C3E4 /* ApplyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplyModel.swift; sourceTree = "<group>"; };
 		E31EF69521BFF5D700E1C3E4 /* JQRadiusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JQRadiusView.h; sourceTree = "<group>"; };
 		E31EF69621BFF5D700E1C3E4 /* JQRadiusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JQRadiusView.m; sourceTree = "<group>"; };
+		E3848B3F21C8D00100B9AC27 /* MSDataProvider+Grzx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MSDataProvider+Grzx.swift"; sourceTree = "<group>"; };
+		E3848B4521C8D03000B9AC27 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		E3848B4621C8D03000B9AC27 /* MineViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MineViewController.xib; sourceTree = "<group>"; };
+		E3848B4921C8D04200B9AC27 /* MineDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineDataController.swift; sourceTree = "<group>"; };
+		E3848B4D21C8D17200B9AC27 /* MinePhotoHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinePhotoHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		E3848B4E21C8D17200B9AC27 /* MinePhotoHeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MinePhotoHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		E3848B5121C8D17C00B9AC27 /* MineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineTableViewCell.swift; sourceTree = "<group>"; };
+		E3848B5221C8D17C00B9AC27 /* MineTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MineTableViewCell.xib; sourceTree = "<group>"; };
+		E3848B5E21C8D7F500B9AC27 /* MineMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineMessageViewController.swift; sourceTree = "<group>"; };
+		E3848B5F21C8D7F500B9AC27 /* MineMessageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MineMessageViewController.xib; sourceTree = "<group>"; };
+		E3848B6221C8D82100B9AC27 /* MineMessageDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineMessageDataController.swift; sourceTree = "<group>"; };
+		E3848B6421C8D9F700B9AC27 /* updateNickNameDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = updateNickNameDataController.swift; sourceTree = "<group>"; };
+		E3848B6621C8DA0700B9AC27 /* updateNickNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = updateNickNameViewController.swift; sourceTree = "<group>"; };
+		E3848B6721C8DA0700B9AC27 /* updateNickNameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = updateNickNameViewController.xib; sourceTree = "<group>"; };
+		E3848B6E21C911FE00B9AC27 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		E3848B6F21C911FE00B9AC27 /* AboutUsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutUsViewController.xib; sourceTree = "<group>"; };
+		E3848B7421C9126400B9AC27 /* FeedBackDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackDataController.swift; sourceTree = "<group>"; };
+		E3848B7621C9127500B9AC27 /* FeedBackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackViewController.swift; sourceTree = "<group>"; };
+		E3848B7721C9127500B9AC27 /* FeedBackViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedBackViewController.xib; sourceTree = "<group>"; };
+		E3848B7B21C912E900B9AC27 /* UpdatePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePasswordViewController.swift; sourceTree = "<group>"; };
+		E3848B7C21C912E900B9AC27 /* UpdatePasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UpdatePasswordViewController.xib; sourceTree = "<group>"; };
+		E3848B7F21C912FB00B9AC27 /* UpdatePasswordDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePasswordDataController.swift; sourceTree = "<group>"; };
+		E38CA3F921C0943800455B81 /* ApplyViewControllerCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplyViewControllerCollectionViewCell.swift; sourceTree = "<group>"; };
+		E38CA3FA21C0943800455B81 /* ApplyViewControllerCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ApplyViewControllerCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1821,6 +1865,7 @@
 		E316128D21B7631E00CF09B2 /* 应用 */ = {
 			isa = PBXGroup;
 			children = (
+				E3848B3E21C8CFEA00B9AC27 /* 个人中心 */,
 				E31EF63121BFD77000E1C3E4 /* 业务经办 */,
 				E316128E21B7631E00CF09B2 /* 咨询信息 */,
 				E31612A321B7631E00CF09B2 /* 通讯录 */,
@@ -2508,10 +2553,10 @@
 		E31EF64421BFD97300E1C3E4 /* 模块cell */ = {
 			isa = PBXGroup;
 			children = (
+				E38CA3F921C0943800455B81 /* ApplyViewControllerCollectionViewCell.swift */,
+				E38CA3FA21C0943800455B81 /* ApplyViewControllerCollectionViewCell.xib */,
 				E31EF64E21BFDA2700E1C3E4 /* ApplyCollectionTableViewCell.swift */,
 				E31EF64D21BFDA2700E1C3E4 /* ApplyCollectionTableViewCell.xib */,
-				E31EF64621BFD99700E1C3E4 /* ApplyViewControllerCollectionViewCell.swift */,
-				E31EF64821BFD99700E1C3E4 /* ApplyViewControllerCollectionViewCell.xib */,
 			);
 			path = "模块cell";
 			sourceTree = "<group>";
@@ -2523,6 +2568,203 @@
 				E31EF69621BFF5D700E1C3E4 /* JQRadiusView.m */,
 			);
 			path = JQRadiusView;
+			sourceTree = "<group>";
+		};
+		E3848B3E21C8CFEA00B9AC27 /* 个人中心 */ = {
+			isa = PBXGroup;
+			children = (
+				E3848B6C21C911E400B9AC27 /* 关于我们 */,
+				E3848B6B21C911D900B9AC27 /* 意见反馈 */,
+				E3848B6A21C911D200B9AC27 /* 修改密码 */,
+				E3848B5521C8D77900B9AC27 /* 完善个人信息 */,
+				E3848B4121C8D00D00B9AC27 /* 首页 */,
+				E3848B3F21C8D00100B9AC27 /* MSDataProvider+Grzx.swift */,
+			);
+			path = "个人中心";
+			sourceTree = "<group>";
+		};
+		E3848B4121C8D00D00B9AC27 /* 首页 */ = {
+			isa = PBXGroup;
+			children = (
+				E3848B4421C8D02200B9AC27 /* model */,
+				E3848B4321C8D01D00B9AC27 /* cell */,
+				E3848B4221C8D01500B9AC27 /* controller */,
+			);
+			path = "首页";
+			sourceTree = "<group>";
+		};
+		E3848B4221C8D01500B9AC27 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				E3848B4921C8D04200B9AC27 /* MineDataController.swift */,
+				E3848B4521C8D03000B9AC27 /* MineViewController.swift */,
+				E3848B4621C8D03000B9AC27 /* MineViewController.xib */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		E3848B4321C8D01D00B9AC27 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				E3848B4C21C8D13700B9AC27 /* 通用cell */,
+				E3848B4B21C8D12F00B9AC27 /* 头像cell */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		E3848B4421C8D02200B9AC27 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		E3848B4B21C8D12F00B9AC27 /* 头像cell */ = {
+			isa = PBXGroup;
+			children = (
+				E3848B4D21C8D17200B9AC27 /* MinePhotoHeaderTableViewCell.swift */,
+				E3848B4E21C8D17200B9AC27 /* MinePhotoHeaderTableViewCell.xib */,
+			);
+			path = "头像cell";
+			sourceTree = "<group>";
+		};
+		E3848B4C21C8D13700B9AC27 /* 通用cell */ = {
+			isa = PBXGroup;
+			children = (
+				E3848B5121C8D17C00B9AC27 /* MineTableViewCell.swift */,
+				E3848B5221C8D17C00B9AC27 /* MineTableViewCell.xib */,
+			);
+			path = "通用cell";
+			sourceTree = "<group>";
+		};
+		E3848B5521C8D77900B9AC27 /* 完善个人信息 */ = {
+			isa = PBXGroup;
+			children = (
+				E3848B5721C8D7A300B9AC27 /* 修改昵称 */,
+				E3848B5621C8D79B00B9AC27 /* 首页 */,
+			);
+			path = "完善个人信息";
+			sourceTree = "<group>";
+		};
+		E3848B5621C8D79B00B9AC27 /* 首页 */ = {
+			isa = PBXGroup;
+			children = (
+				E3848B5A21C8D7C200B9AC27 /* cell */,
+				E3848B5921C8D7BE00B9AC27 /* model */,
+				E3848B5821C8D7B600B9AC27 /* controller */,
+			);
+			path = "首页";
+			sourceTree = "<group>";
+		};
+		E3848B5721C8D7A300B9AC27 /* 修改昵称 */ = {
+			isa = PBXGroup;
+			children = (
+				E3848B5D21C8D7D000B9AC27 /* controller */,
+				E3848B5C21C8D7CC00B9AC27 /* model */,
+				E3848B5B21C8D7C700B9AC27 /* cell */,
+			);
+			path = "修改昵称";
+			sourceTree = "<group>";
+		};
+		E3848B5821C8D7B600B9AC27 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				E3848B6221C8D82100B9AC27 /* MineMessageDataController.swift */,
+				E3848B5E21C8D7F500B9AC27 /* MineMessageViewController.swift */,
+				E3848B5F21C8D7F500B9AC27 /* MineMessageViewController.xib */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		E3848B5921C8D7BE00B9AC27 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		E3848B5A21C8D7C200B9AC27 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		E3848B5B21C8D7C700B9AC27 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		E3848B5C21C8D7CC00B9AC27 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		E3848B5D21C8D7D000B9AC27 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				E3848B6421C8D9F700B9AC27 /* updateNickNameDataController.swift */,
+				E3848B6621C8DA0700B9AC27 /* updateNickNameViewController.swift */,
+				E3848B6721C8DA0700B9AC27 /* updateNickNameViewController.xib */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		E3848B6A21C911D200B9AC27 /* 修改密码 */ = {
+			isa = PBXGroup;
+			children = (
+				E3848B7A21C912DB00B9AC27 /* controller */,
+			);
+			path = "修改密码";
+			sourceTree = "<group>";
+		};
+		E3848B6B21C911D900B9AC27 /* 意见反馈 */ = {
+			isa = PBXGroup;
+			children = (
+				E3848B7221C9122F00B9AC27 /* controller */,
+			);
+			path = "意见反馈";
+			sourceTree = "<group>";
+		};
+		E3848B6C21C911E400B9AC27 /* 关于我们 */ = {
+			isa = PBXGroup;
+			children = (
+				E3848B6D21C911EC00B9AC27 /* controller */,
+			);
+			path = "关于我们";
+			sourceTree = "<group>";
+		};
+		E3848B6D21C911EC00B9AC27 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				E3848B6E21C911FE00B9AC27 /* AboutUsViewController.swift */,
+				E3848B6F21C911FE00B9AC27 /* AboutUsViewController.xib */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		E3848B7221C9122F00B9AC27 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				E3848B7421C9126400B9AC27 /* FeedBackDataController.swift */,
+				E3848B7621C9127500B9AC27 /* FeedBackViewController.swift */,
+				E3848B7721C9127500B9AC27 /* FeedBackViewController.xib */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		E3848B7A21C912DB00B9AC27 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				E3848B7F21C912FB00B9AC27 /* UpdatePasswordDataController.swift */,
+				E3848B7B21C912E900B9AC27 /* UpdatePasswordViewController.swift */,
+				E3848B7C21C912E900B9AC27 /* UpdatePasswordViewController.xib */,
+			);
+			path = controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2636,6 +2878,7 @@
 				E31613EE21B7631F00CF09B2 /* SelectAreaPopupView.xib in Resources */,
 				E316144921B7631F00CF09B2 /* PhotoDetailTableViewCell.xib in Resources */,
 				E316139421B7631F00CF09B2 /* 示例代码WaterViewController.rtf in Resources */,
+				E3848B7E21C912E900B9AC27 /* UpdatePasswordViewController.xib in Resources */,
 				E316135821B7631F00CF09B2 /* LICENSE in Resources */,
 				E3160F8021B761FE00CF09B2 /* LaunchScreen.storyboard in Resources */,
 				E31613D321B7631F00CF09B2 /* CompanyRegisterPhotoTableViewCell.xib in Resources */,
@@ -2647,8 +2890,12 @@
 				E31613A121B7631F00CF09B2 /* HSPopupSelectDayView示例代码.rtf in Resources */,
 				E316143321B7631F00CF09B2 /* AnalysisViewController.xib in Resources */,
 				E316137521B7631F00CF09B2 /* MSCommentEditView.xib in Resources */,
+				E3848B4821C8D03000B9AC27 /* MineViewController.xib in Resources */,
+				E3848B6121C8D7F500B9AC27 /* MineMessageViewController.xib in Resources */,
 				E316143F21B7631F00CF09B2 /* ComprehensiveQueryListTableViewCell.xib in Resources */,
+				E3848B5021C8D17200B9AC27 /* MinePhotoHeaderTableViewCell.xib in Resources */,
 				E316142B21B7631F00CF09B2 /* AddRemarkViewController.xib in Resources */,
+				E3848B7121C911FE00B9AC27 /* AboutUsViewController.xib in Resources */,
 				E316141321B7631F00CF09B2 /* AddressListHeaderView.xib in Resources */,
 				E31613F621B7631F00CF09B2 /* LanchImageViewController.xib in Resources */,
 				E316137F21B7631F00CF09B2 /* CodeSuccessView.xib in Resources */,
@@ -2663,6 +2910,7 @@
 				E316139321B7631F00CF09B2 /* 示例代码XHLTagLabelsViewController.rtf in Resources */,
 				E316137E21B7631F00CF09B2 /* QrCodeView.xib in Resources */,
 				E316143821B7631F00CF09B2 /* FilterViewController.xib in Resources */,
+				E3848B7921C9127500B9AC27 /* FeedBackViewController.xib in Resources */,
 				E31613C721B7631F00CF09B2 /* BindAccountShowSchoolTableViewCell.xib in Resources */,
 				E316140E21B7631F00CF09B2 /* AddressListViewController.xib in Resources */,
 				E3160F7D21B761FE00CF09B2 /* Assets.xcassets in Resources */,
@@ -2691,9 +2939,11 @@
 				E316135D21B7631F00CF09B2 /* PoPSelectListView.xib in Resources */,
 				E31613D721B7631F00CF09B2 /* CompanyRegisterTipTableViewCell.xib in Resources */,
 				E316144521B7631F00CF09B2 /* GetPersonMessageDetailTableViewCell.xib in Resources */,
-				E31EF64C21BFD99700E1C3E4 /* ApplyViewControllerCollectionViewCell.xib in Resources */,
+				E3848B6921C8DA0700B9AC27 /* updateNickNameViewController.xib in Resources */,
 				E31613A321B7631F00CF09B2 /* MenuView示例代码.rtf in Resources */,
+				E38CA3FC21C0943800455B81 /* ApplyViewControllerCollectionViewCell.xib in Resources */,
 				E3160F7B21B761FC00CF09B2 /* Main.storyboard in Resources */,
+				E3848B5421C8D17C00B9AC27 /* MineTableViewCell.xib in Resources */,
 				E316134E21B7631F00CF09B2 /* 使用说明.rtf in Resources */,
 				E31613E121B7631F00CF09B2 /* ConfirmLoginView.xib in Resources */,
 				E31613CA21B7631F00CF09B2 /* PersonMessageInputTableViewCell.xib in Resources */,
@@ -2826,6 +3076,7 @@
 				E316144A21B7631F00CF09B2 /* PhotoDetailTableViewCell.swift in Sources */,
 				E31613B121B7631F00CF09B2 /* SBJsonUTF8Stream.m in Sources */,
 				E316138321B7631F00CF09B2 /* CafToMp3.m in Sources */,
+				E3848B7021C911FE00B9AC27 /* AboutUsViewController.swift in Sources */,
 				E316140221B7631F00CF09B2 /* InformationMessageListDataController.swift in Sources */,
 				E31613FB21B7631F00CF09B2 /* SelectMultipleStudentDataModel.swift in Sources */,
 				E316136221B7631F00CF09B2 /* ColorChange.swift in Sources */,
@@ -2864,6 +3115,7 @@
 				E316136321B7631F00CF09B2 /* JZLocationConverter.m in Sources */,
 				E316146F21B7631F00CF09B2 /* NSNumber+LH.m in Sources */,
 				E316145221B7631F00CF09B2 /* BaseClassesModel.swift in Sources */,
+				E38CA3FB21C0943800455B81 /* ApplyViewControllerCollectionViewCell.swift in Sources */,
 				E316135321B7631F00CF09B2 /* BRDatePickerView.m in Sources */,
 				E316143521B7631F00CF09B2 /* AnalysisDataController.swift in Sources */,
 				E316141221B7631F00CF09B2 /* AddressListHeaderView.swift in Sources */,
@@ -2891,12 +3143,12 @@
 				E316139721B7631F00CF09B2 /* UIView+TYAlertView.m in Sources */,
 				E31613DF21B7631F00CF09B2 /* CompanyRegisterModel.swift in Sources */,
 				E316138921B7631F00CF09B2 /* NoDataView.swift in Sources */,
+				E3848B7821C9127500B9AC27 /* FeedBackViewController.swift in Sources */,
 				E31613AB21B7631F00CF09B2 /* MD5Encoder.m in Sources */,
 				E31613BC21B7631F00CF09B2 /* FMDBHelper.swift in Sources */,
 				E316142121B7631F00CF09B2 /* AreaDataModel.swift in Sources */,
 				E31613D621B7631F00CF09B2 /* CompanyRegisterPhotoTableViewCell.swift in Sources */,
 				E316145C21B7631F00CF09B2 /* MSPlistController.swift in Sources */,
-				E31EF64A21BFD99700E1C3E4 /* ApplyViewControllerCollectionViewCell.swift in Sources */,
 				E31613A421B7631F00CF09B2 /* MenuView.swift in Sources */,
 				E316138E21B7631F00CF09B2 /* WSDatePickerView.m in Sources */,
 				E316140D21B7631F00CF09B2 /* AddressListViewController.swift in Sources */,
@@ -2904,6 +3156,7 @@
 				E316143721B7631F00CF09B2 /* FilterDataController.swift in Sources */,
 				E316141B21B7631F00CF09B2 /* GetPersonMessageTableViewCell.swift in Sources */,
 				E316135C21B7631F00CF09B2 /* PopSelectListTableViewCell.swift in Sources */,
+				E3848B6321C8D82100B9AC27 /* MineMessageDataController.swift in Sources */,
 				E31613A921B7631F00CF09B2 /* LHHTTPClient.swift in Sources */,
 				E316135E21B7631F00CF09B2 /* TCCountDown.swift in Sources */,
 				E316135021B7631F00CF09B2 /* PhotoBrowserView.swift in Sources */,
@@ -2939,6 +3192,7 @@
 				E316147421B7631F00CF09B2 /* UIColor+LH.m in Sources */,
 				E316138121B7631F00CF09B2 /* ShakeView.swift in Sources */,
 				E316142C21B7631F00CF09B2 /* AddRemarkViewController.swift in Sources */,
+				E3848B6021C8D7F500B9AC27 /* MineMessageViewController.swift in Sources */,
 				E316142E21B7631F00CF09B2 /* SendGoodsPhotoDataController.swift in Sources */,
 				E316139821B7631F00CF09B2 /* TYAlertScaleFadeAnimation.m in Sources */,
 				E316140521B7631F00CF09B2 /* InformationMessageListTableViewCell.swift in Sources */,
@@ -2950,6 +3204,7 @@
 				E316136621B7631F00CF09B2 /* RBCustomDatePickerView.m in Sources */,
 				E316145621B7631F00CF09B2 /* BaseViewController.swift in Sources */,
 				E31EF64221BFD92E00E1C3E4 /* ApplyBannerTableViewCell.swift in Sources */,
+				E3848B4F21C8D17200B9AC27 /* MinePhotoHeaderTableViewCell.swift in Sources */,
 				E316136C21B7631F00CF09B2 /* HSRightBarButtonItemMenuItem.swift in Sources */,
 				E31613CB21B7631F00CF09B2 /* PersonMessagePhotoTableViewCell.swift in Sources */,
 				E31EF63A21BFD80900E1C3E4 /* YwjbDataController.swift in Sources */,
@@ -2967,11 +3222,13 @@
 				E31613EC21B7631F00CF09B2 /* SchoolModel.swift in Sources */,
 				E316143421B7631F00CF09B2 /* AnalysisViewController.swift in Sources */,
 				E31EF65221BFDA5A00E1C3E4 /* ApplyModel.swift in Sources */,
+				E3848B6821C8DA0700B9AC27 /* updateNickNameViewController.swift in Sources */,
 				E316136721B7631F00CF09B2 /* LHImageCompressor.m in Sources */,
 				E316144021B7631F00CF09B2 /* ComprehensiveQueryListTableViewCell.swift in Sources */,
 				E316142221B7631F00CF09B2 /* SendAndGetPersonMessageDataModel.swift in Sources */,
 				E31613C921B7631F00CF09B2 /* PersonMessageInputTableViewCell.swift in Sources */,
 				E31613BF21B7631F00CF09B2 /* NSData+AES.m in Sources */,
+				E3848B7521C9126400B9AC27 /* FeedBackDataController.swift in Sources */,
 				E31613FE21B7631F00CF09B2 /* MSDataProvider+InformationMessage.swift in Sources */,
 				E316146121B7631F00CF09B2 /* LHAlertView.swift in Sources */,
 				E316146921B7631F00CF09B2 /* CATransition+HS.swift in Sources */,
@@ -2994,6 +3251,7 @@
 				E316141121B7631F00CF09B2 /* AddressListDataModel.swift in Sources */,
 				E316145F21B7631F00CF09B2 /* UIAlertController+LH.swift in Sources */,
 				E316142D21B7631F00CF09B2 /* SendGoodsPhotoViewController.swift in Sources */,
+				E3848B4021C8D00100B9AC27 /* MSDataProvider+Grzx.swift in Sources */,
 				E316146221B7631F00CF09B2 /* Data+LH.swift in Sources */,
 				E31613DB21B7631F00CF09B2 /* PersonMessageSuccessDataModel.swift in Sources */,
 				E31613FD21B7631F00CF09B2 /* UploadPhotoLogisticsDataModel.swift in Sources */,
@@ -3002,12 +3260,15 @@
 				E316147321B7631F00CF09B2 /* NSData+LH.m in Sources */,
 				E316145921B7631F00CF09B2 /* MSDataProvider+Common.swift in Sources */,
 				E316145D21B7631F00CF09B2 /* VersionModel.swift in Sources */,
+				E3848B7D21C912E900B9AC27 /* UpdatePasswordViewController.swift in Sources */,
 				E316139221B7631F00CF09B2 /* XHLTagLabelsLayout.m in Sources */,
 				E316143B21B7631F00CF09B2 /* MSDataProvider+ComprehensiveQuery.swift in Sources */,
 				E316145821B7631F00CF09B2 /* BaseTabBarViewController.swift in Sources */,
 				E316144B21B7631F00CF09B2 /* SendGoodsMessageDetailTableViewCell.swift in Sources */,
 				E316143121B7631F00CF09B2 /* PhotoCollectionViewCell.swift in Sources */,
 				E316146821B7631F00CF09B2 /* UIImage_LH.swift in Sources */,
+				E3848B4A21C8D04200B9AC27 /* MineDataController.swift in Sources */,
+				E3848B4721C8D03000B9AC27 /* MineViewController.swift in Sources */,
 				E31613B021B7631F00CF09B2 /* SBJsonStreamParserAccumulator.m in Sources */,
 				E31613FA21B7631F00CF09B2 /* CommonWebViewController.swift in Sources */,
 				E316137221B7631F00CF09B2 /* DropListCoverView.swift in Sources */,
@@ -3028,6 +3289,7 @@
 				E316141021B7631F00CF09B2 /* AddressListTableViewCell.swift in Sources */,
 				E316144F21B7631F00CF09B2 /* NotifyDataModel.swift in Sources */,
 				E31613E321B7631F00CF09B2 /* PersonRegisterDataController.swift in Sources */,
+				E3848B8021C912FB00B9AC27 /* UpdatePasswordDataController.swift in Sources */,
 				E316146421B7631F00CF09B2 /* String+LH.swift in Sources */,
 				E316144821B7631F00CF09B2 /* SendPersonMessageDetailTableViewCell.swift in Sources */,
 				E316137B21B7631F00CF09B2 /* CompanyRegisterSuccessView.swift in Sources */,
@@ -3036,6 +3298,7 @@
 				E316147221B7631F00CF09B2 /* NSMutableDictionary+LH.m in Sources */,
 				E31613F921B7631F00CF09B2 /* MSDataProvider+CommonSutdents.swift in Sources */,
 				E31613F221B7631F00CF09B2 /* LanchImageViewController.swift in Sources */,
+				E3848B5321C8D17C00B9AC27 /* MineTableViewCell.swift in Sources */,
 				E31613AC21B7631F00CF09B2 /* Logistics.xcdatamodeld in Sources */,
 				E3160F7621B761FC00CF09B2 /* AppDelegate.swift in Sources */,
 				E316135421B7631F00CF09B2 /* BRBaseView.m in Sources */,
@@ -3043,6 +3306,7 @@
 				E31613C321B7631F00CF09B2 /* BindButtonTableViewCell.swift in Sources */,
 				E31613A021B7631F00CF09B2 /* HSPopupSelectDayView.swift in Sources */,
 				E316146D21B7631F00CF09B2 /* UIImageView+LH.m in Sources */,
+				E3848B6521C8D9F700B9AC27 /* updateNickNameDataController.swift in Sources */,
 				E316139521B7631F00CF09B2 /* XHLWaterLayout.m in Sources */,
 				E31613F721B7631F00CF09B2 /* MSDataProvider+Login.swift in Sources */,
 				E316139921B7631F00CF09B2 /* TYAlertFadeAnimation.m in Sources */,

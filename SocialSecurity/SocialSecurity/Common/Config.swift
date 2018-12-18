@@ -19,10 +19,15 @@ let MyAppID:String = "1402329643" //appId 1402329643
 let ProductId:String = "a131be5242a311e8b50500505694781a"//
 let GetAreaServerClientIdentifier = "GetAreaServerClientIdentifier"
 
+
 //默认图片
 let defaultImage = UIImage.loadImage("image-placeholder")
 let defaultFullScreenImage = UIImage.loadImage("image-fullScreen-placeholder")
 let defaultPortraitImage = UIImage.loadImage("defaultPortrait")
+let aboutUsPhone = "1234567"
+
+//默认viewcontroller背景色
+let viewBgColor = UIColor(hexString: "EAEFF3")
 
 //存储当前登录用户信息
 var currentUser:UserModel! = UserModel()

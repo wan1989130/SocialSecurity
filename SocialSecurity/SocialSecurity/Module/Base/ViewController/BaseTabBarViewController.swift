@@ -20,7 +20,7 @@ class BaseTabBarViewController: UITabBarController {
         addChildViewController(secondVC, title: "政策指南", image: "nav2_normal", selectedImage: "nav2_hover")
         
         //通讯录
-        let thirdVC = AddressListViewController(nibName: "AddressListViewController", bundle: nil)
+        let thirdVC = MineViewController(nibName: "MineViewController", bundle: nil)
         addChildViewController(thirdVC, title: "个人中心", image: "nav3_normal", selectedImage: "nav3_hover")
         
       

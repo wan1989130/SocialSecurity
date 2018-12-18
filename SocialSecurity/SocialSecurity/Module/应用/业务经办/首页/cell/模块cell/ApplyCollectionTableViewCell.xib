@@ -19,7 +19,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="YXg-0a-P4v">
-                        <rect key="frame" x="1" y="61" width="318" height="38.5"/>
+                        <rect key="frame" x="0.0" y="60" width="320" height="39.5"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Nd2-Ss-xxW">
                             <size key="itemSize" width="50" height="50"/>
@@ -104,16 +104,18 @@
                 <constraints>
                     <constraint firstItem="KpZ-64-56f" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="9LQ-VG-hgx"/>
                     <constraint firstItem="KpZ-64-56f" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="BCD-d5-bAu"/>
-                    <constraint firstAttribute="trailing" secondItem="YXg-0a-P4v" secondAttribute="trailing" constant="1" id="GNW-N1-DTc"/>
+                    <constraint firstAttribute="trailing" secondItem="YXg-0a-P4v" secondAttribute="trailing" id="GNW-N1-DTc"/>
                     <constraint firstAttribute="bottom" secondItem="YXg-0a-P4v" secondAttribute="bottom" id="Gsc-qX-VWz"/>
-                    <constraint firstItem="YXg-0a-P4v" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="1" id="et8-w1-7Ya"/>
+                    <constraint firstItem="YXg-0a-P4v" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="et8-w1-7Ya"/>
                     <constraint firstAttribute="trailing" secondItem="KpZ-64-56f" secondAttribute="trailing" id="q4Q-BM-jOV"/>
-                    <constraint firstItem="YXg-0a-P4v" firstAttribute="top" secondItem="KpZ-64-56f" secondAttribute="bottom" constant="1" id="uVL-8Y-68D"/>
+                    <constraint firstItem="YXg-0a-P4v" firstAttribute="top" secondItem="KpZ-64-56f" secondAttribute="bottom" id="uVL-8Y-68D"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="collectionView" destination="YXg-0a-P4v" id="qxc-o4-ffV"/>
                 <outlet property="oneLabel" destination="caw-TS-I9U" id="23n-0B-xbu"/>
+                <outlet property="statusView" destination="KpZ-64-56f" id="oAd-ay-bnz"/>
+                <outlet property="statusViewHeight" destination="aG0-X8-lVP" id="1YM-iM-BZb"/>
             </connections>
             <point key="canvasLocation" x="137.59999999999999" y="143.02848575712144"/>
         </tableViewCell>
