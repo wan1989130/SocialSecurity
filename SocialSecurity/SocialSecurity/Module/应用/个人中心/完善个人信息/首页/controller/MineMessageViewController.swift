@@ -24,7 +24,9 @@ class MineMessageViewController: BaseViewController {
         initUI()
     }
 
-
+    deinit {
+        print("bbbbb")
+    }
   
 
 }
@@ -43,8 +45,9 @@ extension MineMessageViewController{
         present(alert, animated: true, completion: nil)
     }
     @objc func nickClick(){
+        weak var weakSelf = self
         pushViewController("updateNickNameViewController", sender: nil) { (info) in
-            self.nickLabel.text = info as! String
+            weakSelf!.nickLabel.text = info as! String
         }
         
     }
@@ -53,15 +56,16 @@ extension MineMessageViewController{
         modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
         alert = UIAlertController(title: nil, message: nil, preferredStyle: UIAlertController.Style.actionSheet)
         alert.view.tintColor = UIColor.black
+        weak var weakSelf = self
         //通过拍照上传图片
         let takingPicAction:UIAlertAction = UIAlertAction(title: "拍照", style: UIAlertAction.Style.default) { (UIAlertAction) in
             if UIImagePickerController.isSourceTypeAvailable(UIImagePickerController.SourceType.camera){
                 let imagePicker:UIImagePickerController = UIImagePickerController()
                 
-                imagePicker.delegate = self
+                imagePicker.delegate = weakSelf
                 imagePicker.allowsEditing = false
                 imagePicker.sourceType = UIImagePickerController.SourceType.camera
-                self.present(imagePicker, animated: true, completion: nil)
+                weakSelf!.present(imagePicker, animated: true, completion: nil)
             }
         }
         //从手机相册中选择上传图片
@@ -69,10 +73,10 @@ extension MineMessageViewController{
             if UIImagePickerController.isSourceTypeAvailable(UIImagePickerController.SourceType.savedPhotosAlbum){
                 let imagePicker:UIImagePickerController = UIImagePickerController()
                 
-                imagePicker.delegate = self
+                imagePicker.delegate = weakSelf
                 imagePicker.allowsEditing = false
                 imagePicker.sourceType = UIImagePickerController.SourceType.savedPhotosAlbum
-                self.present(imagePicker, animated: true, completion: nil)
+                weakSelf!.present(imagePicker, animated: true, completion: nil)
                 
             }
         }

@@ -9,9 +9,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZcznViewController" customModule="SocialSecurity" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IxcjTypeViewController" customModule="SocialSecurity" customModuleProvider="target">
             <connections>
-                <outlet property="collectionView" destination="GqP-PW-gpo" id="Ki6-uI-YFq"/>
+                <outlet property="collectionView" destination="RYd-M7-Ssm" id="1yW-kt-NeV"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,10 +20,10 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="GqP-PW-gpo">
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="RYd-M7-Ssm">
                     <rect key="frame" x="0.0" y="16" width="375" height="651"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lKI-2a-v2t">
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bwV-Uc-dkq">
                         <size key="itemSize" width="50" height="50"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -33,10 +33,10 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="GqP-PW-gpo" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="16" id="6tu-ev-JHV"/>
-                <constraint firstAttribute="bottom" secondItem="GqP-PW-gpo" secondAttribute="bottom" id="rr7-5z-vOX"/>
-                <constraint firstAttribute="trailing" secondItem="GqP-PW-gpo" secondAttribute="trailing" id="sa4-od-uJG"/>
-                <constraint firstItem="GqP-PW-gpo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="zrU-By-fjC"/>
+                <constraint firstAttribute="bottom" secondItem="RYd-M7-Ssm" secondAttribute="bottom" id="9SX-Rk-96u"/>
+                <constraint firstItem="RYd-M7-Ssm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="a2w-KB-PmW"/>
+                <constraint firstAttribute="trailing" secondItem="RYd-M7-Ssm" secondAttribute="trailing" id="jKB-Pf-JYO"/>
+                <constraint firstItem="RYd-M7-Ssm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="16" id="xsf-c4-SFd"/>
             </constraints>
         </view>
     </objects>

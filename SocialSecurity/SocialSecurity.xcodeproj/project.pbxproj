@@ -171,9 +171,6 @@
 		E31613E321B7631F00CF09B2 /* PersonRegisterDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E316126721B7631E00CF09B2 /* PersonRegisterDataController.swift */; };
 		E31613E421B7631F00CF09B2 /* PersonRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E316126821B7631E00CF09B2 /* PersonRegisterViewController.xib */; };
 		E31613E521B7631F00CF09B2 /* PersonRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E316126921B7631E00CF09B2 /* PersonRegisterViewController.swift */; };
-		E31613E621B7631F00CF09B2 /* SelectCompanyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E316126B21B7631E00CF09B2 /* SelectCompanyViewController.xib */; };
-		E31613E721B7631F00CF09B2 /* SelectCompanyDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E316126C21B7631E00CF09B2 /* SelectCompanyDataController.swift */; };
-		E31613E821B7631F00CF09B2 /* SelectCompanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E316126D21B7631E00CF09B2 /* SelectCompanyViewController.swift */; };
 		E31613E921B7631F00CF09B2 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E316127021B7631E00CF09B2 /* LoginModel.swift */; };
 		E31613EA21B7631F00CF09B2 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E316127121B7631E00CF09B2 /* UserModel.swift */; };
 		E31613EB21B7631F00CF09B2 /* StudentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E316127221B7631E00CF09B2 /* StudentModel.swift */; };
@@ -256,6 +253,18 @@
 		E33C64DA21C9DE3A00AEDF4B /* ZcznDetailDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C64D921C9DE3A00AEDF4B /* ZcznDetailDataModel.swift */; };
 		E33C64DD21C9DE5A00AEDF4B /* ZcznDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C64DB21C9DE5A00AEDF4B /* ZcznDetailTableViewCell.swift */; };
 		E33C64DE21C9DE5A00AEDF4B /* ZcznDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E33C64DC21C9DE5A00AEDF4B /* ZcznDetailTableViewCell.xib */; };
+		E33C64E221C9E86A00AEDF4B /* IxcjTypeDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C64E121C9E86A00AEDF4B /* IxcjTypeDataController.swift */; };
+		E33C64E521C9E88100AEDF4B /* IxcjTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C64E321C9E88100AEDF4B /* IxcjTypeViewController.swift */; };
+		E33C64E621C9E88100AEDF4B /* IxcjTypeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E33C64E421C9E88100AEDF4B /* IxcjTypeViewController.xib */; };
+		E33C64F521C9ED2400AEDF4B /* SbkProgressDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C64F421C9ED2400AEDF4B /* SbkProgressDataController.swift */; };
+		E33C64F821C9ED3600AEDF4B /* SbkProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C64F621C9ED3600AEDF4B /* SbkProgressViewController.swift */; };
+		E33C64F921C9ED3600AEDF4B /* SbkProgressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E33C64F721C9ED3600AEDF4B /* SbkProgressViewController.xib */; };
+		E33C64FB21C9EE9B00AEDF4B /* SbkProgressDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C64FA21C9EE9B00AEDF4B /* SbkProgressDataModel.swift */; };
+		E33C64FE21C9EEB300AEDF4B /* SbkProgressTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C64FC21C9EEB300AEDF4B /* SbkProgressTableViewCell.swift */; };
+		E33C64FF21C9EEB300AEDF4B /* SbkProgressTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E33C64FD21C9EEB300AEDF4B /* SbkProgressTableViewCell.xib */; };
+		E33C650721CA17F800AEDF4B /* IdCardQueryDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C650621CA17F800AEDF4B /* IdCardQueryDataController.swift */; };
+		E33C650A21CA180C00AEDF4B /* IdCardQueryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C650821CA180C00AEDF4B /* IdCardQueryViewController.swift */; };
+		E33C650B21CA180C00AEDF4B /* IdCardQueryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E33C650921CA180C00AEDF4B /* IdCardQueryViewController.xib */; };
 		E3848B4021C8D00100B9AC27 /* MSDataProvider+Grzx.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3848B3F21C8D00100B9AC27 /* MSDataProvider+Grzx.swift */; };
 		E3848B4721C8D03000B9AC27 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3848B4521C8D03000B9AC27 /* MineViewController.swift */; };
 		E3848B4821C8D03000B9AC27 /* MineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3848B4621C8D03000B9AC27 /* MineViewController.xib */; };
@@ -529,9 +538,6 @@
 		E316126721B7631E00CF09B2 /* PersonRegisterDataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonRegisterDataController.swift; sourceTree = "<group>"; };
 		E316126821B7631E00CF09B2 /* PersonRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonRegisterViewController.xib; sourceTree = "<group>"; };
 		E316126921B7631E00CF09B2 /* PersonRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonRegisterViewController.swift; sourceTree = "<group>"; };
-		E316126B21B7631E00CF09B2 /* SelectCompanyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectCompanyViewController.xib; sourceTree = "<group>"; };
-		E316126C21B7631E00CF09B2 /* SelectCompanyDataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectCompanyDataController.swift; sourceTree = "<group>"; };
-		E316126D21B7631E00CF09B2 /* SelectCompanyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectCompanyViewController.swift; sourceTree = "<group>"; };
 		E316127021B7631E00CF09B2 /* LoginModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		E316127121B7631E00CF09B2 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		E316127221B7631E00CF09B2 /* StudentModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentModel.swift; sourceTree = "<group>"; };
@@ -626,6 +632,18 @@
 		E33C64D921C9DE3A00AEDF4B /* ZcznDetailDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZcznDetailDataModel.swift; sourceTree = "<group>"; };
 		E33C64DB21C9DE5A00AEDF4B /* ZcznDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZcznDetailTableViewCell.swift; sourceTree = "<group>"; };
 		E33C64DC21C9DE5A00AEDF4B /* ZcznDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZcznDetailTableViewCell.xib; sourceTree = "<group>"; };
+		E33C64E121C9E86A00AEDF4B /* IxcjTypeDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IxcjTypeDataController.swift; sourceTree = "<group>"; };
+		E33C64E321C9E88100AEDF4B /* IxcjTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IxcjTypeViewController.swift; sourceTree = "<group>"; };
+		E33C64E421C9E88100AEDF4B /* IxcjTypeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IxcjTypeViewController.xib; sourceTree = "<group>"; };
+		E33C64F421C9ED2400AEDF4B /* SbkProgressDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SbkProgressDataController.swift; sourceTree = "<group>"; };
+		E33C64F621C9ED3600AEDF4B /* SbkProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SbkProgressViewController.swift; sourceTree = "<group>"; };
+		E33C64F721C9ED3600AEDF4B /* SbkProgressViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SbkProgressViewController.xib; sourceTree = "<group>"; };
+		E33C64FA21C9EE9B00AEDF4B /* SbkProgressDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SbkProgressDataModel.swift; sourceTree = "<group>"; };
+		E33C64FC21C9EEB300AEDF4B /* SbkProgressTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SbkProgressTableViewCell.swift; sourceTree = "<group>"; };
+		E33C64FD21C9EEB300AEDF4B /* SbkProgressTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SbkProgressTableViewCell.xib; sourceTree = "<group>"; };
+		E33C650621CA17F800AEDF4B /* IdCardQueryDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdCardQueryDataController.swift; sourceTree = "<group>"; };
+		E33C650821CA180C00AEDF4B /* IdCardQueryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdCardQueryViewController.swift; sourceTree = "<group>"; };
+		E33C650921CA180C00AEDF4B /* IdCardQueryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IdCardQueryViewController.xib; sourceTree = "<group>"; };
 		E3848B3F21C8D00100B9AC27 /* MSDataProvider+Grzx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MSDataProvider+Grzx.swift"; sourceTree = "<group>"; };
 		E3848B4521C8D03000B9AC27 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		E3848B4621C8D03000B9AC27 /* MineViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MineViewController.xib; sourceTree = "<group>"; };
@@ -1604,7 +1622,6 @@
 			isa = PBXGroup;
 			children = (
 				E316126621B7631E00CF09B2 /* 个人注册 */,
-				E316126A21B7631E00CF09B2 /* 选择单位 */,
 			);
 			path = viewController;
 			sourceTree = "<group>";
@@ -1617,16 +1634,6 @@
 				E316126821B7631E00CF09B2 /* PersonRegisterViewController.xib */,
 			);
 			path = "个人注册";
-			sourceTree = "<group>";
-		};
-		E316126A21B7631E00CF09B2 /* 选择单位 */ = {
-			isa = PBXGroup;
-			children = (
-				E316126B21B7631E00CF09B2 /* SelectCompanyViewController.xib */,
-				E316126C21B7631E00CF09B2 /* SelectCompanyDataController.swift */,
-				E316126D21B7631E00CF09B2 /* SelectCompanyViewController.swift */,
-			);
-			path = "选择单位";
 			sourceTree = "<group>";
 		};
 		E316126E21B7631E00CF09B2 /* 登录 */ = {
@@ -1867,6 +1874,9 @@
 		E31EF63121BFD77000E1C3E4 /* 业务经办 */ = {
 			isa = PBXGroup;
 			children = (
+				E33C650221CA179A00AEDF4B /* 个人or亲属 */,
+				E33C64EF21C9ECA300AEDF4B /* 社保卡进度查询 */,
+				E33C64DF21C9E7F600AEDF4B /* 分类 */,
 				E31EF63221BFD7A900E1C3E4 /* MSDataProvider+Ywjb.swift */,
 				E31EF63421BFD7C500E1C3E4 /* 首页 */,
 			);
@@ -2020,6 +2030,111 @@
 				E33C64DC21C9DE5A00AEDF4B /* ZcznDetailTableViewCell.xib */,
 			);
 			path = cell;
+			sourceTree = "<group>";
+		};
+		E33C64DF21C9E7F600AEDF4B /* 分类 */ = {
+			isa = PBXGroup;
+			children = (
+				E33C64E821C9E8BB00AEDF4B /* cell */,
+				E33C64E721C9E8B700AEDF4B /* model */,
+				E33C64E021C9E80600AEDF4B /* controller */,
+			);
+			path = "分类";
+			sourceTree = "<group>";
+		};
+		E33C64E021C9E80600AEDF4B /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				E33C64E121C9E86A00AEDF4B /* IxcjTypeDataController.swift */,
+				E33C64E321C9E88100AEDF4B /* IxcjTypeViewController.swift */,
+				E33C64E421C9E88100AEDF4B /* IxcjTypeViewController.xib */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		E33C64E721C9E8B700AEDF4B /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		E33C64E821C9E8BB00AEDF4B /* cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		E33C64EF21C9ECA300AEDF4B /* 社保卡进度查询 */ = {
+			isa = PBXGroup;
+			children = (
+				E33C64F021C9ECAC00AEDF4B /* 首页 */,
+			);
+			path = "社保卡进度查询";
+			sourceTree = "<group>";
+		};
+		E33C64F021C9ECAC00AEDF4B /* 首页 */ = {
+			isa = PBXGroup;
+			children = (
+				E33C64F321C9ECE200AEDF4B /* controller */,
+				E33C64F221C9ECDE00AEDF4B /* cell */,
+				E33C64F121C9ECD400AEDF4B /* model */,
+			);
+			path = "首页";
+			sourceTree = "<group>";
+		};
+		E33C64F121C9ECD400AEDF4B /* model */ = {
+			isa = PBXGroup;
+			children = (
+				E33C64FA21C9EE9B00AEDF4B /* SbkProgressDataModel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		E33C64F221C9ECDE00AEDF4B /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				E33C64FC21C9EEB300AEDF4B /* SbkProgressTableViewCell.swift */,
+				E33C64FD21C9EEB300AEDF4B /* SbkProgressTableViewCell.xib */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		E33C64F321C9ECE200AEDF4B /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				E33C64F421C9ED2400AEDF4B /* SbkProgressDataController.swift */,
+				E33C64F621C9ED3600AEDF4B /* SbkProgressViewController.swift */,
+				E33C64F721C9ED3600AEDF4B /* SbkProgressViewController.xib */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		E33C650221CA179A00AEDF4B /* 个人or亲属 */ = {
+			isa = PBXGroup;
+			children = (
+				E33C650321CA17AA00AEDF4B /* 查询身份证 */,
+			);
+			path = "个人or亲属";
+			sourceTree = "<group>";
+		};
+		E33C650321CA17AA00AEDF4B /* 查询身份证 */ = {
+			isa = PBXGroup;
+			children = (
+				E33C650421CA17B800AEDF4B /* controller */,
+			);
+			path = "查询身份证";
+			sourceTree = "<group>";
+		};
+		E33C650421CA17B800AEDF4B /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				E33C650621CA17F800AEDF4B /* IdCardQueryDataController.swift */,
+				E33C650821CA180C00AEDF4B /* IdCardQueryViewController.swift */,
+				E33C650921CA180C00AEDF4B /* IdCardQueryViewController.xib */,
+			);
+			path = controller;
 			sourceTree = "<group>";
 		};
 		E3848B3E21C8CFEA00B9AC27 /* 个人中心 */ = {
@@ -2334,7 +2449,6 @@
 				E31613D321B7631F00CF09B2 /* CompanyRegisterPhotoTableViewCell.xib in Resources */,
 				E316136921B7631F00CF09B2 /* HSRightBarButtonItemMenu示例代码.rtf in Resources */,
 				E33C64DE21C9DE5A00AEDF4B /* ZcznDetailTableViewCell.xib in Resources */,
-				E31613E621B7631F00CF09B2 /* SelectCompanyViewController.xib in Resources */,
 				E316136121B7631F00CF09B2 /* LRSwitchStudentView.xib in Resources */,
 				E31613A121B7631F00CF09B2 /* HSPopupSelectDayView示例代码.rtf in Resources */,
 				E316137521B7631F00CF09B2 /* MSCommentEditView.xib in Resources */,
@@ -2348,6 +2462,7 @@
 				E3070FA121BE88A200E33BB1 /* ForgetPwdViewController.xib in Resources */,
 				E33C64BE21C9D8DB00AEDF4B /* ZcznViewController.xib in Resources */,
 				E316138D21B7631F00CF09B2 /* WSDatePickerView.xib in Resources */,
+				E33C64F921C9ED3600AEDF4B /* SbkProgressViewController.xib in Resources */,
 				E31613C121B7631F00CF09B2 /* ConfirmLoginPwdTableViewCell.xib in Resources */,
 				E316138221B7631F00CF09B2 /* ShakeView.xib in Resources */,
 				E316139321B7631F00CF09B2 /* 示例代码XHLTagLabelsViewController.rtf in Resources */,
@@ -2358,6 +2473,7 @@
 				E316138A21B7631F00CF09B2 /* NoDataView.xib in Resources */,
 				E316137121B7631F00CF09B2 /* DropListTableViewCell.xib in Resources */,
 				E316137921B7631F00CF09B2 /* area.json in Resources */,
+				E33C64E621C9E88100AEDF4B /* IxcjTypeViewController.xib in Resources */,
 				E31613CD21B7631F00CF09B2 /* PersonMessageButtonTableViewCell.xib in Resources */,
 				E31613C621B7631F00CF09B2 /* ConfirmLoginSelectStrOrSchoolTableViewCell.xib in Resources */,
 				E31EF64321BFD92E00E1C3E4 /* ApplyBannerTableViewCell.xib in Resources */,
@@ -2367,6 +2483,7 @@
 				E31613CC21B7631F00CF09B2 /* PersonMessageTipTableViewCell.xib in Resources */,
 				E31613C421B7631F00CF09B2 /* BindButtonTableViewCell.xib in Resources */,
 				E31613D121B7631F00CF09B2 /* SelectCompanyTableViewCell.xib in Resources */,
+				E33C650B21CA180C00AEDF4B /* IdCardQueryViewController.xib in Resources */,
 				E316135B21B7631F00CF09B2 /* PopSelectListTableViewCell.xib in Resources */,
 				E316138C21B7631F00CF09B2 /* PublishSourceHeaderView.xib in Resources */,
 				E31EF63E21BFD81800E1C3E4 /* YwjbViewController.xib in Resources */,
@@ -2390,6 +2507,7 @@
 				E31613E421B7631F00CF09B2 /* PersonRegisterViewController.xib in Resources */,
 				E31EF64F21BFDA2700E1C3E4 /* ApplyCollectionTableViewCell.xib in Resources */,
 				E31613A221B7631F00CF09B2 /* HSPopupSelectDayView.xib in Resources */,
+				E33C64FF21C9EEB300AEDF4B /* SbkProgressTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2492,6 +2610,7 @@
 				E31613E021B7631F00CF09B2 /* CompanyRegisterSuccessDataModel.swift in Sources */,
 				E316138F21B7631F00CF09B2 /* NSDate+Extension.m in Sources */,
 				E31613DA21B7631F00CF09B2 /* PersonMessageMode.swift in Sources */,
+				E33C64F821C9ED3600AEDF4B /* SbkProgressViewController.swift in Sources */,
 				E316137421B7631F00CF09B2 /* DropListTitleView.swift in Sources */,
 				E31613F021B7631F00CF09B2 /* SelectAreaPopupViewTableViewCell.swift in Sources */,
 				E31613F521B7631F00CF09B2 /* LoginViewController.swift in Sources */,
@@ -2499,7 +2618,6 @@
 				E33C64DD21C9DE5A00AEDF4B /* ZcznDetailTableViewCell.swift in Sources */,
 				E316136821B7631F00CF09B2 /* SelectDateView.swift in Sources */,
 				E316135A21B7631F00CF09B2 /* PoPSelectListView.swift in Sources */,
-				E31613E721B7631F00CF09B2 /* SelectCompanyDataController.swift in Sources */,
 				E31613EA21B7631F00CF09B2 /* UserModel.swift in Sources */,
 				E316146621B7631F00CF09B2 /* UIViewController+LH.swift in Sources */,
 				E31613B121B7631F00CF09B2 /* SBJsonUTF8Stream.m in Sources */,
@@ -2510,6 +2628,7 @@
 				E316139C21B7631F00CF09B2 /* TYAlertDropDownAnimation.m in Sources */,
 				E31613EB21B7631F00CF09B2 /* StudentModel.swift in Sources */,
 				E31613AD21B7631F00CF09B2 /* NSObject+SBJson.m in Sources */,
+				E33C64E221C9E86A00AEDF4B /* IxcjTypeDataController.swift in Sources */,
 				E31EF63D21BFD81800E1C3E4 /* YwjbViewController.swift in Sources */,
 				E31613B421B7631F00CF09B2 /* SBJsonStreamWriter.m in Sources */,
 				E31613B221B7631F00CF09B2 /* SBJsonStreamParserState.m in Sources */,
@@ -2534,6 +2653,7 @@
 				E31613A621B7631F00CF09B2 /* LHHttpDataProvider.swift in Sources */,
 				E316136321B7631F00CF09B2 /* JZLocationConverter.m in Sources */,
 				E316146F21B7631F00CF09B2 /* NSNumber+LH.m in Sources */,
+				E33C64FE21C9EEB300AEDF4B /* SbkProgressTableViewCell.swift in Sources */,
 				E316145221B7631F00CF09B2 /* BaseClassesModel.swift in Sources */,
 				E38CA3FB21C0943800455B81 /* ApplyViewControllerCollectionViewCell.swift in Sources */,
 				E316135321B7631F00CF09B2 /* BRDatePickerView.m in Sources */,
@@ -2553,7 +2673,6 @@
 				E31613D521B7631F00CF09B2 /* CompanyRegisterTipTableViewCell.swift in Sources */,
 				E31EF65021BFDA2700E1C3E4 /* ApplyCollectionTableViewCell.swift in Sources */,
 				E316136521B7631F00CF09B2 /* MXSCycleScrollView.m in Sources */,
-				E31613E821B7631F00CF09B2 /* SelectCompanyViewController.swift in Sources */,
 				E31613D421B7631F00CF09B2 /* CompanyRegisterInputTableViewCell.swift in Sources */,
 				E316139721B7631F00CF09B2 /* UIView+TYAlertView.m in Sources */,
 				E31613DF21B7631F00CF09B2 /* CompanyRegisterModel.swift in Sources */,
@@ -2574,6 +2693,7 @@
 				E316138021B7631F00CF09B2 /* QrCodeView.swift in Sources */,
 				E316139021B7631F00CF09B2 /* UIView+Extension.m in Sources */,
 				E316137821B7631F00CF09B2 /* AddressSelectView.swift in Sources */,
+				E33C64E521C9E88100AEDF4B /* IxcjTypeViewController.swift in Sources */,
 				E316137021B7631F00CF09B2 /* DropListTableViewCell.swift in Sources */,
 				E316146721B7631F00CF09B2 /* NSObject+LH.swift in Sources */,
 				E31613E221B7631F00CF09B2 /* ConfirmLoginView.swift in Sources */,
@@ -2581,6 +2701,7 @@
 				E316145021B7631F00CF09B2 /* BaseOnlyClassDataModel.swift in Sources */,
 				E316137321B7631F00CF09B2 /* DropListView.swift in Sources */,
 				E316136E21B7631F00CF09B2 /* TitleImageButton.m in Sources */,
+				E33C64FB21C9EE9B00AEDF4B /* SbkProgressDataModel.swift in Sources */,
 				E316135221B7631F00CF09B2 /* NSDate+BRPickerView.m in Sources */,
 				E316136A21B7631F00CF09B2 /* HSRightBarButtonItemMenuOverlayView.swift in Sources */,
 				E31613E921B7631F00CF09B2 /* LoginModel.swift in Sources */,
@@ -2612,6 +2733,7 @@
 				E31EF63A21BFD80900E1C3E4 /* YwjbDataController.swift in Sources */,
 				E316138721B7631F00CF09B2 /* UIViewController+LeftSlide.m in Sources */,
 				E316145321B7631F00CF09B2 /* BaseTermsModel.swift in Sources */,
+				E33C64F521C9ED2400AEDF4B /* SbkProgressDataController.swift in Sources */,
 				E3160F7821B761FC00CF09B2 /* ViewController.swift in Sources */,
 				E316144E21B7631F00CF09B2 /* BaseDataController.swift in Sources */,
 				E316145721B7631F00CF09B2 /* BaseNavigationViewController.swift in Sources */,
@@ -2628,6 +2750,7 @@
 				E31613BF21B7631F00CF09B2 /* NSData+AES.m in Sources */,
 				E3848B7521C9126400B9AC27 /* FeedBackDataController.swift in Sources */,
 				E316146121B7631F00CF09B2 /* LHAlertView.swift in Sources */,
+				E33C650721CA17F800AEDF4B /* IdCardQueryDataController.swift in Sources */,
 				E33C64D721C9DE2800AEDF4B /* ZcznDetailViewController.swift in Sources */,
 				E316146921B7631F00CF09B2 /* CATransition+HS.swift in Sources */,
 				E31613ED21B7631F00CF09B2 /* ConfigDataModel.swift in Sources */,
@@ -2689,6 +2812,7 @@
 				E316139B21B7631F00CF09B2 /* UIView+TYAutoLayout.m in Sources */,
 				E31613C321B7631F00CF09B2 /* BindButtonTableViewCell.swift in Sources */,
 				E31613A021B7631F00CF09B2 /* HSPopupSelectDayView.swift in Sources */,
+				E33C650A21CA180C00AEDF4B /* IdCardQueryViewController.swift in Sources */,
 				E316146D21B7631F00CF09B2 /* UIImageView+LH.m in Sources */,
 				E3848B6521C8D9F700B9AC27 /* updateNickNameDataController.swift in Sources */,
 				E316139521B7631F00CF09B2 /* XHLWaterLayout.m in Sources */,

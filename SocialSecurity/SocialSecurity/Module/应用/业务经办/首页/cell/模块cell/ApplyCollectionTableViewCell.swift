@@ -23,11 +23,15 @@ class ApplyCollectionTableViewCell: UITableViewCell {
         super.awakeFromNib()
         self.backgroundColor = UIColor.clear
         self.contentView.backgroundColor = UIColor.clear
-        oneLabel.layer.borderColor = UIColor(hexString: "28C8C8")?.cgColor
+        oneLabel.layer.borderColor = UIColor(hexString: "005191")?.cgColor
         oneLabel.layer.borderWidth = 2
         oneLabel.layer.cornerRadius = 15
         oneLabel.backgroundColor = UIColor.white
+        oneLabel.clipsToBounds = true
     }
+    
+    
+ 
     func initCell(delegate:BaseViewController,dataArray:Array<ApplyToolModel>){
         
         self.delegate = delegate

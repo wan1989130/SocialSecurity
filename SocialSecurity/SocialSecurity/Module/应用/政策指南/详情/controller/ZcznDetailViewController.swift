@@ -18,14 +18,12 @@ class ZcznDetailViewController: BaseViewController {
         initData()
         initUI()
     }
+ 
 
 }
 extension ZcznDetailViewController{
     fileprivate func initUI(){
         self.view.backgroundColor = viewBgColor
-        self.view.backgroundColor = UIColor(hexString: "ECF5FE")
-        
-        
         tableView.delegate = self
         tableView.dataSource = self
         tableView.estimatedRowHeight = 44

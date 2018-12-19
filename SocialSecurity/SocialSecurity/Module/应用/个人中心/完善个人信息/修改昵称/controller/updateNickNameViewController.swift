@@ -18,6 +18,7 @@ class updateNickNameViewController: BaseViewController {
         dismissBlock!(nickTextField.text)
         self.navigationController?.popViewController(animated: true)
     }
+   
     @IBOutlet weak var finishButton: UIButton!
     var dataController:updateNickNameDataController!
     override func viewDidLoad() {

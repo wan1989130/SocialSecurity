@@ -93,7 +93,9 @@ extension YwjbViewController:UITableViewDelegate,UITableViewDataSource{
 }
 extension YwjbViewController:ApplyCollectionIndexClickProtocol{
     func collectionIndexClick(index: Int) {
-        if index == 1{
+        if index == 0{
+            pushViewController("IxcjTypeViewController")
+        }else if index == 1{
             let webVc = CommonWebViewController()
             webVc.urlContent = Protocolhtml
             webVc.titleContent = "制卡进度查询"
