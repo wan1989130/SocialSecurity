@@ -13,7 +13,7 @@ class SbkProgressViewController: BaseViewController {
     @IBOutlet var tableView: UITableView!
     var dataController:SbkProgressDataController!
     
-    var str:String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "采集进度查询"

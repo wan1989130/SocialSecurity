@@ -10,6 +10,10 @@ import UIKit
 
 class IdCardQueryViewController: BaseViewController {
 
+    @IBAction func finishClick(_ sender: Any) {
+        pushViewController("CaijiBasicViewController",sender:self.title)
+    }
+    @IBOutlet weak var idBgView: UIView!
     var dataController:IdCardQueryDataController!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +29,8 @@ class IdCardQueryViewController: BaseViewController {
 extension IdCardQueryViewController{
     fileprivate func initUI(){
         self.view.backgroundColor = viewBgColor
-        
+        idBgView.layer.borderColor = UIColor.black.withAlphaComponent(0.2).cgColor
+        idBgView.layer.borderWidth = 1
         
     }
     fileprivate func initData(){
