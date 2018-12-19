@@ -195,86 +195,6 @@
 		E31613FB21B7631F00CF09B2 /* SelectMultipleStudentDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E316128A21B7631E00CF09B2 /* SelectMultipleStudentDataModel.swift */; };
 		E31613FC21B7631F00CF09B2 /* UploadFileDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E316128B21B7631E00CF09B2 /* UploadFileDataModel.swift */; };
 		E31613FD21B7631F00CF09B2 /* UploadPhotoLogisticsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E316128C21B7631E00CF09B2 /* UploadPhotoLogisticsDataModel.swift */; };
-		E31613FE21B7631F00CF09B2 /* MSDataProvider+InformationMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E316128F21B7631E00CF09B2 /* MSDataProvider+InformationMessage.swift */; };
-		E31613FF21B7631F00CF09B2 /* InformationMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E316129221B7631E00CF09B2 /* InformationMessageViewController.xib */; };
-		E316140021B7631F00CF09B2 /* InformationMessageListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E316129321B7631E00CF09B2 /* InformationMessageListViewController.swift */; };
-		E316140121B7631F00CF09B2 /* InformationMessageListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E316129421B7631E00CF09B2 /* InformationMessageListViewController.xib */; };
-		E316140221B7631F00CF09B2 /* InformationMessageListDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E316129521B7631E00CF09B2 /* InformationMessageListDataController.swift */; };
-		E316140321B7631F00CF09B2 /* InformationMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E316129621B7631E00CF09B2 /* InformationMessageViewController.swift */; };
-		E316140421B7631F00CF09B2 /* InformationMessageListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E316129821B7631E00CF09B2 /* InformationMessageListTableViewCell.xib */; };
-		E316140521B7631F00CF09B2 /* InformationMessageListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E316129921B7631E00CF09B2 /* InformationMessageListTableViewCell.swift */; };
-		E316140621B7631F00CF09B2 /* InformationMessageDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E316129B21B7631E00CF09B2 /* InformationMessageDataModel.swift */; };
-		E316140721B7631F00CF09B2 /* InformationMessageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E316129E21B7631E00CF09B2 /* InformationMessageDetailViewController.swift */; };
-		E316140821B7631F00CF09B2 /* InformationMessageDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E316129F21B7631E00CF09B2 /* InformationMessageDetailViewController.xib */; };
-		E316140921B7631F00CF09B2 /* InformationMessageDetailDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31612A021B7631E00CF09B2 /* InformationMessageDetailDataController.swift */; };
-		E316140A21B7631F00CF09B2 /* InformationMessageDetailDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31612A221B7631E00CF09B2 /* InformationMessageDetailDataModel.swift */; };
-		E316140B21B7631F00CF09B2 /* MSDataProvider+AddressList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31612A421B7631E00CF09B2 /* MSDataProvider+AddressList.swift */; };
-		E316140C21B7631F00CF09B2 /* AddressListDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31612A621B7631E00CF09B2 /* AddressListDataController.swift */; };
-		E316140D21B7631F00CF09B2 /* AddressListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31612A721B7631E00CF09B2 /* AddressListViewController.swift */; };
-		E316140E21B7631F00CF09B2 /* AddressListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E31612A821B7631E00CF09B2 /* AddressListViewController.xib */; };
-		E316140F21B7631F00CF09B2 /* AddressListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E31612AA21B7631E00CF09B2 /* AddressListTableViewCell.xib */; };
-		E316141021B7631F00CF09B2 /* AddressListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31612AB21B7631E00CF09B2 /* AddressListTableViewCell.swift */; };
-		E316141121B7631F00CF09B2 /* AddressListDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31612AD21B7631E00CF09B2 /* AddressListDataModel.swift */; };
-		E316141221B7631F00CF09B2 /* AddressListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31612AF21B7631E00CF09B2 /* AddressListHeaderView.swift */; };
-		E316141321B7631F00CF09B2 /* AddressListHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E31612B021B7631E00CF09B2 /* AddressListHeaderView.xib */; };
-		E316141421B7631F00CF09B2 /* DeliverGoodsDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31612B421B7631E00CF09B2 /* DeliverGoodsDataController.swift */; };
-		E316141521B7631F00CF09B2 /* DeliverGoodsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E31612B521B7631E00CF09B2 /* DeliverGoodsViewController.xib */; };
-		E316141621B7631F00CF09B2 /* DeliverGoodsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31612B621B7631E00CF09B2 /* DeliverGoodsViewController.swift */; };
-		E316141721B7631F00CF09B2 /* SendGoodsSaveButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E31612B921B7631E00CF09B2 /* SendGoodsSaveButtonTableViewCell.xib */; };
-		E316141821B7631F00CF09B2 /* SendGoodsSaveButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31612BA21B7631E00CF09B2 /* SendGoodsSaveButtonTableViewCell.swift */; };
-		E316141921B7631F00CF09B2 /* SendPersonMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31612BC21B7631E00CF09B2 /* SendPersonMessageTableViewCell.swift */; };
-		E316141A21B7631F00CF09B2 /* SendPersonMessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E31612BD21B7631E00CF09B2 /* SendPersonMessageTableViewCell.xib */; };
-		E316141B21B7631F00CF09B2 /* GetPersonMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31612BF21B7631E00CF09B2 /* GetPersonMessageTableViewCell.swift */; };
-		E316141C21B7631F00CF09B2 /* GetPersonMessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E31612C021B7631E00CF09B2 /* GetPersonMessageTableViewCell.xib */; };
-		E316141D21B7631F00CF09B2 /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31612C221B7631E00CF09B2 /* PhotoTableViewCell.swift */; };
-		E316141E21B7631F00CF09B2 /* PhotoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E31612C321B7631E00CF09B2 /* PhotoTableViewCell.xib */; };
-		E316141F21B7631F00CF09B2 /* SendGoodsMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31612C521B7631E00CF09B2 /* SendGoodsMessageTableViewCell.swift */; };
-		E316142021B7631F00CF09B2 /* SendGoodsMessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E31612C621B7631E00CF09B2 /* SendGoodsMessageTableViewCell.xib */; };
-		E316142121B7631F00CF09B2 /* AreaDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31612C821B7631E00CF09B2 /* AreaDataModel.swift */; };
-		E316142221B7631F00CF09B2 /* SendAndGetPersonMessageDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31612C921B7631E00CF09B2 /* SendAndGetPersonMessageDataModel.swift */; };
-		E316142321B7631F00CF09B2 /* OcrDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31612CA21B7631E00CF09B2 /* OcrDataModel.swift */; };
-		E316142421B7631F00CF09B2 /* DeliverGoodsSaveModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31612CB21B7631E00CF09B2 /* DeliverGoodsSaveModel.swift */; };
-		E316142521B7631F00CF09B2 /* MSDataProvider+DeliverGoods.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31612CC21B7631E00CF09B2 /* MSDataProvider+DeliverGoods.swift */; };
-		E316142621B7631F00CF09B2 /* RemarkListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31612D021B7631E00CF09B2 /* RemarkListViewController.swift */; };
-		E316142721B7631F00CF09B2 /* RemarkListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E31612D121B7631E00CF09B2 /* RemarkListViewController.xib */; };
-		E316142821B7631F00CF09B2 /* RemarkTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E31612D321B7631E00CF09B2 /* RemarkTableViewCell.xib */; };
-		E316142921B7631F00CF09B2 /* RemarkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31612D421B7631E00CF09B2 /* RemarkTableViewCell.swift */; };
-		E316142A21B7631F00CF09B2 /* RemarkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31612D621B7631E00CF09B2 /* RemarkModel.swift */; };
-		E316142B21B7631F00CF09B2 /* AddRemarkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E31612D921B7631E00CF09B2 /* AddRemarkViewController.xib */; };
-		E316142C21B7631F00CF09B2 /* AddRemarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31612DA21B7631E00CF09B2 /* AddRemarkViewController.swift */; };
-		E316142D21B7631F00CF09B2 /* SendGoodsPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31612DD21B7631E00CF09B2 /* SendGoodsPhotoViewController.swift */; };
-		E316142E21B7631F00CF09B2 /* SendGoodsPhotoDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31612DE21B7631E00CF09B2 /* SendGoodsPhotoDataController.swift */; };
-		E316142F21B7631F00CF09B2 /* SendGoodsPhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E31612DF21B7631E00CF09B2 /* SendGoodsPhotoViewController.xib */; };
-		E316143021B7631F00CF09B2 /* PhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E31612E121B7631E00CF09B2 /* PhotoCollectionViewCell.xib */; };
-		E316143121B7631F00CF09B2 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31612E221B7631E00CF09B2 /* PhotoCollectionViewCell.swift */; };
-		E316143221B7631F00CF09B2 /* MSDataProvider+Analysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31612E421B7631E00CF09B2 /* MSDataProvider+Analysis.swift */; };
-		E316143321B7631F00CF09B2 /* AnalysisViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E31612E621B7631E00CF09B2 /* AnalysisViewController.xib */; };
-		E316143421B7631F00CF09B2 /* AnalysisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31612E721B7631E00CF09B2 /* AnalysisViewController.swift */; };
-		E316143521B7631F00CF09B2 /* AnalysisDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31612E821B7631E00CF09B2 /* AnalysisDataController.swift */; };
-		E316143621B7631F00CF09B2 /* AnalysisDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31612EA21B7631E00CF09B2 /* AnalysisDataModel.swift */; };
-		E316143721B7631F00CF09B2 /* FilterDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31612EE21B7631E00CF09B2 /* FilterDataController.swift */; };
-		E316143821B7631F00CF09B2 /* FilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E31612EF21B7631E00CF09B2 /* FilterViewController.xib */; };
-		E316143921B7631F00CF09B2 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31612F021B7631E00CF09B2 /* FilterViewController.swift */; };
-		E316143A21B7631F00CF09B2 /* FilterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31612F221B7631E00CF09B2 /* FilterModel.swift */; };
-		E316143B21B7631F00CF09B2 /* MSDataProvider+ComprehensiveQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31612F321B7631E00CF09B2 /* MSDataProvider+ComprehensiveQuery.swift */; };
-		E316143C21B7631F00CF09B2 /* ComprehensiveQueryListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E31612F621B7631E00CF09B2 /* ComprehensiveQueryListViewController.xib */; };
-		E316143D21B7631F00CF09B2 /* ComprehensiveQueryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31612F721B7631E00CF09B2 /* ComprehensiveQueryListViewController.swift */; };
-		E316143E21B7631F00CF09B2 /* ComprehensiveQueryListDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31612F821B7631E00CF09B2 /* ComprehensiveQueryListDataController.swift */; };
-		E316143F21B7631F00CF09B2 /* ComprehensiveQueryListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E31612FA21B7631E00CF09B2 /* ComprehensiveQueryListTableViewCell.xib */; };
-		E316144021B7631F00CF09B2 /* ComprehensiveQueryListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31612FB21B7631E00CF09B2 /* ComprehensiveQueryListTableViewCell.swift */; };
-		E316144121B7631F00CF09B2 /* ComprehensiveQueryListDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31612FD21B7631E00CF09B2 /* ComprehensiveQueryListDataModel.swift */; };
-		E316144221B7631F00CF09B2 /* ComprehensiveQueryDetailDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E316130021B7631E00CF09B2 /* ComprehensiveQueryDetailDataController.swift */; };
-		E316144321B7631F00CF09B2 /* ComprehensiveQueryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E316130121B7631E00CF09B2 /* ComprehensiveQueryDetailViewController.swift */; };
-		E316144421B7631F00CF09B2 /* ComprehensiveQueryDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E316130221B7631E00CF09B2 /* ComprehensiveQueryDetailViewController.xib */; };
-		E316144521B7631F00CF09B2 /* GetPersonMessageDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E316130521B7631E00CF09B2 /* GetPersonMessageDetailTableViewCell.xib */; };
-		E316144621B7631F00CF09B2 /* GetPersonMessageDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E316130621B7631E00CF09B2 /* GetPersonMessageDetailTableViewCell.swift */; };
-		E316144721B7631F00CF09B2 /* SendPersonMessageDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E316130821B7631E00CF09B2 /* SendPersonMessageDetailTableViewCell.xib */; };
-		E316144821B7631F00CF09B2 /* SendPersonMessageDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E316130921B7631E00CF09B2 /* SendPersonMessageDetailTableViewCell.swift */; };
-		E316144921B7631F00CF09B2 /* PhotoDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E316130B21B7631E00CF09B2 /* PhotoDetailTableViewCell.xib */; };
-		E316144A21B7631F00CF09B2 /* PhotoDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E316130C21B7631E00CF09B2 /* PhotoDetailTableViewCell.swift */; };
-		E316144B21B7631F00CF09B2 /* SendGoodsMessageDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E316130E21B7631E00CF09B2 /* SendGoodsMessageDetailTableViewCell.swift */; };
-		E316144C21B7631F00CF09B2 /* SendGoodsMessageDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E316130F21B7631E00CF09B2 /* SendGoodsMessageDetailTableViewCell.xib */; };
-		E316144D21B7631F00CF09B2 /* ComprehensiveQueryDetailDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E316131121B7631E00CF09B2 /* ComprehensiveQueryDetailDataModel.swift */; };
 		E316144E21B7631F00CF09B2 /* BaseDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E316131421B7631E00CF09B2 /* BaseDataController.swift */; };
 		E316144F21B7631F00CF09B2 /* NotifyDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E316131621B7631E00CF09B2 /* NotifyDataModel.swift */; };
 		E316145021B7631F00CF09B2 /* BaseOnlyClassDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E316131721B7631E00CF09B2 /* BaseOnlyClassDataModel.swift */; };
@@ -324,6 +244,18 @@
 		E31EF65021BFDA2700E1C3E4 /* ApplyCollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31EF64E21BFDA2700E1C3E4 /* ApplyCollectionTableViewCell.swift */; };
 		E31EF65221BFDA5A00E1C3E4 /* ApplyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31EF65121BFDA5A00E1C3E4 /* ApplyModel.swift */; };
 		E31EF69721BFF5D700E1C3E4 /* JQRadiusView.m in Sources */ = {isa = PBXBuildFile; fileRef = E31EF69621BFF5D700E1C3E4 /* JQRadiusView.m */; };
+		E33C64BD21C9D8DB00AEDF4B /* ZcznViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C64BB21C9D8DB00AEDF4B /* ZcznViewController.swift */; };
+		E33C64BE21C9D8DB00AEDF4B /* ZcznViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E33C64BC21C9D8DB00AEDF4B /* ZcznViewController.xib */; };
+		E33C64C021C9D94200AEDF4B /* ZcznDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C64BF21C9D94200AEDF4B /* ZcznDataController.swift */; };
+		E33C64C321C9D97000AEDF4B /* ZcznModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C64C221C9D97000AEDF4B /* ZcznModel.swift */; };
+		E33C64C721C9DAEE00AEDF4B /* ZcznCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C64C521C9DAEE00AEDF4B /* ZcznCollectionViewCell.swift */; };
+		E33C64C821C9DAEE00AEDF4B /* ZcznCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E33C64C621C9DAEE00AEDF4B /* ZcznCollectionViewCell.xib */; };
+		E33C64D421C9DE1700AEDF4B /* ZcznDetailDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C64D321C9DE1700AEDF4B /* ZcznDetailDataController.swift */; };
+		E33C64D721C9DE2800AEDF4B /* ZcznDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C64D521C9DE2800AEDF4B /* ZcznDetailViewController.swift */; };
+		E33C64D821C9DE2800AEDF4B /* ZcznDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E33C64D621C9DE2800AEDF4B /* ZcznDetailViewController.xib */; };
+		E33C64DA21C9DE3A00AEDF4B /* ZcznDetailDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C64D921C9DE3A00AEDF4B /* ZcznDetailDataModel.swift */; };
+		E33C64DD21C9DE5A00AEDF4B /* ZcznDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C64DB21C9DE5A00AEDF4B /* ZcznDetailTableViewCell.swift */; };
+		E33C64DE21C9DE5A00AEDF4B /* ZcznDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E33C64DC21C9DE5A00AEDF4B /* ZcznDetailTableViewCell.xib */; };
 		E3848B4021C8D00100B9AC27 /* MSDataProvider+Grzx.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3848B3F21C8D00100B9AC27 /* MSDataProvider+Grzx.swift */; };
 		E3848B4721C8D03000B9AC27 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3848B4521C8D03000B9AC27 /* MineViewController.swift */; };
 		E3848B4821C8D03000B9AC27 /* MineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3848B4621C8D03000B9AC27 /* MineViewController.xib */; };
@@ -621,86 +553,6 @@
 		E316128A21B7631E00CF09B2 /* SelectMultipleStudentDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectMultipleStudentDataModel.swift; sourceTree = "<group>"; };
 		E316128B21B7631E00CF09B2 /* UploadFileDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadFileDataModel.swift; sourceTree = "<group>"; };
 		E316128C21B7631E00CF09B2 /* UploadPhotoLogisticsDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadPhotoLogisticsDataModel.swift; sourceTree = "<group>"; };
-		E316128F21B7631E00CF09B2 /* MSDataProvider+InformationMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MSDataProvider+InformationMessage.swift"; sourceTree = "<group>"; };
-		E316129221B7631E00CF09B2 /* InformationMessageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InformationMessageViewController.xib; sourceTree = "<group>"; };
-		E316129321B7631E00CF09B2 /* InformationMessageListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformationMessageListViewController.swift; sourceTree = "<group>"; };
-		E316129421B7631E00CF09B2 /* InformationMessageListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InformationMessageListViewController.xib; sourceTree = "<group>"; };
-		E316129521B7631E00CF09B2 /* InformationMessageListDataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformationMessageListDataController.swift; sourceTree = "<group>"; };
-		E316129621B7631E00CF09B2 /* InformationMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformationMessageViewController.swift; sourceTree = "<group>"; };
-		E316129821B7631E00CF09B2 /* InformationMessageListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InformationMessageListTableViewCell.xib; sourceTree = "<group>"; };
-		E316129921B7631E00CF09B2 /* InformationMessageListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformationMessageListTableViewCell.swift; sourceTree = "<group>"; };
-		E316129B21B7631E00CF09B2 /* InformationMessageDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformationMessageDataModel.swift; sourceTree = "<group>"; };
-		E316129E21B7631E00CF09B2 /* InformationMessageDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformationMessageDetailViewController.swift; sourceTree = "<group>"; };
-		E316129F21B7631E00CF09B2 /* InformationMessageDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InformationMessageDetailViewController.xib; sourceTree = "<group>"; };
-		E31612A021B7631E00CF09B2 /* InformationMessageDetailDataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformationMessageDetailDataController.swift; sourceTree = "<group>"; };
-		E31612A221B7631E00CF09B2 /* InformationMessageDetailDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformationMessageDetailDataModel.swift; sourceTree = "<group>"; };
-		E31612A421B7631E00CF09B2 /* MSDataProvider+AddressList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MSDataProvider+AddressList.swift"; sourceTree = "<group>"; };
-		E31612A621B7631E00CF09B2 /* AddressListDataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressListDataController.swift; sourceTree = "<group>"; };
-		E31612A721B7631E00CF09B2 /* AddressListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressListViewController.swift; sourceTree = "<group>"; };
-		E31612A821B7631E00CF09B2 /* AddressListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddressListViewController.xib; sourceTree = "<group>"; };
-		E31612AA21B7631E00CF09B2 /* AddressListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddressListTableViewCell.xib; sourceTree = "<group>"; };
-		E31612AB21B7631E00CF09B2 /* AddressListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressListTableViewCell.swift; sourceTree = "<group>"; };
-		E31612AD21B7631E00CF09B2 /* AddressListDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressListDataModel.swift; sourceTree = "<group>"; };
-		E31612AF21B7631E00CF09B2 /* AddressListHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressListHeaderView.swift; sourceTree = "<group>"; };
-		E31612B021B7631E00CF09B2 /* AddressListHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddressListHeaderView.xib; sourceTree = "<group>"; };
-		E31612B421B7631E00CF09B2 /* DeliverGoodsDataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeliverGoodsDataController.swift; sourceTree = "<group>"; };
-		E31612B521B7631E00CF09B2 /* DeliverGoodsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeliverGoodsViewController.xib; sourceTree = "<group>"; };
-		E31612B621B7631E00CF09B2 /* DeliverGoodsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeliverGoodsViewController.swift; sourceTree = "<group>"; };
-		E31612B921B7631E00CF09B2 /* SendGoodsSaveButtonTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SendGoodsSaveButtonTableViewCell.xib; sourceTree = "<group>"; };
-		E31612BA21B7631E00CF09B2 /* SendGoodsSaveButtonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendGoodsSaveButtonTableViewCell.swift; sourceTree = "<group>"; };
-		E31612BC21B7631E00CF09B2 /* SendPersonMessageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendPersonMessageTableViewCell.swift; sourceTree = "<group>"; };
-		E31612BD21B7631E00CF09B2 /* SendPersonMessageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SendPersonMessageTableViewCell.xib; sourceTree = "<group>"; };
-		E31612BF21B7631E00CF09B2 /* GetPersonMessageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetPersonMessageTableViewCell.swift; sourceTree = "<group>"; };
-		E31612C021B7631E00CF09B2 /* GetPersonMessageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GetPersonMessageTableViewCell.xib; sourceTree = "<group>"; };
-		E31612C221B7631E00CF09B2 /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
-		E31612C321B7631E00CF09B2 /* PhotoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoTableViewCell.xib; sourceTree = "<group>"; };
-		E31612C521B7631E00CF09B2 /* SendGoodsMessageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendGoodsMessageTableViewCell.swift; sourceTree = "<group>"; };
-		E31612C621B7631E00CF09B2 /* SendGoodsMessageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SendGoodsMessageTableViewCell.xib; sourceTree = "<group>"; };
-		E31612C821B7631E00CF09B2 /* AreaDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AreaDataModel.swift; sourceTree = "<group>"; };
-		E31612C921B7631E00CF09B2 /* SendAndGetPersonMessageDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendAndGetPersonMessageDataModel.swift; sourceTree = "<group>"; };
-		E31612CA21B7631E00CF09B2 /* OcrDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OcrDataModel.swift; sourceTree = "<group>"; };
-		E31612CB21B7631E00CF09B2 /* DeliverGoodsSaveModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeliverGoodsSaveModel.swift; sourceTree = "<group>"; };
-		E31612CC21B7631E00CF09B2 /* MSDataProvider+DeliverGoods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MSDataProvider+DeliverGoods.swift"; sourceTree = "<group>"; };
-		E31612D021B7631E00CF09B2 /* RemarkListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemarkListViewController.swift; sourceTree = "<group>"; };
-		E31612D121B7631E00CF09B2 /* RemarkListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RemarkListViewController.xib; sourceTree = "<group>"; };
-		E31612D321B7631E00CF09B2 /* RemarkTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RemarkTableViewCell.xib; sourceTree = "<group>"; };
-		E31612D421B7631E00CF09B2 /* RemarkTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemarkTableViewCell.swift; sourceTree = "<group>"; };
-		E31612D621B7631E00CF09B2 /* RemarkModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemarkModel.swift; sourceTree = "<group>"; };
-		E31612D921B7631E00CF09B2 /* AddRemarkViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddRemarkViewController.xib; sourceTree = "<group>"; };
-		E31612DA21B7631E00CF09B2 /* AddRemarkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRemarkViewController.swift; sourceTree = "<group>"; };
-		E31612DD21B7631E00CF09B2 /* SendGoodsPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendGoodsPhotoViewController.swift; sourceTree = "<group>"; };
-		E31612DE21B7631E00CF09B2 /* SendGoodsPhotoDataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendGoodsPhotoDataController.swift; sourceTree = "<group>"; };
-		E31612DF21B7631E00CF09B2 /* SendGoodsPhotoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SendGoodsPhotoViewController.xib; sourceTree = "<group>"; };
-		E31612E121B7631E00CF09B2 /* PhotoCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoCollectionViewCell.xib; sourceTree = "<group>"; };
-		E31612E221B7631E00CF09B2 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
-		E31612E421B7631E00CF09B2 /* MSDataProvider+Analysis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MSDataProvider+Analysis.swift"; sourceTree = "<group>"; };
-		E31612E621B7631E00CF09B2 /* AnalysisViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnalysisViewController.xib; sourceTree = "<group>"; };
-		E31612E721B7631E00CF09B2 /* AnalysisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalysisViewController.swift; sourceTree = "<group>"; };
-		E31612E821B7631E00CF09B2 /* AnalysisDataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalysisDataController.swift; sourceTree = "<group>"; };
-		E31612EA21B7631E00CF09B2 /* AnalysisDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalysisDataModel.swift; sourceTree = "<group>"; };
-		E31612EE21B7631E00CF09B2 /* FilterDataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterDataController.swift; sourceTree = "<group>"; };
-		E31612EF21B7631E00CF09B2 /* FilterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilterViewController.xib; sourceTree = "<group>"; };
-		E31612F021B7631E00CF09B2 /* FilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
-		E31612F221B7631E00CF09B2 /* FilterModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterModel.swift; sourceTree = "<group>"; };
-		E31612F321B7631E00CF09B2 /* MSDataProvider+ComprehensiveQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MSDataProvider+ComprehensiveQuery.swift"; sourceTree = "<group>"; };
-		E31612F621B7631E00CF09B2 /* ComprehensiveQueryListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ComprehensiveQueryListViewController.xib; sourceTree = "<group>"; };
-		E31612F721B7631E00CF09B2 /* ComprehensiveQueryListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComprehensiveQueryListViewController.swift; sourceTree = "<group>"; };
-		E31612F821B7631E00CF09B2 /* ComprehensiveQueryListDataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComprehensiveQueryListDataController.swift; sourceTree = "<group>"; };
-		E31612FA21B7631E00CF09B2 /* ComprehensiveQueryListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ComprehensiveQueryListTableViewCell.xib; sourceTree = "<group>"; };
-		E31612FB21B7631E00CF09B2 /* ComprehensiveQueryListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComprehensiveQueryListTableViewCell.swift; sourceTree = "<group>"; };
-		E31612FD21B7631E00CF09B2 /* ComprehensiveQueryListDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComprehensiveQueryListDataModel.swift; sourceTree = "<group>"; };
-		E316130021B7631E00CF09B2 /* ComprehensiveQueryDetailDataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComprehensiveQueryDetailDataController.swift; sourceTree = "<group>"; };
-		E316130121B7631E00CF09B2 /* ComprehensiveQueryDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComprehensiveQueryDetailViewController.swift; sourceTree = "<group>"; };
-		E316130221B7631E00CF09B2 /* ComprehensiveQueryDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ComprehensiveQueryDetailViewController.xib; sourceTree = "<group>"; };
-		E316130521B7631E00CF09B2 /* GetPersonMessageDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GetPersonMessageDetailTableViewCell.xib; sourceTree = "<group>"; };
-		E316130621B7631E00CF09B2 /* GetPersonMessageDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetPersonMessageDetailTableViewCell.swift; sourceTree = "<group>"; };
-		E316130821B7631E00CF09B2 /* SendPersonMessageDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SendPersonMessageDetailTableViewCell.xib; sourceTree = "<group>"; };
-		E316130921B7631E00CF09B2 /* SendPersonMessageDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendPersonMessageDetailTableViewCell.swift; sourceTree = "<group>"; };
-		E316130B21B7631E00CF09B2 /* PhotoDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoDetailTableViewCell.xib; sourceTree = "<group>"; };
-		E316130C21B7631E00CF09B2 /* PhotoDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoDetailTableViewCell.swift; sourceTree = "<group>"; };
-		E316130E21B7631E00CF09B2 /* SendGoodsMessageDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendGoodsMessageDetailTableViewCell.swift; sourceTree = "<group>"; };
-		E316130F21B7631E00CF09B2 /* SendGoodsMessageDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SendGoodsMessageDetailTableViewCell.xib; sourceTree = "<group>"; };
-		E316131121B7631E00CF09B2 /* ComprehensiveQueryDetailDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComprehensiveQueryDetailDataModel.swift; sourceTree = "<group>"; };
 		E316131421B7631E00CF09B2 /* BaseDataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseDataController.swift; sourceTree = "<group>"; };
 		E316131621B7631E00CF09B2 /* NotifyDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotifyDataModel.swift; sourceTree = "<group>"; };
 		E316131721B7631E00CF09B2 /* BaseOnlyClassDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseOnlyClassDataModel.swift; sourceTree = "<group>"; };
@@ -762,6 +614,18 @@
 		E31EF65121BFDA5A00E1C3E4 /* ApplyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplyModel.swift; sourceTree = "<group>"; };
 		E31EF69521BFF5D700E1C3E4 /* JQRadiusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JQRadiusView.h; sourceTree = "<group>"; };
 		E31EF69621BFF5D700E1C3E4 /* JQRadiusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JQRadiusView.m; sourceTree = "<group>"; };
+		E33C64BB21C9D8DB00AEDF4B /* ZcznViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZcznViewController.swift; sourceTree = "<group>"; };
+		E33C64BC21C9D8DB00AEDF4B /* ZcznViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZcznViewController.xib; sourceTree = "<group>"; };
+		E33C64BF21C9D94200AEDF4B /* ZcznDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZcznDataController.swift; sourceTree = "<group>"; };
+		E33C64C221C9D97000AEDF4B /* ZcznModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZcznModel.swift; sourceTree = "<group>"; };
+		E33C64C521C9DAEE00AEDF4B /* ZcznCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZcznCollectionViewCell.swift; sourceTree = "<group>"; };
+		E33C64C621C9DAEE00AEDF4B /* ZcznCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZcznCollectionViewCell.xib; sourceTree = "<group>"; };
+		E33C64D321C9DE1700AEDF4B /* ZcznDetailDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZcznDetailDataController.swift; sourceTree = "<group>"; };
+		E33C64D521C9DE2800AEDF4B /* ZcznDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZcznDetailViewController.swift; sourceTree = "<group>"; };
+		E33C64D621C9DE2800AEDF4B /* ZcznDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZcznDetailViewController.xib; sourceTree = "<group>"; };
+		E33C64D921C9DE3A00AEDF4B /* ZcznDetailDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZcznDetailDataModel.swift; sourceTree = "<group>"; };
+		E33C64DB21C9DE5A00AEDF4B /* ZcznDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZcznDetailTableViewCell.swift; sourceTree = "<group>"; };
+		E33C64DC21C9DE5A00AEDF4B /* ZcznDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZcznDetailTableViewCell.xib; sourceTree = "<group>"; };
 		E3848B3F21C8D00100B9AC27 /* MSDataProvider+Grzx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MSDataProvider+Grzx.swift"; sourceTree = "<group>"; };
 		E3848B4521C8D03000B9AC27 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		E3848B4621C8D03000B9AC27 /* MineViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MineViewController.xib; sourceTree = "<group>"; };
@@ -1865,506 +1729,11 @@
 		E316128D21B7631E00CF09B2 /* 应用 */ = {
 			isa = PBXGroup;
 			children = (
+				E33C64B821C9D8AC00AEDF4B /* 政策指南 */,
 				E3848B3E21C8CFEA00B9AC27 /* 个人中心 */,
 				E31EF63121BFD77000E1C3E4 /* 业务经办 */,
-				E316128E21B7631E00CF09B2 /* 咨询信息 */,
-				E31612A321B7631E00CF09B2 /* 通讯录 */,
-				E31612B121B7631E00CF09B2 /* 发货管理 */,
-				E31612E321B7631E00CF09B2 /* 分析统计 */,
-				E31612EB21B7631E00CF09B2 /* 综合查询 */,
 			);
 			path = "应用";
-			sourceTree = "<group>";
-		};
-		E316128E21B7631E00CF09B2 /* 咨询信息 */ = {
-			isa = PBXGroup;
-			children = (
-				E316128F21B7631E00CF09B2 /* MSDataProvider+InformationMessage.swift */,
-				E316129021B7631E00CF09B2 /* 资讯信息列表 */,
-				E316129C21B7631E00CF09B2 /* 详情 */,
-			);
-			path = "咨询信息";
-			sourceTree = "<group>";
-		};
-		E316129021B7631E00CF09B2 /* 资讯信息列表 */ = {
-			isa = PBXGroup;
-			children = (
-				E316129121B7631E00CF09B2 /* controller */,
-				E316129721B7631E00CF09B2 /* cell */,
-				E316129A21B7631E00CF09B2 /* model */,
-			);
-			path = "资讯信息列表";
-			sourceTree = "<group>";
-		};
-		E316129121B7631E00CF09B2 /* controller */ = {
-			isa = PBXGroup;
-			children = (
-				E316129221B7631E00CF09B2 /* InformationMessageViewController.xib */,
-				E316129321B7631E00CF09B2 /* InformationMessageListViewController.swift */,
-				E316129421B7631E00CF09B2 /* InformationMessageListViewController.xib */,
-				E316129521B7631E00CF09B2 /* InformationMessageListDataController.swift */,
-				E316129621B7631E00CF09B2 /* InformationMessageViewController.swift */,
-			);
-			path = controller;
-			sourceTree = "<group>";
-		};
-		E316129721B7631E00CF09B2 /* cell */ = {
-			isa = PBXGroup;
-			children = (
-				E316129821B7631E00CF09B2 /* InformationMessageListTableViewCell.xib */,
-				E316129921B7631E00CF09B2 /* InformationMessageListTableViewCell.swift */,
-			);
-			path = cell;
-			sourceTree = "<group>";
-		};
-		E316129A21B7631E00CF09B2 /* model */ = {
-			isa = PBXGroup;
-			children = (
-				E316129B21B7631E00CF09B2 /* InformationMessageDataModel.swift */,
-			);
-			path = model;
-			sourceTree = "<group>";
-		};
-		E316129C21B7631E00CF09B2 /* 详情 */ = {
-			isa = PBXGroup;
-			children = (
-				E316129D21B7631E00CF09B2 /* controller */,
-				E31612A121B7631E00CF09B2 /* model */,
-			);
-			path = "详情";
-			sourceTree = "<group>";
-		};
-		E316129D21B7631E00CF09B2 /* controller */ = {
-			isa = PBXGroup;
-			children = (
-				E316129E21B7631E00CF09B2 /* InformationMessageDetailViewController.swift */,
-				E316129F21B7631E00CF09B2 /* InformationMessageDetailViewController.xib */,
-				E31612A021B7631E00CF09B2 /* InformationMessageDetailDataController.swift */,
-			);
-			path = controller;
-			sourceTree = "<group>";
-		};
-		E31612A121B7631E00CF09B2 /* model */ = {
-			isa = PBXGroup;
-			children = (
-				E31612A221B7631E00CF09B2 /* InformationMessageDetailDataModel.swift */,
-			);
-			path = model;
-			sourceTree = "<group>";
-		};
-		E31612A321B7631E00CF09B2 /* 通讯录 */ = {
-			isa = PBXGroup;
-			children = (
-				E31612A421B7631E00CF09B2 /* MSDataProvider+AddressList.swift */,
-				E31612A521B7631E00CF09B2 /* controller */,
-				E31612A921B7631E00CF09B2 /* cell */,
-				E31612AC21B7631E00CF09B2 /* model */,
-				E31612AE21B7631E00CF09B2 /* view */,
-			);
-			path = "通讯录";
-			sourceTree = "<group>";
-		};
-		E31612A521B7631E00CF09B2 /* controller */ = {
-			isa = PBXGroup;
-			children = (
-				E31612A621B7631E00CF09B2 /* AddressListDataController.swift */,
-				E31612A721B7631E00CF09B2 /* AddressListViewController.swift */,
-				E31612A821B7631E00CF09B2 /* AddressListViewController.xib */,
-			);
-			path = controller;
-			sourceTree = "<group>";
-		};
-		E31612A921B7631E00CF09B2 /* cell */ = {
-			isa = PBXGroup;
-			children = (
-				E31612AA21B7631E00CF09B2 /* AddressListTableViewCell.xib */,
-				E31612AB21B7631E00CF09B2 /* AddressListTableViewCell.swift */,
-			);
-			path = cell;
-			sourceTree = "<group>";
-		};
-		E31612AC21B7631E00CF09B2 /* model */ = {
-			isa = PBXGroup;
-			children = (
-				E31612AD21B7631E00CF09B2 /* AddressListDataModel.swift */,
-			);
-			path = model;
-			sourceTree = "<group>";
-		};
-		E31612AE21B7631E00CF09B2 /* view */ = {
-			isa = PBXGroup;
-			children = (
-				E31612AF21B7631E00CF09B2 /* AddressListHeaderView.swift */,
-				E31612B021B7631E00CF09B2 /* AddressListHeaderView.xib */,
-			);
-			path = view;
-			sourceTree = "<group>";
-		};
-		E31612B121B7631E00CF09B2 /* 发货管理 */ = {
-			isa = PBXGroup;
-			children = (
-				E31612B221B7631E00CF09B2 /* 首页 */,
-				E31612CC21B7631E00CF09B2 /* MSDataProvider+DeliverGoods.swift */,
-				E31612CD21B7631E00CF09B2 /* 备忘录 */,
-				E31612DB21B7631E00CF09B2 /* 发货物品照片 */,
-			);
-			path = "发货管理";
-			sourceTree = "<group>";
-		};
-		E31612B221B7631E00CF09B2 /* 首页 */ = {
-			isa = PBXGroup;
-			children = (
-				E31612B321B7631E00CF09B2 /* controller */,
-				E31612B721B7631E00CF09B2 /* cell */,
-				E31612C721B7631E00CF09B2 /* model */,
-			);
-			path = "首页";
-			sourceTree = "<group>";
-		};
-		E31612B321B7631E00CF09B2 /* controller */ = {
-			isa = PBXGroup;
-			children = (
-				E31612B421B7631E00CF09B2 /* DeliverGoodsDataController.swift */,
-				E31612B521B7631E00CF09B2 /* DeliverGoodsViewController.xib */,
-				E31612B621B7631E00CF09B2 /* DeliverGoodsViewController.swift */,
-			);
-			path = controller;
-			sourceTree = "<group>";
-		};
-		E31612B721B7631E00CF09B2 /* cell */ = {
-			isa = PBXGroup;
-			children = (
-				E31612B821B7631E00CF09B2 /* 保存cell */,
-				E31612BB21B7631E00CF09B2 /* 发货人信息cell */,
-				E31612BE21B7631E00CF09B2 /* 收货人信息 */,
-				E31612C121B7631E00CF09B2 /* 照片cell */,
-				E31612C421B7631E00CF09B2 /* 发货信息cell */,
-			);
-			path = cell;
-			sourceTree = "<group>";
-		};
-		E31612B821B7631E00CF09B2 /* 保存cell */ = {
-			isa = PBXGroup;
-			children = (
-				E31612B921B7631E00CF09B2 /* SendGoodsSaveButtonTableViewCell.xib */,
-				E31612BA21B7631E00CF09B2 /* SendGoodsSaveButtonTableViewCell.swift */,
-			);
-			path = "保存cell";
-			sourceTree = "<group>";
-		};
-		E31612BB21B7631E00CF09B2 /* 发货人信息cell */ = {
-			isa = PBXGroup;
-			children = (
-				E31612BC21B7631E00CF09B2 /* SendPersonMessageTableViewCell.swift */,
-				E31612BD21B7631E00CF09B2 /* SendPersonMessageTableViewCell.xib */,
-			);
-			path = "发货人信息cell";
-			sourceTree = "<group>";
-		};
-		E31612BE21B7631E00CF09B2 /* 收货人信息 */ = {
-			isa = PBXGroup;
-			children = (
-				E31612BF21B7631E00CF09B2 /* GetPersonMessageTableViewCell.swift */,
-				E31612C021B7631E00CF09B2 /* GetPersonMessageTableViewCell.xib */,
-			);
-			path = "收货人信息";
-			sourceTree = "<group>";
-		};
-		E31612C121B7631E00CF09B2 /* 照片cell */ = {
-			isa = PBXGroup;
-			children = (
-				E31612C221B7631E00CF09B2 /* PhotoTableViewCell.swift */,
-				E31612C321B7631E00CF09B2 /* PhotoTableViewCell.xib */,
-			);
-			path = "照片cell";
-			sourceTree = "<group>";
-		};
-		E31612C421B7631E00CF09B2 /* 发货信息cell */ = {
-			isa = PBXGroup;
-			children = (
-				E31612C521B7631E00CF09B2 /* SendGoodsMessageTableViewCell.swift */,
-				E31612C621B7631E00CF09B2 /* SendGoodsMessageTableViewCell.xib */,
-			);
-			path = "发货信息cell";
-			sourceTree = "<group>";
-		};
-		E31612C721B7631E00CF09B2 /* model */ = {
-			isa = PBXGroup;
-			children = (
-				E31612C821B7631E00CF09B2 /* AreaDataModel.swift */,
-				E31612C921B7631E00CF09B2 /* SendAndGetPersonMessageDataModel.swift */,
-				E31612CA21B7631E00CF09B2 /* OcrDataModel.swift */,
-				E31612CB21B7631E00CF09B2 /* DeliverGoodsSaveModel.swift */,
-			);
-			path = model;
-			sourceTree = "<group>";
-		};
-		E31612CD21B7631E00CF09B2 /* 备忘录 */ = {
-			isa = PBXGroup;
-			children = (
-				E31612CE21B7631E00CF09B2 /* 列表 */,
-				E31612D721B7631E00CF09B2 /* 新增 */,
-			);
-			path = "备忘录";
-			sourceTree = "<group>";
-		};
-		E31612CE21B7631E00CF09B2 /* 列表 */ = {
-			isa = PBXGroup;
-			children = (
-				E31612CF21B7631E00CF09B2 /* controller */,
-				E31612D221B7631E00CF09B2 /* cell */,
-				E31612D521B7631E00CF09B2 /* model */,
-			);
-			path = "列表";
-			sourceTree = "<group>";
-		};
-		E31612CF21B7631E00CF09B2 /* controller */ = {
-			isa = PBXGroup;
-			children = (
-				E31612D021B7631E00CF09B2 /* RemarkListViewController.swift */,
-				E31612D121B7631E00CF09B2 /* RemarkListViewController.xib */,
-			);
-			path = controller;
-			sourceTree = "<group>";
-		};
-		E31612D221B7631E00CF09B2 /* cell */ = {
-			isa = PBXGroup;
-			children = (
-				E31612D321B7631E00CF09B2 /* RemarkTableViewCell.xib */,
-				E31612D421B7631E00CF09B2 /* RemarkTableViewCell.swift */,
-			);
-			path = cell;
-			sourceTree = "<group>";
-		};
-		E31612D521B7631E00CF09B2 /* model */ = {
-			isa = PBXGroup;
-			children = (
-				E31612D621B7631E00CF09B2 /* RemarkModel.swift */,
-			);
-			path = model;
-			sourceTree = "<group>";
-		};
-		E31612D721B7631E00CF09B2 /* 新增 */ = {
-			isa = PBXGroup;
-			children = (
-				E31612D821B7631E00CF09B2 /* controller */,
-			);
-			path = "新增";
-			sourceTree = "<group>";
-		};
-		E31612D821B7631E00CF09B2 /* controller */ = {
-			isa = PBXGroup;
-			children = (
-				E31612D921B7631E00CF09B2 /* AddRemarkViewController.xib */,
-				E31612DA21B7631E00CF09B2 /* AddRemarkViewController.swift */,
-			);
-			path = controller;
-			sourceTree = "<group>";
-		};
-		E31612DB21B7631E00CF09B2 /* 发货物品照片 */ = {
-			isa = PBXGroup;
-			children = (
-				E31612DC21B7631E00CF09B2 /* controller */,
-				E31612E021B7631E00CF09B2 /* cell */,
-			);
-			path = "发货物品照片";
-			sourceTree = "<group>";
-		};
-		E31612DC21B7631E00CF09B2 /* controller */ = {
-			isa = PBXGroup;
-			children = (
-				E31612DD21B7631E00CF09B2 /* SendGoodsPhotoViewController.swift */,
-				E31612DE21B7631E00CF09B2 /* SendGoodsPhotoDataController.swift */,
-				E31612DF21B7631E00CF09B2 /* SendGoodsPhotoViewController.xib */,
-			);
-			path = controller;
-			sourceTree = "<group>";
-		};
-		E31612E021B7631E00CF09B2 /* cell */ = {
-			isa = PBXGroup;
-			children = (
-				E31612E121B7631E00CF09B2 /* PhotoCollectionViewCell.xib */,
-				E31612E221B7631E00CF09B2 /* PhotoCollectionViewCell.swift */,
-			);
-			path = cell;
-			sourceTree = "<group>";
-		};
-		E31612E321B7631E00CF09B2 /* 分析统计 */ = {
-			isa = PBXGroup;
-			children = (
-				E31612E421B7631E00CF09B2 /* MSDataProvider+Analysis.swift */,
-				E31612E521B7631E00CF09B2 /* controller */,
-				E31612E921B7631E00CF09B2 /* model */,
-			);
-			path = "分析统计";
-			sourceTree = "<group>";
-		};
-		E31612E521B7631E00CF09B2 /* controller */ = {
-			isa = PBXGroup;
-			children = (
-				E31612E621B7631E00CF09B2 /* AnalysisViewController.xib */,
-				E31612E721B7631E00CF09B2 /* AnalysisViewController.swift */,
-				E31612E821B7631E00CF09B2 /* AnalysisDataController.swift */,
-			);
-			path = controller;
-			sourceTree = "<group>";
-		};
-		E31612E921B7631E00CF09B2 /* model */ = {
-			isa = PBXGroup;
-			children = (
-				E31612EA21B7631E00CF09B2 /* AnalysisDataModel.swift */,
-			);
-			path = model;
-			sourceTree = "<group>";
-		};
-		E31612EB21B7631E00CF09B2 /* 综合查询 */ = {
-			isa = PBXGroup;
-			children = (
-				E31612EC21B7631E00CF09B2 /* 筛选 */,
-				E31612F321B7631E00CF09B2 /* MSDataProvider+ComprehensiveQuery.swift */,
-				E31612F421B7631E00CF09B2 /* 列表 */,
-				E31612FE21B7631E00CF09B2 /* 详情 */,
-			);
-			path = "综合查询";
-			sourceTree = "<group>";
-		};
-		E31612EC21B7631E00CF09B2 /* 筛选 */ = {
-			isa = PBXGroup;
-			children = (
-				E31612ED21B7631E00CF09B2 /* controller */,
-				E31612F121B7631E00CF09B2 /* model */,
-			);
-			path = "筛选";
-			sourceTree = "<group>";
-		};
-		E31612ED21B7631E00CF09B2 /* controller */ = {
-			isa = PBXGroup;
-			children = (
-				E31612EE21B7631E00CF09B2 /* FilterDataController.swift */,
-				E31612EF21B7631E00CF09B2 /* FilterViewController.xib */,
-				E31612F021B7631E00CF09B2 /* FilterViewController.swift */,
-			);
-			path = controller;
-			sourceTree = "<group>";
-		};
-		E31612F121B7631E00CF09B2 /* model */ = {
-			isa = PBXGroup;
-			children = (
-				E31612F221B7631E00CF09B2 /* FilterModel.swift */,
-			);
-			path = model;
-			sourceTree = "<group>";
-		};
-		E31612F421B7631E00CF09B2 /* 列表 */ = {
-			isa = PBXGroup;
-			children = (
-				E31612F521B7631E00CF09B2 /* controller */,
-				E31612F921B7631E00CF09B2 /* cell */,
-				E31612FC21B7631E00CF09B2 /* model */,
-			);
-			path = "列表";
-			sourceTree = "<group>";
-		};
-		E31612F521B7631E00CF09B2 /* controller */ = {
-			isa = PBXGroup;
-			children = (
-				E31612F621B7631E00CF09B2 /* ComprehensiveQueryListViewController.xib */,
-				E31612F721B7631E00CF09B2 /* ComprehensiveQueryListViewController.swift */,
-				E31612F821B7631E00CF09B2 /* ComprehensiveQueryListDataController.swift */,
-			);
-			path = controller;
-			sourceTree = "<group>";
-		};
-		E31612F921B7631E00CF09B2 /* cell */ = {
-			isa = PBXGroup;
-			children = (
-				E31612FA21B7631E00CF09B2 /* ComprehensiveQueryListTableViewCell.xib */,
-				E31612FB21B7631E00CF09B2 /* ComprehensiveQueryListTableViewCell.swift */,
-			);
-			path = cell;
-			sourceTree = "<group>";
-		};
-		E31612FC21B7631E00CF09B2 /* model */ = {
-			isa = PBXGroup;
-			children = (
-				E31612FD21B7631E00CF09B2 /* ComprehensiveQueryListDataModel.swift */,
-			);
-			path = model;
-			sourceTree = "<group>";
-		};
-		E31612FE21B7631E00CF09B2 /* 详情 */ = {
-			isa = PBXGroup;
-			children = (
-				E31612FF21B7631E00CF09B2 /* controller */,
-				E316130321B7631E00CF09B2 /* cell */,
-				E316131021B7631E00CF09B2 /* model */,
-			);
-			path = "详情";
-			sourceTree = "<group>";
-		};
-		E31612FF21B7631E00CF09B2 /* controller */ = {
-			isa = PBXGroup;
-			children = (
-				E316130021B7631E00CF09B2 /* ComprehensiveQueryDetailDataController.swift */,
-				E316130121B7631E00CF09B2 /* ComprehensiveQueryDetailViewController.swift */,
-				E316130221B7631E00CF09B2 /* ComprehensiveQueryDetailViewController.xib */,
-			);
-			path = controller;
-			sourceTree = "<group>";
-		};
-		E316130321B7631E00CF09B2 /* cell */ = {
-			isa = PBXGroup;
-			children = (
-				E316130421B7631E00CF09B2 /* 收货人信息cell */,
-				E316130721B7631E00CF09B2 /* 发货人cell */,
-				E316130A21B7631E00CF09B2 /* 照片cell */,
-				E316130D21B7631E00CF09B2 /* 发货信息cell */,
-			);
-			path = cell;
-			sourceTree = "<group>";
-		};
-		E316130421B7631E00CF09B2 /* 收货人信息cell */ = {
-			isa = PBXGroup;
-			children = (
-				E316130521B7631E00CF09B2 /* GetPersonMessageDetailTableViewCell.xib */,
-				E316130621B7631E00CF09B2 /* GetPersonMessageDetailTableViewCell.swift */,
-			);
-			path = "收货人信息cell";
-			sourceTree = "<group>";
-		};
-		E316130721B7631E00CF09B2 /* 发货人cell */ = {
-			isa = PBXGroup;
-			children = (
-				E316130821B7631E00CF09B2 /* SendPersonMessageDetailTableViewCell.xib */,
-				E316130921B7631E00CF09B2 /* SendPersonMessageDetailTableViewCell.swift */,
-			);
-			path = "发货人cell";
-			sourceTree = "<group>";
-		};
-		E316130A21B7631E00CF09B2 /* 照片cell */ = {
-			isa = PBXGroup;
-			children = (
-				E316130B21B7631E00CF09B2 /* PhotoDetailTableViewCell.xib */,
-				E316130C21B7631E00CF09B2 /* PhotoDetailTableViewCell.swift */,
-			);
-			path = "照片cell";
-			sourceTree = "<group>";
-		};
-		E316130D21B7631E00CF09B2 /* 发货信息cell */ = {
-			isa = PBXGroup;
-			children = (
-				E316130E21B7631E00CF09B2 /* SendGoodsMessageDetailTableViewCell.swift */,
-				E316130F21B7631E00CF09B2 /* SendGoodsMessageDetailTableViewCell.xib */,
-			);
-			path = "发货信息cell";
-			sourceTree = "<group>";
-		};
-		E316131021B7631E00CF09B2 /* model */ = {
-			isa = PBXGroup;
-			children = (
-				E316131121B7631E00CF09B2 /* ComprehensiveQueryDetailDataModel.swift */,
-			);
-			path = model;
 			sourceTree = "<group>";
 		};
 		E316131221B7631E00CF09B2 /* Base */ = {
@@ -2568,6 +1937,89 @@
 				E31EF69621BFF5D700E1C3E4 /* JQRadiusView.m */,
 			);
 			path = JQRadiusView;
+			sourceTree = "<group>";
+		};
+		E33C64B821C9D8AC00AEDF4B /* 政策指南 */ = {
+			isa = PBXGroup;
+			children = (
+				E33C64C921C9DDA100AEDF4B /* 详情 */,
+				E33C64B921C9D8BD00AEDF4B /* 首页 */,
+			);
+			path = "政策指南";
+			sourceTree = "<group>";
+		};
+		E33C64B921C9D8BD00AEDF4B /* 首页 */ = {
+			isa = PBXGroup;
+			children = (
+				E33C64C421C9DABC00AEDF4B /* cell */,
+				E33C64C121C9D95300AEDF4B /* model */,
+				E33C64BA21C9D8C500AEDF4B /* controller */,
+			);
+			path = "首页";
+			sourceTree = "<group>";
+		};
+		E33C64BA21C9D8C500AEDF4B /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				E33C64BF21C9D94200AEDF4B /* ZcznDataController.swift */,
+				E33C64BB21C9D8DB00AEDF4B /* ZcznViewController.swift */,
+				E33C64BC21C9D8DB00AEDF4B /* ZcznViewController.xib */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		E33C64C121C9D95300AEDF4B /* model */ = {
+			isa = PBXGroup;
+			children = (
+				E33C64C221C9D97000AEDF4B /* ZcznModel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		E33C64C421C9DABC00AEDF4B /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				E33C64C521C9DAEE00AEDF4B /* ZcznCollectionViewCell.swift */,
+				E33C64C621C9DAEE00AEDF4B /* ZcznCollectionViewCell.xib */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		E33C64C921C9DDA100AEDF4B /* 详情 */ = {
+			isa = PBXGroup;
+			children = (
+				E33C64CC21C9DDC700AEDF4B /* cell */,
+				E33C64CB21C9DDC200AEDF4B /* model */,
+				E33C64CA21C9DDB200AEDF4B /* controller */,
+			);
+			path = "详情";
+			sourceTree = "<group>";
+		};
+		E33C64CA21C9DDB200AEDF4B /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				E33C64D321C9DE1700AEDF4B /* ZcznDetailDataController.swift */,
+				E33C64D521C9DE2800AEDF4B /* ZcznDetailViewController.swift */,
+				E33C64D621C9DE2800AEDF4B /* ZcznDetailViewController.xib */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		E33C64CB21C9DDC200AEDF4B /* model */ = {
+			isa = PBXGroup;
+			children = (
+				E33C64D921C9DE3A00AEDF4B /* ZcznDetailDataModel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		E33C64CC21C9DDC700AEDF4B /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				E33C64DB21C9DE5A00AEDF4B /* ZcznDetailTableViewCell.swift */,
+				E33C64DC21C9DE5A00AEDF4B /* ZcznDetailTableViewCell.xib */,
+			);
+			path = cell;
 			sourceTree = "<group>";
 		};
 		E3848B3E21C8CFEA00B9AC27 /* 个人中心 */ = {
@@ -2874,45 +2326,34 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E316142F21B7631F00CF09B2 /* SendGoodsPhotoViewController.xib in Resources */,
 				E31613EE21B7631F00CF09B2 /* SelectAreaPopupView.xib in Resources */,
-				E316144921B7631F00CF09B2 /* PhotoDetailTableViewCell.xib in Resources */,
 				E316139421B7631F00CF09B2 /* 示例代码WaterViewController.rtf in Resources */,
 				E3848B7E21C912E900B9AC27 /* UpdatePasswordViewController.xib in Resources */,
 				E316135821B7631F00CF09B2 /* LICENSE in Resources */,
 				E3160F8021B761FE00CF09B2 /* LaunchScreen.storyboard in Resources */,
 				E31613D321B7631F00CF09B2 /* CompanyRegisterPhotoTableViewCell.xib in Resources */,
 				E316136921B7631F00CF09B2 /* HSRightBarButtonItemMenu示例代码.rtf in Resources */,
+				E33C64DE21C9DE5A00AEDF4B /* ZcznDetailTableViewCell.xib in Resources */,
 				E31613E621B7631F00CF09B2 /* SelectCompanyViewController.xib in Resources */,
-				E316142821B7631F00CF09B2 /* RemarkTableViewCell.xib in Resources */,
 				E316136121B7631F00CF09B2 /* LRSwitchStudentView.xib in Resources */,
-				E316142021B7631F00CF09B2 /* SendGoodsMessageTableViewCell.xib in Resources */,
 				E31613A121B7631F00CF09B2 /* HSPopupSelectDayView示例代码.rtf in Resources */,
-				E316143321B7631F00CF09B2 /* AnalysisViewController.xib in Resources */,
 				E316137521B7631F00CF09B2 /* MSCommentEditView.xib in Resources */,
 				E3848B4821C8D03000B9AC27 /* MineViewController.xib in Resources */,
+				E33C64D821C9DE2800AEDF4B /* ZcznDetailViewController.xib in Resources */,
 				E3848B6121C8D7F500B9AC27 /* MineMessageViewController.xib in Resources */,
-				E316143F21B7631F00CF09B2 /* ComprehensiveQueryListTableViewCell.xib in Resources */,
 				E3848B5021C8D17200B9AC27 /* MinePhotoHeaderTableViewCell.xib in Resources */,
-				E316142B21B7631F00CF09B2 /* AddRemarkViewController.xib in Resources */,
 				E3848B7121C911FE00B9AC27 /* AboutUsViewController.xib in Resources */,
-				E316141321B7631F00CF09B2 /* AddressListHeaderView.xib in Resources */,
 				E31613F621B7631F00CF09B2 /* LanchImageViewController.xib in Resources */,
 				E316137F21B7631F00CF09B2 /* CodeSuccessView.xib in Resources */,
-				E316140421B7631F00CF09B2 /* InformationMessageListTableViewCell.xib in Resources */,
 				E3070FA121BE88A200E33BB1 /* ForgetPwdViewController.xib in Resources */,
-				E316144C21B7631F00CF09B2 /* SendGoodsMessageDetailTableViewCell.xib in Resources */,
+				E33C64BE21C9D8DB00AEDF4B /* ZcznViewController.xib in Resources */,
 				E316138D21B7631F00CF09B2 /* WSDatePickerView.xib in Resources */,
 				E31613C121B7631F00CF09B2 /* ConfirmLoginPwdTableViewCell.xib in Resources */,
 				E316138221B7631F00CF09B2 /* ShakeView.xib in Resources */,
-				E316143021B7631F00CF09B2 /* PhotoCollectionViewCell.xib in Resources */,
-				E316141C21B7631F00CF09B2 /* GetPersonMessageTableViewCell.xib in Resources */,
 				E316139321B7631F00CF09B2 /* 示例代码XHLTagLabelsViewController.rtf in Resources */,
 				E316137E21B7631F00CF09B2 /* QrCodeView.xib in Resources */,
-				E316143821B7631F00CF09B2 /* FilterViewController.xib in Resources */,
 				E3848B7921C9127500B9AC27 /* FeedBackViewController.xib in Resources */,
 				E31613C721B7631F00CF09B2 /* BindAccountShowSchoolTableViewCell.xib in Resources */,
-				E316140E21B7631F00CF09B2 /* AddressListViewController.xib in Resources */,
 				E3160F7D21B761FE00CF09B2 /* Assets.xcassets in Resources */,
 				E316138A21B7631F00CF09B2 /* NoDataView.xib in Resources */,
 				E316137121B7631F00CF09B2 /* DropListTableViewCell.xib in Resources */,
@@ -2926,38 +2367,26 @@
 				E31613CC21B7631F00CF09B2 /* PersonMessageTipTableViewCell.xib in Resources */,
 				E31613C421B7631F00CF09B2 /* BindButtonTableViewCell.xib in Resources */,
 				E31613D121B7631F00CF09B2 /* SelectCompanyTableViewCell.xib in Resources */,
-				E316141721B7631F00CF09B2 /* SendGoodsSaveButtonTableViewCell.xib in Resources */,
-				E316143C21B7631F00CF09B2 /* ComprehensiveQueryListViewController.xib in Resources */,
 				E316135B21B7631F00CF09B2 /* PopSelectListTableViewCell.xib in Resources */,
-				E316144721B7631F00CF09B2 /* SendPersonMessageDetailTableViewCell.xib in Resources */,
-				E316141E21B7631F00CF09B2 /* PhotoTableViewCell.xib in Resources */,
-				E31613FF21B7631F00CF09B2 /* InformationMessageViewController.xib in Resources */,
-				E316144421B7631F00CF09B2 /* ComprehensiveQueryDetailViewController.xib in Resources */,
-				E316140121B7631F00CF09B2 /* InformationMessageListViewController.xib in Resources */,
 				E316138C21B7631F00CF09B2 /* PublishSourceHeaderView.xib in Resources */,
 				E31EF63E21BFD81800E1C3E4 /* YwjbViewController.xib in Resources */,
 				E316135D21B7631F00CF09B2 /* PoPSelectListView.xib in Resources */,
 				E31613D721B7631F00CF09B2 /* CompanyRegisterTipTableViewCell.xib in Resources */,
-				E316144521B7631F00CF09B2 /* GetPersonMessageDetailTableViewCell.xib in Resources */,
 				E3848B6921C8DA0700B9AC27 /* updateNickNameViewController.xib in Resources */,
 				E31613A321B7631F00CF09B2 /* MenuView示例代码.rtf in Resources */,
 				E38CA3FC21C0943800455B81 /* ApplyViewControllerCollectionViewCell.xib in Resources */,
+				E33C64C821C9DAEE00AEDF4B /* ZcznCollectionViewCell.xib in Resources */,
 				E3160F7B21B761FC00CF09B2 /* Main.storyboard in Resources */,
 				E3848B5421C8D17C00B9AC27 /* MineTableViewCell.xib in Resources */,
 				E316134E21B7631F00CF09B2 /* 使用说明.rtf in Resources */,
 				E31613E121B7631F00CF09B2 /* ConfirmLoginView.xib in Resources */,
 				E31613CA21B7631F00CF09B2 /* PersonMessageInputTableViewCell.xib in Resources */,
 				E31613F421B7631F00CF09B2 /* LoginViewController.xib in Resources */,
-				E316141A21B7631F00CF09B2 /* SendPersonMessageTableViewCell.xib in Resources */,
 				E316135F21B7631F00CF09B2 /* SKPhotoBrowser.bundle in Resources */,
-				E316140821B7631F00CF09B2 /* InformationMessageDetailViewController.xib in Resources */,
 				E31613CF21B7631F00CF09B2 /* PersonMessagePhotoTableViewCell.xib in Resources */,
-				E316140F21B7631F00CF09B2 /* AddressListTableViewCell.xib in Resources */,
 				E31613D821B7631F00CF09B2 /* CompanyRegisterInputTableViewCell.xib in Resources */,
 				E31613F121B7631F00CF09B2 /* SelectAreaPopupViewTableViewCell.xib in Resources */,
-				E316142721B7631F00CF09B2 /* RemarkListViewController.xib in Resources */,
 				E316137D21B7631F00CF09B2 /* CompanyRegisterSuccessView.xib in Resources */,
-				E316141521B7631F00CF09B2 /* DeliverGoodsViewController.xib in Resources */,
 				E31613E421B7631F00CF09B2 /* PersonRegisterViewController.xib in Resources */,
 				E31EF64F21BFDA2700E1C3E4 /* ApplyCollectionTableViewCell.xib in Resources */,
 				E31613A221B7631F00CF09B2 /* HSPopupSelectDayView.xib in Resources */,
@@ -3067,39 +2496,31 @@
 				E31613F021B7631F00CF09B2 /* SelectAreaPopupViewTableViewCell.swift in Sources */,
 				E31613F521B7631F00CF09B2 /* LoginViewController.swift in Sources */,
 				E316138521B7631F00CF09B2 /* MenuViewContainer.m in Sources */,
+				E33C64DD21C9DE5A00AEDF4B /* ZcznDetailTableViewCell.swift in Sources */,
 				E316136821B7631F00CF09B2 /* SelectDateView.swift in Sources */,
 				E316135A21B7631F00CF09B2 /* PoPSelectListView.swift in Sources */,
 				E31613E721B7631F00CF09B2 /* SelectCompanyDataController.swift in Sources */,
-				E316142921B7631F00CF09B2 /* RemarkTableViewCell.swift in Sources */,
 				E31613EA21B7631F00CF09B2 /* UserModel.swift in Sources */,
 				E316146621B7631F00CF09B2 /* UIViewController+LH.swift in Sources */,
-				E316144A21B7631F00CF09B2 /* PhotoDetailTableViewCell.swift in Sources */,
 				E31613B121B7631F00CF09B2 /* SBJsonUTF8Stream.m in Sources */,
 				E316138321B7631F00CF09B2 /* CafToMp3.m in Sources */,
 				E3848B7021C911FE00B9AC27 /* AboutUsViewController.swift in Sources */,
-				E316140221B7631F00CF09B2 /* InformationMessageListDataController.swift in Sources */,
 				E31613FB21B7631F00CF09B2 /* SelectMultipleStudentDataModel.swift in Sources */,
 				E316136221B7631F00CF09B2 /* ColorChange.swift in Sources */,
 				E316139C21B7631F00CF09B2 /* TYAlertDropDownAnimation.m in Sources */,
 				E31613EB21B7631F00CF09B2 /* StudentModel.swift in Sources */,
 				E31613AD21B7631F00CF09B2 /* NSObject+SBJson.m in Sources */,
-				E316144221B7631F00CF09B2 /* ComprehensiveQueryDetailDataController.swift in Sources */,
 				E31EF63D21BFD81800E1C3E4 /* YwjbViewController.swift in Sources */,
-				E316143A21B7631F00CF09B2 /* FilterModel.swift in Sources */,
 				E31613B421B7631F00CF09B2 /* SBJsonStreamWriter.m in Sources */,
 				E31613B221B7631F00CF09B2 /* SBJsonStreamParserState.m in Sources */,
-				E316141821B7631F00CF09B2 /* SendGoodsSaveButtonTableViewCell.swift in Sources */,
 				E316146B21B7631F00CF09B2 /* NSDictionary+LH.m in Sources */,
 				E31613C521B7631F00CF09B2 /* ConfirmLoginSelectStrOrSchoolTableViewCell.swift in Sources */,
 				E316145421B7631F00CF09B2 /* BaseAreaListDataModel.swift in Sources */,
 				E316136F21B7631F00CF09B2 /* UIPlaceholderTextView.m in Sources */,
 				E31613FC21B7631F00CF09B2 /* UploadFileDataModel.swift in Sources */,
 				E316139621B7631F00CF09B2 /* TYAlertView.m in Sources */,
-				E316142521B7631F00CF09B2 /* MSDataProvider+DeliverGoods.swift in Sources */,
 				E31613D221B7631F00CF09B2 /* SelectCompanyTableViewCell.swift in Sources */,
-				E316140B21B7631F00CF09B2 /* MSDataProvider+AddressList.swift in Sources */,
 				E316139E21B7631F00CF09B2 /* TYBaseAnimation.m in Sources */,
-				E316142421B7631F00CF09B2 /* DeliverGoodsSaveModel.swift in Sources */,
 				E31EF69721BFF5D700E1C3E4 /* JQRadiusView.m in Sources */,
 				E31613E521B7631F00CF09B2 /* PersonRegisterViewController.swift in Sources */,
 				E316146521B7631F00CF09B2 /* UIView+LH.swift in Sources */,
@@ -3111,18 +2532,13 @@
 				E316145E21B7631F00CF09B2 /* HSVersionManager.swift in Sources */,
 				E31613EF21B7631F00CF09B2 /* SelectAreaPopupView.swift in Sources */,
 				E31613A621B7631F00CF09B2 /* LHHttpDataProvider.swift in Sources */,
-				E316140C21B7631F00CF09B2 /* AddressListDataController.swift in Sources */,
 				E316136321B7631F00CF09B2 /* JZLocationConverter.m in Sources */,
 				E316146F21B7631F00CF09B2 /* NSNumber+LH.m in Sources */,
 				E316145221B7631F00CF09B2 /* BaseClassesModel.swift in Sources */,
 				E38CA3FB21C0943800455B81 /* ApplyViewControllerCollectionViewCell.swift in Sources */,
 				E316135321B7631F00CF09B2 /* BRDatePickerView.m in Sources */,
-				E316143521B7631F00CF09B2 /* AnalysisDataController.swift in Sources */,
-				E316141221B7631F00CF09B2 /* AddressListHeaderView.swift in Sources */,
 				E31613B721B7631F00CF09B2 /* SBJsonStreamWriterState.m in Sources */,
-				E316143221B7631F00CF09B2 /* MSDataProvider+Analysis.swift in Sources */,
 				E3070FA021BE88A200E33BB1 /* ForgetPwdViewController.swift in Sources */,
-				E316140021B7631F00CF09B2 /* InformationMessageListViewController.swift in Sources */,
 				E316136B21B7631F00CF09B2 /* HSRightBarButtonItemMenu.swift in Sources */,
 				E31613B321B7631F00CF09B2 /* SBJsonWriter.m in Sources */,
 				E31EF63321BFD7A900E1C3E4 /* MSDataProvider+Ywjb.swift in Sources */,
@@ -3139,33 +2555,26 @@
 				E316136521B7631F00CF09B2 /* MXSCycleScrollView.m in Sources */,
 				E31613E821B7631F00CF09B2 /* SelectCompanyViewController.swift in Sources */,
 				E31613D421B7631F00CF09B2 /* CompanyRegisterInputTableViewCell.swift in Sources */,
-				E316140621B7631F00CF09B2 /* InformationMessageDataModel.swift in Sources */,
 				E316139721B7631F00CF09B2 /* UIView+TYAlertView.m in Sources */,
 				E31613DF21B7631F00CF09B2 /* CompanyRegisterModel.swift in Sources */,
 				E316138921B7631F00CF09B2 /* NoDataView.swift in Sources */,
 				E3848B7821C9127500B9AC27 /* FeedBackViewController.swift in Sources */,
 				E31613AB21B7631F00CF09B2 /* MD5Encoder.m in Sources */,
 				E31613BC21B7631F00CF09B2 /* FMDBHelper.swift in Sources */,
-				E316142121B7631F00CF09B2 /* AreaDataModel.swift in Sources */,
 				E31613D621B7631F00CF09B2 /* CompanyRegisterPhotoTableViewCell.swift in Sources */,
 				E316145C21B7631F00CF09B2 /* MSPlistController.swift in Sources */,
 				E31613A421B7631F00CF09B2 /* MenuView.swift in Sources */,
 				E316138E21B7631F00CF09B2 /* WSDatePickerView.m in Sources */,
-				E316140D21B7631F00CF09B2 /* AddressListViewController.swift in Sources */,
 				E31613D021B7631F00CF09B2 /* PersonMessageTipTableViewCell.swift in Sources */,
-				E316143721B7631F00CF09B2 /* FilterDataController.swift in Sources */,
-				E316141B21B7631F00CF09B2 /* GetPersonMessageTableViewCell.swift in Sources */,
 				E316135C21B7631F00CF09B2 /* PopSelectListTableViewCell.swift in Sources */,
 				E3848B6321C8D82100B9AC27 /* MineMessageDataController.swift in Sources */,
 				E31613A921B7631F00CF09B2 /* LHHTTPClient.swift in Sources */,
 				E316135E21B7631F00CF09B2 /* TCCountDown.swift in Sources */,
 				E316135021B7631F00CF09B2 /* PhotoBrowserView.swift in Sources */,
 				E316138021B7631F00CF09B2 /* QrCodeView.swift in Sources */,
-				E316142A21B7631F00CF09B2 /* RemarkModel.swift in Sources */,
 				E316139021B7631F00CF09B2 /* UIView+Extension.m in Sources */,
 				E316137821B7631F00CF09B2 /* AddressSelectView.swift in Sources */,
 				E316137021B7631F00CF09B2 /* DropListTableViewCell.swift in Sources */,
-				E316143621B7631F00CF09B2 /* AnalysisDataModel.swift in Sources */,
 				E316146721B7631F00CF09B2 /* NSObject+LH.swift in Sources */,
 				E31613E221B7631F00CF09B2 /* ConfirmLoginView.swift in Sources */,
 				E316145B21B7631F00CF09B2 /* MyConfig.swift in Sources */,
@@ -3173,16 +2582,12 @@
 				E316137321B7631F00CF09B2 /* DropListView.swift in Sources */,
 				E316136E21B7631F00CF09B2 /* TitleImageButton.m in Sources */,
 				E316135221B7631F00CF09B2 /* NSDate+BRPickerView.m in Sources */,
-				E316144D21B7631F00CF09B2 /* ComprehensiveQueryDetailDataModel.swift in Sources */,
 				E316136A21B7631F00CF09B2 /* HSRightBarButtonItemMenuOverlayView.swift in Sources */,
 				E31613E921B7631F00CF09B2 /* LoginModel.swift in Sources */,
 				E316135721B7631F00CF09B2 /* BRAddressPickerView.m in Sources */,
 				E31613D921B7631F00CF09B2 /* PersonRegisterSuccessDataModel.swift in Sources */,
 				E3160FA421B762C000CF09B2 /* AppDelegate+Private.swift in Sources */,
 				E31613AE21B7631F00CF09B2 /* SBJsonStreamParser.m in Sources */,
-				E316144621B7631F00CF09B2 /* GetPersonMessageDetailTableViewCell.swift in Sources */,
-				E316141921B7631F00CF09B2 /* SendPersonMessageTableViewCell.swift in Sources */,
-				E316141621B7631F00CF09B2 /* DeliverGoodsViewController.swift in Sources */,
 				E31613BE21B7631F00CF09B2 /* BMChineseSort.swift in Sources */,
 				E316137721B7631F00CF09B2 /* String+CZ.swift in Sources */,
 				E31613C021B7631F00CF09B2 /* AESEncoder.m in Sources */,
@@ -3191,14 +2596,11 @@
 				E31613F821B7631F00CF09B2 /* MSGuidePageViewController.swift in Sources */,
 				E316147421B7631F00CF09B2 /* UIColor+LH.m in Sources */,
 				E316138121B7631F00CF09B2 /* ShakeView.swift in Sources */,
-				E316142C21B7631F00CF09B2 /* AddRemarkViewController.swift in Sources */,
 				E3848B6021C8D7F500B9AC27 /* MineMessageViewController.swift in Sources */,
-				E316142E21B7631F00CF09B2 /* SendGoodsPhotoDataController.swift in Sources */,
 				E316139821B7631F00CF09B2 /* TYAlertScaleFadeAnimation.m in Sources */,
-				E316140521B7631F00CF09B2 /* InformationMessageListTableViewCell.swift in Sources */,
 				E316145521B7631F00CF09B2 /* BaseStudentInfoModel.swift in Sources */,
-				E316140921B7631F00CF09B2 /* InformationMessageDetailDataController.swift in Sources */,
 				E316137A21B7631F00CF09B2 /* UIImage+CZ.swift in Sources */,
+				E33C64BD21C9D8DB00AEDF4B /* ZcznViewController.swift in Sources */,
 				E31613AF21B7631F00CF09B2 /* SBJsonParser.m in Sources */,
 				E31613B821B7631F00CF09B2 /* SBJsonTokeniser.m in Sources */,
 				E316136621B7631F00CF09B2 /* RBCustomDatePickerView.m in Sources */,
@@ -3216,41 +2618,29 @@
 				E31613DC21B7631F00CF09B2 /* ShowStudentOrSchoolSubmitDataModel.swift in Sources */,
 				E31613BA21B7631F00CF09B2 /* pinyin.m in Sources */,
 				E316135121B7631F00CF09B2 /* BRStringPickerView.m in Sources */,
-				E316142621B7631F00CF09B2 /* RemarkListViewController.swift in Sources */,
 				E316139D21B7631F00CF09B2 /* TYShowAlertView.m in Sources */,
 				E316146A21B7631F00CF09B2 /* UIImageView+LH.swift in Sources */,
 				E31613EC21B7631F00CF09B2 /* SchoolModel.swift in Sources */,
-				E316143421B7631F00CF09B2 /* AnalysisViewController.swift in Sources */,
 				E31EF65221BFDA5A00E1C3E4 /* ApplyModel.swift in Sources */,
 				E3848B6821C8DA0700B9AC27 /* updateNickNameViewController.swift in Sources */,
 				E316136721B7631F00CF09B2 /* LHImageCompressor.m in Sources */,
-				E316144021B7631F00CF09B2 /* ComprehensiveQueryListTableViewCell.swift in Sources */,
-				E316142221B7631F00CF09B2 /* SendAndGetPersonMessageDataModel.swift in Sources */,
 				E31613C921B7631F00CF09B2 /* PersonMessageInputTableViewCell.swift in Sources */,
 				E31613BF21B7631F00CF09B2 /* NSData+AES.m in Sources */,
 				E3848B7521C9126400B9AC27 /* FeedBackDataController.swift in Sources */,
-				E31613FE21B7631F00CF09B2 /* MSDataProvider+InformationMessage.swift in Sources */,
 				E316146121B7631F00CF09B2 /* LHAlertView.swift in Sources */,
+				E33C64D721C9DE2800AEDF4B /* ZcznDetailViewController.swift in Sources */,
 				E316146921B7631F00CF09B2 /* CATransition+HS.swift in Sources */,
 				E31613ED21B7631F00CF09B2 /* ConfigDataModel.swift in Sources */,
-				E316141D21B7631F00CF09B2 /* PhotoTableViewCell.swift in Sources */,
 				E31613A821B7631F00CF09B2 /* MSDataProvider.swift in Sources */,
-				E316144321B7631F00CF09B2 /* ComprehensiveQueryDetailViewController.swift in Sources */,
 				E316138B21B7631F00CF09B2 /* PublishSourceHeaderView.swift in Sources */,
 				E31613A721B7631F00CF09B2 /* LHHTTPData.swift in Sources */,
 				E31613A521B7631F00CF09B2 /* BaseTextField.swift in Sources */,
 				E316136D21B7631F00CF09B2 /* TTPaomaView.swift in Sources */,
 				E316146E21B7631F00CF09B2 /* UIAlertView+LH.m in Sources */,
 				E316138621B7631F00CF09B2 /* ShadowUtil.swift in Sources */,
-				E316144121B7631F00CF09B2 /* ComprehensiveQueryListDataModel.swift in Sources */,
-				E316141421B7631F00CF09B2 /* DeliverGoodsDataController.swift in Sources */,
-				E316143921B7631F00CF09B2 /* FilterViewController.swift in Sources */,
-				E316140321B7631F00CF09B2 /* InformationMessageViewController.swift in Sources */,
 				E31613B521B7631F00CF09B2 /* SBJsonStreamParserAdapter.m in Sources */,
 				E31613F321B7631F00CF09B2 /* LoginDataController.swift in Sources */,
-				E316141121B7631F00CF09B2 /* AddressListDataModel.swift in Sources */,
 				E316145F21B7631F00CF09B2 /* UIAlertController+LH.swift in Sources */,
-				E316142D21B7631F00CF09B2 /* SendGoodsPhotoViewController.swift in Sources */,
 				E3848B4021C8D00100B9AC27 /* MSDataProvider+Grzx.swift in Sources */,
 				E316146221B7631F00CF09B2 /* Data+LH.swift in Sources */,
 				E31613DB21B7631F00CF09B2 /* PersonMessageSuccessDataModel.swift in Sources */,
@@ -3261,43 +2651,37 @@
 				E316145921B7631F00CF09B2 /* MSDataProvider+Common.swift in Sources */,
 				E316145D21B7631F00CF09B2 /* VersionModel.swift in Sources */,
 				E3848B7D21C912E900B9AC27 /* UpdatePasswordViewController.swift in Sources */,
+				E33C64C321C9D97000AEDF4B /* ZcznModel.swift in Sources */,
 				E316139221B7631F00CF09B2 /* XHLTagLabelsLayout.m in Sources */,
-				E316143B21B7631F00CF09B2 /* MSDataProvider+ComprehensiveQuery.swift in Sources */,
 				E316145821B7631F00CF09B2 /* BaseTabBarViewController.swift in Sources */,
-				E316144B21B7631F00CF09B2 /* SendGoodsMessageDetailTableViewCell.swift in Sources */,
-				E316143121B7631F00CF09B2 /* PhotoCollectionViewCell.swift in Sources */,
 				E316146821B7631F00CF09B2 /* UIImage_LH.swift in Sources */,
 				E3848B4A21C8D04200B9AC27 /* MineDataController.swift in Sources */,
 				E3848B4721C8D03000B9AC27 /* MineViewController.swift in Sources */,
 				E31613B021B7631F00CF09B2 /* SBJsonStreamParserAccumulator.m in Sources */,
 				E31613FA21B7631F00CF09B2 /* CommonWebViewController.swift in Sources */,
 				E316137221B7631F00CF09B2 /* DropListCoverView.swift in Sources */,
-				E316143E21B7631F00CF09B2 /* ComprehensiveQueryListDataController.swift in Sources */,
 				E316139F21B7631F00CF09B2 /* TYAlertController.m in Sources */,
 				E316136021B7631F00CF09B2 /* LRSwitchStudentView.swift in Sources */,
 				E316134F21B7631F00CF09B2 /* PhotoBrowserShowModel.swift in Sources */,
-				E316140721B7631F00CF09B2 /* InformationMessageDetailViewController.swift in Sources */,
 				E316146021B7631F00CF09B2 /* UITableView+LH.swift in Sources */,
-				E316142321B7631F00CF09B2 /* OcrDataModel.swift in Sources */,
 				E316138821B7631F00CF09B2 /* extension+NSLayoutConstraint.swift in Sources */,
-				E316143D21B7631F00CF09B2 /* ComprehensiveQueryListViewController.swift in Sources */,
 				E31613B621B7631F00CF09B2 /* SBJsonStreamWriterAccumulator.m in Sources */,
 				E31613CE21B7631F00CF09B2 /* PersonMessageButtonTableViewCell.swift in Sources */,
 				E316139A21B7631F00CF09B2 /* TYAlertController+TransitionAnimate.m in Sources */,
 				E31613AA21B7631F00CF09B2 /* FileOperator.swift in Sources */,
-				E316140A21B7631F00CF09B2 /* InformationMessageDetailDataModel.swift in Sources */,
-				E316141021B7631F00CF09B2 /* AddressListTableViewCell.swift in Sources */,
 				E316144F21B7631F00CF09B2 /* NotifyDataModel.swift in Sources */,
 				E31613E321B7631F00CF09B2 /* PersonRegisterDataController.swift in Sources */,
 				E3848B8021C912FB00B9AC27 /* UpdatePasswordDataController.swift in Sources */,
+				E33C64C721C9DAEE00AEDF4B /* ZcznCollectionViewCell.swift in Sources */,
 				E316146421B7631F00CF09B2 /* String+LH.swift in Sources */,
-				E316144821B7631F00CF09B2 /* SendPersonMessageDetailTableViewCell.swift in Sources */,
+				E33C64D421C9DE1700AEDF4B /* ZcznDetailDataController.swift in Sources */,
+				E33C64C021C9D94200AEDF4B /* ZcznDataController.swift in Sources */,
 				E316137B21B7631F00CF09B2 /* CompanyRegisterSuccessView.swift in Sources */,
 				E31613DE21B7631F00CF09B2 /* SelectCompanyDataModel.swift in Sources */,
-				E316141F21B7631F00CF09B2 /* SendGoodsMessageTableViewCell.swift in Sources */,
 				E316147221B7631F00CF09B2 /* NSMutableDictionary+LH.m in Sources */,
 				E31613F921B7631F00CF09B2 /* MSDataProvider+CommonSutdents.swift in Sources */,
 				E31613F221B7631F00CF09B2 /* LanchImageViewController.swift in Sources */,
+				E33C64DA21C9DE3A00AEDF4B /* ZcznDetailDataModel.swift in Sources */,
 				E3848B5321C8D17C00B9AC27 /* MineTableViewCell.swift in Sources */,
 				E31613AC21B7631F00CF09B2 /* Logistics.xcdatamodeld in Sources */,
 				E3160F7621B761FC00CF09B2 /* AppDelegate.swift in Sources */,
@@ -3490,6 +2874,7 @@
 				DEVELOPMENT_TEAM = ZN9FP4NC8P;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = SocialSecurity/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3518,6 +2903,7 @@
 				DEVELOPMENT_TEAM = ZN9FP4NC8P;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = SocialSecurity/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

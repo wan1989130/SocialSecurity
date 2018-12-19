@@ -103,7 +103,7 @@
                             <rect key="frame" x="245" y="5.5" width="72" height="29"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <state key="normal" title="发送验证码">
-                                <color key="titleColor" red="0.058823529411764705" green="0.14901960784313725" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleColor" red="0.0" green="0.31764705882352939" blue="0.56862745098039214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <connections>
                                 <action selector="getCodeClick:" destination="-1" eventType="touchUpInside" id="Z0f-X7-GkX"/>
@@ -191,21 +191,18 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ddh-Uw-sX5">
-                    <rect key="frame" x="60" y="330" width="111" height="20"/>
+                    <rect key="frame" x="60" y="330" width="74" height="20"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="20" id="uA1-8x-cCe"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                    <state key="normal" title="用户协议及隐私政策">
-                        <color key="titleColor" red="0.0" green="0.71764705880000002" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="已阅读并同意">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
-                    <connections>
-                        <action selector="protocolClick:" destination="-1" eventType="touchUpInside" id="XJ2-EH-XG6"/>
-                    </connections>
                 </button>
                 <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="utl-UJ-Nyb">
                     <rect key="frame" x="24" y="370" width="327" height="40"/>
-                    <color key="backgroundColor" red="0.098039215690000001" green="0.59999999999999998" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" red="0.0" green="0.31764705882352939" blue="0.56862745098039214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="UXp-P5-197"/>
                     </constraints>
@@ -219,6 +216,19 @@
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <action selector="isAgreeClick:" destination="-1" eventType="touchUpInside" id="YbU-kZ-2Ng"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G80-3F-aa0">
+                    <rect key="frame" x="134" y="330" width="99" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="nHw-9j-7gQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="《用户服务协议》">
+                        <color key="titleColor" red="0.0" green="0.31764705879999999" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="protocolClick:" destination="-1" eventType="touchUpInside" id="oZT-ko-u8a"/>
                     </connections>
                 </button>
             </subviews>
@@ -236,10 +246,12 @@
                 <constraint firstItem="IlK-iP-0si" firstAttribute="trailing" secondItem="Wlj-77-Hu3" secondAttribute="trailing" id="WO5-0n-fLI"/>
                 <constraint firstItem="Ddh-Uw-sX5" firstAttribute="top" secondItem="SV9-BK-XUl" secondAttribute="top" id="a9I-c0-ioS"/>
                 <constraint firstItem="Wlj-77-Hu3" firstAttribute="top" secondItem="Il6-cd-PFB" secondAttribute="bottom" constant="60" id="cQ1-TW-wTv"/>
+                <constraint firstItem="G80-3F-aa0" firstAttribute="leading" secondItem="Ddh-Uw-sX5" secondAttribute="trailing" id="cag-ui-IAu"/>
                 <constraint firstItem="utl-UJ-Nyb" firstAttribute="top" secondItem="SV9-BK-XUl" secondAttribute="bottom" constant="20" id="dce-bw-6Vu"/>
                 <constraint firstItem="utl-UJ-Nyb" firstAttribute="leading" secondItem="Wlj-77-Hu3" secondAttribute="leading" id="h7t-it-A5i"/>
                 <constraint firstItem="iCQ-yE-4Qe" firstAttribute="leading" secondItem="Wlj-77-Hu3" secondAttribute="leading" id="hBR-JK-44T"/>
                 <constraint firstItem="utl-UJ-Nyb" firstAttribute="trailing" secondItem="Wlj-77-Hu3" secondAttribute="trailing" id="mRi-ry-1Wp"/>
+                <constraint firstItem="G80-3F-aa0" firstAttribute="centerY" secondItem="Ddh-Uw-sX5" secondAttribute="centerY" id="mmc-k6-c8f"/>
                 <constraint firstItem="Il6-cd-PFB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="rjc-ge-7xV"/>
                 <constraint firstItem="Ddh-Uw-sX5" firstAttribute="leading" secondItem="SV9-BK-XUl" secondAttribute="trailing" constant="16" id="sgR-zu-c5o"/>
             </constraints>

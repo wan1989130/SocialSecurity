@@ -34,7 +34,7 @@ class BaseNavigationViewController: UINavigationController,UINavigationControlle
         //TODO:根据实际样式编写
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white,
                                                             NSAttributedString.Key.font: UIFont.systemFont(ofSize: 18)]
-        UINavigationBar.appearance().barTintColor = UIColor(hexString: "1999D9")
+        UINavigationBar.appearance().barTintColor = UIColor(hexString: "005191")
 //        self.navigationBar.setBackgroundImage(UIImage.init(named: "button_bg1")!, for: .default)
 //        UINavigationBar.appearance().barTintColor = UIColor.init(patternImage: UIImage.init(named: "button_bg1")!)
         UINavigationBar.appearance().tintColor = UIColor.white

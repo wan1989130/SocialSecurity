@@ -16,7 +16,7 @@ class BaseTabBarViewController: UITabBarController {
         addChildViewController(firstVC, title: "业务经办", image: "nav1_normal", selectedImage: "nav1_hover")
         
         //综合查询
-        let secondVC = ComprehensiveQueryListViewController(nibName: "ComprehensiveQueryListViewController", bundle: nil)
+        let secondVC = ZcznViewController(nibName: "ZcznViewController", bundle: nil)
         addChildViewController(secondVC, title: "政策指南", image: "nav2_normal", selectedImage: "nav2_hover")
         
         //通讯录
@@ -33,7 +33,7 @@ class BaseTabBarViewController: UITabBarController {
         super.viewDidLoad()
         setupTabBar()
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor:UIColor(hexString:"9A9A9A"), NSAttributedString.Key.font:UIFont.systemFont(ofSize: 11)], for: .normal)
-        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor:UIColor(hexString:"34befc"), NSAttributedString.Key.font:UIFont.systemFont(ofSize: 11)], for: .selected)
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor:UIColor(hexString:"005191"), NSAttributedString.Key.font:UIFont.systemFont(ofSize: 11)], for: .selected)
 
     }
     
@@ -51,7 +51,7 @@ class BaseTabBarViewController: UITabBarController {
  
         
         childController.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor:UIColor(hexString:"9A9A9A")], for: .normal)
-        childController.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor:UIColor(hexString:"34befc")], for: .selected)
+        childController.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor:UIColor(hexString:"005191")], for: .selected)
         let mainNav = BaseNavigationViewController(rootViewController: childController)
         addChild(mainNav)
     }

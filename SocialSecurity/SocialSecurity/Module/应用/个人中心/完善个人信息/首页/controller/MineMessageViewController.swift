@@ -59,7 +59,7 @@ extension MineMessageViewController{
                 let imagePicker:UIImagePickerController = UIImagePickerController()
                 
                 imagePicker.delegate = self
-                imagePicker.allowsEditing = true
+                imagePicker.allowsEditing = false
                 imagePicker.sourceType = UIImagePickerController.SourceType.camera
                 self.present(imagePicker, animated: true, completion: nil)
             }
@@ -70,7 +70,7 @@ extension MineMessageViewController{
                 let imagePicker:UIImagePickerController = UIImagePickerController()
                 
                 imagePicker.delegate = self
-                imagePicker.allowsEditing = true
+                imagePicker.allowsEditing = false
                 imagePicker.sourceType = UIImagePickerController.SourceType.savedPhotosAlbum
                 self.present(imagePicker, animated: true, completion: nil)
                 

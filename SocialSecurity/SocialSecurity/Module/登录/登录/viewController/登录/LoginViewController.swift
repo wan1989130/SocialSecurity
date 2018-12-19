@@ -126,7 +126,7 @@ extension LoginViewController{
     
     fileprivate func initUI(){
         bgView.layer.cornerRadius = 5
-        bgView.layer.borderColor = UIColor(hexString: "8ED1E6")?.cgColor
+        bgView.layer.borderColor = UIColor(hexString: "005191")?.cgColor
         bgView.layer.borderWidth = 1
         
      

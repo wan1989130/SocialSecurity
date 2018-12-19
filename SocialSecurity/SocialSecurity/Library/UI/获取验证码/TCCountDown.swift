@@ -31,7 +31,7 @@ class TCCountDown {
             } else {
                 countdownTimer?.invalidate()
                 countdownTimer = nil
-                getCodeButton.setTitleColor(UIColor(hexString: "0F2654"), for: .normal)
+                getCodeButton.setTitleColor(UIColor(hexString: "005191"), for: .normal)
             }
             getCodeButton.isEnabled = !newValue
         }

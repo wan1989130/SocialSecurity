@@ -34,17 +34,17 @@ class LHHTTPClient: NSObject {
   
     func showHud(){
 //        LHHTTPClient.hud = MBProgressHUD.showAdded(to: UIApplication.shared.keyWindow!, animated: true)
-        if currentViewController() is InformationMessageViewController{
-            currentVc = currentViewController()!.children[0]
-            LHHTTPClient.hud = MBProgressHUD.showAdded(to: currentVc.view!, animated: true)
-            LHHTTPClient.hud.label.text = "数据加载中"
-        }else{
+//        if currentViewController() is InformationMessageViewController{
+//            currentVc = currentViewController()!.children[0]
+//            LHHTTPClient.hud = MBProgressHUD.showAdded(to: currentVc.view!, animated: true)
+//            LHHTTPClient.hud.label.text = "数据加载中"
+//        }else{
             currentVc = currentViewController()!
   
             LHHTTPClient.hud = MBProgressHUD.showAdded(to: currentVc.view!, animated: true)
             
             LHHTTPClient.hud.label.text = "数据加载中"
-        }
+//        }
         
        
     }

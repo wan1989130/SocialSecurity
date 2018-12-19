@@ -23,7 +23,7 @@ class YwjbViewController: BaseViewController {
 }
 extension YwjbViewController{
     fileprivate func initUI(){
-        self.view.backgroundColor = UIColor(hexString: "ECF5FE")
+       self.view.backgroundColor = viewBgColor
 
         self.automaticallyAdjustsScrollViewInsets = false
         tableView.delegate = self
@@ -93,6 +93,21 @@ extension YwjbViewController:UITableViewDelegate,UITableViewDataSource{
 }
 extension YwjbViewController:ApplyCollectionIndexClickProtocol{
     func collectionIndexClick(index: Int) {
-        print(index)
+        if index == 1{
+            let webVc = CommonWebViewController()
+            webVc.urlContent = Protocolhtml
+            webVc.titleContent = "制卡进度查询"
+            self.navigationController?.pushViewController(webVc, animated: true)
+        }else if index == 2{
+            let webVc = CommonWebViewController()
+            webVc.urlContent = Protocolhtml
+            webVc.titleContent = "社保查询"
+            self.navigationController?.pushViewController(webVc, animated: true)
+        }else if index == 3{
+            let webVc = CommonWebViewController()
+            webVc.urlContent = Protocolhtml
+            webVc.titleContent = "医保查询"
+            self.navigationController?.pushViewController(webVc, animated: true)
+        }
     }
 }
