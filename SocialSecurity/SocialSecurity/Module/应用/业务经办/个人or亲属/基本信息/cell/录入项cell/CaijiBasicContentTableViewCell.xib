@@ -43,6 +43,16 @@
                                         <color key="textColor" red="0.0" green="0.31764705879999999" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VKs-vT-TF4">
+                                        <rect key="frame" x="0.0" y="43" width="289" height="1"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="z19-Sr-4aa"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -52,6 +62,9 @@
                                     <constraint firstAttribute="height" constant="44" id="DfG-Pe-3n4"/>
                                     <constraint firstItem="cVC-Ig-jU1" firstAttribute="leading" secondItem="c6n-8Z-u2H" secondAttribute="trailing" id="JCr-EX-tdf"/>
                                     <constraint firstItem="c6n-8Z-u2H" firstAttribute="centerY" secondItem="cVC-Ig-jU1" secondAttribute="centerY" id="RH9-C5-hqS"/>
+                                    <constraint firstAttribute="trailing" secondItem="VKs-vT-TF4" secondAttribute="trailing" id="aHe-KL-c3D"/>
+                                    <constraint firstItem="VKs-vT-TF4" firstAttribute="leading" secondItem="E12-Uq-zj5" secondAttribute="leading" id="bmt-eD-kss"/>
+                                    <constraint firstAttribute="bottom" secondItem="VKs-vT-TF4" secondAttribute="bottom" id="qf3-Vz-SsO"/>
                                     <constraint firstItem="cVC-Ig-jU1" firstAttribute="centerY" secondItem="E12-Uq-zj5" secondAttribute="centerY" id="y9Z-ff-thA"/>
                                 </constraints>
                             </view>

@@ -131,8 +131,14 @@ extension CaijiBasicViewController:CaijiBasicNextProtocol,CaijiBasicContentSelec
         print("民族")
     }
     
-    func nextClick() {
-        print("下一步")
+    func nextClick() {//下一步
+        let dic:NSMutableDictionary = [
+            "title":self.title,
+            "type":dataController.type,
+            "saveModel":dataController.saveModel
+        ]
+        pushViewController("CaijiJianHuRenViewController",sender:dic)
+        
     }
     func xbClick() {
         var dataArray = [DictionaryModel]()

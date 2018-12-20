@@ -12,23 +12,23 @@ class SelectViewController: BaseViewController {
 
     
     @IBAction func finishClick(_ sender: Any) {
-//        var flag = false
-//        for item in dataArray{
-//            if item .isSelect{
-//                flag = true
-//                let dic:NSMutableDictionary = [
-//                    "model":item,
-//                    "selectIndex":selectIndex
-//                ]
-//                dismissBlock?(dic)
-//            }
-//        }
-//        if !flag{
-//            LHAlertView.showTipAlertWithTitle("请选择")
-//            return
-//        }
-//
-//        self.navigationController?.popViewController(animated: true)
+        var flag = false
+        for item in dataArray{
+            if item .isSelect{
+                flag = true
+                let dic:NSMutableDictionary = [
+                    "model":item,
+                    "selectIndex":selectIndex
+                ]
+                dismissBlock?(dic)
+            }
+        }
+        if !flag{
+            LHAlertView.showTipAlertWithTitle("请选择")
+            return
+        }
+
+        self.navigationController?.popViewController(animated: true)
     }
     @IBOutlet var tableView: UITableView!
     var dataArray:Array<DictionaryModel>! = [DictionaryModel]()

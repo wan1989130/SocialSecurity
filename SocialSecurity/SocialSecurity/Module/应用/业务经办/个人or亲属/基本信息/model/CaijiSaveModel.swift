@@ -18,6 +18,10 @@ class CaijiSaveModel: BaseModel {
     var zjyxq = ""//证件有效期
     var mz = ""//民族
     var txdz = ""//通信地址
+    
+    var jhrzjlx = "" //监护人证件类型
+    var jhrzjhm = "" //监护人证件号码
+    var jhrxm = "" //监护人姓名
     override func mapping(map: Map) {
         super.mapping(map: map)
         sex <- map["sex"]
@@ -27,6 +31,10 @@ class CaijiSaveModel: BaseModel {
         zjyxq <- map["zjyxq"]
         mz <- map["mz"]
         txdz <- map["txdz"]
+        
+        jhrzjlx <- map["jhrzjlx"]
+        jhrzjhm <- map["jhrzjhm"]
+        jhrxm <- map["jhrxm"]
         
         
         

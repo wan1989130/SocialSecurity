@@ -25,7 +25,9 @@ class IdCardQueryViewController: BaseViewController {
         initUI()
         
     }
-
+    deinit {
+        print("查询身份证页面销毁")
+    }
 
    
 

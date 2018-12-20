@@ -308,6 +308,9 @@
 		E3848B8021C912FB00B9AC27 /* UpdatePasswordDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3848B7F21C912FB00B9AC27 /* UpdatePasswordDataController.swift */; };
 		E38CA3FB21C0943800455B81 /* ApplyViewControllerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38CA3F921C0943800455B81 /* ApplyViewControllerCollectionViewCell.swift */; };
 		E38CA3FC21C0943800455B81 /* ApplyViewControllerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E38CA3FA21C0943800455B81 /* ApplyViewControllerCollectionViewCell.xib */; };
+		E3B68D5921CBB9AA0048F377 /* CaijiJianHuRenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B68D5721CBB9AA0048F377 /* CaijiJianHuRenViewController.swift */; };
+		E3B68D5A21CBB9AA0048F377 /* CaijiJianHuRenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3B68D5821CBB9AA0048F377 /* CaijiJianHuRenViewController.xib */; };
+		E3B68D5C21CBB9B80048F377 /* CaijiJianHuRenDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B68D5B21CBB9B80048F377 /* CaijiJianHuRenDataController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -706,6 +709,9 @@
 		E3848B7F21C912FB00B9AC27 /* UpdatePasswordDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePasswordDataController.swift; sourceTree = "<group>"; };
 		E38CA3F921C0943800455B81 /* ApplyViewControllerCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplyViewControllerCollectionViewCell.swift; sourceTree = "<group>"; };
 		E38CA3FA21C0943800455B81 /* ApplyViewControllerCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ApplyViewControllerCollectionViewCell.xib; sourceTree = "<group>"; };
+		E3B68D5721CBB9AA0048F377 /* CaijiJianHuRenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaijiJianHuRenViewController.swift; sourceTree = "<group>"; };
+		E3B68D5821CBB9AA0048F377 /* CaijiJianHuRenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CaijiJianHuRenViewController.xib; sourceTree = "<group>"; };
+		E3B68D5B21CBB9B80048F377 /* CaijiJianHuRenDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaijiJianHuRenDataController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2155,6 +2161,7 @@
 		E33C650221CA179A00AEDF4B /* 个人or亲属 */ = {
 			isa = PBXGroup;
 			children = (
+				E3B68D5421CBB9600048F377 /* 监护人信息 */,
 				E36809A921CB7351000FCDC7 /* 国标项选择 */,
 				E33C650C21CA1B2A00AEDF4B /* 基本信息 */,
 				E33C650321CA17AA00AEDF4B /* 查询身份证 */,
@@ -2487,6 +2494,32 @@
 			path = controller;
 			sourceTree = "<group>";
 		};
+		E3B68D5421CBB9600048F377 /* 监护人信息 */ = {
+			isa = PBXGroup;
+			children = (
+				E3B68D5621CBB9810048F377 /* cell */,
+				E3B68D5521CBB9790048F377 /* controller */,
+			);
+			path = "监护人信息";
+			sourceTree = "<group>";
+		};
+		E3B68D5521CBB9790048F377 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				E3B68D5B21CBB9B80048F377 /* CaijiJianHuRenDataController.swift */,
+				E3B68D5721CBB9AA0048F377 /* CaijiJianHuRenViewController.swift */,
+				E3B68D5821CBB9AA0048F377 /* CaijiJianHuRenViewController.xib */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		E3B68D5621CBB9810048F377 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2604,6 +2637,7 @@
 				E316136921B7631F00CF09B2 /* HSRightBarButtonItemMenu示例代码.rtf in Resources */,
 				E33C64DE21C9DE5A00AEDF4B /* ZcznDetailTableViewCell.xib in Resources */,
 				E316136121B7631F00CF09B2 /* LRSwitchStudentView.xib in Resources */,
+				E3B68D5A21CBB9AA0048F377 /* CaijiJianHuRenViewController.xib in Resources */,
 				E31613A121B7631F00CF09B2 /* HSPopupSelectDayView示例代码.rtf in Resources */,
 				E316137521B7631F00CF09B2 /* MSCommentEditView.xib in Resources */,
 				E3848B4821C8D03000B9AC27 /* MineViewController.xib in Resources */,
@@ -2881,6 +2915,7 @@
 				E31613BD21B7631F00CF09B2 /* SQLiteManager.swift in Sources */,
 				E316137621B7631F00CF09B2 /* MSCommentEditView.swift in Sources */,
 				E31613F821B7631F00CF09B2 /* MSGuidePageViewController.swift in Sources */,
+				E3B68D5C21CBB9B80048F377 /* CaijiJianHuRenDataController.swift in Sources */,
 				E316147421B7631F00CF09B2 /* UIColor+LH.m in Sources */,
 				E316138121B7631F00CF09B2 /* ShakeView.swift in Sources */,
 				E3848B6021C8D7F500B9AC27 /* MineMessageViewController.swift in Sources */,
@@ -2938,6 +2973,7 @@
 				E316146221B7631F00CF09B2 /* Data+LH.swift in Sources */,
 				E31613DB21B7631F00CF09B2 /* PersonMessageSuccessDataModel.swift in Sources */,
 				E31613FD21B7631F00CF09B2 /* UploadPhotoLogisticsDataModel.swift in Sources */,
+				E3B68D5921CBB9AA0048F377 /* CaijiJianHuRenViewController.swift in Sources */,
 				E316137C21B7631F00CF09B2 /* CodeSuccessView.swift in Sources */,
 				E31613B921B7631F00CF09B2 /* POAPinyin.m in Sources */,
 				E316147321B7631F00CF09B2 /* NSData+LH.m in Sources */,
