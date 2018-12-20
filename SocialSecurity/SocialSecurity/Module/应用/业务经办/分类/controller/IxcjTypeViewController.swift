@@ -76,9 +76,17 @@ extension IxcjTypeViewController:UICollectionViewDelegate,UICollectionViewDataSo
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if indexPath.row == 0{
-            pushViewController("IdCardQueryViewController",sender:"个人办理")
+            let dic:NSMutableDictionary = [
+                "title":"个人办理",
+                "type":"0"
+            ]
+            pushViewController("IdCardQueryViewController",sender:dic)
         }else if indexPath.row == 1{
-            pushViewController("IdCardQueryViewController",sender:"亲属代办")
+            let dic:NSMutableDictionary = [
+                "title":"亲属代办",
+                "type":"0"
+            ]
+            pushViewController("IdCardQueryViewController",sender:dic)
         }else if indexPath.row == 2{//社保卡进度查询
             pushViewController("SbkProgressViewController")
         }

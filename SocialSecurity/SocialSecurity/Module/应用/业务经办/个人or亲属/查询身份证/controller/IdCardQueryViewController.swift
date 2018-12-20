@@ -11,7 +11,11 @@ import UIKit
 class IdCardQueryViewController: BaseViewController {
 
     @IBAction func finishClick(_ sender: Any) {
-        pushViewController("CaijiBasicViewController",sender:self.title)
+        let dic:NSMutableDictionary = [
+            "title":self.title,
+            "type":dataController.type
+        ]
+        pushViewController("CaijiBasicViewController",sender:dic)
     }
     @IBOutlet weak var idBgView: UIView!
     var dataController:IdCardQueryDataController!
@@ -36,7 +40,14 @@ extension IdCardQueryViewController{
     fileprivate func initData(){
         dataController = IdCardQueryDataController(delegate: self)
         if senderParam != nil{
-            title = senderParam as! String
+            let dic = senderParam as! NSMutableDictionary
+            if dic["title"] != nil{
+                title = dic["title"] as! String
+            }
+            if dic["type"] != nil{
+                dataController.type = dic["type"] as! String
+            }
+            
         }
     }
 }

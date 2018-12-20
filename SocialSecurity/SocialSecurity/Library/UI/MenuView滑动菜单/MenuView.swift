@@ -7,7 +7,7 @@
 //
 
 import UIKit
-protocol MenuViewProtocol {
+protocol MenuViewProtocol :class{
     func menuView(forIndex index:Int) -> UIView
     //    func MenuViewDidScrollToIndex(index:Int) -> Void
     func menuViewIndex(index:Int) -> Void
@@ -63,7 +63,7 @@ class MenuView: UIView,UIScrollViewDelegate {
         
     }
     
-    var delegate:MenuViewProtocol?{
+    weak var delegate:MenuViewProtocol?{
         didSet{
             for subView in contentScrollView.subviews{
                 subView.removeFromSuperview()

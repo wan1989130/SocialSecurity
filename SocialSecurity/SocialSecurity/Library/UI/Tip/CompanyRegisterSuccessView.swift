@@ -7,7 +7,7 @@
 //
 
 import UIKit
-protocol CompanyRegisterSuccessProtocol {
+protocol CompanyRegisterSuccessProtocol:class{
     func companyRegisterSuccessFinishProtocol() -> Void
     func companyRegisterSuccesslookProtocol() -> Void
 }
@@ -27,6 +27,6 @@ class CompanyRegisterSuccessView: UIView {
             delegate?.companyRegisterSuccessFinishProtocol()
         }
     }
-    var delegate:CompanyRegisterSuccessProtocol?
+    weak var delegate:CompanyRegisterSuccessProtocol?
 
 }

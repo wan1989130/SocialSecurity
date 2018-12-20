@@ -9,5 +9,5 @@
 import UIKit
 
 class IdCardQueryDataController: BaseDataController {
-
+var type = ""//0录入1修改
 }

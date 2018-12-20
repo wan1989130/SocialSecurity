@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol PersonMessageFinishProtocol {
+protocol PersonMessageFinishProtocol :class{
     func personMessageFinishProtocol() -> Void
 }
 class PersonMessageButtonTableViewCell: UITableViewCell {
@@ -19,7 +19,7 @@ class PersonMessageButtonTableViewCell: UITableViewCell {
             delegate.personMessageFinishProtocol()
         }
     }
-    var delegate:PersonMessageFinishProtocol!
+    weak var delegate:PersonMessageFinishProtocol!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

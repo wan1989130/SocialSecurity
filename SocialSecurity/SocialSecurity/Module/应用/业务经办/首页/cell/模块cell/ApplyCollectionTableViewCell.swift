@@ -7,7 +7,7 @@
 //
 
 import UIKit
-@objc protocol ApplyCollectionIndexClickProtocol {
+@objc protocol ApplyCollectionIndexClickProtocol:NSObjectProtocol {
     func collectionIndexClick(index:Int)
 }
 class ApplyCollectionTableViewCell: UITableViewCell {
@@ -18,7 +18,7 @@ class ApplyCollectionTableViewCell: UITableViewCell {
     var delegate:BaseViewController!
     var dataArray:Array<ApplyToolModel> = [ApplyToolModel]()
     @IBOutlet weak var oneLabel: UILabel!
-    var pro:ApplyCollectionIndexClickProtocol!
+    weak var pro:ApplyCollectionIndexClickProtocol!
     override func awakeFromNib() {
         super.awakeFromNib()
         self.backgroundColor = UIColor.clear

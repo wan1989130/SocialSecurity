@@ -270,11 +270,20 @@
 		E33C651521CA1B9100AEDF4B /* CaijiBasicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E33C651321CA1B9100AEDF4B /* CaijiBasicViewController.xib */; };
 		E33C651B21CA1CD800AEDF4B /* CaijiBasicIdCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C651921CA1CD800AEDF4B /* CaijiBasicIdCardTableViewCell.swift */; };
 		E33C651C21CA1CD800AEDF4B /* CaijiBasicIdCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E33C651A21CA1CD800AEDF4B /* CaijiBasicIdCardTableViewCell.xib */; };
-		E33C651F21CA1CF000AEDF4B /* CaijiBasicNormalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C651D21CA1CF000AEDF4B /* CaijiBasicNormalTableViewCell.swift */; };
-		E33C652021CA1CF000AEDF4B /* CaijiBasicNormalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E33C651E21CA1CF000AEDF4B /* CaijiBasicNormalTableViewCell.xib */; };
 		E33C652321CA1D0200AEDF4B /* CaijiBasicSaveTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C652121CA1D0200AEDF4B /* CaijiBasicSaveTableViewCell.swift */; };
 		E33C652421CA1D0200AEDF4B /* CaijiBasicSaveTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E33C652221CA1D0200AEDF4B /* CaijiBasicSaveTableViewCell.xib */; };
 		E33C652721CA264E00AEDF4B /* button+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C652621CA264E00AEDF4B /* button+extension.swift */; };
+		E368099F21CB22C0000FCDC7 /* CaijiBasicDisplayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E368099E21CB22C0000FCDC7 /* CaijiBasicDisplayModel.swift */; };
+		E36809A121CB2376000FCDC7 /* CaijiSaveModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36809A021CB2376000FCDC7 /* CaijiSaveModel.swift */; };
+		E36809A321CB40AC000FCDC7 /* UIView + Cornner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36809A221CB40AC000FCDC7 /* UIView + Cornner.swift */; };
+		E36809A721CB5A84000FCDC7 /* CaijiBasicContentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36809A521CB5A84000FCDC7 /* CaijiBasicContentTableViewCell.swift */; };
+		E36809A821CB5A84000FCDC7 /* CaijiBasicContentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E36809A621CB5A84000FCDC7 /* CaijiBasicContentTableViewCell.xib */; };
+		E36809B021CB73BF000FCDC7 /* SelectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36809AE21CB73BF000FCDC7 /* SelectTableViewCell.swift */; };
+		E36809B121CB73BF000FCDC7 /* SelectTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E36809AF21CB73BF000FCDC7 /* SelectTableViewCell.xib */; };
+		E36809B421CB745F000FCDC7 /* SelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36809B221CB745F000FCDC7 /* SelectViewController.swift */; };
+		E36809B521CB745F000FCDC7 /* SelectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E36809B321CB745F000FCDC7 /* SelectViewController.xib */; };
+		E36809B821CB7665000FCDC7 /* DictionaryDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36809B721CB7665000FCDC7 /* DictionaryDataModel.swift */; };
+		E36809BA21CB92A6000FCDC7 /* SelectChangQiDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36809B921CB92A6000FCDC7 /* SelectChangQiDateView.swift */; };
 		E3848B4021C8D00100B9AC27 /* MSDataProvider+Grzx.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3848B3F21C8D00100B9AC27 /* MSDataProvider+Grzx.swift */; };
 		E3848B4721C8D03000B9AC27 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3848B4521C8D03000B9AC27 /* MineViewController.swift */; };
 		E3848B4821C8D03000B9AC27 /* MineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3848B4621C8D03000B9AC27 /* MineViewController.xib */; };
@@ -659,11 +668,20 @@
 		E33C651321CA1B9100AEDF4B /* CaijiBasicViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CaijiBasicViewController.xib; sourceTree = "<group>"; };
 		E33C651921CA1CD800AEDF4B /* CaijiBasicIdCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaijiBasicIdCardTableViewCell.swift; sourceTree = "<group>"; };
 		E33C651A21CA1CD800AEDF4B /* CaijiBasicIdCardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CaijiBasicIdCardTableViewCell.xib; sourceTree = "<group>"; };
-		E33C651D21CA1CF000AEDF4B /* CaijiBasicNormalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaijiBasicNormalTableViewCell.swift; sourceTree = "<group>"; };
-		E33C651E21CA1CF000AEDF4B /* CaijiBasicNormalTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CaijiBasicNormalTableViewCell.xib; sourceTree = "<group>"; };
 		E33C652121CA1D0200AEDF4B /* CaijiBasicSaveTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaijiBasicSaveTableViewCell.swift; sourceTree = "<group>"; };
 		E33C652221CA1D0200AEDF4B /* CaijiBasicSaveTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CaijiBasicSaveTableViewCell.xib; sourceTree = "<group>"; };
 		E33C652621CA264E00AEDF4B /* button+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "button+extension.swift"; sourceTree = "<group>"; };
+		E368099E21CB22C0000FCDC7 /* CaijiBasicDisplayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaijiBasicDisplayModel.swift; sourceTree = "<group>"; };
+		E36809A021CB2376000FCDC7 /* CaijiSaveModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaijiSaveModel.swift; sourceTree = "<group>"; };
+		E36809A221CB40AC000FCDC7 /* UIView + Cornner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Cornner.swift"; sourceTree = "<group>"; };
+		E36809A521CB5A84000FCDC7 /* CaijiBasicContentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaijiBasicContentTableViewCell.swift; sourceTree = "<group>"; };
+		E36809A621CB5A84000FCDC7 /* CaijiBasicContentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CaijiBasicContentTableViewCell.xib; sourceTree = "<group>"; };
+		E36809AE21CB73BF000FCDC7 /* SelectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTableViewCell.swift; sourceTree = "<group>"; };
+		E36809AF21CB73BF000FCDC7 /* SelectTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectTableViewCell.xib; sourceTree = "<group>"; };
+		E36809B221CB745F000FCDC7 /* SelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewController.swift; sourceTree = "<group>"; };
+		E36809B321CB745F000FCDC7 /* SelectViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectViewController.xib; sourceTree = "<group>"; };
+		E36809B721CB7665000FCDC7 /* DictionaryDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryDataModel.swift; sourceTree = "<group>"; };
+		E36809B921CB92A6000FCDC7 /* SelectChangQiDateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectChangQiDateView.swift; sourceTree = "<group>"; };
 		E3848B3F21C8D00100B9AC27 /* MSDataProvider+Grzx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MSDataProvider+Grzx.swift"; sourceTree = "<group>"; };
 		E3848B4521C8D03000B9AC27 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		E3848B4621C8D03000B9AC27 /* MineViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MineViewController.xib; sourceTree = "<group>"; };
@@ -1057,6 +1075,7 @@
 		E316118721B7631E00CF09B2 /* 选择日期 */ = {
 			isa = PBXGroup;
 			children = (
+				E36809B921CB92A6000FCDC7 /* SelectChangQiDateView.swift */,
 				E316118821B7631E00CF09B2 /* SelectDateView.swift */,
 			);
 			path = "选择日期";
@@ -1966,6 +1985,7 @@
 			children = (
 				E31EF69521BFF5D700E1C3E4 /* JQRadiusView.h */,
 				E31EF69621BFF5D700E1C3E4 /* JQRadiusView.m */,
+				E36809A221CB40AC000FCDC7 /* UIView + Cornner.swift */,
 			);
 			path = JQRadiusView;
 			sourceTree = "<group>";
@@ -2135,6 +2155,7 @@
 		E33C650221CA179A00AEDF4B /* 个人or亲属 */ = {
 			isa = PBXGroup;
 			children = (
+				E36809A921CB7351000FCDC7 /* 国标项选择 */,
 				E33C650C21CA1B2A00AEDF4B /* 基本信息 */,
 				E33C650321CA17AA00AEDF4B /* 查询身份证 */,
 			);
@@ -2182,8 +2203,8 @@
 		E33C650E21CA1B4500AEDF4B /* cell */ = {
 			isa = PBXGroup;
 			children = (
+				E36809A421CB5A56000FCDC7 /* 录入项cell */,
 				E33C651821CA1CA900AEDF4B /* 保存cell */,
-				E33C651721CA1C9C00AEDF4B /* 通用cell */,
 				E33C651621CA1C8900AEDF4B /* 身份证cell */,
 			);
 			path = cell;
@@ -2192,6 +2213,8 @@
 		E33C650F21CA1B4A00AEDF4B /* model */ = {
 			isa = PBXGroup;
 			children = (
+				E368099E21CB22C0000FCDC7 /* CaijiBasicDisplayModel.swift */,
+				E36809A021CB2376000FCDC7 /* CaijiSaveModel.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -2203,15 +2226,6 @@
 				E33C651A21CA1CD800AEDF4B /* CaijiBasicIdCardTableViewCell.xib */,
 			);
 			path = "身份证cell";
-			sourceTree = "<group>";
-		};
-		E33C651721CA1C9C00AEDF4B /* 通用cell */ = {
-			isa = PBXGroup;
-			children = (
-				E33C651D21CA1CF000AEDF4B /* CaijiBasicNormalTableViewCell.swift */,
-				E33C651E21CA1CF000AEDF4B /* CaijiBasicNormalTableViewCell.xib */,
-			);
-			path = "通用cell";
 			sourceTree = "<group>";
 		};
 		E33C651821CA1CA900AEDF4B /* 保存cell */ = {
@@ -2229,6 +2243,51 @@
 				E33C652621CA264E00AEDF4B /* button+extension.swift */,
 			);
 			path = "button中图片位置";
+			sourceTree = "<group>";
+		};
+		E36809A421CB5A56000FCDC7 /* 录入项cell */ = {
+			isa = PBXGroup;
+			children = (
+				E36809A521CB5A84000FCDC7 /* CaijiBasicContentTableViewCell.swift */,
+				E36809A621CB5A84000FCDC7 /* CaijiBasicContentTableViewCell.xib */,
+			);
+			path = "录入项cell";
+			sourceTree = "<group>";
+		};
+		E36809A921CB7351000FCDC7 /* 国标项选择 */ = {
+			isa = PBXGroup;
+			children = (
+				E36809B621CB762F000FCDC7 /* model */,
+				E36809AB21CB7399000FCDC7 /* cell */,
+				E36809AA21CB7383000FCDC7 /* controller */,
+			);
+			path = "国标项选择";
+			sourceTree = "<group>";
+		};
+		E36809AA21CB7383000FCDC7 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				E36809B221CB745F000FCDC7 /* SelectViewController.swift */,
+				E36809B321CB745F000FCDC7 /* SelectViewController.xib */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		E36809AB21CB7399000FCDC7 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				E36809AE21CB73BF000FCDC7 /* SelectTableViewCell.swift */,
+				E36809AF21CB73BF000FCDC7 /* SelectTableViewCell.xib */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		E36809B621CB762F000FCDC7 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				E36809B721CB7665000FCDC7 /* DictionaryDataModel.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 		E3848B3E21C8CFEA00B9AC27 /* 个人中心 */ = {
@@ -2539,6 +2598,7 @@
 				E316139421B7631F00CF09B2 /* 示例代码WaterViewController.rtf in Resources */,
 				E3848B7E21C912E900B9AC27 /* UpdatePasswordViewController.xib in Resources */,
 				E316135821B7631F00CF09B2 /* LICENSE in Resources */,
+				E36809B521CB745F000FCDC7 /* SelectViewController.xib in Resources */,
 				E3160F8021B761FE00CF09B2 /* LaunchScreen.storyboard in Resources */,
 				E31613D321B7631F00CF09B2 /* CompanyRegisterPhotoTableViewCell.xib in Resources */,
 				E316136921B7631F00CF09B2 /* HSRightBarButtonItemMenu示例代码.rtf in Resources */,
@@ -2566,6 +2626,7 @@
 				E3848B7921C9127500B9AC27 /* FeedBackViewController.xib in Resources */,
 				E31613C721B7631F00CF09B2 /* BindAccountShowSchoolTableViewCell.xib in Resources */,
 				E3160F7D21B761FE00CF09B2 /* Assets.xcassets in Resources */,
+				E36809A821CB5A84000FCDC7 /* CaijiBasicContentTableViewCell.xib in Resources */,
 				E316138A21B7631F00CF09B2 /* NoDataView.xib in Resources */,
 				E316137121B7631F00CF09B2 /* DropListTableViewCell.xib in Resources */,
 				E316137921B7631F00CF09B2 /* area.json in Resources */,
@@ -2586,7 +2647,6 @@
 				E31EF63E21BFD81800E1C3E4 /* YwjbViewController.xib in Resources */,
 				E316135D21B7631F00CF09B2 /* PoPSelectListView.xib in Resources */,
 				E31613D721B7631F00CF09B2 /* CompanyRegisterTipTableViewCell.xib in Resources */,
-				E33C652021CA1CF000AEDF4B /* CaijiBasicNormalTableViewCell.xib in Resources */,
 				E3848B6921C8DA0700B9AC27 /* updateNickNameViewController.xib in Resources */,
 				E31613A321B7631F00CF09B2 /* MenuView示例代码.rtf in Resources */,
 				E38CA3FC21C0943800455B81 /* ApplyViewControllerCollectionViewCell.xib in Resources */,
@@ -2602,6 +2662,7 @@
 				E31613D821B7631F00CF09B2 /* CompanyRegisterInputTableViewCell.xib in Resources */,
 				E31613F121B7631F00CF09B2 /* SelectAreaPopupViewTableViewCell.xib in Resources */,
 				E316137D21B7631F00CF09B2 /* CompanyRegisterSuccessView.xib in Resources */,
+				E36809B121CB73BF000FCDC7 /* SelectTableViewCell.xib in Resources */,
 				E31613E421B7631F00CF09B2 /* PersonRegisterViewController.xib in Resources */,
 				E31EF64F21BFDA2700E1C3E4 /* ApplyCollectionTableViewCell.xib in Resources */,
 				E31613A221B7631F00CF09B2 /* HSPopupSelectDayView.xib in Resources */,
@@ -2741,6 +2802,7 @@
 				E31613D221B7631F00CF09B2 /* SelectCompanyTableViewCell.swift in Sources */,
 				E316139E21B7631F00CF09B2 /* TYBaseAnimation.m in Sources */,
 				E31EF69721BFF5D700E1C3E4 /* JQRadiusView.m in Sources */,
+				E36809A721CB5A84000FCDC7 /* CaijiBasicContentTableViewCell.swift in Sources */,
 				E31613E521B7631F00CF09B2 /* PersonRegisterViewController.swift in Sources */,
 				E316146521B7631F00CF09B2 /* UIView+LH.swift in Sources */,
 				E316145A21B7631F00CF09B2 /* Config.swift in Sources */,
@@ -2761,8 +2823,10 @@
 				E3070FA021BE88A200E33BB1 /* ForgetPwdViewController.swift in Sources */,
 				E316136B21B7631F00CF09B2 /* HSRightBarButtonItemMenu.swift in Sources */,
 				E31613B321B7631F00CF09B2 /* SBJsonWriter.m in Sources */,
+				E36809A321CB40AC000FCDC7 /* UIView + Cornner.swift in Sources */,
 				E31EF63321BFD7A900E1C3E4 /* MSDataProvider+Ywjb.swift in Sources */,
 				E316147121B7631F00CF09B2 /* NSString+LH.m in Sources */,
+				E36809B821CB7665000FCDC7 /* DictionaryDataModel.swift in Sources */,
 				E316146C21B7631F00CF09B2 /* UIImage+LH.m in Sources */,
 				E316145121B7631F00CF09B2 /* BaseModel.swift in Sources */,
 				E31613DD21B7631F00CF09B2 /* BindAccountDataModel.swift in Sources */,
@@ -2808,6 +2872,7 @@
 				E31613E921B7631F00CF09B2 /* LoginModel.swift in Sources */,
 				E316135721B7631F00CF09B2 /* BRAddressPickerView.m in Sources */,
 				E31613D921B7631F00CF09B2 /* PersonRegisterSuccessDataModel.swift in Sources */,
+				E36809BA21CB92A6000FCDC7 /* SelectChangQiDateView.swift in Sources */,
 				E3160FA421B762C000CF09B2 /* AppDelegate+Private.swift in Sources */,
 				E31613AE21B7631F00CF09B2 /* SBJsonStreamParser.m in Sources */,
 				E31613BE21B7631F00CF09B2 /* BMChineseSort.swift in Sources */,
@@ -2825,7 +2890,9 @@
 				E33C64BD21C9D8DB00AEDF4B /* ZcznViewController.swift in Sources */,
 				E31613AF21B7631F00CF09B2 /* SBJsonParser.m in Sources */,
 				E31613B821B7631F00CF09B2 /* SBJsonTokeniser.m in Sources */,
+				E368099F21CB22C0000FCDC7 /* CaijiBasicDisplayModel.swift in Sources */,
 				E316136621B7631F00CF09B2 /* RBCustomDatePickerView.m in Sources */,
+				E36809B021CB73BF000FCDC7 /* SelectTableViewCell.swift in Sources */,
 				E316145621B7631F00CF09B2 /* BaseViewController.swift in Sources */,
 				E31EF64221BFD92E00E1C3E4 /* ApplyBannerTableViewCell.swift in Sources */,
 				E3848B4F21C8D17200B9AC27 /* MinePhotoHeaderTableViewCell.swift in Sources */,
@@ -2859,7 +2926,6 @@
 				E31613A821B7631F00CF09B2 /* MSDataProvider.swift in Sources */,
 				E316138B21B7631F00CF09B2 /* PublishSourceHeaderView.swift in Sources */,
 				E31613A721B7631F00CF09B2 /* LHHTTPData.swift in Sources */,
-				E33C651F21CA1CF000AEDF4B /* CaijiBasicNormalTableViewCell.swift in Sources */,
 				E31613A521B7631F00CF09B2 /* BaseTextField.swift in Sources */,
 				E316136D21B7631F00CF09B2 /* TTPaomaView.swift in Sources */,
 				E316146E21B7631F00CF09B2 /* UIAlertView+LH.m in Sources */,
@@ -2910,8 +2976,10 @@
 				E31613F221B7631F00CF09B2 /* LanchImageViewController.swift in Sources */,
 				E33C64DA21C9DE3A00AEDF4B /* ZcznDetailDataModel.swift in Sources */,
 				E3848B5321C8D17C00B9AC27 /* MineTableViewCell.swift in Sources */,
+				E36809B421CB745F000FCDC7 /* SelectViewController.swift in Sources */,
 				E31613AC21B7631F00CF09B2 /* Logistics.xcdatamodeld in Sources */,
 				E3160F7621B761FC00CF09B2 /* AppDelegate.swift in Sources */,
+				E36809A121CB2376000FCDC7 /* CaijiSaveModel.swift in Sources */,
 				E316135421B7631F00CF09B2 /* BRBaseView.m in Sources */,
 				E316139B21B7631F00CF09B2 /* UIView+TYAutoLayout.m in Sources */,
 				E31613C321B7631F00CF09B2 /* BindButtonTableViewCell.swift in Sources */,

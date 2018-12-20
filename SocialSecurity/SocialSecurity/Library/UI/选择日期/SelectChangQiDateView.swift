@@ -8,11 +8,9 @@
 
 import UIKit
 
-@objc protocol SelectDateDelegate :NSObjectProtocol{
-     func selectDate(dateString:String)
-}
 
-class SelectDateView: UIView {
+
+class SelectChangQiDateView: UIView {
     weak var pro:SelectDateDelegate?
     var delegate:UIViewController?
     var alert:UIAlertController?
@@ -40,7 +38,7 @@ class SelectDateView: UIView {
         datePicker.datePickerMode = .date
         let locale = Locale.init(identifier: "zh_CN")
         let cformatter = DateFormatter()
-        if !String.isNilOrEmpty(currentStr){
+        if !String.isNilOrEmpty(currentStr) && currentStr != "长期"{
             cformatter.dateFormat = "yyyy-MM-dd"
             let currentDate = cformatter.date(from: currentStr!)
             datePicker.setDate(currentDate!, animated: true)
@@ -61,9 +59,13 @@ class SelectDateView: UIView {
         let cancel = UIAlertAction(title: "取消", style: .cancel) { (UIAlertAction) in
             print("cancel")
         }
+        let changqi = UIAlertAction(title: "长期", style: .default) { (UIAlertAction) in
+            self.pro?.selectDate(dateString: "长期")
+        }
        
         alert?.addAction(ok)
         alert?.addAction(cancel)
+        alert?.addAction(changqi)
         
         
     }

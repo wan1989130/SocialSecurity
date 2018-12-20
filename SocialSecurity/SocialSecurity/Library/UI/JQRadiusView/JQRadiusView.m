@@ -22,6 +22,9 @@
 - (void)drawRect:(CGRect)rect {
     [super drawRect:rect];
     UIBezierPath *p = [UIBezierPath bezierPathWithRoundedRect:rect byRoundingCorners:(_bottomLeftRadius?UIRectCornerBottomLeft:0)|(_bottomRightRadius?UIRectCornerBottomRight:0)|(_topLeftRadius?UIRectCornerTopLeft:0)|(_topRightRadius?UIRectCornerTopRight:0) cornerRadii:CGSizeMake(_cornerRadius, 0.f)];
+
+  
+    
     CGContextRef c = UIGraphicsGetCurrentContext();
     CGContextAddPath(c, p.CGPath);
     CGContextClosePath(c);

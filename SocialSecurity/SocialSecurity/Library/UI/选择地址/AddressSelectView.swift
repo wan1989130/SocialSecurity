@@ -16,7 +16,7 @@ private let kAddressSelectTopTabbarHeight: CGFloat = 45
 private let kAddressColorMotif: UIColor = UIColor.init(red: 246/255.0, green: 16/255.0, blue: 39/255.0, alpha: 1.0)
 private let kAddressColorLine: UIColor = UIColor.init(red: 230/255.0, green: 230/255.0, blue: 230/255.0, alpha: 1.0)
 
-protocol AddressSelectTopTabbarDelegate {
+protocol AddressSelectTopTabbarDelegate :class{
     func topTabbar(_ topTabbar: AddressSelectTopTabbar, didSelectWithIndex index: Int)
     func didSelelctCancel(_ topTabbar: AddressSelectTopTabbar)
 }
@@ -25,7 +25,7 @@ protocol AddressSelectTopTabbarDelegate {
 class AddressSelectTopTabbar : UIView {
     var lineView: UIView = UIView.init()
     var dataSource: [AddressModel] = [AddressModel]()
-    var delegate: AddressSelectTopTabbarDelegate?
+    weak var delegate: AddressSelectTopTabbarDelegate?
     
     override init (frame: CGRect) {
         super.init(frame: frame)

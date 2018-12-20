@@ -7,13 +7,20 @@
 //
 
 import UIKit
-
+protocol CaijiBasicNextProtocol:class {
+    func nextClick()
+}
 class CaijiBasicSaveTableViewCell: UITableViewCell {
 
+    @IBAction func nextClick(_ sender: Any) {
+        pro.nextClick()
+    }
+    weak var pro:CaijiBasicNextProtocol!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
+   
 
     class func loadCell(_ tableView:UITableView)-> CaijiBasicSaveTableViewCell{
         let cellId:String = "CaijiBasicSaveTableViewCellId"
