@@ -19,6 +19,12 @@ class CaijiJianHuRenViewController: BaseViewController {
     var isWrite = true
     var selectIndex = -1
     @IBAction func nextClick(_ sender: Any) {
+        let dic:NSMutableDictionary = [
+            "title":self.title,
+            "type":dataController.type,
+            "saveModel":dataController.saveModel
+        ]
+        pushViewController("CaijiQiTaViewController",sender:dic)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +34,9 @@ class CaijiJianHuRenViewController: BaseViewController {
     }
 
 
+    deinit {
+        print("监护人信息页面销毁")
+    }
    
 
 }
