@@ -22,6 +22,13 @@ class CaijiSaveModel: BaseModel {
     var jhrzjlx = "" //监护人证件类型
     var jhrzjhm = "" //监护人证件号码
     var jhrxm = "" //监护人姓名
+    var provinceId = ""
+    var cityId = ""
+    var regionId = ""
+    var provinceName = ""
+    var cityName = ""
+    var regionName = ""
+    
     override func mapping(map: Map) {
         super.mapping(map: map)
         sex <- map["sex"]

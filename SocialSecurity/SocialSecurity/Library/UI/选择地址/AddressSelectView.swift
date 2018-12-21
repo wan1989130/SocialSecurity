@@ -16,7 +16,7 @@ private let kAddressSelectTopTabbarHeight: CGFloat = 45
 private let kAddressColorMotif: UIColor = UIColor.init(red: 246/255.0, green: 16/255.0, blue: 39/255.0, alpha: 1.0)
 private let kAddressColorLine: UIColor = UIColor.init(red: 230/255.0, green: 230/255.0, blue: 230/255.0, alpha: 1.0)
 
-protocol AddressSelectTopTabbarDelegate :class{
+protocol AddressSelectTopTabbarDelegate {
     func topTabbar(_ topTabbar: AddressSelectTopTabbar, didSelectWithIndex index: Int)
     func didSelelctCancel(_ topTabbar: AddressSelectTopTabbar)
 }
@@ -25,7 +25,7 @@ protocol AddressSelectTopTabbarDelegate :class{
 class AddressSelectTopTabbar : UIView {
     var lineView: UIView = UIView.init()
     var dataSource: [AddressModel] = [AddressModel]()
-    weak var delegate: AddressSelectTopTabbarDelegate?
+    var delegate: AddressSelectTopTabbarDelegate?
     
     override init (frame: CGRect) {
         super.init(frame: frame)
@@ -75,11 +75,11 @@ class AddressSelectTopTabbar : UIView {
         let size = text.size(withFont: itemView.titleLabel!.font, maxSize: CGSize(width: 90, height: 30))
         itemView.frame = CGRect(x: CGFloat(left), y: CGFloat(0), width: size.width, height: kAddressSelectTopTabbarHeight)
         
-      
+        
         self.lineView.frame = CGRect(x: itemView.frame.minX, y: self.lineView.frame.minY, width: self.lineView.frame.width, height: self.lineView.frame.height)
         self.lineView.frame.size.width = itemView.frame.width
- 
- 
+        
+        
     }
     
     func addItem(withIndex index: Int, atAddress address: AddressModel)  {
@@ -97,7 +97,7 @@ class AddressSelectTopTabbar : UIView {
         var left :CGFloat = 15
         
         for (i, model) in dataSource.enumerated() {
-        
+            
             let text = model.region_name!
             
             let itemView = UIButton(type: .custom)
@@ -116,7 +116,7 @@ class AddressSelectTopTabbar : UIView {
         }
         
         if index < 2 {
-
+            
             let text = "请选择"
             let itemView = UIButton(type: .custom)
             itemView.frame = CGRect(x: kAddressContentViewWidth-50, y: 9, width: 50, height: kAddressSelectTopTabbarHeight)
@@ -141,7 +141,7 @@ class AddressSelectTopTabbar : UIView {
             
             self.lineView.frame.size.width = itemView.frame.width
             self.lineView.frame = CGRect(x: itemView.frame.minX, y: self.lineView.frame.minY, width: self.lineView.frame.width, height: self.lineView.frame.height)
-          
+            
         }
     }
     
@@ -211,7 +211,7 @@ class AddressSelectView: UIView {
     var topTabbar: AddressSelectTopTabbar = AddressSelectTopTabbar()
     
     var selectBlock: SelectBlock?
-    var dataSource = AddressConfigManager.shared.addressDatas
+    var dataSource = AddressConfigManager.shared.addressDatas?.items
     var selectIndexs : [Int] = [Int]()
     
     override init (frame: CGRect) {
@@ -260,7 +260,7 @@ class AddressSelectView: UIView {
         self.backgroundView.alpha = 0
         
         addTableView(withIndex: 0, animated: false)
-      
+        
         //点击阴影消失TODO
         let dismissButton = UIButton.init(frame: CGRect(x: 0, y: 0, width: kAddressContentViewWidth, height: ScreenHeight - kAddressContentViewHeight))
         dismissButton.addTarget(self, action: #selector(hideFunc), for: .touchUpInside)
@@ -278,9 +278,9 @@ class AddressSelectView: UIView {
         }
         return array
     }
-
+    
     private func addTableView(withIndex index :Int, animated :Bool) {
-
+        
         for view in scrollView.subviews {
             if(view.tag >= index) {
                 view.removeFromSuperview()
@@ -368,7 +368,6 @@ class AddressSelectView: UIView {
         addressView.show()
         addressView.setAddress(withProvince: province, city: city, district: district)
     }
-    
 }
 
 // MARK: - @protocol AddressSelectTopTabbarDelegate
@@ -398,7 +397,7 @@ extension AddressSelectView: UITableViewDelegate {
     
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-
+        
         if self.selectIndexs.count > tableView.tag {
             self.selectIndexs.removeLast(self.selectIndexs.count-tableView.tag)
         }
@@ -467,30 +466,30 @@ extension AddressSelectView: UITableViewDataSource {
 class AddressConfigManager {
     
     public static let shared = AddressConfigManager()
-    var addressDatas : [AddressModel]?
+    var addressDatas : AddressModels?
     init() {
         
-//        let path: String = Bundle.main.path(forResource: "area", ofType: "json")!
-//        let data = NSData.init(contentsOfFile: path)
-//
-//        let str = NSString(data: data! as Data, encoding: String.Encoding.utf8.rawValue)
-//
-//        addressDatas = Mapper<AddressModels>().map(JSONString: str! as String)
+        let path: String = Bundle.main.path(forResource: "area", ofType: "json")!
+        let data = NSData.init(contentsOfFile: path)
         
-       
-//        do{
-//            addressDatas?.items![0].region_name = "aaaa"
-//            str = addressDatas?.toJSONString()! as! NSString
-//              let url = URL(fileURLWithPath: "/area.json")
-//            try str?.write(toFile: path, atomically: true, encoding: String.Encoding.utf8.rawValue)
-//            
-//        }catch let error as NSError {
-//            print(error.localizedDescription)
-//        }
+        let str = NSString(data: data! as Data, encoding: String.Encoding.utf8.rawValue)
+        
+        addressDatas = Mapper<AddressModels>().map(JSONString: str! as String)
+        
+        
+        //        do{
+        //            addressDatas?.items![0].region_name = "aaaa"
+        //            str = addressDatas?.toJSONString()! as! NSString
+        //              let url = URL(fileURLWithPath: "/area.json")
+        //            try str?.write(toFile: path, atomically: true, encoding: String.Encoding.utf8.rawValue)
+        //
+        //        }catch let error as NSError {
+        //            print(error.localizedDescription)
+        //        }
         
         
     }
-   
+    
 }
 
 
@@ -498,13 +497,13 @@ class AddressConfigManager {
 class AddressModel : BaseModel {
     
     var region_id : String?
-     var region_name : String?
-     var children : [AddressModel]?
-
+    var region_name : String?
+    var children : [AddressModel]?
+    
     override func mapping(map: Map) {
         super.mapping(map: map)
-        region_id <- map["id"]
-        region_name <- map["name"]
+        region_id <- map["region_id"]
+        region_name <- map["region_name"]
         children <- map["children"]
         
     }
@@ -516,11 +515,11 @@ class AddressModels :BaseModel {
     
     var items : [AddressModel]?
     
- 
+    
     
     override func mapping(map: Map) {
         super.mapping(map: map)
         items <- map["items"]
-       
+        
     }
 }

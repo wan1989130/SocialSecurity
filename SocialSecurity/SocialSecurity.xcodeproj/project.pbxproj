@@ -313,6 +313,11 @@
 		E3ACE86721CC80E3005EBB02 /* CaijiQiTaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3ACE86521CC80E3005EBB02 /* CaijiQiTaViewController.xib */; };
 		E3ACE86A21CC80F7005EBB02 /* CaijiQiTaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ACE86821CC80F7005EBB02 /* CaijiQiTaTableViewCell.swift */; };
 		E3ACE86B21CC80F7005EBB02 /* CaijiQiTaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3ACE86921CC80F7005EBB02 /* CaijiQiTaTableViewCell.xib */; };
+		E3ACE86F21CCAADB005EBB02 /* CamaryDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ACE86E21CCAADB005EBB02 /* CamaryDataController.swift */; };
+		E3ACE87221CCAAED005EBB02 /* CamaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ACE87021CCAAED005EBB02 /* CamaryViewController.swift */; };
+		E3ACE87321CCAAED005EBB02 /* CamaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3ACE87121CCAAED005EBB02 /* CamaryViewController.xib */; };
+		E3ACE87621CCB1B7005EBB02 /* UIImage + GetColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ACE87521CCB1B7005EBB02 /* UIImage + GetColor.swift */; };
+		E3ACE87821CCBA04005EBB02 /* UIImage + Compressor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ACE87721CCBA04005EBB02 /* UIImage + Compressor.swift */; };
 		E3B68D5921CBB9AA0048F377 /* CaijiJianHuRenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B68D5721CBB9AA0048F377 /* CaijiJianHuRenViewController.swift */; };
 		E3B68D5A21CBB9AA0048F377 /* CaijiJianHuRenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3B68D5821CBB9AA0048F377 /* CaijiJianHuRenViewController.xib */; };
 		E3B68D5C21CBB9B80048F377 /* CaijiJianHuRenDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B68D5B21CBB9B80048F377 /* CaijiJianHuRenDataController.swift */; };
@@ -719,6 +724,11 @@
 		E3ACE86521CC80E3005EBB02 /* CaijiQiTaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CaijiQiTaViewController.xib; sourceTree = "<group>"; };
 		E3ACE86821CC80F7005EBB02 /* CaijiQiTaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaijiQiTaTableViewCell.swift; sourceTree = "<group>"; };
 		E3ACE86921CC80F7005EBB02 /* CaijiQiTaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CaijiQiTaTableViewCell.xib; sourceTree = "<group>"; };
+		E3ACE86E21CCAADB005EBB02 /* CamaryDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamaryDataController.swift; sourceTree = "<group>"; };
+		E3ACE87021CCAAED005EBB02 /* CamaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamaryViewController.swift; sourceTree = "<group>"; };
+		E3ACE87121CCAAED005EBB02 /* CamaryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CamaryViewController.xib; sourceTree = "<group>"; };
+		E3ACE87521CCB1B7005EBB02 /* UIImage + GetColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage + GetColor.swift"; sourceTree = "<group>"; };
+		E3ACE87721CCBA04005EBB02 /* UIImage + Compressor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage + Compressor.swift"; sourceTree = "<group>"; };
 		E3B68D5721CBB9AA0048F377 /* CaijiJianHuRenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaijiJianHuRenViewController.swift; sourceTree = "<group>"; };
 		E3B68D5821CBB9AA0048F377 /* CaijiJianHuRenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CaijiJianHuRenViewController.xib; sourceTree = "<group>"; };
 		E3B68D5B21CBB9B80048F377 /* CaijiJianHuRenDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaijiJianHuRenDataController.swift; sourceTree = "<group>"; };
@@ -859,6 +869,7 @@
 		E316114B21B7631E00CF09B2 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				E3ACE87421CCB19F005EBB02 /* 判断像素颜色 */,
 				E33C652521CA263600AEDF4B /* button中图片位置 */,
 				E31EF69421BFF5D700E1C3E4 /* JQRadiusView */,
 				E316114C21B7631E00CF09B2 /* 多张图片展示 */,
@@ -1082,6 +1093,7 @@
 		E316118421B7631E00CF09B2 /* 图片压缩 */ = {
 			isa = PBXGroup;
 			children = (
+				E3ACE87721CCBA04005EBB02 /* UIImage + Compressor.swift */,
 				E316118521B7631E00CF09B2 /* LHImageCompressor.m */,
 				E316118621B7631E00CF09B2 /* LHImageCompressor.h */,
 			);
@@ -2171,6 +2183,7 @@
 		E33C650221CA179A00AEDF4B /* 个人or亲属 */ = {
 			isa = PBXGroup;
 			children = (
+				E3ACE86C21CCAA6A005EBB02 /* 拍照 */,
 				E3ACE85F21CC809F005EBB02 /* 其它信息 */,
 				E3B68D5421CBB9600048F377 /* 监护人信息 */,
 				E36809A921CB7351000FCDC7 /* 国标项选择 */,
@@ -2533,6 +2546,32 @@
 			path = controller;
 			sourceTree = "<group>";
 		};
+		E3ACE86C21CCAA6A005EBB02 /* 拍照 */ = {
+			isa = PBXGroup;
+			children = (
+				E3ACE86D21CCAA79005EBB02 /* controller */,
+			);
+			path = "拍照";
+			sourceTree = "<group>";
+		};
+		E3ACE86D21CCAA79005EBB02 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				E3ACE86E21CCAADB005EBB02 /* CamaryDataController.swift */,
+				E3ACE87021CCAAED005EBB02 /* CamaryViewController.swift */,
+				E3ACE87121CCAAED005EBB02 /* CamaryViewController.xib */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		E3ACE87421CCB19F005EBB02 /* 判断像素颜色 */ = {
+			isa = PBXGroup;
+			children = (
+				E3ACE87521CCB1B7005EBB02 /* UIImage + GetColor.swift */,
+			);
+			path = "判断像素颜色";
+			sourceTree = "<group>";
+		};
 		E3B68D5421CBB9600048F377 /* 监护人信息 */ = {
 			isa = PBXGroup;
 			children = (
@@ -2700,6 +2739,7 @@
 				E31613C721B7631F00CF09B2 /* BindAccountShowSchoolTableViewCell.xib in Resources */,
 				E3160F7D21B761FE00CF09B2 /* Assets.xcassets in Resources */,
 				E36809A821CB5A84000FCDC7 /* CaijiBasicContentTableViewCell.xib in Resources */,
+				E3ACE87321CCAAED005EBB02 /* CamaryViewController.xib in Resources */,
 				E316138A21B7631F00CF09B2 /* NoDataView.xib in Resources */,
 				E316137121B7631F00CF09B2 /* DropListTableViewCell.xib in Resources */,
 				E316137921B7631F00CF09B2 /* area.json in Resources */,
@@ -2863,10 +2903,12 @@
 				E316136221B7631F00CF09B2 /* ColorChange.swift in Sources */,
 				E316139C21B7631F00CF09B2 /* TYAlertDropDownAnimation.m in Sources */,
 				E31613EB21B7631F00CF09B2 /* StudentModel.swift in Sources */,
+				E3ACE87621CCB1B7005EBB02 /* UIImage + GetColor.swift in Sources */,
 				E31613AD21B7631F00CF09B2 /* NSObject+SBJson.m in Sources */,
 				E33C64E221C9E86A00AEDF4B /* IxcjTypeDataController.swift in Sources */,
 				E31EF63D21BFD81800E1C3E4 /* YwjbViewController.swift in Sources */,
 				E31613B421B7631F00CF09B2 /* SBJsonStreamWriter.m in Sources */,
+				E3ACE87821CCBA04005EBB02 /* UIImage + Compressor.swift in Sources */,
 				E31613B221B7631F00CF09B2 /* SBJsonStreamParserState.m in Sources */,
 				E33C651121CA1B8200AEDF4B /* CaijiBasicDataController.swift in Sources */,
 				E316146B21B7631F00CF09B2 /* NSDictionary+LH.m in Sources */,
@@ -2905,6 +2947,7 @@
 				E36809B821CB7665000FCDC7 /* DictionaryDataModel.swift in Sources */,
 				E316146C21B7631F00CF09B2 /* UIImage+LH.m in Sources */,
 				E316145121B7631F00CF09B2 /* BaseModel.swift in Sources */,
+				E3ACE86F21CCAADB005EBB02 /* CamaryDataController.swift in Sources */,
 				E31613DD21B7631F00CF09B2 /* BindAccountDataModel.swift in Sources */,
 				E316147021B7631F00CF09B2 /* NSMutableArray+LH.m in Sources */,
 				E31613C821B7631F00CF09B2 /* BindAccountShowSchoolTableViewCell.swift in Sources */,
@@ -2983,6 +3026,7 @@
 				E3160F7821B761FC00CF09B2 /* ViewController.swift in Sources */,
 				E316144E21B7631F00CF09B2 /* BaseDataController.swift in Sources */,
 				E316145721B7631F00CF09B2 /* BaseNavigationViewController.swift in Sources */,
+				E3ACE87221CCAAED005EBB02 /* CamaryViewController.swift in Sources */,
 				E31613DC21B7631F00CF09B2 /* ShowStudentOrSchoolSubmitDataModel.swift in Sources */,
 				E31613BA21B7631F00CF09B2 /* pinyin.m in Sources */,
 				E316135121B7631F00CF09B2 /* BRStringPickerView.m in Sources */,

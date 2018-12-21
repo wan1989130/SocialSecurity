@@ -862,6 +862,7 @@
                         </userDefinedRuntimeAttributes>
                     </label>
                 </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ACm-RR-z9P" secondAttribute="bottom" id="AnJ-Fk-jgl"/>
                     <constraint firstItem="PzK-ay-uCD" firstAttribute="leading" secondItem="Goe-gI-f2o" secondAttribute="trailing" constant="4" id="Dp3-gS-ACd"/>
@@ -878,6 +879,7 @@
                     <constraint firstItem="ACm-RR-z9P" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="tMp-K2-ogN"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="bgView" destination="ACm-RR-z9P" id="ezJ-n1-fed"/>

@@ -11,7 +11,7 @@ import UIKit
 class CaijiQiTaViewController: BaseViewController {
 
     @IBOutlet var tableView: UITableView!
-    var dataController:CaijiBasicDataController!
+    var dataController:CaijiQiTaDataController!
     var isWrite = true
     
     override func viewDidLoad() {
@@ -38,7 +38,7 @@ extension CaijiQiTaViewController{
         
     }
     fileprivate func initData(){
-        dataController = CaijiBasicDataController(delegate: self)
+        dataController = CaijiQiTaDataController(delegate: self)
         if senderParam != nil{
             let dic = senderParam as! NSMutableDictionary
             if dic["title"] != nil{
@@ -46,6 +46,9 @@ extension CaijiQiTaViewController{
             }
             if dic["type"] != nil{
                 dataController.type = dic["type"] as! String
+            }
+            if dic["saveModel"] != nil{
+                dataController.saveModel = dic["saveModel"] as! CaijiSaveModel
             }
             
         }
@@ -101,12 +104,25 @@ extension CaijiQiTaViewController:CaijiBasicNextProtocol,CaijiQiTaContentSelectP
         print("专属行业")
     }
     
-    func yjqyClick() {
-        print("邮寄区域")
+    func yjqyClick() {//邮寄区域
+        weak var weakSelf = self
+        AddressSelectView.show(withProvince: dataController.saveModel.provinceId, city: dataController.saveModel.cityId, district: dataController.saveModel.regionId) { (province , city, district) in
+            let str = "\(province.region_name!)\(city.region_name!)\(district.region_name!)"
+            weakSelf!.dataController.saveModel.provinceId = province.region_id!
+            weakSelf!.dataController.saveModel.cityId = city.region_id!
+            weakSelf!.dataController.saveModel.regionId = district.region_id!
+            
+        }
+        
     }
     
     func nextClick() {//下一步
-        
+        let dic:NSMutableDictionary = [
+            "title":self.title,
+            "type":dataController.type,
+            "saveModel":dataController.saveModel
+        ]
+        pushViewController("CamaryViewController",sender:dic)
     }
     
     
