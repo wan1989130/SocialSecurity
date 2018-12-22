@@ -26,6 +26,9 @@ class CamaryViewController: BaseViewController {
         initAlert()
     }
 
+    deinit {
+        print("拍照页面销毁")
+    }
 
 }
 extension CamaryViewController{
@@ -73,13 +76,18 @@ extension CamaryViewController{
             }
         }
         //从手机相册中选择上传图片
+        //UIImagePickerControllerSourceTypePhotoLibrary 相册 来自图库
+//        UIImagePickerControllerSourceTypeSavedPhotosAlbum 相簿 来自相册
+//        UIImagePickerControllerSourceTypeCamera 相机
+        
+     
         let okAction:UIAlertAction = UIAlertAction(title: "相册", style: UIAlertAction.Style.default) { (UIAlertAction) in
-            if UIImagePickerController.isSourceTypeAvailable(UIImagePickerController.SourceType.savedPhotosAlbum){
+            if UIImagePickerController.isSourceTypeAvailable(UIImagePickerController.SourceType.photoLibrary){
                 let imagePicker:UIImagePickerController = UIImagePickerController()
                 
                 imagePicker.delegate = weakSelf
                 imagePicker.allowsEditing = false
-                imagePicker.sourceType = UIImagePickerController.SourceType.savedPhotosAlbum
+                imagePicker.sourceType = UIImagePickerController.SourceType.photoLibrary
                 weakSelf!.present(imagePicker, animated: true, completion: nil)
                 
             }
@@ -92,7 +100,8 @@ extension CamaryViewController{
     }
     
     //上传图片接口
-    fileprivate func uploadPortrait(portraitData:Data){
+    fileprivate func uploadPortrait(image:UIImage){
+        let imageData:Data  = image.imageWithImageSimple(newSize:CGSize(width: 358, height: 441), maxLength: 50 * 1024)
         //        let parameter:NSMutableDictionary = [
         //            "typeFile":"0",
         //            "work":MyConfig.shared().projectNameBase,
@@ -103,7 +112,7 @@ extension CamaryViewController{
         //        let imageData:Data = UIImageJPEGRepresentation(portrait, 0.9)! as Data
         //        dataController.uploadHeadPhoto(imgDataArray:  [imageData], parameter: parameter) { (isSucceed, info) in
         //            if isSucceed{
-        self.uploadHeadUrl(portrait: UIImage.init(data: portraitData)!)
+//        self.uploadHeadUrl(portrait: UIImage.init(data: portraitData)!)
         //
         //            }
         //        }
@@ -115,7 +124,7 @@ extension CamaryViewController{
         //        ]
         //        dataController.uploadHeadUrl(parameter: parameter) { (isSucceed, info) in
         //            if isSucceed {
-        self.photoButton.setImage(portrait, for: .normal)
+//        self.photoButton.setBackgroundImage(portrait, for: .normal)
         //            }else {
         //
         //            }
@@ -127,16 +136,18 @@ extension CamaryViewController: UIImagePickerControllerDelegate,UINavigationCont
     //调用系统相册及拍照功能实现方法
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         var chosenImage:UIImage = info[.originalImage] as! UIImage
-        let imageData:Data  = chosenImage.imageWithImageSimple(newSize:CGSize(width: 358, height: 441), maxLength: 50 * 1024)
+        
         //调用接口
         weak var weakSelf = self
-        picker.dismiss(animated: true) {
-            self.photoButton.setImage(UIImage.init(data: imageData)!, for: .normal)
-            if weakSelf!.checkPixColor(){
-                if weakSelf!.getPixColor(){
-                    weakSelf!.uploadPortrait(portraitData: imageData)
-                }
-            }
+        picker.dismiss(animated: false) {
+            let clipper = SwiftyPhotoClipper()
+            clipper.delegate = self
+            clipper.img = chosenImage
+            weakSelf?.present(clipper, animated: true, completion: {
+                
+            })
+            
+           
         }
     }
     //判断像素点色值
@@ -155,7 +166,7 @@ extension CamaryViewController: UIImagePickerControllerDelegate,UINavigationCont
                     ((r - g) > 10 || (g - r) > 10) ||
                     ((g - b) > 10 || (b - g) > 10) {
                     LHAlertView.showTipAlertWithTitle("图片背景不是白色")
-                    photoButton.setBackgroundImage(UIImage.init(named: "ic_id_photo"), for: .normal)
+//                    photoButton.setBackgroundImage(UIImage.init(named: "ic_id_photo"), for: .normal)
                     
                     return false
                 }
@@ -174,12 +185,22 @@ extension CamaryViewController: UIImagePickerControllerDelegate,UINavigationCont
                 }
             }
         }
-        photoButton.setBackgroundImage(UIImage.init(named: "ic_id_photo"), for: .normal)
+//        photoButton.setBackgroundImage(UIImage.init(named: "ic_id_photo"), for: .normal)
         LHAlertView.showTipAlertWithTitle("照片不能是黑白照片")
         return false
     }
     
 }
-extension CamaryViewController{
-    
+extension CamaryViewController:SwiftyPhotoClipperDelegate{
+    func didFinishClippingPhoto(image: UIImage) {
+        self.photoButton.setBackgroundImage(image, for: .normal)
+        if self.checkPixColor(){
+            if self.getPixColor(){
+                self.uploadPortrait(image: image)
+                //                    weakSelf.present(clipper, animated: true, completion: nil)
+                
+            }
+        }
+        
+    }
 }

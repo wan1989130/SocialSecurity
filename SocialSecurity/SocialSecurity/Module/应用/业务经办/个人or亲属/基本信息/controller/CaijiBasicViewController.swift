@@ -36,7 +36,7 @@ extension CaijiBasicViewController{
         self.view.backgroundColor = viewBgColor
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.estimatedRowHeight = 44
+        tableView.estimatedRowHeight = ScreenHeight
         tableView.rowHeight = UITableView.automaticDimension
         tableView.register("CaijiBasicIdCardTableViewCell")
         tableView.register("CaijiBasicContentTableViewCell")

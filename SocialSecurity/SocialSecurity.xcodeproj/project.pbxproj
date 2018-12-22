@@ -318,6 +318,7 @@
 		E3ACE87321CCAAED005EBB02 /* CamaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3ACE87121CCAAED005EBB02 /* CamaryViewController.xib */; };
 		E3ACE87621CCB1B7005EBB02 /* UIImage + GetColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ACE87521CCB1B7005EBB02 /* UIImage + GetColor.swift */; };
 		E3ACE87821CCBA04005EBB02 /* UIImage + Compressor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ACE87721CCBA04005EBB02 /* UIImage + Compressor.swift */; };
+		E3ACE8C021CCD677005EBB02 /* SwiftyPhotoClipper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ACE8BF21CCD677005EBB02 /* SwiftyPhotoClipper.swift */; };
 		E3B68D5921CBB9AA0048F377 /* CaijiJianHuRenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B68D5721CBB9AA0048F377 /* CaijiJianHuRenViewController.swift */; };
 		E3B68D5A21CBB9AA0048F377 /* CaijiJianHuRenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3B68D5821CBB9AA0048F377 /* CaijiJianHuRenViewController.xib */; };
 		E3B68D5C21CBB9B80048F377 /* CaijiJianHuRenDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B68D5B21CBB9B80048F377 /* CaijiJianHuRenDataController.swift */; };
@@ -729,6 +730,7 @@
 		E3ACE87121CCAAED005EBB02 /* CamaryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CamaryViewController.xib; sourceTree = "<group>"; };
 		E3ACE87521CCB1B7005EBB02 /* UIImage + GetColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage + GetColor.swift"; sourceTree = "<group>"; };
 		E3ACE87721CCBA04005EBB02 /* UIImage + Compressor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage + Compressor.swift"; sourceTree = "<group>"; };
+		E3ACE8BF21CCD677005EBB02 /* SwiftyPhotoClipper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyPhotoClipper.swift; sourceTree = "<group>"; };
 		E3B68D5721CBB9AA0048F377 /* CaijiJianHuRenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaijiJianHuRenViewController.swift; sourceTree = "<group>"; };
 		E3B68D5821CBB9AA0048F377 /* CaijiJianHuRenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CaijiJianHuRenViewController.xib; sourceTree = "<group>"; };
 		E3B68D5B21CBB9B80048F377 /* CaijiJianHuRenDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaijiJianHuRenDataController.swift; sourceTree = "<group>"; };
@@ -869,6 +871,7 @@
 		E316114B21B7631E00CF09B2 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				E3ACE8BE21CCD662005EBB02 /* 图片裁剪 */,
 				E3ACE87421CCB19F005EBB02 /* 判断像素颜色 */,
 				E33C652521CA263600AEDF4B /* button中图片位置 */,
 				E31EF69421BFF5D700E1C3E4 /* JQRadiusView */,
@@ -2572,6 +2575,14 @@
 			path = "判断像素颜色";
 			sourceTree = "<group>";
 		};
+		E3ACE8BE21CCD662005EBB02 /* 图片裁剪 */ = {
+			isa = PBXGroup;
+			children = (
+				E3ACE8BF21CCD677005EBB02 /* SwiftyPhotoClipper.swift */,
+			);
+			path = "图片裁剪";
+			sourceTree = "<group>";
+		};
 		E3B68D5421CBB9600048F377 /* 监护人信息 */ = {
 			isa = PBXGroup;
 			children = (
@@ -2901,6 +2912,7 @@
 				E33C652321CA1D0200AEDF4B /* CaijiBasicSaveTableViewCell.swift in Sources */,
 				E31613FB21B7631F00CF09B2 /* SelectMultipleStudentDataModel.swift in Sources */,
 				E316136221B7631F00CF09B2 /* ColorChange.swift in Sources */,
+				E3ACE8C021CCD677005EBB02 /* SwiftyPhotoClipper.swift in Sources */,
 				E316139C21B7631F00CF09B2 /* TYAlertDropDownAnimation.m in Sources */,
 				E31613EB21B7631F00CF09B2 /* StudentModel.swift in Sources */,
 				E3ACE87621CCB1B7005EBB02 /* UIImage + GetColor.swift in Sources */,

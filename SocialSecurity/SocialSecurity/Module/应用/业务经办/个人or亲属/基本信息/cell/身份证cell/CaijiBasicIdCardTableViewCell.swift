@@ -33,19 +33,19 @@ class CaijiBasicIdCardTableViewCell: UITableViewCell {
         pro.idCardClick(.zheng)
     }
  
-    private lazy var myLayer:CAShapeLayer = {
-        
-        let path = UIBezierPath.init(roundedRect: CGRect(x: 0, y: 0, width: ScreenWidth - 32, height: 44), byRoundingCorners: [.topRight , .topLeft] , cornerRadii: CGSize(width: 5, height: 0));
-        let layer = CAShapeLayer.init();
-        layer.path = path.cgPath;
-        layer.lineWidth = 1;
-        layer.lineCap = CAShapeLayerLineCap.square;
-        layer.strokeColor = UIColor.black.withAlphaComponent(0.2).cgColor;
-        //  注意直接填充layer的颜色，不需要设置控件view的backgroundColor
-        layer.fillColor = UIColor.clear.cgColor;
-        return layer;
-        
-        }()
+//    private lazy var myLayer:CAShapeLayer = {
+//        
+//        let path = UIBezierPath.init(roundedRect: CGRect(x: 0, y: 0, width: ScreenWidth - 32, height: 44), byRoundingCorners: [.topRight , .topLeft] , cornerRadii: CGSize(width: 5, height: 0));
+//        let layer = CAShapeLayer.init();
+//        layer.path = path.cgPath;
+//        layer.lineWidth = 1;
+//        layer.lineCap = CAShapeLayerLineCap.square;
+//        layer.strokeColor = UIColor.black.withAlphaComponent(0.2).cgColor;
+//        //  注意直接填充layer的颜色，不需要设置控件view的backgroundColor
+//        layer.fillColor = UIColor.clear.cgColor;
+//        return layer;
+//        
+//        }()
  
     override func awakeFromNib() {
         super.awakeFromNib()
