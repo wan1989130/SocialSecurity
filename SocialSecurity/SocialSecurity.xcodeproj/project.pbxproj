@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		AC525E65F46EEC70AB6B111A /* Pods_SocialSecurity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 479DB85FDA5E06F04992D1EF /* Pods_SocialSecurity.framework */; };
+		E300D05821CF09C400F1A52B /* DetailWebviewDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E300D05721CF09C400F1A52B /* DetailWebviewDataController.swift */; };
+		E300D06621CF14EC00F1A52B /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = E300D06521CF14EC00F1A52B /* index.html */; };
+		E300D06A21CF17F200F1A52B /* DetailWebviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E300D06921CF17F200F1A52B /* DetailWebviewViewController.swift */; };
 		E3070FA021BE88A200E33BB1 /* ForgetPwdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3070F9E21BE88A200E33BB1 /* ForgetPwdViewController.swift */; };
 		E3070FA121BE88A200E33BB1 /* ForgetPwdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3070F9F21BE88A200E33BB1 /* ForgetPwdViewController.xib */; };
 		E3070FA321BE88B100E33BB1 /* ForgetPwdDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3070FA221BE88B100E33BB1 /* ForgetPwdDataController.swift */; };
@@ -345,6 +348,9 @@
 		3AE74293051A04F2E7E449DA /* Pods-SocialSecurity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialSecurity.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialSecurity/Pods-SocialSecurity.release.xcconfig"; sourceTree = "<group>"; };
 		479DB85FDA5E06F04992D1EF /* Pods_SocialSecurity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialSecurity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79EE8C03498E4E37B72F86DE /* Pods-SocialSecurity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialSecurity.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialSecurity/Pods-SocialSecurity.debug.xcconfig"; sourceTree = "<group>"; };
+		E300D05721CF09C400F1A52B /* DetailWebviewDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWebviewDataController.swift; sourceTree = "<group>"; };
+		E300D06521CF14EC00F1A52B /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		E300D06921CF17F200F1A52B /* DetailWebviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWebviewViewController.swift; sourceTree = "<group>"; };
 		E3070F9E21BE88A200E33BB1 /* ForgetPwdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPwdViewController.swift; sourceTree = "<group>"; };
 		E3070F9F21BE88A200E33BB1 /* ForgetPwdViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgetPwdViewController.xib; sourceTree = "<group>"; };
 		E3070FA221BE88B100E33BB1 /* ForgetPwdDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPwdDataController.swift; sourceTree = "<group>"; };
@@ -778,6 +784,32 @@
 				3AE74293051A04F2E7E449DA /* Pods-SocialSecurity.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		E300D05021CF092100F1A52B /* 查看详情 */ = {
+			isa = PBXGroup;
+			children = (
+				E300D05221CF099400F1A52B /* model */,
+				E300D05121CF098E00F1A52B /* controller */,
+			);
+			path = "查看详情";
+			sourceTree = "<group>";
+		};
+		E300D05121CF098E00F1A52B /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				E300D06521CF14EC00F1A52B /* index.html */,
+				E300D05721CF09C400F1A52B /* DetailWebviewDataController.swift */,
+				E300D06921CF17F200F1A52B /* DetailWebviewViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		E300D05221CF099400F1A52B /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 		E3070F9C21BE887800E33BB1 /* 忘记密码 */ = {
@@ -2141,6 +2173,7 @@
 		E33C64EF21C9ECA300AEDF4B /* 社保卡进度查询 */ = {
 			isa = PBXGroup;
 			children = (
+				E300D05021CF092100F1A52B /* 查看详情 */,
 				E33C64F021C9ECAC00AEDF4B /* 首页 */,
 			);
 			path = "社保卡进度查询";
@@ -2789,6 +2822,7 @@
 				E31613F121B7631F00CF09B2 /* SelectAreaPopupViewTableViewCell.xib in Resources */,
 				E316137D21B7631F00CF09B2 /* CompanyRegisterSuccessView.xib in Resources */,
 				E36809B121CB73BF000FCDC7 /* SelectTableViewCell.xib in Resources */,
+				E300D06621CF14EC00F1A52B /* index.html in Resources */,
 				E31613E421B7631F00CF09B2 /* PersonRegisterViewController.xib in Resources */,
 				E31EF64F21BFDA2700E1C3E4 /* ApplyCollectionTableViewCell.xib in Resources */,
 				E31613A221B7631F00CF09B2 /* HSPopupSelectDayView.xib in Resources */,
@@ -2917,6 +2951,7 @@
 				E31613EB21B7631F00CF09B2 /* StudentModel.swift in Sources */,
 				E3ACE87621CCB1B7005EBB02 /* UIImage + GetColor.swift in Sources */,
 				E31613AD21B7631F00CF09B2 /* NSObject+SBJson.m in Sources */,
+				E300D06A21CF17F200F1A52B /* DetailWebviewViewController.swift in Sources */,
 				E33C64E221C9E86A00AEDF4B /* IxcjTypeDataController.swift in Sources */,
 				E31EF63D21BFD81800E1C3E4 /* YwjbViewController.swift in Sources */,
 				E31613B421B7631F00CF09B2 /* SBJsonStreamWriter.m in Sources */,
@@ -2954,6 +2989,7 @@
 				E316136B21B7631F00CF09B2 /* HSRightBarButtonItemMenu.swift in Sources */,
 				E31613B321B7631F00CF09B2 /* SBJsonWriter.m in Sources */,
 				E36809A321CB40AC000FCDC7 /* UIView + Cornner.swift in Sources */,
+				E300D05821CF09C400F1A52B /* DetailWebviewDataController.swift in Sources */,
 				E31EF63321BFD7A900E1C3E4 /* MSDataProvider+Ywjb.swift in Sources */,
 				E316147121B7631F00CF09B2 /* NSString+LH.m in Sources */,
 				E36809B821CB7665000FCDC7 /* DictionaryDataModel.swift in Sources */,

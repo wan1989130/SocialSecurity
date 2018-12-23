@@ -43,10 +43,14 @@ extension SbkProgressViewController:UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = SbkProgressTableViewCell.loadCell(tableView)
         cell.update()
+        cell.pro = self
         return cell
     }
     
 }
-extension SbkProgressViewController{
-    
+extension SbkProgressViewController:SbkProgressProtocol{
+    func detailWebviewClick() {
+        let webVc = DetailWebviewViewController()
+        self.navigationController?.pushViewController(webVc, animated: true)
+    }
 }

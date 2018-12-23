@@ -7,9 +7,15 @@
 //
 
 import UIKit
-
+protocol SbkProgressProtocol:class {
+    func detailWebviewClick()
+}
 class SbkProgressTableViewCell: UITableViewCell {
 
+    var pro:SbkProgressProtocol!
+    @IBAction func detailWebviewClick(_ sender: Any) {
+        pro.detailWebviewClick()
+    }
     @IBOutlet weak var viewHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var statusLabel: UILabel!
     override func awakeFromNib() {
