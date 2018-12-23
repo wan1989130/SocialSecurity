@@ -315,6 +315,7 @@
                 <constraint firstItem="Uih-dx-aqh" firstAttribute="top" secondItem="S58-wa-Ubi" secondAttribute="bottom" constant="16" id="tZK-8m-YTm"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="-215" y="-95"/>
         </view>
     </objects>
     <resources>

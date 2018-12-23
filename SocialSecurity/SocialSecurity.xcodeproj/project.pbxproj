@@ -276,6 +276,9 @@
 		E33C652321CA1D0200AEDF4B /* CaijiBasicSaveTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C652121CA1D0200AEDF4B /* CaijiBasicSaveTableViewCell.swift */; };
 		E33C652421CA1D0200AEDF4B /* CaijiBasicSaveTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E33C652221CA1D0200AEDF4B /* CaijiBasicSaveTableViewCell.xib */; };
 		E33C652721CA264E00AEDF4B /* button+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C652621CA264E00AEDF4B /* button+extension.swift */; };
+		E34A66A621CF896B00F92336 /* DaiBanPersonDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34A66A521CF896B00F92336 /* DaiBanPersonDataController.swift */; };
+		E34A66A921CF897A00F92336 /* DaiBanPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34A66A721CF897A00F92336 /* DaiBanPersonViewController.swift */; };
+		E34A66AA21CF897A00F92336 /* DaiBanPersonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E34A66A821CF897A00F92336 /* DaiBanPersonViewController.xib */; };
 		E368099F21CB22C0000FCDC7 /* CaijiBasicDisplayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E368099E21CB22C0000FCDC7 /* CaijiBasicDisplayModel.swift */; };
 		E36809A121CB2376000FCDC7 /* CaijiSaveModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36809A021CB2376000FCDC7 /* CaijiSaveModel.swift */; };
 		E36809A321CB40AC000FCDC7 /* UIView + Cornner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36809A221CB40AC000FCDC7 /* UIView + Cornner.swift */; };
@@ -691,6 +694,9 @@
 		E33C652121CA1D0200AEDF4B /* CaijiBasicSaveTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaijiBasicSaveTableViewCell.swift; sourceTree = "<group>"; };
 		E33C652221CA1D0200AEDF4B /* CaijiBasicSaveTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CaijiBasicSaveTableViewCell.xib; sourceTree = "<group>"; };
 		E33C652621CA264E00AEDF4B /* button+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "button+extension.swift"; sourceTree = "<group>"; };
+		E34A66A521CF896B00F92336 /* DaiBanPersonDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaiBanPersonDataController.swift; sourceTree = "<group>"; };
+		E34A66A721CF897A00F92336 /* DaiBanPersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaiBanPersonViewController.swift; sourceTree = "<group>"; };
+		E34A66A821CF897A00F92336 /* DaiBanPersonViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DaiBanPersonViewController.xib; sourceTree = "<group>"; };
 		E368099E21CB22C0000FCDC7 /* CaijiBasicDisplayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaijiBasicDisplayModel.swift; sourceTree = "<group>"; };
 		E36809A021CB2376000FCDC7 /* CaijiSaveModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaijiSaveModel.swift; sourceTree = "<group>"; };
 		E36809A221CB40AC000FCDC7 /* UIView + Cornner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Cornner.swift"; sourceTree = "<group>"; };
@@ -2219,6 +2225,7 @@
 		E33C650221CA179A00AEDF4B /* 个人or亲属 */ = {
 			isa = PBXGroup;
 			children = (
+				E34A66A421CF893300F92336 /* 代办人 */,
 				E3ACE86C21CCAA6A005EBB02 /* 拍照 */,
 				E3ACE85F21CC809F005EBB02 /* 其它信息 */,
 				E3B68D5421CBB9600048F377 /* 监护人信息 */,
@@ -2310,6 +2317,16 @@
 				E33C652621CA264E00AEDF4B /* button+extension.swift */,
 			);
 			path = "button中图片位置";
+			sourceTree = "<group>";
+		};
+		E34A66A421CF893300F92336 /* 代办人 */ = {
+			isa = PBXGroup;
+			children = (
+				E34A66A521CF896B00F92336 /* DaiBanPersonDataController.swift */,
+				E34A66A721CF897A00F92336 /* DaiBanPersonViewController.swift */,
+				E34A66A821CF897A00F92336 /* DaiBanPersonViewController.xib */,
+			);
+			path = "代办人";
 			sourceTree = "<group>";
 		};
 		E36809A421CB5A56000FCDC7 /* 录入项cell */ = {
@@ -2815,6 +2832,7 @@
 				E316134E21B7631F00CF09B2 /* 使用说明.rtf in Resources */,
 				E31613E121B7631F00CF09B2 /* ConfirmLoginView.xib in Resources */,
 				E31613CA21B7631F00CF09B2 /* PersonMessageInputTableViewCell.xib in Resources */,
+				E34A66AA21CF897A00F92336 /* DaiBanPersonViewController.xib in Resources */,
 				E31613F421B7631F00CF09B2 /* LoginViewController.xib in Resources */,
 				E316135F21B7631F00CF09B2 /* SKPhotoBrowser.bundle in Resources */,
 				E31613CF21B7631F00CF09B2 /* PersonMessagePhotoTableViewCell.xib in Resources */,
@@ -2934,6 +2952,7 @@
 				E31613F021B7631F00CF09B2 /* SelectAreaPopupViewTableViewCell.swift in Sources */,
 				E31613F521B7631F00CF09B2 /* LoginViewController.swift in Sources */,
 				E316138521B7631F00CF09B2 /* MenuViewContainer.m in Sources */,
+				E34A66A621CF896B00F92336 /* DaiBanPersonDataController.swift in Sources */,
 				E33C64DD21C9DE5A00AEDF4B /* ZcznDetailTableViewCell.swift in Sources */,
 				E316136821B7631F00CF09B2 /* SelectDateView.swift in Sources */,
 				E316135A21B7631F00CF09B2 /* PoPSelectListView.swift in Sources */,
@@ -3151,6 +3170,7 @@
 				E36809B421CB745F000FCDC7 /* SelectViewController.swift in Sources */,
 				E31613AC21B7631F00CF09B2 /* Logistics.xcdatamodeld in Sources */,
 				E3160F7621B761FC00CF09B2 /* AppDelegate.swift in Sources */,
+				E34A66A921CF897A00F92336 /* DaiBanPersonViewController.swift in Sources */,
 				E36809A121CB2376000FCDC7 /* CaijiSaveModel.swift in Sources */,
 				E316135421B7631F00CF09B2 /* BRBaseView.m in Sources */,
 				E316139B21B7631F00CF09B2 /* UIView+TYAutoLayout.m in Sources */,
