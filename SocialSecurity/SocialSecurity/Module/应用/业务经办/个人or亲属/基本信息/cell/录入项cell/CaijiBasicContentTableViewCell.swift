@@ -13,7 +13,9 @@ protocol CaijiBasicContentSelectProtocol:class {
     func csrqClick()
     func zjyxqClick()
     func mzClick()
+    func txdzChange(_ height:CGFloat)
 }
+
 class CaijiBasicContentTableViewCell: UITableViewCell {
     
     @IBOutlet weak var waiBgViewHeight: NSLayoutConstraint!
@@ -29,7 +31,7 @@ class CaijiBasicContentTableViewCell: UITableViewCell {
     var tableView:UITableView!
     
     weak var pro:CaijiBasicContentSelectProtocol!
-
+    var indexPath:IndexPath!
     @IBOutlet weak var bgView: UIView!
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -48,15 +50,27 @@ class CaijiBasicContentTableViewCell: UITableViewCell {
         txdzTextView.showsVerticalScrollIndicator = false
         txdzTextView.showsHorizontalScrollIndicator = false
         txdzTextView.placeholder = "请输入通信地址"
+        txdzTextView.textColor = UIColor.darkGray
         
         bgView.clipsToBounds = true
         bgView.layer.borderWidth = 1
         bgView.layer.borderColor = UIColor.black.withAlphaComponent(0.2).cgColor
         
     }
-    func update(tableView:UITableView,model:CaijiSaveModel,isWrite:Bool){
+    func update(tableView:UITableView,model:CaijiSaveModel,isWrite:Bool,indexPath:IndexPath){
+        self.indexPath = indexPath
+        xmTextField.text = model.name
+        xbTextField.text = model.sex
+        zjlxTextField.text = model.zjlx
+        zjhmTextField.text = model.zjhm
         csrqTextField.text = model.csrq
-        zjyxqTextField.text = model.csrq
+        zjyxqTextField.text = model.zjyxq
+        mzTextField.text = model.mz
+        if model.txdz != ""{
+            txdzTextView.text = model.txdz
+        }else{
+            
+        }
         
         
         xmTextField.isEnabled = isWrite
@@ -70,7 +84,7 @@ class CaijiBasicContentTableViewCell: UITableViewCell {
         
         
         self.tableView = tableView
-        txdzTextView.text = "aaaa请输入通信地址请输入通信地址请输入通信地址请输入通信地址请输入通信地址1请输入通信地址2"
+//        txdzTextView.text = "aaaa请输入通信地址请输入通信地址请输入通信地址请输入通信地址请输入通信地址1请输入通信地址2"
          var temBounds = txdzTextView.bounds
         let constraint = CGSize(width: temBounds.size.width, height: CGFloat.greatestFiniteMagnitude)
         let size = txdzTextView.sizeThatFits(constraint)
@@ -122,6 +136,15 @@ extension CaijiBasicContentTableViewCell:UITextViewDelegate{
         
         if textView == (txdzTextView as UITextView){
             
+            var flag = false
+            for item in self.tableView.visibleCells{
+                if item == self{
+                    flag = true
+                }
+            }
+            if !flag{
+                self.tableView.scrollToRow(at: indexPath, at: .bottom, animated: false)
+            }
             var temBounds = textView.bounds
             
             let constraint = CGSize(width: temBounds.size.width, height: CGFloat.greatestFiniteMagnitude)
@@ -131,6 +154,7 @@ extension CaijiBasicContentTableViewCell:UITextViewDelegate{
             waiBgViewHeight.constant = 44 * 8 + size.height + 16
             txdzViewHeight.constant = size.height + 16
 //            model.sendCardAddress = textView.text
+            pro.txdzChange(waiBgViewHeight.constant + 16)
             UIView.performWithoutAnimation {
                 self.tableView.beginUpdates()
                 self.tableView.endUpdates()

@@ -10,8 +10,9 @@ import UIKit
 import ObjectMapper
 class CaijiBasicViewController: BaseViewController {
 
-    var idCardFrontModel:IdCardFrontModel = IdCardFrontModel()
-    var idCardBackModel:IdCardFrontModel = IdCardFrontModel()
+    var cellHeight:CGFloat = 417
+//    var idCardFrontModel:IdCardFrontModel = IdCardFrontModel()
+//    var idCardBackModel:IdCardFrontModel = IdCardFrontModel()
    
     var frontVc:UIViewController!
     var dateType = ""//0出生日期1证件有效期
@@ -41,8 +42,8 @@ extension CaijiBasicViewController{
         self.view.backgroundColor = viewBgColor
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.estimatedRowHeight = ScreenHeight
-        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 40
+//        tableView.rowHeight = UITableView.automaticDimension
         tableView.register("CaijiBasicIdCardTableViewCell")
         tableView.register("CaijiBasicContentTableViewCell")
         tableView.register("CaijiBasicSaveTableViewCell")
@@ -100,9 +101,16 @@ extension CaijiBasicViewController:UITableViewDelegate,UITableViewDataSource{
             let cell = CaijiBasicContentTableViewCell.loadCell(tableView)
             cell.pro = self
            
-            cell.update(tableView: tableView, model: dataController.saveModel, isWrite: isWrite)
+            cell.update(tableView: tableView, model: dataController.saveModel, isWrite: isWrite,indexPath:indexPath)
             return cell
             
+        }
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.row == 1{
+            return cellHeight
+        }else{
+            return UITableView.automaticDimension
         }
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -110,6 +118,7 @@ extension CaijiBasicViewController:UITableViewDelegate,UITableViewDataSource{
     }
 }
 extension CaijiBasicViewController:CaijiBasicIdCardPhotoClickProtoco{
+   
     func idCardClick(_ type: IdCardType) {
         weak var weakSelf = self
         if type == .zheng{
@@ -137,21 +146,53 @@ extension CaijiBasicViewController:CaijiBasicIdCardPhotoClickProtoco{
         }
     }
     func success(info:Any,type:Int){
+        weak var weakSelf = self
         if type == 0{
             OperationQueue.main.addOperation {
                 let str = self.getJSONStringFromDictionary(dictionary: info as! NSDictionary)
-                self.idCardFrontModel = Mapper<IdCardFrontModel>().map(JSONString: str)!
+                let temModel = Mapper<IdCardFrontModel>().map(JSONString: str)
+                if temModel != nil{
+                    weakSelf!.dataController.saveModel.name = temModel!.words_result.nameModel.words
+                    weakSelf!.dataController.saveModel.sex = temModel!.words_result.sexModel.words
+                    weakSelf!.dataController.saveModel.zjhm = temModel!.words_result.sfzhModel.words
+                    weakSelf!.dataController.saveModel.csrq = temModel!.words_result.csrqModel.words
+                    weakSelf!.dataController.saveModel.mz = temModel!.words_result.mzModel.words
+                    weakSelf!.dataController.saveModel.txdz = temModel!.words_result.zzModel.words
+                }
                 
                 
-                print("name = \(self.idCardFrontModel.words_result.nameModel.words)")
-                self.dismiss(animated: true, completion: nil)
+                self.dismiss(animated: true, completion: {
+                    weakSelf?.tableView.reloadRows(at: [IndexPath.init(row: 1, section: 0)], with: .none)
+                })
+                
+                
+                
             }
         }else{
             OperationQueue.main.addOperation {
                 let str = self.getJSONStringFromDictionary(dictionary: info as! NSDictionary)
-                self.idCardBackModel = Mapper<IdCardFrontModel>().map(JSONString: str)!
-                print("name = \(self.idCardBackModel.words_result.qfjgModel.words)")
-                self.dismiss(animated: true, completion: nil)
+                let temModel = Mapper<IdCardFrontModel>().map(JSONString: str)
+                if temModel != nil{
+                    if temModel!.words_result.sxrqModel.words != "" && temModel!.words_result.sxrqModel.words != "长期"{
+                        let dateFormatter = DateFormatter()
+                        dateFormatter.dateFormat = "yyyyMMdd"
+                        let temDate = dateFormatter.date(from: temModel!.words_result.sxrqModel.words)
+                        
+                        let dateFormatter2 = DateFormatter()
+                        dateFormatter2.dateFormat = "yyyy-MM-dd"
+                        let zjyxq = dateFormatter2.string(from: temDate!)
+                        
+                        
+                        weakSelf!.dataController.saveModel.zjyxq = zjyxq
+                    }else if temModel!.words_result.sxrqModel.words == "长期"{
+                        weakSelf!.dataController.saveModel.zjyxq = "长期"
+                    }
+                    
+                   
+                }
+                self.dismiss(animated: true, completion: {
+                    weakSelf?.tableView.reloadRows(at: [IndexPath.init(row: 1, section: 0)], with: .none)
+                })
             }
             
         }
@@ -184,6 +225,10 @@ extension CaijiBasicViewController:CaijiBasicIdCardPhotoClickProtoco{
     
 }
 extension CaijiBasicViewController:CaijiBasicNextProtocol,CaijiBasicContentSelectProtocol{
+    func txdzChange(_ height: CGFloat) {
+        cellHeight = height
+    }
+    
     func zjlxClick() {
         print("证件类型")
     }

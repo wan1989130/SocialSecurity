@@ -78,6 +78,7 @@ class CaijiBasicIdCardTableViewCell: UITableViewCell {
             idCardViewHeightConstraint.constant = 0
         }
         
+        
     }
     class func loadCell(_ tableView:UITableView)-> CaijiBasicIdCardTableViewCell{
         let cellId:String = "CaijiBasicIdCardTableViewCellId"

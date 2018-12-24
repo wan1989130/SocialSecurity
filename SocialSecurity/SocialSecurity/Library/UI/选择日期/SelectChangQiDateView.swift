@@ -62,10 +62,11 @@ class SelectChangQiDateView: UIView {
         let changqi = UIAlertAction(title: "长期", style: .default) { (UIAlertAction) in
             self.pro?.selectDate(dateString: "长期")
         }
-       
+        
+        alert?.addAction(changqi)
         alert?.addAction(ok)
         alert?.addAction(cancel)
-        alert?.addAction(changqi)
+
         
         
     }

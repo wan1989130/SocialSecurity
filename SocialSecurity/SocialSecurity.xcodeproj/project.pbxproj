@@ -279,6 +279,7 @@
 		E34A66A621CF896B00F92336 /* DaiBanPersonDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34A66A521CF896B00F92336 /* DaiBanPersonDataController.swift */; };
 		E34A66A921CF897A00F92336 /* DaiBanPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34A66A721CF897A00F92336 /* DaiBanPersonViewController.swift */; };
 		E34A66AA21CF897A00F92336 /* DaiBanPersonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E34A66A821CF897A00F92336 /* DaiBanPersonViewController.xib */; };
+		E35B8E5F21D0C61F00D48DF5 /* aip.license in Resources */ = {isa = PBXBuildFile; fileRef = E35B8E5E21D0C61F00D48DF5 /* aip.license */; };
 		E368099F21CB22C0000FCDC7 /* CaijiBasicDisplayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E368099E21CB22C0000FCDC7 /* CaijiBasicDisplayModel.swift */; };
 		E36809A121CB2376000FCDC7 /* CaijiSaveModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36809A021CB2376000FCDC7 /* CaijiSaveModel.swift */; };
 		E36809A321CB40AC000FCDC7 /* UIView + Cornner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36809A221CB40AC000FCDC7 /* UIView + Cornner.swift */; };
@@ -335,7 +336,6 @@
 		E3F2D6F721D0A288004E7597 /* AipBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3F2D6F221D0A288004E7597 /* AipBase.framework */; };
 		E3F2D6F821D0A288004E7597 /* AipBase.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E3F2D6F221D0A288004E7597 /* AipBase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E3F2D6FD21D0ABD0004E7597 /* IdCardFrontModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F2D6FC21D0ABD0004E7597 /* IdCardFrontModel.swift */; };
-		E3F2D6FF21D0B2B2004E7597 /* aip.license in Resources */ = {isa = PBXBuildFile; fileRef = E3F2D6FE21D0B2B1004E7597 /* aip.license */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -721,6 +721,7 @@
 		E34A66A521CF896B00F92336 /* DaiBanPersonDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaiBanPersonDataController.swift; sourceTree = "<group>"; };
 		E34A66A721CF897A00F92336 /* DaiBanPersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaiBanPersonViewController.swift; sourceTree = "<group>"; };
 		E34A66A821CF897A00F92336 /* DaiBanPersonViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DaiBanPersonViewController.xib; sourceTree = "<group>"; };
+		E35B8E5E21D0C61F00D48DF5 /* aip.license */ = {isa = PBXFileReference; lastKnownFileType = file; path = aip.license; sourceTree = "<group>"; };
 		E368099E21CB22C0000FCDC7 /* CaijiBasicDisplayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaijiBasicDisplayModel.swift; sourceTree = "<group>"; };
 		E36809A021CB2376000FCDC7 /* CaijiSaveModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaijiSaveModel.swift; sourceTree = "<group>"; };
 		E36809A221CB40AC000FCDC7 /* UIView + Cornner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Cornner.swift"; sourceTree = "<group>"; };
@@ -774,7 +775,6 @@
 		E3F2D6F121D0A287004E7597 /* AipOcrSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AipOcrSdk.framework; path = lib/AipOcrSdk.framework; sourceTree = "<group>"; };
 		E3F2D6F221D0A288004E7597 /* AipBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AipBase.framework; path = lib/AipBase.framework; sourceTree = "<group>"; };
 		E3F2D6FC21D0ABD0004E7597 /* IdCardFrontModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdCardFrontModel.swift; sourceTree = "<group>"; };
-		E3F2D6FE21D0B2B1004E7597 /* aip.license */ = {isa = PBXFileReference; lastKnownFileType = file; path = aip.license; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1932,7 +1932,7 @@
 		E316132121B7631F00CF09B2 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				E3F2D6FE21D0B2B1004E7597 /* aip.license */,
+				E35B8E5E21D0C61F00D48DF5 /* aip.license */,
 				E316132221B7631F00CF09B2 /* MSDataProvider+Common.swift */,
 				E316132321B7631F00CF09B2 /* Config.swift */,
 				E316132421B7631F00CF09B2 /* MyConfig.swift */,
@@ -2858,7 +2858,7 @@
 				E33C650B21CA180C00AEDF4B /* IdCardQueryViewController.xib in Resources */,
 				E316135B21B7631F00CF09B2 /* PopSelectListTableViewCell.xib in Resources */,
 				E316138C21B7631F00CF09B2 /* PublishSourceHeaderView.xib in Resources */,
-				E3F2D6FF21D0B2B2004E7597 /* aip.license in Resources */,
+				E35B8E5F21D0C61F00D48DF5 /* aip.license in Resources */,
 				E31EF63E21BFD81800E1C3E4 /* YwjbViewController.xib in Resources */,
 				E316135D21B7631F00CF09B2 /* PoPSelectListView.xib in Resources */,
 				E31613D721B7631F00CF09B2 /* CompanyRegisterTipTableViewCell.xib in Resources */,
