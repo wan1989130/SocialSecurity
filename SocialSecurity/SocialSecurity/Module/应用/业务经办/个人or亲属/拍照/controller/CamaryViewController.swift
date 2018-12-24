@@ -173,7 +173,7 @@ extension CamaryViewController: UIImagePickerControllerDelegate,UINavigationCont
                     ((r - g) > 10 || (g - r) > 10) ||
                     ((g - b) > 10 || (b - g) > 10) {
                     LHAlertView.showTipAlertWithTitle("图片背景不是白色")
-//                    photoButton.setBackgroundImage(UIImage.init(named: "ic_id_photo"), for: .normal)
+                    photoButton.setBackgroundImage(UIImage.init(named: "ic_id_photo"), for: .normal)
                     
                     return false
                 }
@@ -192,7 +192,7 @@ extension CamaryViewController: UIImagePickerControllerDelegate,UINavigationCont
                 }
             }
         }
-//        photoButton.setBackgroundImage(UIImage.init(named: "ic_id_photo"), for: .normal)
+        photoButton.setBackgroundImage(UIImage.init(named: "ic_id_photo"), for: .normal)
         LHAlertView.showTipAlertWithTitle("照片不能是黑白照片")
         return false
     }
