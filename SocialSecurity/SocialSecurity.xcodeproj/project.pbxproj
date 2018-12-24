@@ -328,6 +328,14 @@
 		E3B68D5921CBB9AA0048F377 /* CaijiJianHuRenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B68D5721CBB9AA0048F377 /* CaijiJianHuRenViewController.swift */; };
 		E3B68D5A21CBB9AA0048F377 /* CaijiJianHuRenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3B68D5821CBB9AA0048F377 /* CaijiJianHuRenViewController.xib */; };
 		E3B68D5C21CBB9B80048F377 /* CaijiJianHuRenDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B68D5B21CBB9B80048F377 /* CaijiJianHuRenDataController.swift */; };
+		E3F2D6F321D0A288004E7597 /* IdcardQuality.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3F2D6F021D0A287004E7597 /* IdcardQuality.framework */; };
+		E3F2D6F421D0A288004E7597 /* IdcardQuality.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E3F2D6F021D0A287004E7597 /* IdcardQuality.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E3F2D6F521D0A288004E7597 /* AipOcrSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3F2D6F121D0A287004E7597 /* AipOcrSdk.framework */; };
+		E3F2D6F621D0A288004E7597 /* AipOcrSdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E3F2D6F121D0A287004E7597 /* AipOcrSdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E3F2D6F721D0A288004E7597 /* AipBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3F2D6F221D0A288004E7597 /* AipBase.framework */; };
+		E3F2D6F821D0A288004E7597 /* AipBase.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E3F2D6F221D0A288004E7597 /* AipBase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E3F2D6FD21D0ABD0004E7597 /* IdCardFrontModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F2D6FC21D0ABD0004E7597 /* IdCardFrontModel.swift */; };
+		E3F2D6FF21D0B2B2004E7597 /* aip.license in Resources */ = {isa = PBXBuildFile; fileRef = E3F2D6FE21D0B2B1004E7597 /* aip.license */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -346,6 +354,22 @@
 			remoteInfo = SocialSecurity;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E3F2D6F921D0A288004E7597 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E3F2D6F821D0A288004E7597 /* AipBase.framework in Embed Frameworks */,
+				E3F2D6F421D0A288004E7597 /* IdcardQuality.framework in Embed Frameworks */,
+				E3F2D6F621D0A288004E7597 /* AipOcrSdk.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3AE74293051A04F2E7E449DA /* Pods-SocialSecurity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialSecurity.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialSecurity/Pods-SocialSecurity.release.xcconfig"; sourceTree = "<group>"; };
@@ -746,6 +770,11 @@
 		E3B68D5721CBB9AA0048F377 /* CaijiJianHuRenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaijiJianHuRenViewController.swift; sourceTree = "<group>"; };
 		E3B68D5821CBB9AA0048F377 /* CaijiJianHuRenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CaijiJianHuRenViewController.xib; sourceTree = "<group>"; };
 		E3B68D5B21CBB9B80048F377 /* CaijiJianHuRenDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaijiJianHuRenDataController.swift; sourceTree = "<group>"; };
+		E3F2D6F021D0A287004E7597 /* IdcardQuality.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IdcardQuality.framework; path = lib/IdcardQuality.framework; sourceTree = "<group>"; };
+		E3F2D6F121D0A287004E7597 /* AipOcrSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AipOcrSdk.framework; path = lib/AipOcrSdk.framework; sourceTree = "<group>"; };
+		E3F2D6F221D0A288004E7597 /* AipBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AipBase.framework; path = lib/AipBase.framework; sourceTree = "<group>"; };
+		E3F2D6FC21D0ABD0004E7597 /* IdCardFrontModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdCardFrontModel.swift; sourceTree = "<group>"; };
+		E3F2D6FE21D0B2B1004E7597 /* aip.license */ = {isa = PBXFileReference; lastKnownFileType = file; path = aip.license; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -754,7 +783,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E316138421B7631F00CF09B2 /* libmp3lame.a in Frameworks */,
+				E3F2D6F721D0A288004E7597 /* AipBase.framework in Frameworks */,
 				AC525E65F46EEC70AB6B111A /* Pods_SocialSecurity.framework in Frameworks */,
+				E3F2D6F321D0A288004E7597 /* IdcardQuality.framework in Frameworks */,
+				E3F2D6F521D0A288004E7597 /* AipOcrSdk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -839,6 +871,9 @@
 		E3160F6921B761FC00CF09B2 = {
 			isa = PBXGroup;
 			children = (
+				E3F2D6F221D0A288004E7597 /* AipBase.framework */,
+				E3F2D6F121D0A287004E7597 /* AipOcrSdk.framework */,
+				E3F2D6F021D0A287004E7597 /* IdcardQuality.framework */,
 				E3160F7421B761FC00CF09B2 /* SocialSecurity */,
 				E3160F8921B761FE00CF09B2 /* SocialSecurityTests */,
 				E3160F9421B761FE00CF09B2 /* SocialSecurityUITests */,
@@ -1897,6 +1932,7 @@
 		E316132121B7631F00CF09B2 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				E3F2D6FE21D0B2B1004E7597 /* aip.license */,
 				E316132221B7631F00CF09B2 /* MSDataProvider+Common.swift */,
 				E316132321B7631F00CF09B2 /* Config.swift */,
 				E316132421B7631F00CF09B2 /* MyConfig.swift */,
@@ -2289,6 +2325,7 @@
 			children = (
 				E368099E21CB22C0000FCDC7 /* CaijiBasicDisplayModel.swift */,
 				E36809A021CB2376000FCDC7 /* CaijiSaveModel.swift */,
+				E3F2D6FC21D0ABD0004E7597 /* IdCardFrontModel.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -2671,6 +2708,7 @@
 				E3160F6F21B761FC00CF09B2 /* Frameworks */,
 				E3160F7021B761FC00CF09B2 /* Resources */,
 				9A4AEBD117E501396B4C1E94 /* [CP] Embed Pods Frameworks */,
+				E3F2D6F921D0A288004E7597 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -2820,6 +2858,7 @@
 				E33C650B21CA180C00AEDF4B /* IdCardQueryViewController.xib in Resources */,
 				E316135B21B7631F00CF09B2 /* PopSelectListTableViewCell.xib in Resources */,
 				E316138C21B7631F00CF09B2 /* PublishSourceHeaderView.xib in Resources */,
+				E3F2D6FF21D0B2B2004E7597 /* aip.license in Resources */,
 				E31EF63E21BFD81800E1C3E4 /* YwjbViewController.xib in Resources */,
 				E316135D21B7631F00CF09B2 /* PoPSelectListView.xib in Resources */,
 				E31613D721B7631F00CF09B2 /* CompanyRegisterTipTableViewCell.xib in Resources */,
@@ -2958,6 +2997,7 @@
 				E316135A21B7631F00CF09B2 /* PoPSelectListView.swift in Sources */,
 				E31613EA21B7631F00CF09B2 /* UserModel.swift in Sources */,
 				E316146621B7631F00CF09B2 /* UIViewController+LH.swift in Sources */,
+				E3F2D6FD21D0ABD0004E7597 /* IdCardFrontModel.swift in Sources */,
 				E31613B121B7631F00CF09B2 /* SBJsonUTF8Stream.m in Sources */,
 				E3ACE86621CC80E3005EBB02 /* CaijiQiTaViewController.swift in Sources */,
 				E316138321B7631F00CF09B2 /* CafToMp3.m in Sources */,
@@ -3361,6 +3401,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZN9FP4NC8P;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib",
+				);
 				INFOPLIST_FILE = SocialSecurity/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -3371,7 +3415,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/SocialSecurity/Library/UI/CafToMp3",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = cn.net.huihai.SocialSecurity;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.net.zongheng.SocialSecurity;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SocialSecurity/SocialSecurity-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -3390,6 +3434,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZN9FP4NC8P;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib",
+				);
 				INFOPLIST_FILE = SocialSecurity/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -3400,7 +3448,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/SocialSecurity/Library/UI/CafToMp3",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = cn.net.huihai.SocialSecurity;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.net.zongheng.SocialSecurity;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SocialSecurity/SocialSecurity-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;

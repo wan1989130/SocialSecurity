@@ -7,10 +7,13 @@
 //
 
 import UIKit
-
+import ObjectMapper
 class CaijiBasicViewController: BaseViewController {
 
+    var idCardFrontModel:IdCardFrontModel = IdCardFrontModel()
+    var idCardBackModel:IdCardFrontModel = IdCardFrontModel()
    
+    var frontVc:UIViewController!
     var dateType = ""//0出生日期1证件有效期
     var ageSelectIndex = -1
     var csrq = ""
@@ -23,6 +26,7 @@ class CaijiBasicViewController: BaseViewController {
  
         initData()
         initUI()
+        
     }
     deinit {
         print("基础信息页面销毁")
@@ -33,6 +37,7 @@ class CaijiBasicViewController: BaseViewController {
 }
 extension CaijiBasicViewController{
     fileprivate func initUI(){
+        initIdCardOcr()
         self.view.backgroundColor = viewBgColor
         tableView.delegate = self
         tableView.dataSource = self
@@ -55,12 +60,23 @@ extension CaijiBasicViewController{
             }
             
         }
-        
-        
         if dataController.type == "2"{
             isWrite = false
         }
         
+        
+    }
+    func initIdCardOcr(){
+        let licenseFile = Bundle.main.path(forResource: "aip", ofType: "license")
+        let licenseFileData = NSData(contentsOfFile: licenseFile!) as! Data
+//        let licenseFileData:NSData = try! NSData.init(contentsOfFile: licenseFile!)
+        
+        if licenseFileData.count > 0{
+             AipOcrService.shard()?.auth(withLicenseFileData: licenseFileData)
+        }else{
+           print("失败")
+            
+        }
     }
     
    
@@ -89,19 +105,83 @@ extension CaijiBasicViewController:UITableViewDelegate,UITableViewDataSource{
             
         }
     }
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
 }
 extension CaijiBasicViewController:CaijiBasicIdCardPhotoClickProtoco{
     func idCardClick(_ type: IdCardType) {
+        weak var weakSelf = self
         if type == .zheng{
-            print("正")
+            let vc = AipCaptureCardVC.viewController(with: .idCardFont) { (image) in
+                AipOcrService.shard()?.detectIdCardFront(from: image, withOptions: nil, successHandler: { (info) in
+                    weakSelf?.success(info:info,type:0)
+                }, failHandler: { (error) in
+                    weakSelf?.dismiss(animated: true, completion: nil)
+                    print("error = \(error.debugDescription)")
+                })
+            }
+            self.present(vc!, animated: true, completion: nil)
+            
         }else if type == .fan{
-            print("反")
+            
+            let vc = AipCaptureCardVC.viewController(with: .idCardBack) { (image) in
+                AipOcrService.shard()?.detectIdCardBack(from: image, withOptions: nil, successHandler: { (info) in
+                    weakSelf?.success(info:info,type:1)
+                }, failHandler: { (error) in
+                    weakSelf?.dismiss(animated: true, completion: nil)
+                    print("error = \(error.debugDescription)")
+                })
+            }
+            self.present(vc!, animated: true, completion: nil)
         }
     }
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-
+    func success(info:Any,type:Int){
+        if type == 0{
+            OperationQueue.main.addOperation {
+                let str = self.getJSONStringFromDictionary(dictionary: info as! NSDictionary)
+                self.idCardFrontModel = Mapper<IdCardFrontModel>().map(JSONString: str)!
+                
+                
+                print("name = \(self.idCardFrontModel.words_result.nameModel.words)")
+                self.dismiss(animated: true, completion: nil)
+            }
+        }else{
+            OperationQueue.main.addOperation {
+                let str = self.getJSONStringFromDictionary(dictionary: info as! NSDictionary)
+                self.idCardBackModel = Mapper<IdCardFrontModel>().map(JSONString: str)!
+                print("name = \(self.idCardBackModel.words_result.qfjgModel.words)")
+                self.dismiss(animated: true, completion: nil)
+            }
+            
+        }
+        
     }
+   
+    func faile(){
+        OperationQueue.main.addOperation {
+            self.dismiss(animated: true, completion: nil)
+        }
+        
+    }
+    /**
+     字典转换为JSONString
+     
+     - parameter dictionary: 字典参数
+     
+     - returns: JSONString
+     */
+    func getJSONStringFromDictionary(dictionary:NSDictionary) -> String {
+        if (!JSONSerialization.isValidJSONObject(dictionary)) {
+            print("无法解析出JSONString")
+            return ""
+        }
+        let data : NSData! = try? JSONSerialization.data(withJSONObject: dictionary, options: []) as NSData!
+        let JSONString = NSString(data:data as Data,encoding: String.Encoding.utf8.rawValue)
+        return JSONString! as String
+        
+    }
+    
 }
 extension CaijiBasicViewController:CaijiBasicNextProtocol,CaijiBasicContentSelectProtocol{
     func zjlxClick() {

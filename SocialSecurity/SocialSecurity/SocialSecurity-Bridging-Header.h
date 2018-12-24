@@ -43,3 +43,6 @@
 #import "BRPickerView.h"
 //部分切圆角
 #import "JQRadiusView.h"
+
+//百度身份证识别
+#import <AipOcrSdk/AipOcrSdk.h>
