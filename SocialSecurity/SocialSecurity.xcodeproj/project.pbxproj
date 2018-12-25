@@ -313,6 +313,12 @@
 		E3848B7D21C912E900B9AC27 /* UpdatePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3848B7B21C912E900B9AC27 /* UpdatePasswordViewController.swift */; };
 		E3848B7E21C912E900B9AC27 /* UpdatePasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3848B7C21C912E900B9AC27 /* UpdatePasswordViewController.xib */; };
 		E3848B8021C912FB00B9AC27 /* UpdatePasswordDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3848B7F21C912FB00B9AC27 /* UpdatePasswordDataController.swift */; };
+		E3871EC821D22E6C00A918FB /* AipBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3871EC521D22E6B00A918FB /* AipBase.framework */; };
+		E3871EC921D22E6C00A918FB /* AipBase.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E3871EC521D22E6B00A918FB /* AipBase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E3871ECA21D22E6C00A918FB /* AipOcrSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3871EC621D22E6B00A918FB /* AipOcrSdk.framework */; };
+		E3871ECB21D22E6C00A918FB /* AipOcrSdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E3871EC621D22E6B00A918FB /* AipOcrSdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E3871ECC21D22E6C00A918FB /* IdcardQuality.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3871EC721D22E6B00A918FB /* IdcardQuality.framework */; };
+		E3871ECD21D22E6C00A918FB /* IdcardQuality.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E3871EC721D22E6B00A918FB /* IdcardQuality.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E38CA3FB21C0943800455B81 /* ApplyViewControllerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38CA3F921C0943800455B81 /* ApplyViewControllerCollectionViewCell.swift */; };
 		E38CA3FC21C0943800455B81 /* ApplyViewControllerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E38CA3FA21C0943800455B81 /* ApplyViewControllerCollectionViewCell.xib */; };
 		E3ACE86321CC80D3005EBB02 /* CaijiQiTaDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ACE86221CC80D3005EBB02 /* CaijiQiTaDataController.swift */; };
@@ -329,12 +335,6 @@
 		E3B68D5921CBB9AA0048F377 /* CaijiJianHuRenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B68D5721CBB9AA0048F377 /* CaijiJianHuRenViewController.swift */; };
 		E3B68D5A21CBB9AA0048F377 /* CaijiJianHuRenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3B68D5821CBB9AA0048F377 /* CaijiJianHuRenViewController.xib */; };
 		E3B68D5C21CBB9B80048F377 /* CaijiJianHuRenDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B68D5B21CBB9B80048F377 /* CaijiJianHuRenDataController.swift */; };
-		E3F2D6F321D0A288004E7597 /* IdcardQuality.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3F2D6F021D0A287004E7597 /* IdcardQuality.framework */; };
-		E3F2D6F421D0A288004E7597 /* IdcardQuality.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E3F2D6F021D0A287004E7597 /* IdcardQuality.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E3F2D6F521D0A288004E7597 /* AipOcrSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3F2D6F121D0A287004E7597 /* AipOcrSdk.framework */; };
-		E3F2D6F621D0A288004E7597 /* AipOcrSdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E3F2D6F121D0A287004E7597 /* AipOcrSdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E3F2D6F721D0A288004E7597 /* AipBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3F2D6F221D0A288004E7597 /* AipBase.framework */; };
-		E3F2D6F821D0A288004E7597 /* AipBase.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E3F2D6F221D0A288004E7597 /* AipBase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E3F2D6FD21D0ABD0004E7597 /* IdCardFrontModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F2D6FC21D0ABD0004E7597 /* IdCardFrontModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -362,9 +362,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E3F2D6F821D0A288004E7597 /* AipBase.framework in Embed Frameworks */,
-				E3F2D6F421D0A288004E7597 /* IdcardQuality.framework in Embed Frameworks */,
-				E3F2D6F621D0A288004E7597 /* AipOcrSdk.framework in Embed Frameworks */,
+				E3871EC921D22E6C00A918FB /* AipBase.framework in Embed Frameworks */,
+				E3871ECB21D22E6C00A918FB /* AipOcrSdk.framework in Embed Frameworks */,
+				E3871ECD21D22E6C00A918FB /* IdcardQuality.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -755,6 +755,9 @@
 		E3848B7B21C912E900B9AC27 /* UpdatePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePasswordViewController.swift; sourceTree = "<group>"; };
 		E3848B7C21C912E900B9AC27 /* UpdatePasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UpdatePasswordViewController.xib; sourceTree = "<group>"; };
 		E3848B7F21C912FB00B9AC27 /* UpdatePasswordDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePasswordDataController.swift; sourceTree = "<group>"; };
+		E3871EC521D22E6B00A918FB /* AipBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AipBase.framework; path = lib/AipBase.framework; sourceTree = "<group>"; };
+		E3871EC621D22E6B00A918FB /* AipOcrSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AipOcrSdk.framework; path = lib/AipOcrSdk.framework; sourceTree = "<group>"; };
+		E3871EC721D22E6B00A918FB /* IdcardQuality.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IdcardQuality.framework; path = lib/IdcardQuality.framework; sourceTree = "<group>"; };
 		E38CA3F921C0943800455B81 /* ApplyViewControllerCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplyViewControllerCollectionViewCell.swift; sourceTree = "<group>"; };
 		E38CA3FA21C0943800455B81 /* ApplyViewControllerCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ApplyViewControllerCollectionViewCell.xib; sourceTree = "<group>"; };
 		E3ACE86221CC80D3005EBB02 /* CaijiQiTaDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaijiQiTaDataController.swift; sourceTree = "<group>"; };
@@ -771,9 +774,6 @@
 		E3B68D5721CBB9AA0048F377 /* CaijiJianHuRenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaijiJianHuRenViewController.swift; sourceTree = "<group>"; };
 		E3B68D5821CBB9AA0048F377 /* CaijiJianHuRenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CaijiJianHuRenViewController.xib; sourceTree = "<group>"; };
 		E3B68D5B21CBB9B80048F377 /* CaijiJianHuRenDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaijiJianHuRenDataController.swift; sourceTree = "<group>"; };
-		E3F2D6F021D0A287004E7597 /* IdcardQuality.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IdcardQuality.framework; path = lib/IdcardQuality.framework; sourceTree = "<group>"; };
-		E3F2D6F121D0A287004E7597 /* AipOcrSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AipOcrSdk.framework; path = lib/AipOcrSdk.framework; sourceTree = "<group>"; };
-		E3F2D6F221D0A288004E7597 /* AipBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AipBase.framework; path = lib/AipBase.framework; sourceTree = "<group>"; };
 		E3F2D6FC21D0ABD0004E7597 /* IdCardFrontModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdCardFrontModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -782,11 +782,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3871ECC21D22E6C00A918FB /* IdcardQuality.framework in Frameworks */,
+				E3871EC821D22E6C00A918FB /* AipBase.framework in Frameworks */,
 				E316138421B7631F00CF09B2 /* libmp3lame.a in Frameworks */,
-				E3F2D6F721D0A288004E7597 /* AipBase.framework in Frameworks */,
 				AC525E65F46EEC70AB6B111A /* Pods_SocialSecurity.framework in Frameworks */,
-				E3F2D6F321D0A288004E7597 /* IdcardQuality.framework in Frameworks */,
-				E3F2D6F521D0A288004E7597 /* AipOcrSdk.framework in Frameworks */,
+				E3871ECA21D22E6C00A918FB /* AipOcrSdk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -871,9 +871,9 @@
 		E3160F6921B761FC00CF09B2 = {
 			isa = PBXGroup;
 			children = (
-				E3F2D6F221D0A288004E7597 /* AipBase.framework */,
-				E3F2D6F121D0A287004E7597 /* AipOcrSdk.framework */,
-				E3F2D6F021D0A287004E7597 /* IdcardQuality.framework */,
+				E3871EC521D22E6B00A918FB /* AipBase.framework */,
+				E3871EC621D22E6B00A918FB /* AipOcrSdk.framework */,
+				E3871EC721D22E6B00A918FB /* IdcardQuality.framework */,
 				E3160F7421B761FC00CF09B2 /* SocialSecurity */,
 				E3160F8921B761FE00CF09B2 /* SocialSecurityTests */,
 				E3160F9421B761FE00CF09B2 /* SocialSecurityUITests */,
