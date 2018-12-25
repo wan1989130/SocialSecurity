@@ -112,7 +112,7 @@ extension DetailWebviewViewController:WKNavigationDelegate,WKUIDelegate{
             let contentData = fileManager.contents(atPath: path2)
             let contentStr = String(data: contentData!, encoding: String.Encoding.utf8)
             if contentStr != nil{
-                let contentStrReplace = (contentStr as! NSString).replacingOccurrences(of: "姓名", with: "aa")
+                let contentStrReplace = (contentStr as! NSString).replacingOccurrences(of: "##32", with: "https://js.tuguaishou.com/start-design/20180326/28.jpg")
                 
                 try contentStrReplace.write(to: URL.init(fileURLWithPath: path2), atomically: true, encoding: String.Encoding.utf8)
             }

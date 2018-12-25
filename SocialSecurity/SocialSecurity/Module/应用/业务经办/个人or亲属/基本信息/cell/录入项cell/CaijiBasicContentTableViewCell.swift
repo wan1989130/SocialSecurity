@@ -29,7 +29,7 @@ class CaijiBasicContentTableViewCell: UITableViewCell {
     @IBOutlet weak var mzTextField: UITextField!
     @IBOutlet weak var txdzTextView: UIPlaceholderTextView!
     var tableView:UITableView!
-    
+    var model:CaijiSaveModel!
     weak var pro:CaijiBasicContentSelectProtocol!
     var indexPath:IndexPath!
     @IBOutlet weak var bgView: UIView!
@@ -58,6 +58,7 @@ class CaijiBasicContentTableViewCell: UITableViewCell {
         
     }
     func update(tableView:UITableView,model:CaijiSaveModel,isWrite:Bool,indexPath:IndexPath){
+        self.model = model
         self.indexPath = indexPath
         xmTextField.text = model.name
         xbTextField.text = model.sex
@@ -132,6 +133,34 @@ extension CaijiBasicContentTableViewCell:UITextFieldDelegate{
     }
 }
 extension CaijiBasicContentTableViewCell:UITextViewDelegate{
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        if textField == xmTextField{//姓名
+            let currentText = textField.text ?? ""
+            let newText = (currentText as NSString).replacingCharacters(in: range, with: string)
+            if newText.characters.count >= 18{
+                xmTextField.text = (newText as NSString).substring(to: 18)
+                model.name = newText
+                return false
+            }else{
+                model.name = newText
+            }
+        }else if textField == zjhmTextField{//证件号码
+            let currentText = textField.text ?? ""
+            let newText = (currentText as NSString).replacingCharacters(in: range, with: string)
+            if newText.characters.count >= 18{
+                zjhmTextField.text = (newText as NSString).substring(to: 18)
+                model.zjhm = newText
+                return false
+            }else{
+                model.zjhm = newText
+            }
+        }
+        
+        
+        return true
+    }
+
+    
     func textViewDidChange(_ textView: UITextView) {
         
         if textView == (txdzTextView as UITextView){
@@ -145,6 +174,14 @@ extension CaijiBasicContentTableViewCell:UITextViewDelegate{
             if !flag{
                 self.tableView.scrollToRow(at: indexPath, at: .bottom, animated: false)
             }
+            if (textView.markedTextRange == nil && textView.text.characters.count >= 50) {
+                if textView.text != nil{
+                    textView.text = (textView.text! as NSString).substring(to: 50)
+                    model.txdz = textView.text
+                }                
+            }
+            model.txdz = textView.text
+            
             var temBounds = textView.bounds
             
             let constraint = CGSize(width: temBounds.size.width, height: CGFloat.greatestFiniteMagnitude)
