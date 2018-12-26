@@ -280,6 +280,11 @@
 		E34A66A921CF897A00F92336 /* DaiBanPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34A66A721CF897A00F92336 /* DaiBanPersonViewController.swift */; };
 		E34A66AA21CF897A00F92336 /* DaiBanPersonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E34A66A821CF897A00F92336 /* DaiBanPersonViewController.xib */; };
 		E35B8E5F21D0C61F00D48DF5 /* aip.license in Resources */ = {isa = PBXBuildFile; fileRef = E35B8E5E21D0C61F00D48DF5 /* aip.license */; };
+		E362E4EE21D360FB005E60B9 /* PopupSelectDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E362E4EC21D360FB005E60B9 /* PopupSelectDayView.swift */; };
+		E362E4EF21D360FB005E60B9 /* PopupSelectDayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E362E4ED21D360FB005E60B9 /* PopupSelectDayView.xib */; };
+		E362E4F121D36110005E60B9 /* UIView + Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = E362E4F021D36110005E60B9 /* UIView + Load.swift */; };
+		E362E4F321D3627F005E60B9 /* HSPopupSelectDayView示例代码.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E362E4F221D3627F005E60B9 /* HSPopupSelectDayView示例代码.rtf */; };
+		E362E4F621D365A4005E60B9 /* PhoneType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E362E4F521D365A3005E60B9 /* PhoneType.swift */; };
 		E368099F21CB22C0000FCDC7 /* CaijiBasicDisplayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E368099E21CB22C0000FCDC7 /* CaijiBasicDisplayModel.swift */; };
 		E36809A121CB2376000FCDC7 /* CaijiSaveModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36809A021CB2376000FCDC7 /* CaijiSaveModel.swift */; };
 		E36809A321CB40AC000FCDC7 /* UIView + Cornner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36809A221CB40AC000FCDC7 /* UIView + Cornner.swift */; };
@@ -722,6 +727,11 @@
 		E34A66A721CF897A00F92336 /* DaiBanPersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaiBanPersonViewController.swift; sourceTree = "<group>"; };
 		E34A66A821CF897A00F92336 /* DaiBanPersonViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DaiBanPersonViewController.xib; sourceTree = "<group>"; };
 		E35B8E5E21D0C61F00D48DF5 /* aip.license */ = {isa = PBXFileReference; lastKnownFileType = file; path = aip.license; sourceTree = "<group>"; };
+		E362E4EC21D360FB005E60B9 /* PopupSelectDayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupSelectDayView.swift; sourceTree = "<group>"; };
+		E362E4ED21D360FB005E60B9 /* PopupSelectDayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopupSelectDayView.xib; sourceTree = "<group>"; };
+		E362E4F021D36110005E60B9 /* UIView + Load.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Load.swift"; sourceTree = "<group>"; };
+		E362E4F221D3627F005E60B9 /* HSPopupSelectDayView示例代码.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "HSPopupSelectDayView示例代码.rtf"; sourceTree = "<group>"; };
+		E362E4F521D365A3005E60B9 /* PhoneType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneType.swift; sourceTree = "<group>"; };
 		E368099E21CB22C0000FCDC7 /* CaijiBasicDisplayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaijiBasicDisplayModel.swift; sourceTree = "<group>"; };
 		E36809A021CB2376000FCDC7 /* CaijiSaveModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaijiSaveModel.swift; sourceTree = "<group>"; };
 		E36809A221CB40AC000FCDC7 /* UIView + Cornner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Cornner.swift"; sourceTree = "<group>"; };
@@ -944,6 +954,7 @@
 		E316114B21B7631E00CF09B2 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				E362E4F421D365A3005E60B9 /* 判断机型 */,
 				E3ACE8BE21CCD662005EBB02 /* 图片裁剪 */,
 				E3ACE87421CCB19F005EBB02 /* 判断像素颜色 */,
 				E33C652521CA263600AEDF4B /* button中图片位置 */,
@@ -1179,8 +1190,12 @@
 		E316118721B7631E00CF09B2 /* 选择日期 */ = {
 			isa = PBXGroup;
 			children = (
+				E362E4F221D3627F005E60B9 /* HSPopupSelectDayView示例代码.rtf */,
+				E362E4EC21D360FB005E60B9 /* PopupSelectDayView.swift */,
+				E362E4ED21D360FB005E60B9 /* PopupSelectDayView.xib */,
 				E36809B921CB92A6000FCDC7 /* SelectChangQiDateView.swift */,
 				E316118821B7631E00CF09B2 /* SelectDateView.swift */,
+				E362E4F021D36110005E60B9 /* UIView + Load.swift */,
 			);
 			path = "选择日期";
 			sourceTree = "<group>";
@@ -2366,6 +2381,14 @@
 			path = "代办人";
 			sourceTree = "<group>";
 		};
+		E362E4F421D365A3005E60B9 /* 判断机型 */ = {
+			isa = PBXGroup;
+			children = (
+				E362E4F521D365A3005E60B9 /* PhoneType.swift */,
+			);
+			path = "判断机型";
+			sourceTree = "<group>";
+		};
 		E36809A421CB5A56000FCDC7 /* 录入项cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -2829,11 +2852,13 @@
 				E316138D21B7631F00CF09B2 /* WSDatePickerView.xib in Resources */,
 				E33C64F921C9ED3600AEDF4B /* SbkProgressViewController.xib in Resources */,
 				E33C652421CA1D0200AEDF4B /* CaijiBasicSaveTableViewCell.xib in Resources */,
+				E362E4F321D3627F005E60B9 /* HSPopupSelectDayView示例代码.rtf in Resources */,
 				E31613C121B7631F00CF09B2 /* ConfirmLoginPwdTableViewCell.xib in Resources */,
 				E316138221B7631F00CF09B2 /* ShakeView.xib in Resources */,
 				E316139321B7631F00CF09B2 /* 示例代码XHLTagLabelsViewController.rtf in Resources */,
 				E316137E21B7631F00CF09B2 /* QrCodeView.xib in Resources */,
 				E33C651521CA1B9100AEDF4B /* CaijiBasicViewController.xib in Resources */,
+				E362E4EF21D360FB005E60B9 /* PopupSelectDayView.xib in Resources */,
 				E3848B7921C9127500B9AC27 /* FeedBackViewController.xib in Resources */,
 				E31613C721B7631F00CF09B2 /* BindAccountShowSchoolTableViewCell.xib in Resources */,
 				E3160F7D21B761FE00CF09B2 /* Assets.xcassets in Resources */,
@@ -3031,6 +3056,7 @@
 				E316146521B7631F00CF09B2 /* UIView+LH.swift in Sources */,
 				E316145A21B7631F00CF09B2 /* Config.swift in Sources */,
 				E316139121B7631F00CF09B2 /* ZJPickerView.m in Sources */,
+				E362E4EE21D360FB005E60B9 /* PopupSelectDayView.swift in Sources */,
 				E316146321B7631F00CF09B2 /* ViewController+LH.swift in Sources */,
 				E316135521B7631F00CF09B2 /* BRAddressModel.m in Sources */,
 				E316136421B7631F00CF09B2 /* FDAlertView.m in Sources */,
@@ -3070,6 +3096,7 @@
 				E3848B7821C9127500B9AC27 /* FeedBackViewController.swift in Sources */,
 				E31613AB21B7631F00CF09B2 /* MD5Encoder.m in Sources */,
 				E31613BC21B7631F00CF09B2 /* FMDBHelper.swift in Sources */,
+				E362E4F621D365A4005E60B9 /* PhoneType.swift in Sources */,
 				E3ACE86A21CC80F7005EBB02 /* CaijiQiTaTableViewCell.swift in Sources */,
 				E31613D621B7631F00CF09B2 /* CompanyRegisterPhotoTableViewCell.swift in Sources */,
 				E316145C21B7631F00CF09B2 /* MSPlistController.swift in Sources */,
@@ -3205,6 +3232,7 @@
 				E316147221B7631F00CF09B2 /* NSMutableDictionary+LH.m in Sources */,
 				E31613F921B7631F00CF09B2 /* MSDataProvider+CommonSutdents.swift in Sources */,
 				E31613F221B7631F00CF09B2 /* LanchImageViewController.swift in Sources */,
+				E362E4F121D36110005E60B9 /* UIView + Load.swift in Sources */,
 				E33C64DA21C9DE3A00AEDF4B /* ZcznDetailDataModel.swift in Sources */,
 				E3848B5321C8D17C00B9AC27 /* MineTableViewCell.swift in Sources */,
 				E36809B421CB745F000FCDC7 /* SelectViewController.swift in Sources */,

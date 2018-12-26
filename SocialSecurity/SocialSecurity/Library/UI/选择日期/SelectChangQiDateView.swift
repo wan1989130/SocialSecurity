@@ -12,14 +12,14 @@ import UIKit
 
 class SelectChangQiDateView: UIView {
     weak var pro:SelectDateDelegate?
-    var delegate:UIViewController?
+    weak var delegate:UIViewController?
     var alert:UIAlertController?
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
     init(delegate:UIViewController,currentStr:String?) {
         super.init(frame: CGRect.zero)
-        
+       
         self.delegate = delegate
         let datePicker = UIDatePicker()
         
@@ -54,9 +54,11 @@ class SelectChangQiDateView: UIView {
             let dateString = dateFormat.string(from: datePicker.date)
 //            print(dateString)
             self.pro?.selectDate(dateString: dateString)
+            self.alert = nil
             
         }
         let cancel = UIAlertAction(title: "取消", style: .cancel) { (UIAlertAction) in
+            self.alert = nil
             print("cancel")
         }
         let changqi = UIAlertAction(title: "长期", style: .default) { (UIAlertAction) in
@@ -78,4 +80,7 @@ class SelectChangQiDateView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    deinit {
+        print("长期销毁")
+    }
 }

@@ -26,6 +26,9 @@ let defaultFullScreenImage = UIImage.loadImage("image-fullScreen-placeholder")
 let defaultPortraitImage = UIImage.loadImage("defaultPortrait")
 let aboutUsPhone = "1234567"
 
+let tabbarHeight = UIDevice.current.isX() == true ? 83 : 49
+let navHeight = UIDevice.current.isX() == true ? 88 : 64
+
 //默认viewcontroller背景色
 let viewBgColor = UIColor(hexString: "EAEFF3")
 

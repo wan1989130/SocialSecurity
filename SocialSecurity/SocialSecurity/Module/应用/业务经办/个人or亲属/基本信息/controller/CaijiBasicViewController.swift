@@ -152,12 +152,12 @@ extension CaijiBasicViewController:CaijiBasicIdCardPhotoClickProtoco{
                 let str = self.getJSONStringFromDictionary(dictionary: info as! NSDictionary)
                 let temModel = Mapper<IdCardFrontModel>().map(JSONString: str)
                 if temModel != nil{
-                    weakSelf!.dataController.saveModel.name = temModel!.words_result.nameModel.words
-                    weakSelf!.dataController.saveModel.sex = temModel!.words_result.sexModel.words
-                    weakSelf!.dataController.saveModel.zjhm = temModel!.words_result.sfzhModel.words
-                    weakSelf!.dataController.saveModel.csrq = temModel!.words_result.csrqModel.words
-                    weakSelf!.dataController.saveModel.mz = temModel!.words_result.mzModel.words
-                    weakSelf!.dataController.saveModel.txdz = temModel!.words_result.zzModel.words
+                    weakSelf?.dataController.saveModel.name = temModel!.words_result.nameModel.words
+                    weakSelf?.dataController.saveModel.sex = temModel!.words_result.sexModel.words
+                    weakSelf?.dataController.saveModel.zjhm = temModel!.words_result.sfzhModel.words
+                    weakSelf?.dataController.saveModel.csrq = temModel!.words_result.csrqModel.words
+                    weakSelf?.dataController.saveModel.mz = temModel!.words_result.mzModel.words
+                    weakSelf?.dataController.saveModel.txdz = temModel!.words_result.zzModel.words
                 }
                 
                 
@@ -183,9 +183,9 @@ extension CaijiBasicViewController:CaijiBasicIdCardPhotoClickProtoco{
                         let zjyxq = dateFormatter2.string(from: temDate!)
                         
                         
-                        weakSelf!.dataController.saveModel.zjyxq = zjyxq
+                        weakSelf?.dataController.saveModel.zjyxq = zjyxq
                     }else if temModel!.words_result.sxrqModel.words == "长期"{
-                        weakSelf!.dataController.saveModel.zjyxq = "长期"
+                        weakSelf?.dataController.saveModel.zjyxq = "长期"
                     }
                     
                    
@@ -234,11 +234,12 @@ extension CaijiBasicViewController:CaijiBasicNextProtocol,CaijiBasicContentSelec
     }
     
     func csrqClick() {//出生日期
+        
         closeKeyboard()
         dateType = "0"
-        weak var weakSelf = self
-        let dateView = SelectDateView(delegate: weakSelf!,currentStr:dataController.saveModel.csrq)
-        dateView.pro = weakSelf
+//        weak var weakSelf = self
+        let dateView = SelectDateView(delegate: self,currentStr:dataController.saveModel.csrq)
+        dateView.pro = self
         dateView.show()
     }
     
@@ -247,7 +248,7 @@ extension CaijiBasicViewController:CaijiBasicNextProtocol,CaijiBasicContentSelec
         dateType = "1"
         weak var weakSelf = self
         let dateView = SelectChangQiDateView(delegate: weakSelf!,currentStr:dataController.saveModel.zjyxq)
-        dateView.pro = weakSelf
+        dateView.pro = weakSelf!
         dateView.show()
         
     }
@@ -283,7 +284,12 @@ extension CaijiBasicViewController:CaijiBasicNextProtocol,CaijiBasicContentSelec
             let dic = info as! NSMutableDictionary
             let model = dic["model"] as! DictionaryModel
             print(model.name)
-            weakSelf!.tableView.reloadRows(at: [IndexPath.init(row: 1, section: 0)], with: .none)
+            UIView.performWithoutAnimation {
+                weakSelf?.tableView.reloadRows(at: [IndexPath.init(row: 1, section: 0)], with: .none)
+            }
+            
+            
+            
         }
 
         
@@ -293,11 +299,16 @@ extension CaijiBasicViewController:SelectDateDelegate{
     func selectDate(dateString: String) {
         if dateType == "0"{
             dataController.saveModel.csrq = dateString
-            self.tableView.reloadRows(at: [IndexPath.init(row: 1, section: 0)], with: .none)
+            reloadTableViewContentCell()
         }else if dateType == "1"{
             dataController.saveModel.zjyxq = dateString
-            self.tableView.reloadRows(at: [IndexPath.init(row: 1, section: 0)], with: .none)
+            reloadTableViewContentCell()
         }
         
+    }
+    func reloadTableViewContentCell(){
+        UIView.performWithoutAnimation {
+            self.tableView.reloadRows(at: [IndexPath.init(row: 1, section: 0)], with: .none)
+        }
     }
 }

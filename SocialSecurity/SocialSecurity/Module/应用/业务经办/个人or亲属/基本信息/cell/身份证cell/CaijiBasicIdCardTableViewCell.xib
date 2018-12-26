@@ -141,7 +141,7 @@
                             <constraint firstItem="qaV-84-RvT" firstAttribute="centerY" secondItem="U6b-IN-7wG" secondAttribute="centerY" id="b9R-Mw-A4p"/>
                             <constraint firstItem="JD1-JT-yjY" firstAttribute="top" secondItem="kIr-DH-avX" secondAttribute="bottom" constant="8" id="gGK-Kf-pa9"/>
                             <constraint firstItem="qaV-84-RvT" firstAttribute="centerX" secondItem="0q8-Ag-hje" secondAttribute="centerX" id="iqq-mO-TO0"/>
-                            <constraint firstAttribute="height" constant="156" id="m9s-3l-9HS"/>
+                            <constraint firstAttribute="height" priority="750" constant="156" id="m9s-3l-9HS"/>
                         </constraints>
                     </view>
                 </subviews>

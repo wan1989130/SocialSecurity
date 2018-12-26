@@ -79,7 +79,7 @@ extension CamaryViewController{
                 imagePicker.delegate = weakSelf
                 imagePicker.allowsEditing = false
                 imagePicker.sourceType = UIImagePickerController.SourceType.camera
-                weakSelf!.present(imagePicker, animated: true, completion: nil)
+                weakSelf?.present(imagePicker, animated: true, completion: nil)
             }
         }
         //从手机相册中选择上传图片
@@ -95,7 +95,7 @@ extension CamaryViewController{
                 imagePicker.delegate = weakSelf
                 imagePicker.allowsEditing = false
                 imagePicker.sourceType = UIImagePickerController.SourceType.photoLibrary
-                weakSelf!.present(imagePicker, animated: true, completion: nil)
+                weakSelf?.present(imagePicker, animated: true, completion: nil)
                 
             }
         }

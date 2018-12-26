@@ -7,7 +7,7 @@
 //
 
 import UIKit
-protocol MenuViewProtocol :class{
+protocol MenuViewProtocol {
     func menuView(forIndex index:Int) -> UIView
     //    func MenuViewDidScrollToIndex(index:Int) -> Void
     func menuViewIndex(index:Int) -> Void
@@ -63,7 +63,7 @@ class MenuView: UIView,UIScrollViewDelegate {
         
     }
     
-    weak var delegate:MenuViewProtocol?{
+    var delegate:MenuViewProtocol?{
         didSet{
             for subView in contentScrollView.subviews{
                 subView.removeFromSuperview()
@@ -74,7 +74,7 @@ class MenuView: UIView,UIScrollViewDelegate {
                 subView?.frame = CGRect(x: frame.size.width * CGFloat(i),
                                         y: 0,
                                         width: frame.size.width,
-                                        height: frame.size.height - 64)
+                                        height: frame.size.height - CGFloat(navHeight))
                 contentScrollView.addSubview(subView!)
             }
         }
@@ -121,8 +121,8 @@ class MenuView: UIView,UIScrollViewDelegate {
                     totalSize = totalSize + width
                     scrollView.addSubview(btn)
                 }
+                scrollView.contentSize = CGSize(width: totalSize, height: 0)
                 
-                scrollView.contentSize = CGSize(width: totalSize, height: height+1)
                 line = UILabel.init(frame: CGRect(x: 0, y: height, width: currentButton.frame.size.width, height: 1))
                 line.backgroundColor = lineColor
                 scrollView.addSubview(line)
@@ -148,16 +148,26 @@ class MenuView: UIView,UIScrollViewDelegate {
             self.line.frame.size.width = self.currentButton.frame.width
             self.line.transform = CGAffineTransform(translationX: self.currentButton.frame.minX, y: 0)
         }, completion: nil)
-        contentScrollView.scrollRectToVisible(CGRect(x: contentScrollView.frame.width * CGFloat((btn.tag - 100)), y: height + 1, width:contentScrollView.frame.width, height: contentScrollView.frame.height), animated: true)
+        contentScrollView.scrollRectToVisible(CGRect(x: contentScrollView.frame.width * CGFloat((btn.tag - 100)), y: height + 1, width:contentScrollView.frame.width, height: contentScrollView.frame.height), animated: false)
         delegate?.menuViewIndex(index: btn.tag - 100)
     }
     
     var scrollView:UIScrollView!
     override init(frame: CGRect) {
         super.init(frame: frame)
+        
         scrollView = UIScrollView(frame: CGRect(x: 0, y: 0, width: ScreenWidth, height: height+1))
         scrollView.delegate = self
+        
+        //        scrollView.isScrollEnabled = false
+        scrollView.alwaysBounceVertical = false
+        //        scrollView.alwaysBounceHorizontal = false
+        
+        //        scrollView.isPagingEnabled = true
+        
+        
         scrollView.showsHorizontalScrollIndicator = false
+        scrollView.showsVerticalScrollIndicator = false
         
     }
     required init?(coder aDecoder: NSCoder) {
@@ -165,7 +175,7 @@ class MenuView: UIView,UIScrollViewDelegate {
     }
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         if scrollView == contentScrollView{
-            currentPage = Int(ceilf(Float(contentScrollView.contentOffset.x/scrollView.frame.width)))
+            currentPage = Int(contentScrollView.contentOffset.x/scrollView.frame.width)
             let button = self.scrollView.viewWithTag(currentPage + 100) as! UIButton
             currentButton.isSelected = false
             currentButton = button
@@ -186,5 +196,6 @@ class MenuView: UIView,UIScrollViewDelegate {
             })
         }
     }
+    
     
 }

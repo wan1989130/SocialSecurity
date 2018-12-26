@@ -47,7 +47,7 @@ extension MineMessageViewController{
     @objc func nickClick(){
         weak var weakSelf = self
         pushViewController("updateNickNameViewController", sender: nil) { (info) in
-            weakSelf!.nickLabel.text = info as! String
+            weakSelf?.nickLabel.text = info as! String
         }
         
     }
@@ -65,7 +65,7 @@ extension MineMessageViewController{
                 imagePicker.delegate = weakSelf
                 imagePicker.allowsEditing = false
                 imagePicker.sourceType = UIImagePickerController.SourceType.camera
-                weakSelf!.present(imagePicker, animated: true, completion: nil)
+                weakSelf?.present(imagePicker, animated: true, completion: nil)
             }
         }
         //从手机相册中选择上传图片
@@ -76,7 +76,7 @@ extension MineMessageViewController{
                 imagePicker.delegate = weakSelf
                 imagePicker.allowsEditing = false
                 imagePicker.sourceType = UIImagePickerController.SourceType.savedPhotosAlbum
-                weakSelf!.present(imagePicker, animated: true, completion: nil)
+                weakSelf?.present(imagePicker, animated: true, completion: nil)
                 
             }
         }

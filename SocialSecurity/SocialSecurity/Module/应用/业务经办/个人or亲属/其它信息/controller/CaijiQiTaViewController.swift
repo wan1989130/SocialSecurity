@@ -108,9 +108,9 @@ extension CaijiQiTaViewController:CaijiBasicNextProtocol,CaijiQiTaContentSelectP
         weak var weakSelf = self
         AddressSelectView.show(withProvince: dataController.saveModel.provinceId, city: dataController.saveModel.cityId, district: dataController.saveModel.regionId) { (province , city, district) in
             let str = "\(province.region_name!)\(city.region_name!)\(district.region_name!)"
-            weakSelf!.dataController.saveModel.provinceId = province.region_id!
-            weakSelf!.dataController.saveModel.cityId = city.region_id!
-            weakSelf!.dataController.saveModel.regionId = district.region_id!
+            weakSelf?.dataController.saveModel.provinceId = province.region_id!
+            weakSelf?.dataController.saveModel.cityId = city.region_id!
+            weakSelf?.dataController.saveModel.regionId = district.region_id!
             
         }
         
