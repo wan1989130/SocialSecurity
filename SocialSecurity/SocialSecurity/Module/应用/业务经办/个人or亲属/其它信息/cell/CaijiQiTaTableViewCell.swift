@@ -30,7 +30,7 @@ class CaijiQiTaTableViewCell: UITableViewCell {
     @IBOutlet weak var yjqyTextField: UITextField!//邮寄区域
    
     @IBOutlet weak var yjdzTextView: UIPlaceholderTextView!//邮寄地址
-    
+ 
     
     @IBOutlet weak var waiBgViewHeight: NSLayoutConstraint!
     @IBOutlet weak var yjdzViewHeight: NSLayoutConstraint!
@@ -80,7 +80,7 @@ class CaijiQiTaTableViewCell: UITableViewCell {
         
         
         self.tableView = tableView
-        yjdzTextView.text = "aaaa请输入通信地址请输入通信地址请输入通信地址请输入通信地址请输入通信地址1请输入通信地址2"
+//        yjdzTextView.text = "aaaa请输入通信地址请输入通信地址请输入通信地址请输入通信地址请输入通信地址1请输入通信地址2"
         var temBounds = yjdzTextView.bounds
         let constraint = CGSize(width: temBounds.size.width, height: CGFloat.greatestFiniteMagnitude)
         let size = yjdzTextView.sizeThatFits(constraint)
