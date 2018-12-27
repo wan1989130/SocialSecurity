@@ -50,6 +50,16 @@ class CaijiBasicDataController: BaseDataController {
             }
         }
     }
+    //国标项
+    func getDictionary(parameter:NSMutableDictionary,completionBlock:@escaping RequestCompleteBlock){
+        MSDataProvider.getDictionary(delegate: self.delegate!, parameter: parameter) { (isSuccess,result) in
+            if isSuccess{
+                completionBlock(true,nil)
+            }else{
+                completionBlock(false, nil)
+            }
+        }
+    }
     
     
     

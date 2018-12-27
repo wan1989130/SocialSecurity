@@ -34,4 +34,8 @@ extension MSDataProvider {
     class func scanCountQuery(delegate:UIViewController, parameter:NSMutableDictionary, completionBlock:@escaping LHHTTPResultJsonHandler){
         LHHttpDataProvider.postDataForDelegate(delegate, path: "scanCountQuery.do", withParams: parameter, verson: nil, autoAlert: false, completionBlock: completionBlock)
     }
+    //国标项
+    class func getDictionary(delegate:UIViewController, parameter:NSMutableDictionary, completionBlock:@escaping LHHTTPResultJsonHandler){
+        LHHttpDataProvider.postDataForDelegate(delegate, path: "getDictionary.do", withParams: parameter, verson: nil, autoAlert: false, completionBlock: completionBlock)
+    }
 }

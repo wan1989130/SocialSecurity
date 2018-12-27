@@ -296,7 +296,6 @@
 		E36809B121CB73BF000FCDC7 /* SelectTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E36809AF21CB73BF000FCDC7 /* SelectTableViewCell.xib */; };
 		E36809B421CB745F000FCDC7 /* SelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36809B221CB745F000FCDC7 /* SelectViewController.swift */; };
 		E36809B521CB745F000FCDC7 /* SelectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E36809B321CB745F000FCDC7 /* SelectViewController.xib */; };
-		E36809B821CB7665000FCDC7 /* DictionaryDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36809B721CB7665000FCDC7 /* DictionaryDataModel.swift */; };
 		E36809BA21CB92A6000FCDC7 /* SelectChangQiDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36809B921CB92A6000FCDC7 /* SelectChangQiDateView.swift */; };
 		E3848B4021C8D00100B9AC27 /* MSDataProvider+Grzx.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3848B3F21C8D00100B9AC27 /* MSDataProvider+Grzx.swift */; };
 		E3848B4721C8D03000B9AC27 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3848B4521C8D03000B9AC27 /* MineViewController.swift */; };
@@ -344,6 +343,7 @@
 		E3B68D5921CBB9AA0048F377 /* CaijiJianHuRenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B68D5721CBB9AA0048F377 /* CaijiJianHuRenViewController.swift */; };
 		E3B68D5A21CBB9AA0048F377 /* CaijiJianHuRenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3B68D5821CBB9AA0048F377 /* CaijiJianHuRenViewController.xib */; };
 		E3B68D5C21CBB9B80048F377 /* CaijiJianHuRenDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B68D5B21CBB9B80048F377 /* CaijiJianHuRenDataController.swift */; };
+		E3DE177621D4FE7F00E4378A /* DictionaryDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DE177521D4FE7F00E4378A /* DictionaryDataModel.swift */; };
 		E3F2D6FD21D0ABD0004E7597 /* IdCardFrontModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F2D6FC21D0ABD0004E7597 /* IdCardFrontModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -747,7 +747,6 @@
 		E36809AF21CB73BF000FCDC7 /* SelectTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectTableViewCell.xib; sourceTree = "<group>"; };
 		E36809B221CB745F000FCDC7 /* SelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewController.swift; sourceTree = "<group>"; };
 		E36809B321CB745F000FCDC7 /* SelectViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectViewController.xib; sourceTree = "<group>"; };
-		E36809B721CB7665000FCDC7 /* DictionaryDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryDataModel.swift; sourceTree = "<group>"; };
 		E36809B921CB92A6000FCDC7 /* SelectChangQiDateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectChangQiDateView.swift; sourceTree = "<group>"; };
 		E3848B3F21C8D00100B9AC27 /* MSDataProvider+Grzx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MSDataProvider+Grzx.swift"; sourceTree = "<group>"; };
 		E3848B4521C8D03000B9AC27 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
@@ -792,6 +791,7 @@
 		E3B68D5721CBB9AA0048F377 /* CaijiJianHuRenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaijiJianHuRenViewController.swift; sourceTree = "<group>"; };
 		E3B68D5821CBB9AA0048F377 /* CaijiJianHuRenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CaijiJianHuRenViewController.xib; sourceTree = "<group>"; };
 		E3B68D5B21CBB9B80048F377 /* CaijiJianHuRenDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaijiJianHuRenDataController.swift; sourceTree = "<group>"; };
+		E3DE177521D4FE7F00E4378A /* DictionaryDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryDataModel.swift; sourceTree = "<group>"; };
 		E3F2D6FC21D0ABD0004E7597 /* IdCardFrontModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdCardFrontModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -2350,6 +2350,7 @@
 		E33C650F21CA1B4A00AEDF4B /* model */ = {
 			isa = PBXGroup;
 			children = (
+				E3DE177421D4FE6700E4378A /* 国标项 */,
 				E368099E21CB22C0000FCDC7 /* CaijiBasicDisplayModel.swift */,
 				E36809A021CB2376000FCDC7 /* CaijiSaveModel.swift */,
 				E3F2D6FC21D0ABD0004E7597 /* IdCardFrontModel.swift */,
@@ -2442,7 +2443,6 @@
 		E36809B621CB762F000FCDC7 /* model */ = {
 			isa = PBXGroup;
 			children = (
-				E36809B721CB7665000FCDC7 /* DictionaryDataModel.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -2737,6 +2737,14 @@
 			children = (
 			);
 			path = cell;
+			sourceTree = "<group>";
+		};
+		E3DE177421D4FE6700E4378A /* 国标项 */ = {
+			isa = PBXGroup;
+			children = (
+				E3DE177521D4FE7F00E4378A /* DictionaryDataModel.swift */,
+			);
+			path = "国标项";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -3081,6 +3089,7 @@
 				E316146321B7631F00CF09B2 /* ViewController+LH.swift in Sources */,
 				E316135521B7631F00CF09B2 /* BRAddressModel.m in Sources */,
 				E316136421B7631F00CF09B2 /* FDAlertView.m in Sources */,
+				E3DE177621D4FE7F00E4378A /* DictionaryDataModel.swift in Sources */,
 				E316145E21B7631F00CF09B2 /* HSVersionManager.swift in Sources */,
 				E31613EF21B7631F00CF09B2 /* SelectAreaPopupView.swift in Sources */,
 				E31613A621B7631F00CF09B2 /* LHHttpDataProvider.swift in Sources */,
@@ -3099,7 +3108,6 @@
 				E31EF63321BFD7A900E1C3E4 /* MSDataProvider+Ywjb.swift in Sources */,
 				E316147121B7631F00CF09B2 /* NSString+LH.m in Sources */,
 				E3100BA521D472AE001A38F0 /* GetWriteCountDataModel.swift in Sources */,
-				E36809B821CB7665000FCDC7 /* DictionaryDataModel.swift in Sources */,
 				E316146C21B7631F00CF09B2 /* UIImage+LH.m in Sources */,
 				E388497721D4A11F007BCA23 /* UploadFileSocialSecurityDataModel.swift in Sources */,
 				E316145121B7631F00CF09B2 /* BaseModel.swift in Sources */,
