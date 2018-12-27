@@ -16,9 +16,12 @@ class YwjbViewController: BaseViewController {
         super.viewDidLoad()
         initData()
         initUI()
+        
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         loadRequest()
     }
-
 
 }
 extension YwjbViewController{
@@ -42,18 +45,19 @@ extension YwjbViewController{
 }
 extension YwjbViewController{
     fileprivate func loadRequest(){
-//        let parameter:NSMutableDictionary = ["id":"9000"]
-//        
-//        dataController.getApply(parameter: parameter) { (isSucceed, info) in
-//            if isSucceed {
-//                self.getCarouselList()
-//                //                self.tableView.reloadData()
-//            }else {
-//                //TODO
-//                
-//            }
-//        }
+        let parameter:NSMutableDictionary = ["phone":MyConfig.shared().phone]
+        weak var weakSelf = self
+        dataController.selfQuery(parameter: parameter) { (isSucceed, info) in
+            if isSucceed {
+                weakSelf?.tableView.reloadRows(at: [IndexPath.init(row: 0, section: 1)], with: .none)
+                
+            }else {
+                //TODO
+                
+            }
+        }
     }
+  
 }
 
 extension YwjbViewController:UITableViewDelegate,UITableViewDataSource{
@@ -75,6 +79,10 @@ extension YwjbViewController:UITableViewDelegate,UITableViewDataSource{
             cell.initCell(delegate: self, dataArray: dataController.toolArray)
             cell.backgroundColor = UIColor.clear
             cell.pro = self
+            if dataController.model != nil{
+                cell.update(model: dataController.model.data)
+            }
+            
 //            cell.statusView.removeAllSubviews()
 //           cell.statusViewHeight.constant = 0
             return cell

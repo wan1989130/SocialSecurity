@@ -17,11 +17,15 @@ class LoginDataController: BaseDataController {
             if isSuccess{
                 let model = Mapper<LoginModel>().map(JSONObject: result)
                 if model != nil{
-                    let data = NSKeyedArchiver.archivedData(withRootObject: model?.data.toNSObject())
+//                    let data = NSKeyedArchiver.archivedData(withRootObject: model?.data.toNSObject())
                     
                     
-                    MyConfig.shared().companyId = model!.data.companyId
-                    MyConfig.shared().projectId = model!.data.id
+                    MyConfig.shared().phone = model!.data.phone
+                    MyConfig.shared().headPhoto = model!.data.headPhoto
+                    MyConfig.shared().shebaoUrl = model!.data.shebaoUrl
+                    MyConfig.shared().zhikajinduUrl = model!.data.zhikajinduUrl
+                    MyConfig.shared().yibaoUrl = model!.data.yibaoUrl
+                    MyConfig.shared().userName = model!.data.userName
                     
 //                    MyConfig.shared().userModel = data
 //                    currentUser = model?.data

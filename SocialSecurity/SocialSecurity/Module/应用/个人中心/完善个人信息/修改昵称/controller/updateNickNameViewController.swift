@@ -11,12 +11,8 @@ import UIKit
 class updateNickNameViewController: BaseViewController {
     @IBOutlet weak var nickTextField: UITextField!
     @IBAction func saveClick(_ sender: UIButton) {
-        if String.isNilOrEmpty(nickTextField.text){
-            LHAlertView.showTipAlertWithTitle("请输入昵称")
-            return
-        }
-        dismissBlock!(nickTextField.text)
-        self.navigationController?.popViewController(animated: true)
+        
+     loadRequest()
     }
    
     @IBOutlet weak var finishButton: UIButton!
@@ -29,7 +25,9 @@ class updateNickNameViewController: BaseViewController {
         initUI()
     }
 
-
+    deinit {
+        print("修改昵称")
+    }
    
 
 }
@@ -43,4 +41,28 @@ extension updateNickNameViewController{
         dataController = updateNickNameDataController(delegate: self)
     }
 }
-extension updateNickNameViewController{}
+extension updateNickNameViewController{
+    fileprivate func loadRequest(){
+        closeKeyboard()
+        if String.isNilOrEmpty(nickTextField.text){
+            LHAlertView.showTipAlertWithTitle("昵称不能为空")
+            return
+        }
+        
+        let parameter:NSMutableDictionary = [
+            "phone":MyConfig.shared().phone,
+            "nickName":nickTextField.text
+        ]
+        weak var weakSelf = self
+        dataController.updateNickName(parameter: parameter) { (isSucceed, info) in
+            if isSucceed {
+                if weakSelf == nil{return}
+                MyConfig.shared().userName = weakSelf!.nickTextField.text!
+                weakSelf?.navigationController?.popViewController(animated: true)
+            }else {
+                //TODO
+                
+            }
+        }
+    }
+}

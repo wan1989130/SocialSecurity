@@ -27,56 +27,44 @@ enum UserStatus:String{
 
 class UserModel: BaseModel {
     //name登录名称
-    var loginName = ""//loginName
-    var companyId = ""//companyId
-    
-     var userId = ""
-    var loginPwd = ""
-    var status:UserStatus = .error
-        var userType:UserType = .error  //用户角色
-    var phoneNum:String = ""//电话号
-    
-    var enterpriseId = ""//企业id
+    var phone = ""//loginName
+    var headPhoto = ""//companyId
+     var shebaoUrl = ""
+    var zhikajinduUrl = ""
+    var yibaoUrl:String = ""//
+    var userName = ""//企业id
+    var userType:UserType = .error  //用户角色
     var token:String = "" //认证标识
-    var enterpriseStatus:UserStatus = .error
-    var dnid:Int64 = -1
     override func mapping(map: Map) {
         super.mapping(map: map)
-         name      <- map["name"]
-        companyId      <- map["companyId"]
-        userId       <- map["userId"]
-        loginPwd   <- map["loginPwd"]
-        status      <- map["status"]
+         phone      <- map["phone"]
+        headPhoto      <- map["headPhoto"]
+        shebaoUrl       <- map["shebaoUrl"]
+        zhikajinduUrl   <- map["zhikajinduUrl"]
+        yibaoUrl      <- map["yibaoUrl"]
+        userName       <- map["userName"]
         userType       <- map["userType"]
-        phoneNum       <- map["loginTel"]
-         enterpriseId       <- map["enterpriseId"]
         token       <- map["token"]
-        enterpriseStatus       <- map["enterpriseStatus"]
-        loginName       <- map["loginName"]
-        dnid       <- map["dnid"]
         
     }
     func toNSObject() -> UserNSObjectModel{
         let newObj = UserNSObjectModel()
         newObj.id = self.id
         newObj.name = self.name
-        newObj.userId = self.userId
-        newObj.loginPwd = self.loginPwd
-        newObj.status = self.status
-                newObj.userType = self.userType
-        newObj.phoneNum = self.phoneNum
+        newObj.phone = self.phone
+        newObj.headPhoto = self.headPhoto
+        newObj.shebaoUrl = self.shebaoUrl
+                newObj.zhikajinduUrl = self.zhikajinduUrl
+        newObj.yibaoUrl = self.yibaoUrl
+        newObj.userName = self.userName
+        newObj.userType = self.userType
         newObj.token = self.token
 
-        
-        newObj.enterpriseStatus = self.enterpriseStatus
-        newObj.enterpriseId = self.enterpriseId
-           newObj.userId = self.userId
-        newObj.dnid = self.dnid
-        newObj.loginName = self.loginName
-        newObj.companyId = self.companyId
-  
-       
-        
+
+      
+
+
+
         return newObj
     }
     
@@ -86,56 +74,44 @@ class UserModel: BaseModel {
 class UserNSObjectModel: NSObject,NSCoding {
     var id = ""
     var name = ""
-    var userId = ""
-    var loginPwd = ""
-    var status:UserStatus = .error
+    var phone = ""//loginName
+    var headPhoto = ""//companyId
+    var shebaoUrl = ""
+    var zhikajinduUrl = ""
+    var yibaoUrl:String = ""//
+    var userName = ""//企业id
     var userType:UserType = .error  //用户角色
-    var phoneNum:String = ""//电话号
-    var loginName = ""//用户姓名
-    var companyId = ""//
-    var enterpriseId = ""//企业id
-    var token:String = ""
-    var enterpriseStatus:UserStatus = .error
-    var dnid:Int64 = -1
+    var token:String = "" //认证标识
     override init() {
         super.init()
     }
-    
-    
     func toAnyObject() -> UserModel{
         let newObj = UserModel()
         newObj.id = self.id
         newObj.name = self.name
-        newObj.userId = self.userId
-        newObj.loginPwd = self.loginPwd
-        newObj.status = self.status
+        newObj.phone = self.phone
+        newObj.headPhoto = self.headPhoto
+        newObj.shebaoUrl = self.shebaoUrl
+        newObj.zhikajinduUrl = self.zhikajinduUrl
+        newObj.yibaoUrl = self.yibaoUrl
+        newObj.userName = self.userName
         newObj.userType = self.userType
-        newObj.phoneNum = self.phoneNum
         newObj.token = self.token
-        newObj.enterpriseStatus = self.enterpriseStatus
-        newObj.enterpriseId = self.enterpriseId
-        newObj.userId = self.userId
-        newObj.dnid = self.dnid
-        newObj.loginName = self.loginName
-        newObj.companyId = self.companyId
         
         return newObj
     }
     func encode(with aCoder: NSCoder) {
         aCoder.encode(id, forKey: "id")
         aCoder.encode(name, forKey: "name")
-        aCoder.encode(userId, forKey: "userId")
-        aCoder.encode(loginPwd, forKey: "loginPwd")
-        aCoder.encode(status.rawValue, forKey: "status")
+        aCoder.encode(phone, forKey: "phone")
+        aCoder.encode(headPhoto, forKey: "headPhoto")
+        aCoder.encode(shebaoUrl, forKey: "shebaoUrl")
+        aCoder.encode(zhikajinduUrl, forKey: "zhikajinduUrl")
+        aCoder.encode(yibaoUrl, forKey: "yibaoUrl")
+        aCoder.encode(userName, forKey: "userName")
         aCoder.encode(userType.rawValue, forKey: "userType")
-        aCoder.encode(phoneNum, forKey: "phoneNum")
         aCoder.encode(token, forKey: "token")
-        aCoder.encode(enterpriseStatus.rawValue, forKey: "enterpriseStatus")
-        aCoder.encode(enterpriseId, forKey: "enterpriseId")
-        aCoder.encode(userId, forKey: "userId")
-        aCoder.encode(dnid, forKey: "dnid")
-        aCoder.encode(loginName, forKey: "loginName")
-        aCoder.encode(companyId, forKey: "companyId")
+      
     }
     
     
@@ -143,21 +119,17 @@ class UserNSObjectModel: NSObject,NSCoding {
         id = aDecoder.decodeObject(forKey: "id") == nil ? "" : aDecoder.decodeObject(forKey: "id") as! String
         name = aDecoder.decodeObject(forKey: "name") == nil ? "" : aDecoder.decodeObject(forKey: "name") as! String
         
-        userId = aDecoder.decodeObject(forKey: "userId") == nil ? "" : aDecoder.decodeObject(forKey: "userId") as! String
-           loginPwd = aDecoder.decodeObject(forKey: "loginPwd") == nil ? "" : aDecoder.decodeObject(forKey: "loginPwd") as! String
-           status = aDecoder.decodeObject(forKey: "status") == nil ? .error : UserStatus(rawValue: aDecoder.decodeObject(forKey: "status") as! String)!
+        phone = aDecoder.decodeObject(forKey: "phone") == nil ? "" : aDecoder.decodeObject(forKey: "phone") as! String
+           headPhoto = aDecoder.decodeObject(forKey: "headPhoto") == nil ? "" : aDecoder.decodeObject(forKey: "headPhoto") as! String
+        shebaoUrl = aDecoder.decodeObject(forKey: "shebaoUrl") == nil ? "" : aDecoder.decodeObject(forKey: "shebaoUrl") as! String
+         zhikajinduUrl = aDecoder.decodeObject(forKey: "zhikajinduUrl") == nil ? "" : aDecoder.decodeObject(forKey: "zhikajinduUrl") as! String
+        yibaoUrl = aDecoder.decodeObject(forKey: "yibaoUrl") == nil ? "" : aDecoder.decodeObject(forKey: "yibaoUrl") as! String
+         userName = aDecoder.decodeObject(forKey: "userName") == nil ? "" : aDecoder.decodeObject(forKey: "userName") as! String
+        
         let tempuserTypeDesc:Int32 = aDecoder.decodeInt32(forKey: "userType")
-       
         let tempType = UserType(rawValue: Int(tempuserTypeDesc))
         userType = tempType == nil ? .error : tempType!
-        
-        phoneNum = aDecoder.decodeObject(forKey: "phoneNum") == nil ? "" : aDecoder.decodeObject(forKey: "phoneNum") as! String
-         loginName = aDecoder.decodeObject(forKey: "loginName") == nil ? "" : aDecoder.decodeObject(forKey: "loginName") as! String
-        companyId = aDecoder.decodeObject(forKey: "companyId") == nil ? "" : aDecoder.decodeObject(forKey: "companyId") as! String
-         enterpriseId = aDecoder.decodeObject(forKey: "enterpriseId") == nil ? "" : aDecoder.decodeObject(forKey: "enterpriseId") as! String
-         token = aDecoder.decodeObject(forKey: "token") == nil ? "" : aDecoder.decodeObject(forKey: "token") as! String
-        enterpriseStatus = aDecoder.decodeObject(forKey: "enterpriseStatus") == nil ? .error : UserStatus(rawValue: aDecoder.decodeObject(forKey: "enterpriseStatus") as! String)!
-        dnid = aDecoder.decodeInt64(forKey: "dnid")
+        token = aDecoder.decodeObject(forKey: "token") == nil ? "" : aDecoder.decodeObject(forKey: "token") as! String
         
     }
 }

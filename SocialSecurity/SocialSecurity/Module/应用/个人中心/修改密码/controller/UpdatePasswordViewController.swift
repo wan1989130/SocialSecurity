@@ -79,4 +79,48 @@ extension UpdatePasswordViewController{
         dataController = UpdatePasswordDataController(delegate: self)
     }
 }
-extension UpdatePasswordViewController{}
+extension UpdatePasswordViewController{
+    fileprivate func loadRequest(){
+        closeKeyboard()
+        if checkFun(){
+        
+            
+            let parameter:NSMutableDictionary = [
+                "phone":MyConfig.shared().phone,
+                "oldPassword":oldPasswordTextField.text,
+                "newPassword":newPasswordTextField.text,
+            ]
+            weak var weakSelf = self
+            dataController.updatePassword(parameter: parameter) { (isSucceed, info) in
+                if isSucceed {
+                    if weakSelf == nil{return}
+                    weakSelf?.navigationController?.popViewController(animated: true)
+                }else {
+                    //TODO
+                    
+                }
+            }
+        }
+        
+    }
+    func checkFun() -> Bool{
+        if String.isNilOrEmpty(oldPasswordTextField.text){
+            LHAlertView.showTipAlertWithTitle("旧密码不能为空")
+            return false
+        }
+        if String.isNilOrEmpty(newPasswordTextField.text){
+            LHAlertView.showTipAlertWithTitle("新密码不能为空")
+            return false
+        }
+        if String.isNilOrEmpty(confirmPasswordTextField.text){
+            LHAlertView.showTipAlertWithTitle("确认密码不能为空")
+            return false
+        }
+        if newPasswordTextField.text != confirmPasswordTextField.text{
+            LHAlertView.showTipAlertWithTitle("新密码与确认密码不一致")
+            return false
+        }
+        return true
+    }
+    
+}

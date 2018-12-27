@@ -70,32 +70,32 @@ class LoginViewController: BaseViewController {
     
     @IBAction func loginButtonClicked(_ sender: UIButton) {
         closeKeyboard()
-           self.showMainTab()
-//        if !checkFun(){
-//            return
-//        }
-        self.showMainTab()
-//        let parameter:NSMutableDictionary = [
-//            "loginName":userNameTextField.text!,
-//            "passWord":passwordTextField.text!,
-//
-//        ]
-//        dataController.login(parameter: parameter) { (isSucceed, info) in
-//            if isSucceed {
-//                MyConfig.shared().loginName = self.userNameTextField.text!
-//                MyConfig.shared().passWord = self.passwordTextField.text!
-//                self.showMainTab()
-//            }else {
-//
-//            }
-//        }
+
+        if !checkFun(){
+            return
+        }
+//        self.showMainTab()
+        let parameter:NSMutableDictionary = [
+            "phone":userNameTextField.text!,
+            "password":passwordTextField.text!,
+
+        ]
+        weak var weakSelf = self
+        dataController.login(parameter: parameter) { (isSucceed, info) in
+            if isSucceed {
+       
+                weakSelf?.showMainTab()
+            }else {
+
+            }
+        }
     }
     
     func checkFun() -> Bool{
      
-//        if !userNameTextField.text!.isLegalMobile(){
-//            return false
-//        }
+        if !userNameTextField.text!.isLegalMobile(){
+            return false
+        }
         if String.isNilOrEmpty(passwordTextField.text){
             LHAlertView.showTipAlertWithTitle("密码不能为空")
             return false
@@ -130,9 +130,8 @@ extension LoginViewController{
         bgView.layer.borderWidth = 1
         
      
-        if MyConfig.shared().loginName != "" && MyConfig.shared().passWord != ""{
-            userNameTextField.text = MyConfig.shared().loginName
-            passwordTextField.text = MyConfig.shared().passWord
+        if MyConfig.shared().phone != "" && MyConfig.shared().phone != ""{
+            userNameTextField.text = MyConfig.shared().phone
         }
     }
    

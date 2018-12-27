@@ -11,13 +11,9 @@ import UIKit
 class FeedBackViewController: BaseViewController {
 
     @IBAction func saveClick(_ sender: Any) {
-        if String.isNilOrEmpty(contentTextField.text){
-            LHAlertView.showTipAlertWithTitle("请输入反馈内容")
-            return
-        }
-        self.navigationController?.popViewController(animated: true)
+       loadRequest()
     }
-    @IBOutlet weak var contentTextField: UITextView!
+    @IBOutlet weak var contentTextField: UIPlaceholderTextView!
     var dataController:FeedBackDataController!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,10 +29,33 @@ class FeedBackViewController: BaseViewController {
 extension FeedBackViewController{
     fileprivate func initUI(){
         self.view.backgroundColor = viewBgColor
+        contentTextField.placeholder = "请输入内容"
         
     }
     fileprivate func initData(){
         dataController = FeedBackDataController(delegate: self)
     }
 }
-extension FeedBackViewController{}
+extension FeedBackViewController{
+    fileprivate func loadRequest(){
+        closeKeyboard()
+        if String.isNilOrEmpty(contentTextField.text){
+            LHAlertView.showTipAlertWithTitle("内容不能为空")
+            return
+        }
+        let parameter:NSMutableDictionary = [
+            "phone":MyConfig.shared().phone,
+            "message":contentTextField.text
+            ]
+        weak var weakSelf = self
+        dataController.suggest(parameter: parameter) { (isSucceed, info) in
+            if isSucceed {
+                if weakSelf == nil{return}
+                weakSelf?.navigationController?.popViewController(animated: true)
+            }else {
+                //TODO
+                
+            }
+        }
+    }
+}

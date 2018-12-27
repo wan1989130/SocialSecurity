@@ -73,31 +73,31 @@ class MyConfig {
         }
     }
    
-    var loginName:String{
+    var phone:String{
         get{
-            if userDefault.object(forKey: "loginName") == nil{
+            if userDefault.object(forKey: "phone") == nil{
                 return ""
             }else{
-                return userDefault.object(forKey: "loginName") as! String
+                return userDefault.object(forKey: "phone") as! String
             }
         }
         set{
-            userDefault.set(newValue,forKey:"loginName")
+            userDefault.set(newValue,forKey:"phone")
         }
     }
-    var passWord:String{
+    var headPhoto:String{
         get{
-            if userDefault.object(forKey: "passWord") == nil{
+            if userDefault.object(forKey: "headPhoto") == nil{
                 return ""
             }else{
-                return userDefault.object(forKey: "passWord") as! String
+                return userDefault.object(forKey: "headPhoto") as! String
             }
         }
         set{
-            userDefault.set(newValue,forKey:"passWord")
+            userDefault.set(newValue,forKey:"headPhoto")
         }
     }
-    var companyId:String{
+    var shebaoUrl:String{
         get{
             if userDefault.object(forKey: "companyId") == nil{
                 return ""
@@ -109,18 +109,45 @@ class MyConfig {
             userDefault.set(newValue,forKey:"companyId")
         }
     }
-    var projectId:String{
+    var zhikajinduUrl:String{
         get{
-            if userDefault.object(forKey: "projectId") == nil{
+            if userDefault.object(forKey: "zhikajinduUrl") == nil{
                 return ""
             }else{
-                return userDefault.object(forKey: "projectId") as! String
+                return userDefault.object(forKey: "zhikajinduUrl") as! String
             }
         }
         set{
-            userDefault.set(newValue,forKey:"projectId")
+            userDefault.set(newValue,forKey:"zhikajinduUrl")
         }
     }
+    var yibaoUrl:String{
+        get{
+            if userDefault.object(forKey: "yibaoUrl") == nil{
+                return ""
+            }else{
+                return userDefault.object(forKey: "yibaoUrl") as! String
+            }
+        }
+        set{
+            userDefault.set(newValue,forKey:"yibaoUrl")
+        }
+    }
+    
+    var userName:String{
+        get{
+            if userDefault.object(forKey: "userName") == nil{
+                return ""
+            }else{
+                return userDefault.object(forKey: "userName") as! String
+            }
+        }
+        set{
+            userDefault.set(newValue,forKey:"userName")
+        }
+    }
+    
+    
     
     var token:String{
         get{

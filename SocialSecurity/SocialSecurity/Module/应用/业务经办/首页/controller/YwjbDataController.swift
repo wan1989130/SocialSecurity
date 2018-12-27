@@ -7,9 +7,10 @@
 //
 
 import UIKit
-
+import ObjectMapper
 class YwjbDataController: BaseDataController {
 
+    var model:SelfQueryDataModel!
     var toolArray:Array<ApplyToolModel> = [ApplyToolModel]()
     override init(delegate: UIViewController) {
         super.init(delegate: delegate)
@@ -29,6 +30,24 @@ class YwjbDataController: BaseDataController {
         toolArray.append(model2)
         toolArray.append(model3)
         toolArray.append(model4)
+        
+    }
+    
+    func selfQuery(parameter:NSMutableDictionary,completionBlock:@escaping RequestCompleteBlock){
+        MSDataProvider.selfQuery(delegate: self.delegate!, parameter: parameter) { (isSuccess,result) in
+            if isSuccess{
+                let model = Mapper<SelfQueryDataModel>().map(JSONObject: result)
+                if model != nil{
+                    self.model = model
+                    completionBlock(true, nil)
+                }else{
+                    completionBlock(false, nil)
+                }
+            }else{
+                completionBlock(false, nil)
+            }
+            
+        }
         
     }
 }

@@ -27,11 +27,17 @@ class MineMessageViewController: BaseViewController {
     deinit {
         print("bbbbb")
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        nickLabel.text = MyConfig.shared().userName
+        headPhotoImageView.setImage(url: MyConfig.shared().headPhoto, placeholder: defaultImage)
+    }
   
 
 }
 extension MineMessageViewController{
     fileprivate func initUI(){
+        
         self.view.backgroundColor = UIColor(hexString: "ECF5FE")
         headPhotoBgView.addGestureRecognizer(UITapGestureRecognizer.init(target: self, action: #selector(headPhotoClick)))
         nickBgView.addGestureRecognizer(UITapGestureRecognizer.init(target: self, action: #selector(nickClick)))
@@ -46,9 +52,7 @@ extension MineMessageViewController{
     }
     @objc func nickClick(){
         weak var weakSelf = self
-        pushViewController("updateNickNameViewController", sender: nil) { (info) in
-            weakSelf?.nickLabel.text = info as! String
-        }
+        pushViewController("updateNickNameViewController", sender: nil)
         
     }
     

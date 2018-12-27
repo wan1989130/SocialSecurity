@@ -12,6 +12,10 @@ import UIKit
 }
 class ApplyCollectionTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var twoRadiusView: JQRadiusView!
+    @IBOutlet weak var twoMsgLabel: UILabel!
+    @IBOutlet weak var oneMsgLabel: UILabel!
+    @IBOutlet weak var twoLabel: UILabel!
     @IBOutlet weak var statusView: UIView!
     @IBOutlet weak var statusViewHeight: NSLayoutConstraint!
     @IBOutlet var collectionView: UICollectionView!
@@ -23,11 +27,77 @@ class ApplyCollectionTableViewCell: UITableViewCell {
         super.awakeFromNib()
         self.backgroundColor = UIColor.clear
         self.contentView.backgroundColor = UIColor.clear
-        oneLabel.layer.borderColor = UIColor(hexString: "005191")?.cgColor
-        oneLabel.layer.borderWidth = 2
-        oneLabel.layer.cornerRadius = 15
-        oneLabel.backgroundColor = UIColor.white
-        oneLabel.clipsToBounds = true
+        
+    }
+    func update(model:SelfQueryItemModel){
+//        model.status = "2"
+//        model.msg = "a,b"
+        if model.status == "0"{
+            statusViewHeight.constant = 0
+            statusView.removeAllSubviews()
+        }else if model.status == "1"{
+            if model.msg != ""{
+                let array = model.msg?.components(separatedBy: ",")
+                oneMsgLabel.text = array![0]
+                twoMsgLabel.text = array![1]
+            }
+            
+            oneLabel.layer.borderColor = UIColor(hexString: "005191")?.cgColor
+            oneLabel.layer.borderWidth = 2
+            oneLabel.layer.cornerRadius = 15
+            oneLabel.backgroundColor = UIColor.white
+            oneLabel.clipsToBounds = true
+            
+            
+            twoLabel.layer.borderColor = UIColor.lightGray.withAlphaComponent(0.5).cgColor
+            twoLabel.layer.borderWidth = 2
+            twoLabel.layer.cornerRadius = 15
+            twoLabel.backgroundColor = UIColor.lightGray
+            twoLabel.clipsToBounds = true
+            
+            
+            
+            
+        }else if model.status == "2"{
+            if model.msg != ""{
+                let array = model.msg?.components(separatedBy: ",")
+                oneMsgLabel.text = array![0]
+                twoMsgLabel.text = array![1]
+            }
+            
+            oneLabel.layer.borderColor = UIColor(hexString: "005191")?.cgColor
+            oneLabel.layer.borderWidth = 2
+            oneLabel.layer.cornerRadius = 15
+            oneLabel.backgroundColor = UIColor.white
+            oneLabel.clipsToBounds = true
+            
+            twoRadiusView.backgroundColor = UIColor(hexString: "005191")
+            twoLabel.layer.borderColor = UIColor(hexString: "005191")?.cgColor
+            twoLabel.layer.borderWidth = 2
+            twoLabel.layer.cornerRadius = 15
+            twoLabel.backgroundColor = UIColor.white
+            twoLabel.clipsToBounds = true
+        }else if model.status == "3"{
+            if model.msg != ""{
+                let array = model.msg?.components(separatedBy: ",")
+                oneMsgLabel.text = array![0]
+                twoMsgLabel.text = array![1]
+            }
+            
+            oneLabel.layer.borderColor = UIColor(hexString: "005191")?.cgColor
+            oneLabel.layer.borderWidth = 2
+            oneLabel.layer.cornerRadius = 15
+            oneLabel.backgroundColor = UIColor.white
+            oneLabel.clipsToBounds = true
+            
+            
+            twoRadiusView.backgroundColor = UIColor(hexString: "005191")
+            twoLabel.layer.borderColor = UIColor(hexString: "005191")?.cgColor
+            twoLabel.layer.borderWidth = 2
+            twoLabel.layer.cornerRadius = 15
+            twoLabel.backgroundColor = UIColor.white
+            twoLabel.clipsToBounds = true
+        }
     }
     
     

@@ -36,10 +36,10 @@ class BaseModel: Mappable {
         }
         
         name <- map["name"]
-        if map["result"].currentValue is String{
-            code <- map["result"]
+        if map["code"].currentValue is String{
+            code <- map["code"]
         }else{
-            code <- (map["result"],transfromOfCustomFunction())
+            code <- (map["code"],transfromOfCustomFunction())
         }
         lastPage <- map["lastPage"]
         msg <- map["msg"]

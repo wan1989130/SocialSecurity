@@ -10,16 +10,19 @@ import UIKit
 
 class IxcjTypeViewController: BaseViewController {
 
+    var isMax:Bool = true
     @IBOutlet var collectionView: UICollectionView!
     var dataController:IxcjTypeDataController!
     override func viewDidLoad() {
         super.viewDidLoad()
         initData()
         initUI()
-        
+        loadRequest()
     }
 
-
+    deinit {
+        print(("分类页面销毁"))
+    }
 
 }
 extension IxcjTypeViewController{
@@ -75,13 +78,17 @@ extension IxcjTypeViewController:UICollectionViewDelegate,UICollectionViewDataSo
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if indexPath.row <= 1 && isMax {
+            LHAlertView.showTipAlertWithTitle("录入次数已达最大限制\(dataController.model.data.maxCount)")
+            return
+        }
         if indexPath.row == 0{
             let dic:NSMutableDictionary = [
                 "title":"个人办理",
                 "type":"0"
             ]
             pushViewController("IdCardQueryViewController",sender:dic)
-        }else if indexPath.row == 1{
+        }else if indexPath.row == 1 {
             let dic:NSMutableDictionary = [
                 "title":"亲属代办",
                 "type":"0"
@@ -89,6 +96,26 @@ extension IxcjTypeViewController:UICollectionViewDelegate,UICollectionViewDataSo
             pushViewController("IdCardQueryViewController",sender:dic)
         }else if indexPath.row == 2{//社保卡进度查询
             pushViewController("SbkProgressViewController")
+        }
+    }
+}
+extension IxcjTypeViewController{
+    
+    fileprivate func loadRequest(){
+        let parameter:NSMutableDictionary = ["phone":MyConfig.shared().phone]
+        weak var weakSelf = self
+        dataController.getWriteCount(parameter: parameter) { (isSucceed, info) in
+            if isSucceed {
+                if weakSelf?.dataController.model.data.maxCount == weakSelf?.dataController.model.data.nowCount{
+                    weakSelf?.isMax = true
+                }else{
+                    weakSelf?.isMax = false
+                }
+                weakSelf?.collectionView.reloadData()
+            }else {
+                //TODO
+                
+            }
         }
     }
 }

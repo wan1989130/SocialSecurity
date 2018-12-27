@@ -47,7 +47,7 @@
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mhU-NI-RFE" customClass="JQRadiusView">
                                         <rect key="frame" x="136" y="0.0" width="136" height="10"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" red="0.60392156862745094" green="0.60271537303924561" blue="0.60271537303924561" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                 <real key="value" value="5"/>
@@ -66,6 +66,16 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1aO-7j-BRV">
+                                        <rect key="frame" x="189" y="-10" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="ZTI-K3-aUA"/>
+                                            <constraint firstAttribute="height" constant="30" id="cWB-Y0-h6u"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -76,9 +86,11 @@
                                     <constraint firstAttribute="bottom" secondItem="mhU-NI-RFE" secondAttribute="bottom" id="QSx-j4-u5h"/>
                                     <constraint firstItem="caw-TS-I9U" firstAttribute="centerX" secondItem="FVY-ZB-3mR" secondAttribute="centerX" id="f5P-DS-HnI"/>
                                     <constraint firstItem="caw-TS-I9U" firstAttribute="centerY" secondItem="FVY-ZB-3mR" secondAttribute="centerY" id="g0I-BZ-fUE"/>
+                                    <constraint firstItem="1aO-7j-BRV" firstAttribute="centerX" secondItem="mhU-NI-RFE" secondAttribute="centerX" id="gf6-PF-oJG"/>
                                     <constraint firstItem="mhU-NI-RFE" firstAttribute="leading" secondItem="FVY-ZB-3mR" secondAttribute="trailing" id="h2e-70-8qu"/>
                                     <constraint firstItem="FVY-ZB-3mR" firstAttribute="leading" secondItem="Ywk-UR-ngR" secondAttribute="leading" id="jYa-IP-lEv"/>
                                     <constraint firstAttribute="bottom" secondItem="FVY-ZB-3mR" secondAttribute="bottom" id="kfc-Xd-R72"/>
+                                    <constraint firstItem="1aO-7j-BRV" firstAttribute="centerY" secondItem="mhU-NI-RFE" secondAttribute="centerY" id="p72-ED-sRz"/>
                                     <constraint firstItem="FVY-ZB-3mR" firstAttribute="top" secondItem="Ywk-UR-ngR" secondAttribute="top" id="yzj-8t-9ft"/>
                                 </constraints>
                             </view>
@@ -88,14 +100,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="保存成功" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kV1-8E-lBB">
+                                <rect key="frame" x="201.5" y="38" width="53.5" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="sGp-kZ-kKY" secondAttribute="bottom" constant="6" id="JKv-mn-Wlo"/>
+                            <constraint firstItem="kV1-8E-lBB" firstAttribute="top" secondItem="sGp-kZ-kKY" secondAttribute="top" id="Vgi-Cd-8JE"/>
                             <constraint firstItem="sGp-kZ-kKY" firstAttribute="centerX" secondItem="FVY-ZB-3mR" secondAttribute="centerX" id="W8K-Ej-8Xh"/>
                             <constraint firstAttribute="height" constant="60" id="aG0-X8-lVP"/>
                             <constraint firstItem="Ywk-UR-ngR" firstAttribute="leading" secondItem="KpZ-64-56f" secondAttribute="leading" constant="24" id="enT-1Q-Mnj"/>
                             <constraint firstAttribute="trailing" secondItem="Ywk-UR-ngR" secondAttribute="trailing" constant="24" id="ivA-Yi-iv2"/>
+                            <constraint firstItem="kV1-8E-lBB" firstAttribute="centerX" secondItem="1aO-7j-BRV" secondAttribute="centerX" id="tI1-K0-nfX"/>
                             <constraint firstItem="Ywk-UR-ngR" firstAttribute="top" secondItem="KpZ-64-56f" secondAttribute="top" constant="16" id="yfL-me-KTy"/>
                         </constraints>
                     </view>
@@ -114,8 +134,12 @@
             <connections>
                 <outlet property="collectionView" destination="YXg-0a-P4v" id="qxc-o4-ffV"/>
                 <outlet property="oneLabel" destination="caw-TS-I9U" id="23n-0B-xbu"/>
+                <outlet property="oneMsgLabel" destination="sGp-kZ-kKY" id="1Ar-VH-61S"/>
                 <outlet property="statusView" destination="KpZ-64-56f" id="oAd-ay-bnz"/>
                 <outlet property="statusViewHeight" destination="aG0-X8-lVP" id="1YM-iM-BZb"/>
+                <outlet property="twoLabel" destination="1aO-7j-BRV" id="Rw6-f4-Ku5"/>
+                <outlet property="twoMsgLabel" destination="kV1-8E-lBB" id="g0b-Bo-sJw"/>
+                <outlet property="twoRadiusView" destination="mhU-NI-RFE" id="I6v-af-W5K"/>
             </connections>
             <point key="canvasLocation" x="137.59999999999999" y="143.02848575712144"/>
         </tableViewCell>

@@ -83,7 +83,7 @@ let StaticProtocoHtml = "resources/common/user_agreement.html"
 
 
 //测试服务器
-//var HostAddress = "http://221.8.52.7:8010/lpsms_client/"
+//var HostAddress = "http://192.168.1.53:8080/sjcj_web/phoneCon"
 //var FileServerAddress = "http://221.8.52.7:8010/lpsms_client/ph/fileUpload"// 上传文件
 //var OcrAddress = "http://139.210.38.78:8030/cxfServerX/doAllCardRecon"//身份证识别
 //var FileAccessHost = "http://221.8.52.7:8010/lpsms_client/" // 显示文件
@@ -93,7 +93,7 @@ let StaticProtocoHtml = "resources/common/user_agreement.html"
 
 
 //正式服务器
-var HostAddress = "http://139.210.38.75:8010/lpsms_client/"
+var HostAddress = "http://192.168.1.53:8080/sjcj_web/phoneCon/"
 var FileServerAddress = "http://139.210.38.75:8010/lpsms_client/ph/fileUpload"// 上传文件
 var OcrAddress = "http://139.210.38.78:8030/cxfServerX/doAllCardRecon"//身份证识别
 var FileAccessHost = "http://139.210.38.75:8010/lpsms_client/" // 显示文件
