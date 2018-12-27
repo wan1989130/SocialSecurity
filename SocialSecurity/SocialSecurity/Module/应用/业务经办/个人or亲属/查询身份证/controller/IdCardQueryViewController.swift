@@ -11,12 +11,11 @@ import UIKit
 class IdCardQueryViewController: BaseViewController {
 
     @IBAction func finishClick(_ sender: Any) {
-        let dic:NSMutableDictionary = [
-            "title":self.title,
-            "type":dataController.type
-        ]
-        pushViewController("CaijiBasicViewController",sender:dic)
+        loadRequest()
+        
     }
+    @IBOutlet weak var contentTextField: UITextField!
+    
     @IBOutlet weak var idBgView: UIView!
     var dataController:IdCardQueryDataController!
     override func viewDidLoad() {
@@ -54,5 +53,29 @@ extension IdCardQueryViewController{
     }
 }
 extension IdCardQueryViewController{
-    
+    fileprivate func loadRequest(){
+        closeKeyboard()
+        
+        if !(contentTextField.text?.isLegalIdCard())!{
+            return
+        }
+        let parameter:NSMutableDictionary = [
+            "phone":MyConfig.shared().phone,
+            "idCard":contentTextField.text
+        ]
+        weak var weakSelf = self
+        dataController.idCardQuery(parameter: parameter) { (isSucceed, info) in
+            if isSucceed {
+                if weakSelf == nil{return}
+                let dic:NSMutableDictionary = [
+                    "title":self.title,
+                    "type":weakSelf!.dataController.type
+                ]
+                weakSelf!.pushViewController("CaijiBasicViewController",sender:dic)
+            }else {
+                //TODO
+                
+            }
+        }
+    }
 }

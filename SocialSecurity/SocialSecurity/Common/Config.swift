@@ -94,9 +94,9 @@ let StaticProtocoHtml = "resources/common/user_agreement.html"
 
 //正式服务器
 var HostAddress = "http://192.168.1.53:8080/sjcj_web/phoneCon/"
-var FileServerAddress = "http://139.210.38.75:8010/lpsms_client/ph/fileUpload"// 上传文件
+var FileServerAddress = "http://192.168.1.53:8080/sjcj_web/phoneCon/uploadPhoto.do"// 上传文件
 var OcrAddress = "http://139.210.38.78:8030/cxfServerX/doAllCardRecon"//身份证识别
-var FileAccessHost = "http://139.210.38.75:8010/lpsms_client/" // 显示文件
+var FileAccessHost = "http://192.168.1.53:8080/sjcj_web/kssh/getImg.do?cx=" // 显示文件
 var DetailImageAccess = "http://139.210.38.75:8020"
 var Protocolhtml = "http://high.huihaiedu.cn/static/resources/user_agreement.html"
 

@@ -86,7 +86,7 @@ class LHHTTPClient: NSObject {
         manager.requestSerializer.timeoutInterval = 40
         manager.post(basePath, parameters: parameters, constructingBodyWith: { (formData) in
             let formatter = DateFormatter()
-            formatter.dateFormat = "yyyyMMddHHmmssSSS"
+            
             if parameters != nil {
                 if parameters?["typeFile"] != nil{
                     if parameters?["typeFile"] as! String == "1"{
@@ -96,8 +96,8 @@ class LHHTTPClient: NSObject {
                         }
                     }else{
                         for item in data{
-                            let fileName = formatter.string(from: Date())+".jpg"
-                            formData.appendPart(withFileData: item, name: "file_fields", fileName: fileName, mimeType: "image/jpeg")
+                            let fileName = (parameters?["name"] as! String) + ".jpg"
+                            formData.appendPart(withFileData: item, name: "file", fileName: fileName, mimeType: "image/jpeg")
                         }
                     }
 

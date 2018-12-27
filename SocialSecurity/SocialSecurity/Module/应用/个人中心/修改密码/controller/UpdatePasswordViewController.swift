@@ -9,6 +9,9 @@
 import UIKit
 
 class UpdatePasswordViewController: BaseViewController {
+    @IBAction func saveClick(_ sender: Any) {
+        loadRequest()
+    }
     @IBOutlet weak var oldPasswordTextField: UITextField!
     @IBOutlet weak var newPasswordTextField: UITextField!
     @IBOutlet weak var confirmPasswordTextField: UITextField!

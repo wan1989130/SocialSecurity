@@ -10,9 +10,49 @@ import UIKit
 import ObjectMapper
 
 class CaijiBasicDataController: BaseDataController {
+    
+    var isCan = true
     var type = ""//0录入1修改2查看
 //    var dataArray:Array<CaijiBasicDisplayModel> = []
     var saveModel = CaijiSaveModel()
+    var isCanQueryModel = IsScanQueryDataModel()
+    func scanQuery(parameter:NSMutableDictionary,completionBlock:@escaping RequestCompleteBlock){
+        MSDataProvider.scanQuery(delegate: self.delegate!, parameter: parameter) { (isSuccess,result) in
+            if isSuccess{
+                let model = Mapper<IsScanQueryDataModel>().map(JSONObject: result)
+                if model != nil{
+                    self.isCanQueryModel = model!
+                    if model?.data.isCan == "0"{
+                        self.isCan = false
+                    }else{
+                        self.isCan = true
+                        
+                    }
+                    completionBlock(true,nil)
+                }else{
+                    completionBlock(false, nil)
+                }
+                
+            }else{
+                completionBlock(false, nil)
+            }
+            
+        }
+        
+    }
+    //扫描身份证使用
+    func scanCountQuery(parameter:NSMutableDictionary,completionBlock:@escaping RequestCompleteBlock){
+        MSDataProvider.scanCountQuery(delegate: self.delegate!, parameter: parameter) { (isSuccess,result) in
+            if isSuccess{
+                completionBlock(true,nil)
+            }else{
+                completionBlock(false, nil)
+            }
+        }
+    }
+    
+    
+    
 //    func initData() {
 //        dataArray.removeAll()
 //        dataArray.append(CaijiBasicDisplayModel(key: "姓名", value: saveModel.name,placeHolder:"请输入姓名", type: .name,isMust:true,isSelect:false))
@@ -25,4 +65,5 @@ class CaijiBasicDataController: BaseDataController {
 //        dataArray.append(CaijiBasicDisplayModel(key: "通信地址", value: saveModel.txdz,placeHolder:"请输入通信地址", type: .name,isMust:true,isSelect:false))
 //       
 //    }
+    
 }

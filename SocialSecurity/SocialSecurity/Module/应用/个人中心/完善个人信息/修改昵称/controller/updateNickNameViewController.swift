@@ -34,7 +34,7 @@ class updateNickNameViewController: BaseViewController {
 extension updateNickNameViewController{
     fileprivate func initUI(){
 //        self.view.backgroundColor = UIColor(hexString: "ECF5FE")
-        
+        nickTextField.text = MyConfig.shared().userName
         
     }
     fileprivate func initData(){

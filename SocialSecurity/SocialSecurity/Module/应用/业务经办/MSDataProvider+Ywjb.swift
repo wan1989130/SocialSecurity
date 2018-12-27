@@ -20,4 +20,18 @@ extension MSDataProvider {
         
         LHHttpDataProvider.postDataForDelegate(delegate, path: "getWriteCount.do", withParams: parameter, verson: nil, completionBlock: completionBlock)
     }
+    //身份证查询
+    class func idCardQuery(delegate:UIViewController, parameter:NSMutableDictionary, completionBlock:@escaping LHHTTPResultJsonHandler){
+        
+        LHHttpDataProvider.postDataForDelegate(delegate, path: "idCardQuery.do", withParams: parameter, verson: nil, completionBlock: completionBlock)
+    }
+    //扫描身份证是否可用
+    class func scanQuery(delegate:UIViewController, parameter:NSMutableDictionary, completionBlock:@escaping LHHTTPResultJsonHandler){
+        
+        LHHttpDataProvider.postDataForDelegate(delegate, path: "scanQuery.do", withParams: parameter, verson: nil, completionBlock: completionBlock)
+    }
+    //扫描身份证使用
+    class func scanCountQuery(delegate:UIViewController, parameter:NSMutableDictionary, completionBlock:@escaping LHHTTPResultJsonHandler){
+        LHHttpDataProvider.postDataForDelegate(delegate, path: "scanCountQuery.do", withParams: parameter, verson: nil, autoAlert: false, completionBlock: completionBlock)
+    }
 }

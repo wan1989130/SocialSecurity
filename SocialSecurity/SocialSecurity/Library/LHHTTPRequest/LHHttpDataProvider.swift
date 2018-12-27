@@ -124,7 +124,6 @@ class LHHttpDataProvider {
         client.POST(path, parameters: params, verson: verson,autoAlert:autoAlert) { (requestSucceed, response, error) -> Void in
             let vc = delegate as? BaseViewController
             vc?.endLoad()
-            
             if delegate != nil && delegate!.isKind(of: UIViewController.self){
                 let vc = delegate as! UIViewController
                 UIView.hideProgressHUB(vc.view)

@@ -27,6 +27,7 @@ class CaijiBasicViewController: BaseViewController {
  
         initData()
         initUI()
+        isCanScanQuery()
         
     }
     deinit {
@@ -85,13 +86,15 @@ extension CaijiBasicViewController{
 }
 extension CaijiBasicViewController:UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
         return 3
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 0{
             let cell = CaijiBasicIdCardTableViewCell.loadCell(tableView)
             cell.pro = self
-            cell.update(flag: false, isWrite: isWrite)
+            dataController.isCan = false
+            cell.update(flag: dataController.isCan, isWrite: isWrite)
             return cell
         }else if indexPath.row == 2{
             let cell = CaijiBasicSaveTableViewCell.loadCell(tableView)
@@ -309,6 +312,42 @@ extension CaijiBasicViewController:SelectDateDelegate{
     func reloadTableViewContentCell(){
         UIView.performWithoutAnimation {
             self.tableView.reloadRows(at: [IndexPath.init(row: 1, section: 0)], with: .none)
+        }
+    }
+}
+extension CaijiBasicViewController{
+    //扫描身份证是否可用
+    fileprivate func isCanScanQuery(){
+        
+        let parameter:NSMutableDictionary = [
+            "phone":MyConfig.shared().phone
+        ]
+        weak var weakSelf = self
+        dataController.scanQuery(parameter: parameter) { (isSucceed, info) in
+            if isSucceed {
+                if weakSelf == nil{return}
+                
+                weakSelf!.tableView.reloadData()
+            }else {
+                //TODO
+                
+            }
+        }
+    }
+    //扫描身份证使用
+    fileprivate func scanCountQuery(){
+        
+        let parameter:NSMutableDictionary = [
+            "phone":MyConfig.shared().phone
+        ]
+        
+        dataController.scanCountQuery(parameter: parameter) { (isSucceed, info) in
+            if isSucceed {
+               
+            }else {
+                //TODO
+                
+            }
         }
     }
 }

@@ -38,6 +38,23 @@ extension String {
         }
         return true
     }
+    //验证手机号
+    func isLegalIdCard() -> Bool{
+        let phone = self
+        if phone.characters.count == 0{
+            LHAlertView.showTipAlertWithTitle("身份证号不能为空")
+            return false
+        }else{
+//            let regex = "/^\\d{6}(18|19|20)+\\d{2}(0[1-9]|1[0-2])(0[1-9]|[12]\\d|3[01])\\d{3}(\\d|X)$/i"
+//            let pred = NSPredicate(format: "SELF MATCHES %@", regex)
+//            let isMatch = pred.evaluate(with: phone)
+//            if !isMatch {
+//                LHAlertView.showTipAlertWithTitle("身份证号格式错误")
+//                return false
+//            }
+        }
+        return true
+    }
     
     //验证邮箱
     func isLegalEmail() -> Bool{

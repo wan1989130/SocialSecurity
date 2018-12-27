@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IdCardQueryViewController" customModule="SocialSecurity" customModuleProvider="target">
             <connections>
+                <outlet property="contentTextField" destination="imc-UK-cWG" id="AgG-iG-3gw"/>
                 <outlet property="idBgView" destination="HQB-cl-M0x" id="IzP-4e-cyg"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -42,7 +43,7 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G31-ft-AKm">
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="imc-UK-cWG">
                             <rect key="frame" x="61" y="0.0" width="282" height="44"/>
                             <nil key="textColor"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -53,15 +54,15 @@
                     <constraints>
                         <constraint firstItem="g5s-nO-G7x" firstAttribute="top" secondItem="HQB-cl-M0x" secondAttribute="top" id="1o0-lz-jX8"/>
                         <constraint firstItem="fPy-oh-guk" firstAttribute="top" secondItem="HQB-cl-M0x" secondAttribute="top" id="2F6-hi-X5H"/>
-                        <constraint firstAttribute="trailing" secondItem="G31-ft-AKm" secondAttribute="trailing" id="Cnl-VK-usp"/>
+                        <constraint firstAttribute="bottom" secondItem="imc-UK-cWG" secondAttribute="bottom" id="46j-jx-xeZ"/>
+                        <constraint firstItem="imc-UK-cWG" firstAttribute="top" secondItem="HQB-cl-M0x" secondAttribute="top" id="Aiy-uh-rV1"/>
                         <constraint firstAttribute="bottom" secondItem="fPy-oh-guk" secondAttribute="bottom" id="Fgi-X5-lBa"/>
+                        <constraint firstAttribute="trailing" secondItem="imc-UK-cWG" secondAttribute="trailing" id="IVV-b4-NiP"/>
                         <constraint firstAttribute="bottom" secondItem="g5s-nO-G7x" secondAttribute="bottom" id="QuA-tu-nez"/>
                         <constraint firstItem="fPy-oh-guk" firstAttribute="leading" secondItem="HQB-cl-M0x" secondAttribute="leading" id="Sh7-YP-FLf"/>
                         <constraint firstAttribute="height" constant="44" id="UDF-D2-l3y"/>
                         <constraint firstItem="g5s-nO-G7x" firstAttribute="leading" secondItem="fPy-oh-guk" secondAttribute="trailing" id="Yu5-Hw-NAF"/>
-                        <constraint firstItem="G31-ft-AKm" firstAttribute="top" secondItem="HQB-cl-M0x" secondAttribute="top" id="ckq-dS-pxW"/>
-                        <constraint firstItem="G31-ft-AKm" firstAttribute="leading" secondItem="g5s-nO-G7x" secondAttribute="trailing" id="ltW-d4-UNQ"/>
-                        <constraint firstAttribute="bottom" secondItem="G31-ft-AKm" secondAttribute="bottom" id="xOu-Ud-R8d"/>
+                        <constraint firstItem="imc-UK-cWG" firstAttribute="leading" secondItem="g5s-nO-G7x" secondAttribute="trailing" id="o8c-k5-Xag"/>
                     </constraints>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">

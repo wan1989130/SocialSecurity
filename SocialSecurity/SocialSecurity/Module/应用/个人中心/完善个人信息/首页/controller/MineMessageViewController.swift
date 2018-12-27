@@ -22,6 +22,7 @@ class MineMessageViewController: BaseViewController {
         title = "完善个人信息"
         initData()
         initUI()
+        
     }
 
     deinit {
@@ -30,7 +31,8 @@ class MineMessageViewController: BaseViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         nickLabel.text = MyConfig.shared().userName
-        headPhotoImageView.setImage(url: MyConfig.shared().headPhoto, placeholder: defaultImage)
+        SDImageCache.shared().clearMemory()
+        headPhotoImageView.setImage(url: FileAccessHost + MyConfig.shared().headPhoto, placeholder: defaultImage)
     }
   
 
@@ -99,7 +101,7 @@ extension MineMessageViewController{
         return newImage
     }
     //上传图片接口
-    fileprivate func uploadPortrait(portrait:UIImage){
+//    fileprivate func uploadPortrait(portrait:UIImage){
 //        let parameter:NSMutableDictionary = [
 //            "typeFile":"0",
 //            "work":MyConfig.shared().projectNameBase,
@@ -110,11 +112,11 @@ extension MineMessageViewController{
 //        let imageData:Data = UIImageJPEGRepresentation(portrait, 0.9)! as Data
 //        dataController.uploadHeadPhoto(imgDataArray:  [imageData], parameter: parameter) { (isSucceed, info) in
 //            if isSucceed{
-                self.uploadHeadUrl(portrait: portrait)
+//                self.uploadHeadUrl(portrait: portrait)
 //
 //            }
 //        }
-    }
+//    }
     //上传头像url
     fileprivate func uploadHeadUrl(portrait:UIImage){
 //        let parameter:NSMutableDictionary = [
@@ -145,5 +147,52 @@ extension MineMessageViewController: UIImagePickerControllerDelegate,UINavigatio
     }
     
 }
-extension MineMessageViewController{}
+extension MineMessageViewController{
+    //上传图片接口
+    fileprivate func uploadPortrait(portrait:UIImage){
+        let parameter:NSMutableDictionary = [
+            "phone":MyConfig.shared().phone,
+            "remark":"1",
+            "typeFile":"0",
+            "name":MyConfig.shared().phone
+        ]
+        let imageData:Data = portrait.jpegData(compressionQuality: 0.5)!
+        weak var weakSelf = self
+        dataController.uploadPhoto(imgDataArray:  [imageData], parameter: parameter) { (isSucceed, info) in
+            
+           
+            if isSucceed{
+                weakSelf?.uploadHeadPhotoUrl(image:portrait)
+              print("成功")
+            }else{
+                print("失败")
+            }
+            
+        }
+    }
+    fileprivate func uploadHeadPhotoUrl(image:UIImage){
+        
+        
+        let parameter:NSMutableDictionary = [
+            "phone":MyConfig.shared().phone,
+            "imageUrl":dataController.uploadPhotoModel.data.imageUrl,
+            ]
+        weak var weakSelf = self
+        dataController.uploadHeadPhoto(parameter: parameter) { (isSucceed, info) in
+            if isSucceed {
+                
+                if weakSelf == nil{return}
+                MyConfig.shared().headPhoto = (weakSelf?.dataController.uploadPhotoModel.data.imageUrl)!
+                weakSelf?.headPhotoImageView.image = image
+                //                    weakSelf?.navigationController?.popViewController(animated: true)
+            }else {
+                //TODO
+                
+            }
+        }
+        
+        
+    }
+    
+}
 

@@ -13,7 +13,7 @@ class UploadPhotoLogisticsDataModel: BaseModel {
     
     override func mapping(map: Map) {
         super.mapping(map: map)
-        data    <- map["obj"]
+        data    <- map["data"]
        
     }
 }

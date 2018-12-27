@@ -70,12 +70,14 @@ class CaijiBasicIdCardTableViewCell: UITableViewCell {
 
 
     func update(flag:Bool,isWrite:Bool){
-        fanButton.isEnabled = isWrite
-        zhengButton.isEnabled = isWrite
+       
         if flag{
             topConstraint.constant = 0
             idCardView.removeAllSubviews()
             idCardViewHeightConstraint.constant = 0
+        }else{
+            fanButton.isEnabled = isWrite
+            zhengButton.isEnabled = isWrite
         }
         
         

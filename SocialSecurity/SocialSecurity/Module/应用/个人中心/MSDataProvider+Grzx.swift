@@ -24,4 +24,9 @@ extension MSDataProvider {
         
         LHHttpDataProvider.postDataForDelegate(delegate, path: "updatePassword.do", withParams: parameter, verson: nil, completionBlock: completionBlock)
     }
+    //上传头像
+    class func uploadHeadPhoto(delegate:UIViewController, parameter:NSMutableDictionary, completionBlock:@escaping LHHTTPResultJsonHandler){
+        
+        LHHttpDataProvider.postDataForDelegate(delegate, path: "uploadHeadPhoto.do", withParams: parameter, verson: nil, completionBlock: completionBlock)
+    }
 }
