@@ -10,6 +10,13 @@ import UIKit
 
 class PersonRegisterViewController: BaseViewController {
     
+    @IBAction func registerClick(_ sender: Any) {
+        closeKeyboard()
+        if checkFun(){
+            addUser()
+        }
+        
+    }
     @IBAction func isAgreeClick(_ sender: UIButton) {
         let img = UIImage.init(named: "main_MutiCheck_Off")
         if sender.currentBackgroundImage == img{
@@ -122,36 +129,35 @@ extension PersonRegisterViewController{
         let countDown = TCCountDown()//实例化
         countDown.getCodeButton = self.getCodeButton
         countDown.isCounting = true//开启倒计时
-//        let parameter:NSMutableDictionary = [
-//            "phone":phoneTextField.text!,
-//            "type":GetCodeType.regist.rawValue
-//        ]
-//        dataController.getVerCode(parameter: parameter) { (isSucceed, info) in
-//            if isSucceed {
-//                LHAlertView.showTipAlertWithTitle(info as! String)
-//                let countDown = TCCountDown()//实例化
-//                countDown.getCodeButton = self.getCodeButton
-//                countDown.isCounting = true//开启倒计时
-//            }else {
-//            }
-//        }
+        let parameter:NSMutableDictionary = [
+            "phone":phoneTextField.text!,
+            "type":"0"
+        ]
+        dataController.getCode(parameter: parameter) { (isSucceed, info) in
+            if isSucceed {
+                LHAlertView.showTipAlertWithTitle(info as! String)
+                let countDown = TCCountDown()//实例化
+                countDown.getCodeButton = self.getCodeButton
+                countDown.isCounting = true//开启倒计时
+            }else {
+            }
+        }
     }
-//    //添加注册的新用户
-//    fileprivate func addUser(){
-//        let parameter:NSMutableDictionary = [
-//            "loginName":userNameTextField.text!,
-//            "name":nameTextField.text!,
-//            "pwd":passwordTextField.text!,
-//            "companyId":companyModel.id
-//
-//            ]
-//
-//
-//        dataController.addUser(parameter: parameter) { (isSucceed, info) in
-//            if isSucceed {
-//                self.navigationController?.popViewController(animated: true)
-//            }
-//        }
-//    }
+  //添加注册的新用户
+    fileprivate func addUser(){
+        let parameter:NSMutableDictionary = [
+            "phone":phoneTextField.text!,
+            "code":codeTextField.text!,
+            "password":passwordTextField.text!
+            ]
+
+
+        weak var weakSelf = self
+        dataController.register(parameter: parameter) { (isSucceed, info) in
+            if isSucceed {
+                weakSelf?.navigationController?.popViewController(animated: true)
+            }
+        }
+    }
 }
 

@@ -61,6 +61,24 @@ extension DaiBanPersonViewController{
     }
 }
 extension DaiBanPersonViewController{
+    func checkFun() -> Bool{
+        
+        let model = dataController.saveModel
+        if model.dbr_xm == ""{
+            LHAlertView.showTipAlertWithTitle("代办人姓名不能为空")
+            return false
+        }
+        if model.dbr_sfzhm == ""{
+            LHAlertView.showTipAlertWithTitle("代办人身份证号不能为空")
+            return false
+        }
+        if model.dbr_lxdh == ""{
+            LHAlertView.showTipAlertWithTitle("代办人联系手机不能为空")
+            return false
+        }
+        
+        return true
+    }
     
 }
 extension DaiBanPersonViewController{

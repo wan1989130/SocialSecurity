@@ -26,7 +26,7 @@ class TCCountDown {
         willSet {
             if newValue {
                 countdownTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
-                remainingSeconds = 2
+                remainingSeconds = 60
                 getCodeButton.setTitleColor(UIColor.darkGray, for: .normal)
             } else {
                 countdownTimer?.invalidate()

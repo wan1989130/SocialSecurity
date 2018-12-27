@@ -46,12 +46,13 @@ extension String {
             return false
         }else{
 //            let regex = "/^\\d{6}(18|19|20)+\\d{2}(0[1-9]|1[0-2])(0[1-9]|[12]\\d|3[01])\\d{3}(\\d|X)$/i"
-//            let pred = NSPredicate(format: "SELF MATCHES %@", regex)
-//            let isMatch = pred.evaluate(with: phone)
-//            if !isMatch {
-//                LHAlertView.showTipAlertWithTitle("身份证号格式错误")
-//                return false
-//            }
+            let regex = "(^\\d{15}$)|(^\\d{17}([0-9]|X)$)"
+            let pred = NSPredicate(format: "SELF MATCHES %@", regex)
+            let isMatch = pred.evaluate(with: phone)
+            if !isMatch {
+                LHAlertView.showTipAlertWithTitle("身份证号格式错误")
+                return false
+            }
         }
         return true
     }

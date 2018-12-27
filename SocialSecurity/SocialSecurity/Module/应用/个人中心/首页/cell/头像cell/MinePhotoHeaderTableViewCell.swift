@@ -9,10 +9,21 @@
 import UIKit
 
 class MinePhotoHeaderTableViewCell: UITableViewCell {
-
+    @IBOutlet weak var headPhotoImageView: UIImageView!
+    @IBOutlet weak var nickNameLabel: UILabel!
+    @IBOutlet weak var phoneLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+       
+    }
+    func update(){
+        nickNameLabel.text = MyConfig.shared().userName
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyyMMddHHmmss"
+        let str = "&" + formatter.string(from: Date())
+        headPhotoImageView.setImage(url: FileAccessHost + MyConfig.shared().headPhoto + str, placeholder: defaultImage)
+        phoneLabel.text = MyConfig.shared().phone
     }
 
     class func loadCell(_ tableView:UITableView)-> MinePhotoHeaderTableViewCell{

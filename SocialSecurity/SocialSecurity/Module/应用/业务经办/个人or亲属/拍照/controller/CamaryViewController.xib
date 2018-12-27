@@ -33,7 +33,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHM-6m-vQa">
-                    <rect key="frame" x="16" y="306" width="288" height="40"/>
+                    <rect key="frame" x="16" y="345.5" width="288" height="40"/>
                     <color key="backgroundColor" red="0.0" green="0.31764705879999999" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="hB9-2L-13n"/>
@@ -50,13 +50,22 @@
                         <action selector="nextClick:" destination="-1" eventType="touchUpInside" id="BoZ-Tr-qF4"/>
                     </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="要求：本人证件照，白底，大小小于50K分辨率是358*441" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yxp-GR-VXS">
+                    <rect key="frame" x="16" y="298" width="288" height="31.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="PkM-HD-hgA" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="AdX-ZH-tIa"/>
-                <constraint firstItem="qHM-6m-vQa" firstAttribute="top" secondItem="PkM-HD-hgA" secondAttribute="bottom" constant="24" id="aIJ-ps-n0W"/>
+                <constraint firstItem="Yxp-GR-VXS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="GCd-EQ-wL6"/>
+                <constraint firstItem="Yxp-GR-VXS" firstAttribute="top" secondItem="PkM-HD-hgA" secondAttribute="bottom" constant="16" id="RZR-a1-qw3"/>
+                <constraint firstItem="qHM-6m-vQa" firstAttribute="top" secondItem="Yxp-GR-VXS" secondAttribute="bottom" constant="16" id="bCa-yT-cTH"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="qHM-6m-vQa" secondAttribute="trailing" constant="16" id="cCs-zG-O5b"/>
                 <constraint firstItem="PkM-HD-hgA" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="iEE-wt-YW7"/>
+                <constraint firstAttribute="trailing" secondItem="Yxp-GR-VXS" secondAttribute="trailing" constant="16" id="jq5-SI-E3M"/>
                 <constraint firstItem="qHM-6m-vQa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="p7J-A4-yVh"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

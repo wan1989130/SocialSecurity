@@ -11,7 +11,7 @@ import ObjectMapper
 
 class CaijiBasicDataController: BaseDataController {
     
-    var isCan = true
+    var isCan = false
     var type = ""//0录入1修改2查看
 //    var dataArray:Array<CaijiBasicDisplayModel> = []
     var saveModel = CaijiSaveModel()
@@ -22,10 +22,10 @@ class CaijiBasicDataController: BaseDataController {
                 let model = Mapper<IsScanQueryDataModel>().map(JSONObject: result)
                 if model != nil{
                     self.isCanQueryModel = model!
-                    if model?.data.isCan == "0"{
-                        self.isCan = false
-                    }else{
+                    if model?.data.isCan == "0"{//0是可以非0不可以拍照
                         self.isCan = true
+                    }else{
+                        self.isCan = false
                         
                     }
                     completionBlock(true,nil)

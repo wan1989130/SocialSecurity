@@ -71,7 +71,7 @@ class CaijiBasicIdCardTableViewCell: UITableViewCell {
 
     func update(flag:Bool,isWrite:Bool){
        
-        if flag{
+        if !flag{
             topConstraint.constant = 0
             idCardView.removeAllSubviews()
             idCardViewHeightConstraint.constant = 0

@@ -187,7 +187,7 @@
                     </constraints>
                     <state key="normal" backgroundImage="main_MutiCheck_On"/>
                     <connections>
-                        <action selector="isAgreeClick:" destination="-1" eventType="touchUpInside" id="HQQ-h1-mCp"/>
+                        <action selector="isAgreeClick:" destination="-1" eventType="touchUpInside" id="rbd-my-lgu"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ddh-Uw-sX5">
@@ -215,7 +215,7 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                     <connections>
-                        <action selector="isAgreeClick:" destination="-1" eventType="touchUpInside" id="YbU-kZ-2Ng"/>
+                        <action selector="registerClick:" destination="-1" eventType="touchUpInside" id="Diu-SG-Ffo"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G80-3F-aa0">

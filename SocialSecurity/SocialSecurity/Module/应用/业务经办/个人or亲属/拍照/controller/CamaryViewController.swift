@@ -14,12 +14,15 @@ class CamaryViewController: BaseViewController {
     var dataController:CaijiQiTaDataController!
     var isWrite = true
     @IBAction func nextClick(_ sender: Any) {
-        let dic:NSMutableDictionary = [
-            "title":self.title,
-            "type":dataController.type,
-            "saveModel":dataController.saveModel
-        ]
-        pushViewController("DaiBanPersonViewController",sender:dic)
+        if checkFun(){
+            let dic:NSMutableDictionary = [
+                "title":self.title,
+                "type":dataController.type,
+                "saveModel":dataController.saveModel
+            ]
+            pushViewController("DaiBanPersonViewController",sender:dic)
+        }
+        
         
     }
     @IBAction func photoClick(_ sender: Any) {
@@ -209,5 +212,17 @@ extension CamaryViewController:SwiftyPhotoClipperDelegate{
             }
         }
         
+    }
+}
+extension CamaryViewController{
+    func checkFun() -> Bool{
+        
+        let model = dataController.saveModel
+        if model.zp == ""{
+            LHAlertView.showTipAlertWithTitle("请上传照片")
+            return false
+        }
+        
+        return true
     }
 }

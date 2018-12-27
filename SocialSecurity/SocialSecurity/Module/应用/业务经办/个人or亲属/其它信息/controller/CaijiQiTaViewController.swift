@@ -117,13 +117,60 @@ extension CaijiQiTaViewController:CaijiBasicNextProtocol,CaijiQiTaContentSelectP
     }
     
     func nextClick() {//下一步
-        let dic:NSMutableDictionary = [
-            "title":self.title,
-            "type":dataController.type,
-            "saveModel":dataController.saveModel
-        ]
-        pushViewController("CamaryViewController",sender:dic)
+        if checkFun(){
+            let dic:NSMutableDictionary = [
+                "title":self.title,
+                "type":dataController.type,
+                "saveModel":dataController.saveModel
+            ]
+            pushViewController("CamaryViewController",sender:dic)
+        }
+        
     }
-    
+    func checkFun() -> Bool{
+        closeKeyboard()
+        let model = dataController.saveModel
+        if model.ryzt == ""{
+            LHAlertView.showTipAlertWithTitle("人员状态不能为空")
+            return false
+        }
+        if model.gj == ""{
+            LHAlertView.showTipAlertWithTitle("国籍不能为空")
+            return false
+        }
+        if model.hjxz == ""{
+            LHAlertView.showTipAlertWithTitle("户籍性质不能为空")
+            return false
+        }
+        if model.lxsj == ""{
+            LHAlertView.showTipAlertWithTitle("联系手机不能为空")
+            return false
+        }
+        if model.yzbm == ""{
+            LHAlertView.showTipAlertWithTitle("邮政编码不能为空")
+            return false
+        }
+        if model.klmyh == ""{
+            LHAlertView.showTipAlertWithTitle("卡联名银行不能为空")
+            return false
+        }
+        if model.zszy == ""{
+            LHAlertView.showTipAlertWithTitle("专属职业不能为空")
+            return false
+        }
+        if model.zshy == ""{
+            LHAlertView.showTipAlertWithTitle("专属行业不能为空")
+            return false
+        }
+        if model.cityId == ""{
+            LHAlertView.showTipAlertWithTitle("邮寄区域不能为空")
+            return false
+        }
+        if model.yjdz == ""{
+            LHAlertView.showTipAlertWithTitle("邮寄地址不能为空")
+            return false
+        }
+        return true
+    }
     
 }

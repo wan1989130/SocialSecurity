@@ -66,6 +66,11 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="headPhotoImageView" destination="1Fq-3K-zVf" id="Vfn-Rp-Ibr"/>
+                <outlet property="nickNameLabel" destination="0wl-B4-qLC" id="xMW-lo-h8F"/>
+                <outlet property="phoneLabel" destination="Tf0-gR-cNs" id="GKN-lX-Mhg"/>
+            </connections>
             <point key="canvasLocation" x="-206.40000000000001" y="114.24287856071965"/>
         </tableViewCell>
     </objects>

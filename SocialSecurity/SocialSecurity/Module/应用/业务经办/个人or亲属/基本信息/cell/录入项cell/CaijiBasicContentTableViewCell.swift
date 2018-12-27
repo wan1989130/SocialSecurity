@@ -61,7 +61,7 @@ class CaijiBasicContentTableViewCell: UITableViewCell {
         self.model = model
         self.indexPath = indexPath
         xmTextField.text = model.name
-        xbTextField.text = model.sex
+        xbTextField.text = model.xb
         zjlxTextField.text = model.zjlx
         zjhmTextField.text = model.zjhm
         csrqTextField.text = model.csrq

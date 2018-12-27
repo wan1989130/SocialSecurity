@@ -64,6 +64,7 @@ class ForgetPwdViewController: BaseViewController {
         if !checkFun(){
             return
         }
+        forgetPassword()
     }
     var dataController:ForgetPwdDataController!
     override func viewDidLoad() {
@@ -123,18 +124,32 @@ extension ForgetPwdViewController{
         let countDown = TCCountDown()//实例化
         countDown.getCodeButton = self.getCodeButton
         countDown.isCounting = true//开启倒计时
-        //        let parameter:NSMutableDictionary = [
-        //            "phone":phoneTextField.text!,
-        //            "type":GetCodeType.regist.rawValue
-        //        ]
-        //        dataController.getVerCode(parameter: parameter) { (isSucceed, info) in
-        //            if isSucceed {
-        //                LHAlertView.showTipAlertWithTitle(info as! String)
-        //                let countDown = TCCountDown()//实例化
-        //                countDown.getCodeButton = self.getCodeButton
-        //                countDown.isCounting = true//开启倒计时
-        //            }else {
-        //            }
-        //        }
+        let parameter:NSMutableDictionary = [
+            "phone":phoneTextField.text!,
+            "type":"1"
+        ]
+                dataController.getCode(parameter: parameter) { (isSucceed, info) in
+                    if isSucceed {
+                        LHAlertView.showTipAlertWithTitle(info as! String)
+                        let countDown = TCCountDown()//实例化
+                        countDown.getCodeButton = self.getCodeButton
+                        countDown.isCounting = true//开启倒计时
+                    }else {
+                    }
+                }
+    }
+    //忘记密码
+    fileprivate func forgetPassword(){
+        let parameter:NSMutableDictionary = [
+            "phone":phoneTextField.text!,
+            "code":codeTextField.text!,
+            "password":passwordTextField.text!
+        ]
+        weak var weakSelf = self
+        dataController.forgetPassword(parameter: parameter) { (isSucceed, info) in
+            if isSucceed {
+                weakSelf?.navigationController?.popViewController(animated: true)
+            }
+        }
     }
 }

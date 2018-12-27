@@ -62,7 +62,7 @@ class LHHttpDataProvider {
                 
                 let myBaseModel = Mapper<BaseModel>().map(JSONObject: response)
                 
-                if myBaseModel?.code == "102"{//异地登陆
+                if myBaseModel?.code == "100"{//异地登陆
                     LHAlertView.showTipAlertWithTitle((myBaseModel?.msg)!)
                     let config = MyConfig.shared()
                     
@@ -162,7 +162,7 @@ class LHHttpDataProvider {
     
                 let myBaseModel = Mapper<BaseModel>().map(JSONObject: response)
 
-                if myBaseModel?.code == "102"{//异地登陆
+                if myBaseModel?.code == "100"{//异地登陆
                     LHAlertView.showTipAlertWithTitle((myBaseModel?.msg)!)
                     let config = MyConfig.shared()
                     config.userModel.removeAll()
@@ -260,7 +260,7 @@ extension LHHttpDataProvider{
                     
                     let myBaseModel = Mapper<BaseModel>().map(JSONObject: response)
                     
-                    if myBaseModel?.code == "102"{//异地登陆
+                    if myBaseModel?.code == "100"{//异地登陆
                         LHAlertView.showTipAlertWithTitle((myBaseModel?.msg)!)
                         let config = MyConfig.shared()
                         config.userModel.removeAll()

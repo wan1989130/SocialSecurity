@@ -68,6 +68,7 @@ extension MineViewController:UITableViewDelegate,UITableViewDataSource{
         
         if indexPath.section == 0{
             let cell = MinePhotoHeaderTableViewCell.loadCell(tableView)
+            cell.update()
             return cell
         }else {
             let cell = MineTableViewCell.loadCell(tableView)

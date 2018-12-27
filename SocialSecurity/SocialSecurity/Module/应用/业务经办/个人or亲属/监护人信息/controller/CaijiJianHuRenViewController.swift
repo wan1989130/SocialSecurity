@@ -19,12 +19,14 @@ class CaijiJianHuRenViewController: BaseViewController {
     var isWrite = true
     var selectIndex = -1
     @IBAction func nextClick(_ sender: Any) {
-        let dic:NSMutableDictionary = [
-            "title":self.title,
-            "type":dataController.type,
-            "saveModel":dataController.saveModel
-        ]
-        pushViewController("CaijiQiTaViewController",sender:dic)
+        if checkFun(){
+            let dic:NSMutableDictionary = [
+                "title":self.title,
+                "type":dataController.type,
+                "saveModel":dataController.saveModel
+            ]
+            pushViewController("CaijiQiTaViewController",sender:dic)
+        }
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,7 +53,7 @@ extension CaijiJianHuRenViewController{
         jhrxmTextField.delegate = self
         
         jhrzjlxTextField.text = dataController.saveModel.jhrzjlx
-        jhrzjhmTextField.text = dataController.saveModel.jhrzjhm
+        jhrzjhmTextField.text = dataController.saveModel.jhrzh
         jhrxmTextField.text = dataController.saveModel.jhrxm
         
         
@@ -113,5 +115,17 @@ extension CaijiJianHuRenViewController:UITextFieldDelegate{
     }
 }
 extension CaijiJianHuRenViewController{
-    
+    func checkFun() -> Bool{
+        closeKeyboard()
+        let model = dataController.saveModel!
+        if model.jhrzh == ""{
+            LHAlertView.showTipAlertWithTitle("监护人证件号码不能为空")
+            return false
+        }
+        if model.jhrxm == ""{
+            LHAlertView.showTipAlertWithTitle("监护人姓名不能为空")
+            return false
+        }
+        return true
+    }
 }

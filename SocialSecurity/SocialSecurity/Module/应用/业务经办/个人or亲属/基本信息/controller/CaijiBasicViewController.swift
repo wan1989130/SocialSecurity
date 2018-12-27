@@ -93,7 +93,7 @@ extension CaijiBasicViewController:UITableViewDelegate,UITableViewDataSource{
         if indexPath.row == 0{
             let cell = CaijiBasicIdCardTableViewCell.loadCell(tableView)
             cell.pro = self
-            dataController.isCan = false
+//            dataController.isCan = false
             cell.update(flag: dataController.isCan, isWrite: isWrite)
             return cell
         }else if indexPath.row == 2{
@@ -149,14 +149,16 @@ extension CaijiBasicViewController:CaijiBasicIdCardPhotoClickProtoco{
         }
     }
     func success(info:Any,type:Int){
+        
         weak var weakSelf = self
         if type == 0{
             OperationQueue.main.addOperation {
+                weakSelf?.scanCountQuery()
                 let str = self.getJSONStringFromDictionary(dictionary: info as! NSDictionary)
                 let temModel = Mapper<IdCardFrontModel>().map(JSONString: str)
                 if temModel != nil{
                     weakSelf?.dataController.saveModel.name = temModel!.words_result.nameModel.words
-                    weakSelf?.dataController.saveModel.sex = temModel!.words_result.sexModel.words
+                    weakSelf?.dataController.saveModel.xb = temModel!.words_result.sexModel.words
                     weakSelf?.dataController.saveModel.zjhm = temModel!.words_result.sfzhModel.words
                     weakSelf?.dataController.saveModel.csrq = temModel!.words_result.csrqModel.words
                     weakSelf?.dataController.saveModel.mz = temModel!.words_result.mzModel.words
@@ -173,6 +175,7 @@ extension CaijiBasicViewController:CaijiBasicIdCardPhotoClickProtoco{
             }
         }else{
             OperationQueue.main.addOperation {
+                weakSelf?.scanCountQuery()
                 let str = self.getJSONStringFromDictionary(dictionary: info as! NSDictionary)
                 let temModel = Mapper<IdCardFrontModel>().map(JSONString: str)
                 if temModel != nil{
@@ -203,8 +206,10 @@ extension CaijiBasicViewController:CaijiBasicIdCardPhotoClickProtoco{
     }
    
     func faile(){
+        weak var weakSelf = self
         OperationQueue.main.addOperation {
-            self.dismiss(animated: true, completion: nil)
+            weakSelf?.scanCountQuery()
+            weakSelf?.dismiss(animated: true, completion: nil)
         }
         
     }
@@ -261,12 +266,15 @@ extension CaijiBasicViewController:CaijiBasicNextProtocol,CaijiBasicContentSelec
     }
     
     func nextClick() {//下一步
-        let dic:NSMutableDictionary = [
-            "title":self.title,
-            "type":dataController.type,
-            "saveModel":dataController.saveModel
-        ]
-        pushViewController("CaijiJianHuRenViewController",sender:dic)
+        if checkFun(){
+            let dic:NSMutableDictionary = [
+                "title":self.title,
+                "type":dataController.type,
+                "saveModel":dataController.saveModel
+            ]
+            pushViewController("CaijiJianHuRenViewController",sender:dic)
+        }
+        
         
     }
     func xbClick() {
@@ -316,6 +324,43 @@ extension CaijiBasicViewController:SelectDateDelegate{
     }
 }
 extension CaijiBasicViewController{
+    func checkFun() -> Bool{
+        closeKeyboard()
+        let model = dataController.saveModel
+        if model.name == ""{
+            LHAlertView.showTipAlertWithTitle("姓名不能为空")
+            return false
+        }
+        if model.xb == ""{
+            LHAlertView.showTipAlertWithTitle("性别不能为空")
+            return false
+        }
+        if model.zjlx == ""{
+            LHAlertView.showTipAlertWithTitle("证件类型不能为空")
+            return false
+        }
+        if model.zjhm == ""{
+            LHAlertView.showTipAlertWithTitle("证件号码不能为空")
+            return false
+        }
+        if model.csrq == ""{
+            LHAlertView.showTipAlertWithTitle("出生日期不能为空")
+            return false
+        }
+        if model.zjyxq == ""{
+            LHAlertView.showTipAlertWithTitle("证件有效期不能为空")
+            return false
+        }
+        if model.mz == ""{
+            LHAlertView.showTipAlertWithTitle("民族不能为空")
+            return false
+        }
+        if model.txdz == ""{
+            LHAlertView.showTipAlertWithTitle("通信地址不能为空")
+            return false
+        }
+        return true
+    }
     //扫描身份证是否可用
     fileprivate func isCanScanQuery(){
         

@@ -14,13 +14,14 @@ class PersonRegisterDataController: BaseDataController {
   
     
     var successModel:PersonRegisterSuccessDataModel = PersonRegisterSuccessDataModel()
-    //账号注册验证
-    func checkPassword(parameter:NSMutableDictionary,completionBlock:@escaping RequestCompleteBlock){
-        MSDataProvider.checkPassword(delegate: self.delegate!, parameter: parameter) { (isSuccess,result) in
+    //发送验证码
+    func getCode(parameter:NSMutableDictionary,completionBlock:@escaping RequestCompleteBlock){
+        MSDataProvider.getCode(delegate: self.delegate!, parameter: parameter) { (isSuccess,result) in
             if isSuccess{
-                let model = Mapper<PersonRegisterSuccessDataModel>().map(JSONObject: result)
-                if model != nil{
-                    self.successModel = model!
+                let model = Mapper<BaseModel>().map(JSONObject: result)
+                if model != nil && model!.msg != nil{
+                    LHAlertView.showTipAlertWithTitle(model!.msg!)
+                    completionBlock(true, nil)
                 }
                 completionBlock(true, nil)
             }else{
@@ -28,11 +29,11 @@ class PersonRegisterDataController: BaseDataController {
             }
         }
     }
-    //添加注册的新用户
-    func addUser(parameter:NSMutableDictionary,completionBlock:@escaping RequestCompleteBlock){
-        MSDataProvider.addUser(delegate: self.delegate!, parameter: parameter) { (isSuccess,result) in
+    //注册
+    func register(parameter:NSMutableDictionary,completionBlock:@escaping RequestCompleteBlock){
+        MSDataProvider.register(delegate: self.delegate!, parameter: parameter) { (isSuccess,result) in
             if isSuccess{
-                let model = Mapper<PersonRegisterSuccessDataModel>().map(JSONObject: result)
+                let model = Mapper<BaseModel>().map(JSONObject: result)
                 if model != nil && model!.msg != nil{
                     LHAlertView.showTipAlertWithTitle(model!.msg!)
                 }
