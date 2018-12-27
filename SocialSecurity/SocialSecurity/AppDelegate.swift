@@ -41,6 +41,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UITabBar.appearance().isTranslucent = false
         //skphoto内存缓存图片
         //                SKCache.sharedCache.removeAllImages()
+        
+        SDImageCache.shared().clearDisk(onCompletion: nil)
         return true
     }
 

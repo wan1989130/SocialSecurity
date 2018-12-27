@@ -31,8 +31,10 @@ class MineMessageViewController: BaseViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         nickLabel.text = MyConfig.shared().userName
-        SDImageCache.shared().clearMemory()
-        headPhotoImageView.setImage(url: FileAccessHost + MyConfig.shared().headPhoto, placeholder: defaultImage)
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyyMMddHHmmss"
+        let str = "&" + formatter.string(from: Date())
+        headPhotoImageView.setImage(url: FileAccessHost + MyConfig.shared().headPhoto + str, placeholder: defaultImage)
     }
   
 
