@@ -26,6 +26,7 @@ class LoginDataController: BaseDataController {
                     MyConfig.shared().zhikajinduUrl = model!.data.zhikajinduUrl
                     MyConfig.shared().yibaoUrl = model!.data.yibaoUrl
                     MyConfig.shared().userName = model!.data.userName
+                    MyConfig.shared().token = model!.data.token
                     
 //                    MyConfig.shared().userModel = data
 //                    currentUser = model?.data

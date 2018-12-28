@@ -13,15 +13,20 @@ import ObjectMapper
 
 class CaijiSaveModel: BaseModel {
     //name 姓名
+    var xm = ""
     var xb = ""
+    var xbName = ""
     var zjlx = ""//证件类型
+    var zjlxName = ""
     var zjhm = ""//证件号码
     var csrq = ""//出生日期
     var zjyxq = ""//证件有效期
     var mz = ""//民族
+    var mzName = ""
     var txdz = ""//通信地址
     
     var jhrzjlx = "" //监护人证件类型
+    var jhrzjlxName = "" //
     var jhrzh = "" //监护人证件号码
     var jhrxm = "" //监护人姓名
     
@@ -42,6 +47,7 @@ class CaijiSaveModel: BaseModel {
     var dbr_sfzhm = ""//代办人身份证号
     var dbr_lxdh = ""//代办人联系手机
     
+    
     var provinceId = ""
     var cityId = ""
     var regionId = ""
@@ -49,18 +55,24 @@ class CaijiSaveModel: BaseModel {
     var cityName = ""
     var regionName = ""
     
+
     
     override func mapping(map: Map) {
         super.mapping(map: map)
+        xm <- map["xm"]
         xb <- map["xb"]
+        xbName <- map["xbName"]
         zjlx <- map["zjlx"]
+        zjlxName <- map["zjlxName"]
         zjhm <- map["zjhm"]
         csrq <- map["csrq"]
         zjyxq <- map["zjyxq"]
         mz <- map["mz"]
+        mzName <- map["mzName"]
         txdz <- map["txdz"]
         
         jhrzjlx <- map["jhrzjlx"]
+        jhrzjlxName <- map["jhrzjlxName"]
         jhrzh <- map["jhrzh"]
         jhrxm <- map["jhrxm"]
         

@@ -61,19 +61,17 @@ class CaijiBasicContentTableViewCell: UITableViewCell {
         self.model = model
         self.indexPath = indexPath
         xmTextField.text = model.name
-        xbTextField.text = model.xb
-        zjlxTextField.text = model.zjlx
+        xbTextField.text = model.xbName
+        zjlxTextField.text = model.zjlxName
         zjhmTextField.text = model.zjhm
         csrqTextField.text = model.csrq
         zjyxqTextField.text = model.zjyxq
-        mzTextField.text = model.mz
+        mzTextField.text = model.mzName
         if model.txdz != ""{
             txdzTextView.text = model.txdz
         }else{
             
         }
-        
-        
         xmTextField.isEnabled = isWrite
         xbTextField.isEnabled = isWrite
         zjlxTextField.isEnabled = isWrite
@@ -131,6 +129,7 @@ extension CaijiBasicContentTableViewCell:UITextFieldDelegate{
         }
         return true
     }
+    
 }
 extension CaijiBasicContentTableViewCell:UITextViewDelegate{
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {

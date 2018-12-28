@@ -10,7 +10,8 @@ import UIKit
 import ObjectMapper
 
 class CaijiBasicDataController: BaseDataController {
-    
+    var dictionaryModel:DictionaryDataModel!
+    var cellCount = 0
     var isCan = false
     var type = ""//0录入1修改2查看
 //    var dataArray:Array<CaijiBasicDisplayModel> = []
@@ -44,6 +45,7 @@ class CaijiBasicDataController: BaseDataController {
     func scanCountQuery(parameter:NSMutableDictionary,completionBlock:@escaping RequestCompleteBlock){
         MSDataProvider.scanCountQuery(delegate: self.delegate!, parameter: parameter) { (isSuccess,result) in
             if isSuccess{
+                
                 completionBlock(true,nil)
             }else{
                 completionBlock(false, nil)
@@ -54,7 +56,15 @@ class CaijiBasicDataController: BaseDataController {
     func getDictionary(parameter:NSMutableDictionary,completionBlock:@escaping RequestCompleteBlock){
         MSDataProvider.getDictionary(delegate: self.delegate!, parameter: parameter) { (isSuccess,result) in
             if isSuccess{
-                completionBlock(true,nil)
+                let model = Mapper<DictionaryDataModel>().map(JSONObject: result)
+                if model != nil{
+                    self.dictionaryModel = model!
+                    self.cellCount = 3
+                    completionBlock(true,nil)
+                }else{
+                    completionBlock(false,nil)
+                }
+               
             }else{
                 completionBlock(false, nil)
             }

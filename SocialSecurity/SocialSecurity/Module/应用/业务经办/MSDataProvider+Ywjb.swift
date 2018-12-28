@@ -32,10 +32,10 @@ extension MSDataProvider {
     }
     //扫描身份证使用
     class func scanCountQuery(delegate:UIViewController, parameter:NSMutableDictionary, completionBlock:@escaping LHHTTPResultJsonHandler){
-        LHHttpDataProvider.postDataForDelegate(delegate, path: "scanCountQuery.do", withParams: parameter, verson: nil, autoAlert: false, completionBlock: completionBlock)
+        LHHttpDataProvider.postDataForDelegate(delegate, path: "scanCountQuery.do", withParams: parameter, verson: nil, autoAlert: true, completionBlock: completionBlock)
     }
     //国标项
     class func getDictionary(delegate:UIViewController, parameter:NSMutableDictionary, completionBlock:@escaping LHHTTPResultJsonHandler){
-        LHHttpDataProvider.postDataForDelegate(delegate, path: "getDictionary.do", withParams: parameter, verson: nil, autoAlert: false, completionBlock: completionBlock)
+        LHHttpDataProvider.postDataForDelegate(delegate, path: "getDictionary.do", withParams: parameter, verson: nil, autoAlert: true, completionBlock: completionBlock)
     }
 }

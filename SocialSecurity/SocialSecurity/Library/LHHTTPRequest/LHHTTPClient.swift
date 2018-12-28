@@ -73,12 +73,19 @@ class LHHTTPClient: NSObject {
             showHud()
         
         
+        
         print("上传文件-路径:\n\(basePath)")
        //上传参数
         let result = self.getJSONStringFromDictionary(dictionary: parameters as! NSDictionary)
         print("上传参数 = \(result)")
         
         let manager = AFHTTPSessionManager()
+        
+        //header 中加token
+        var token = ""
+        if MyConfig.shared().token != ""{
+           manager.requestSerializer.setValue(token, forHTTPHeaderField: "token")
+        }
         
         manager.responseSerializer = AFJSONResponseSerializer()
         
@@ -163,12 +170,13 @@ class LHHTTPClient: NSObject {
         LHHTTPClient.manager.requestSerializer = AFHTTPRequestSerializer()
 
         //header 中加token
-//        var token = ""
-//        if MyConfig.shared().userModel.count > 0{
-//            let userNSObjectModel = NSKeyedUnarchiver.unarchiveObject(with: MyConfig.shared().userModel) as! UserNSObjectModel
-//            token = userNSObjectModel.token
-//        }
-//        manager.requestSerializer.setValue(token, forHTTPHeaderField: "token")
+        var token = ""
+        if MyConfig.shared().token != ""{
+
+            print("token = \(token)")
+            LHHTTPClient.manager.requestSerializer.setValue(MyConfig.shared().token, forHTTPHeaderField: "token")
+        }
+        
 //        manager.requestSerializer.setValue(HSEncryptionManager.sharedInstance().getToken(), forHTTPHeaderField: "ticket")
 //        let now = Date()
 //        let timeInterval:TimeInterval = now.timeIntervalSince1970

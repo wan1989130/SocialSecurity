@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import ObjectMapper
 class SelectViewController: BaseViewController {
 
     
@@ -18,7 +18,7 @@ class SelectViewController: BaseViewController {
                 flag = true
                 let dic:NSMutableDictionary = [
                     "model":item,
-                    "selectIndex":selectIndex
+                    "selectIndexId":selectIndexId
                 ]
                 dismissBlock?(dic)
             }
@@ -31,8 +31,9 @@ class SelectViewController: BaseViewController {
         self.navigationController?.popViewController(animated: true)
     }
     @IBOutlet var tableView: UITableView!
-    var dataArray:Array<DictionaryModel>! = [DictionaryModel]()
-    var selectIndex = -1
+    var dataArray:Array<DictionaryModel> = [DictionaryModel]()
+    var selectIndexId = ""
+    var selectIndex = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         initData()
@@ -61,16 +62,26 @@ extension SelectViewController{
         
         if senderParam != nil{
             let dic = senderParam as! NSMutableDictionary
-            dataArray = dic["array"] as! Array<DictionaryModel>
-            if dic["selectIndex"] != nil{
-                selectIndex = dic["selectIndex"] as! Int
-                if selectIndex == -1{
-                    if dataArray.count > 0{
-                        dataArray[0].isSelect = true
-                        selectIndex = 0
+            let tempDataArray = dic["array"] as! Array<DictionaryModel>
+            for item in tempDataArray{
+                dataArray.append(Mapper<DictionaryModel>().map(JSONObject: item.toJSON())!)
+            }
+            if dic["selectIndexId"] as! String != ""{
+                for i in 0..<dataArray.count{
+                    if dataArray[i].id == dic["selectIndexId"] as! String{
+                        dataArray[i].isSelect = true
+                        selectIndexId = dataArray[i].id
+                        selectIndex = i
+                        
                     }
                 }
+            }else{
+                dataArray[0].isSelect = true
+                selectIndexId = dataArray[0].id
+                selectIndex = 0
             }
+            
+           
         }
         
     }

@@ -71,6 +71,9 @@ extension CaijiJianHuRenViewController{
             if dic["saveModel"] != nil{
                 dataController.saveModel = dic["saveModel"] as! CaijiSaveModel
             }
+            if dic["dictionaryModel"] != nil{
+                dataController.dictionaryModel = dic["dictionaryModel"] as! DictionaryDataModel
+            }
             
         }
         
@@ -88,24 +91,20 @@ extension CaijiJianHuRenViewController:UITextFieldDelegate{
                 return false
             }else{
                 
-                var dataArray = [DictionaryModel]()
-                let model1 = DictionaryModel(id: "0", name: "身份证")
-                let model2 = DictionaryModel(id: "1", name: "护照")
-                let model3 = DictionaryModel(id: "2", name: "驾驶证")
-                dataArray.append(model1)
-                dataArray.append(model2)
-                dataArray.append(model3)
+              
                 
                 weak var weakSelf = self
                 let dic:NSMutableDictionary = [
-                    "array":dataArray,
-                    "selectIndex":selectIndex
+                    "array":dataController.dictionaryModel.data.zjlxMap,
+                    "selectIndexId":dataController.saveModel.jhrzjlx
                 ]
                 pushViewController("SelectViewController", sender: dic) { (info) in
+                    if weakSelf == nil{return}
                     let dic = info as! NSMutableDictionary
                     let model = dic["model"] as! DictionaryModel
-                    print(model.name)
-                    weakSelf?.jhrzjlxTextField.text = model.name
+                    weakSelf!.dataController.saveModel.jhrzjlx = model.id
+                    weakSelf!.dataController.saveModel.jhrzjlxName = model.name
+                   
                 }
                 return false
             }
@@ -113,6 +112,9 @@ extension CaijiJianHuRenViewController:UITextFieldDelegate{
         }
         return true
     }
+//    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+//        
+//    }
 }
 extension CaijiJianHuRenViewController{
     func checkFun() -> Bool{

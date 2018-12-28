@@ -9,41 +9,50 @@
 import UIKit
 import ObjectMapper
 class DictionaryDataModel: BaseModel {
-    var data = IsScanQueryModel()
+    var data = DictionaryItemModel()
     override func mapping(map: Map) {
         super.mapping(map: map)
         data <- map["data"]
     }
 }
 class DictionaryItemModel: BaseModel {
-    var xbMap = [DictionaryModel]()
-    var zjlxMap = [DictionaryModel]()
-    var mzMap = [DictionaryModel]()
-    var ryztMap = [DictionaryModel]()
-    var gjMap = [DictionaryModel]()
-    var hjxzMap = [DictionaryModel]()
-    var klmyhMap = [DictionaryModel]()
-    var zszyMap = [DictionaryModel]()
-    var zshyMap = [DictionaryModel]()
-    var jhrzjlxMap = [DictionaryModel]()
+    var ryztMap = [DictionaryModel]()//人员状态
+    var hjxzMap = [DictionaryModel]()//户籍性质
+    var xbMap = [DictionaryModel]()//性别
+    var zjlxMap = [DictionaryModel]()//证件类型  监护人证件类型
+    var zszyMap = [DictionaryModel]()//专属职业
+    var gjMap = [DictionaryModel]()//国籍
+    var zshyMap = [DictionaryModel]()//专属行业
+    var mzMap = [DictionaryModel]()//民族
+    var klmyhMap = [DictionaryModel]()//卡联名银行
+    
+    
+    
+    
+    
+    
     override func mapping(map: Map) {
         super.mapping(map: map)
+        ryztMap <- map["ryztMap"]
+        hjxzMap <- map["hjxzMap"]
         xbMap <- map["xbMap"]
+        
         zjlxMap <- map["zjlxMap"]
         mzMap <- map["mzMap"]
-        ryztMap <- map["ryztMap"]
+        
         gjMap <- map["gjMap"]
-        hjxzMap <- map["hjxzMap"]
+        
         klmyhMap <- map["klmyhMap"]
         zszyMap <- map["zszyMap"]
         zshyMap <- map["zshyMap"]
-        jhrzjlxMap <- map["jhrzjlxMap"]
+        
     }
 }
 class DictionaryModel:BaseModel{
     var isSelect = false
     override func mapping(map: Map) {
         super.mapping(map: map)
-        
+        id <- map["id"]
+         isSelect <- map["isSelect"]
     }
 }

@@ -16,7 +16,7 @@ class CaijiBasicViewController: BaseViewController {
    
     var frontVc:UIViewController!
     var dateType = ""//0出生日期1证件有效期
-    var ageSelectIndex = -1
+    
     var csrq = ""
     @IBOutlet var tableView: UITableView!
     var dataController:CaijiBasicDataController!
@@ -87,7 +87,7 @@ extension CaijiBasicViewController{
 extension CaijiBasicViewController:UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 3
+        return dataController.cellCount
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 0{
@@ -237,8 +237,22 @@ extension CaijiBasicViewController:CaijiBasicNextProtocol,CaijiBasicContentSelec
         cellHeight = height
     }
     
-    func zjlxClick() {
-        print("证件类型")
+    func zjlxClick() {//证件类型
+        weak var weakSelf = self
+        let dic:NSMutableDictionary = [
+            "array":dataController.dictionaryModel.data.zjlxMap,
+            "selectIndexId":dataController.saveModel.zjlx
+        ]
+        pushViewController("SelectViewController", sender: dic) { (info) in
+            if weakSelf == nil{return}
+            let dic = info as! NSMutableDictionary
+            let model = dic["model"] as! DictionaryModel
+            weakSelf!.dataController.saveModel.zjlx = model.id
+            weakSelf!.dataController.saveModel.zjlxName = model.name
+            UIView.performWithoutAnimation {
+                weakSelf?.tableView.reloadRows(at: [IndexPath.init(row: 1, section: 0)], with: .none)
+            }
+        }
     }
     
     func csrqClick() {//出生日期
@@ -261,8 +275,22 @@ extension CaijiBasicViewController:CaijiBasicNextProtocol,CaijiBasicContentSelec
         
     }
     
-    func mzClick() {
-        print("民族")
+    func mzClick() {//民族
+        weak var weakSelf = self
+        let dic:NSMutableDictionary = [
+            "array":dataController.dictionaryModel.data.mzMap,
+            "selectIndexId":dataController.saveModel.mz
+        ]
+        pushViewController("SelectViewController", sender: dic) { (info) in
+            if weakSelf == nil{return}
+            let dic = info as! NSMutableDictionary
+            let model = dic["model"] as! DictionaryModel
+            weakSelf!.dataController.saveModel.mz = model.id
+            weakSelf!.dataController.saveModel.mzName = model.name
+            UIView.performWithoutAnimation {
+                weakSelf?.tableView.reloadRows(at: [IndexPath.init(row: 1, section: 0)], with: .none)
+            }
+        }
     }
     
     func nextClick() {//下一步
@@ -270,7 +298,8 @@ extension CaijiBasicViewController:CaijiBasicNextProtocol,CaijiBasicContentSelec
             let dic:NSMutableDictionary = [
                 "title":self.title,
                 "type":dataController.type,
-                "saveModel":dataController.saveModel
+                "saveModel":dataController.saveModel,
+                "dictionaryModel":dataController.dictionaryModel
             ]
             pushViewController("CaijiJianHuRenViewController",sender:dic)
         }
@@ -278,32 +307,21 @@ extension CaijiBasicViewController:CaijiBasicNextProtocol,CaijiBasicContentSelec
         
     }
     func xbClick() {
-        var dataArray = [DictionaryModel]()
-        let model1 = DictionaryModel(id: "0", name: "男")
-        let model2 = DictionaryModel(id: "1", name: "女")
-        let model3 = DictionaryModel(id: "2", name: "未知")
-        dataArray.append(model1)
-        dataArray.append(model2)
-        dataArray.append(model3)
-        
         weak var weakSelf = self
         let dic:NSMutableDictionary = [
-            "array":dataArray,
-            "selectIndex":ageSelectIndex
+            "array":dataController.dictionaryModel.data.xbMap,
+            "selectIndexId":dataController.saveModel.xb
         ]
         pushViewController("SelectViewController", sender: dic) { (info) in
+            if weakSelf == nil{return}
             let dic = info as! NSMutableDictionary
             let model = dic["model"] as! DictionaryModel
-            print(model.name)
+            weakSelf!.dataController.saveModel.xb = model.id
+            weakSelf!.dataController.saveModel.xbName = model.name
             UIView.performWithoutAnimation {
                 weakSelf?.tableView.reloadRows(at: [IndexPath.init(row: 1, section: 0)], with: .none)
             }
-            
-            
-            
         }
-
-        
     }
 }
 extension CaijiBasicViewController:SelectDateDelegate{
@@ -339,8 +357,8 @@ extension CaijiBasicViewController{
             LHAlertView.showTipAlertWithTitle("证件类型不能为空")
             return false
         }
-        if model.zjhm == ""{
-            LHAlertView.showTipAlertWithTitle("证件号码不能为空")
+        if  !model.zjhm.isLegalIdCard(){
+            
             return false
         }
         if model.csrq == ""{
@@ -371,8 +389,7 @@ extension CaijiBasicViewController{
         dataController.scanQuery(parameter: parameter) { (isSucceed, info) in
             if isSucceed {
                 if weakSelf == nil{return}
-                
-                weakSelf!.tableView.reloadData()
+                weakSelf!.getDictionary()
             }else {
                 //TODO
                 
@@ -388,7 +405,24 @@ extension CaijiBasicViewController{
         
         dataController.scanCountQuery(parameter: parameter) { (isSucceed, info) in
             if isSucceed {
-               
+                
+            }else {
+                //TODO
+                
+            }
+        }
+    }
+    //国标项
+    fileprivate func getDictionary(){
+        
+        let parameter:NSMutableDictionary = [
+            "phone":MyConfig.shared().phone
+        ]
+        weak var weakSelf = self
+        dataController.getDictionary(parameter: parameter) { (isSucceed, info) in
+            if isSucceed {
+                if weakSelf == nil{return}
+                weakSelf!.tableView.reloadData()
             }else {
                 //TODO
                 
