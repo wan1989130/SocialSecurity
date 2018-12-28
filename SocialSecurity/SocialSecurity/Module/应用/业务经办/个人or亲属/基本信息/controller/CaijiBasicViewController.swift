@@ -60,6 +60,9 @@ extension CaijiBasicViewController{
             if dic["type"] != nil{
                 dataController.type = dic["type"] as! String
             }
+            if dic["saveModel"] != nil{
+                dataController.saveModel = dic["saveModel"] as! CaijiSaveModel
+            }
             
         }
         if dataController.type == "2"{

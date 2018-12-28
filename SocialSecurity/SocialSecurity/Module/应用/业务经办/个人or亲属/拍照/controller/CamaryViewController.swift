@@ -24,7 +24,7 @@ class CamaryViewController: BaseViewController {
                 ]
                 pushViewController("DaiBanPersonViewController",sender:dic)
             }else{
-                //调接口
+                addOrUpdate()
             }
             
         }
@@ -154,6 +154,30 @@ extension CamaryViewController{
             }
         }
         
+    }
+    
+    //录入和修改
+    fileprivate func addOrUpdate(){
+        
+        let parameterDic = dataController.saveModel.toJSON()
+        let parameter = NSMutableDictionary(dictionary: parameterDic)
+        weak var weakSelf = self
+        dataController.addOrUpdate(parameter: parameter) { (isSucceed, info) in
+            if weakSelf == nil{return}
+            if isSucceed {
+                weakSelf!.returnMain()
+            }else {
+                
+            }
+        }
+        
+    }
+    func returnMain(){
+        for vc in (self.navigationController?.viewControllers)!{
+            if vc is YwjbViewController{
+                self.navigationController?.popToViewController(vc, animated: true)
+            }
+        }
     }
     
     

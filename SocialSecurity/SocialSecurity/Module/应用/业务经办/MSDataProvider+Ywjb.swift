@@ -38,4 +38,8 @@ extension MSDataProvider {
     class func getDictionary(delegate:UIViewController, parameter:NSMutableDictionary, completionBlock:@escaping LHHTTPResultJsonHandler){
         LHHttpDataProvider.postDataForDelegate(delegate, path: "getDictionary.do", withParams: parameter, verson: nil, autoAlert: true, completionBlock: completionBlock)
     }
+    // 录入和修改
+    class func addOrUpdate(delegate:UIViewController, parameter:NSMutableDictionary, completionBlock:@escaping LHHTTPResultJsonHandler){
+        LHHttpDataProvider.postDataForDelegate(delegate, path: "addOrUpdate.do", withParams: parameter, verson: nil, autoAlert: true, completionBlock: completionBlock)
+    }
 }

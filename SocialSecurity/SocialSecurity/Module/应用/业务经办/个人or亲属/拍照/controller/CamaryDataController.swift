@@ -44,4 +44,19 @@ class CamaryDataController: BaseDataController {
         }
         
     }
+    func addOrUpdate(parameter:NSMutableDictionary,completionBlock:@escaping RequestCompleteBlock){
+        MSDataProvider.addOrUpdate(delegate: self.delegate!, parameter: parameter) { (isSuccess,result) in
+            if isSuccess{
+                let model = Mapper<BaseModel>().map(JSONObject: result)
+                if model != nil && model!.msg != nil{
+                    LHAlertView.showTipAlertWithTitle(model!.msg!)
+                    completionBlock(true, nil)
+                }
+            }else{
+                completionBlock(false, nil)
+            }
+            
+        }
+        
+    }
 }

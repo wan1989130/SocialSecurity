@@ -60,6 +60,7 @@ class CaijiBasicDataController: BaseDataController {
                 if model != nil{
                     self.dictionaryModel = model!
                     self.cellCount = 3
+                    self.updateDictionary()
                     completionBlock(true,nil)
                 }else{
                     completionBlock(false,nil)
@@ -70,7 +71,39 @@ class CaijiBasicDataController: BaseDataController {
             }
         }
     }
-    
+    func updateDictionary(){
+        if type == "1"{//录入取第0个，修改不用动
+            saveModel.xb = dictionaryModel.data.xbMap[0].id
+            saveModel.xbName = dictionaryModel.data.xbMap[0].name
+            
+            saveModel.zjlx = dictionaryModel.data.zjlxMap[0].id
+            saveModel.zjlxName = dictionaryModel.data.zjlxMap[0].name
+            
+            saveModel.mz = dictionaryModel.data.mzMap[0].id
+            saveModel.mzName = dictionaryModel.data.mzMap[0].name
+            
+            saveModel.jhrzjlx = dictionaryModel.data.zjlxMap[0].id
+            saveModel.jhrzjlxName = dictionaryModel.data.zjlxMap[0].name
+            
+            saveModel.ryzt = dictionaryModel.data.ryztMap[0].id
+            saveModel.ryztName = dictionaryModel.data.ryztMap[0].name
+            
+            saveModel.gj = dictionaryModel.data.gjMap[0].id
+            saveModel.gjName = dictionaryModel.data.gjMap[0].name
+            
+            saveModel.hjxz = dictionaryModel.data.hjxzMap[0].id
+            saveModel.hjxzName = dictionaryModel.data.hjxzMap[0].name
+            
+            saveModel.klmyh = dictionaryModel.data.klmyhMap[0].id
+            saveModel.klmyhName = dictionaryModel.data.klmyhMap[0].name
+            
+            saveModel.zszy = dictionaryModel.data.zszyMap[0].id
+            saveModel.zszyName = dictionaryModel.data.zszyMap[0].name
+            
+            saveModel.zshy = dictionaryModel.data.zshyMap[0].id
+            saveModel.zshyName = dictionaryModel.data.zshyMap[0].name
+        }
+    }
     
     
 //    func initData() {

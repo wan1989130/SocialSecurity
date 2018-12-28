@@ -16,7 +16,7 @@
                 <outlet property="lxsjTextField" destination="7Xz-q0-R1o" id="Vyi-Wq-4NH"/>
                 <outlet property="sfzhTextField" destination="1Uz-In-CwO" id="uBW-vM-LUh"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
-                <outlet property="xbTextField" destination="Vav-PO-F0u" id="X2V-6q-i5U"/>
+                <outlet property="xmTextField" destination="Vav-PO-F0u" id="Aa8-3K-mfD"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
