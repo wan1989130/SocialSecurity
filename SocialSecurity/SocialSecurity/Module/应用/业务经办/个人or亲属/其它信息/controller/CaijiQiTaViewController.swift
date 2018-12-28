@@ -185,10 +185,14 @@ extension CaijiQiTaViewController:CaijiBasicNextProtocol,CaijiQiTaContentSelectP
     func yjqyClick() {//邮寄区域
         weak var weakSelf = self
         AddressSelectView.show(withProvince: dataController.saveModel.provinceId, city: dataController.saveModel.cityId, district: dataController.saveModel.regionId) { (province , city, district) in
+            if weakSelf == nil{return}
             let str = "\(province.region_name!)\(city.region_name!)\(district.region_name!)"
-            weakSelf?.dataController.saveModel.provinceId = province.region_id!
-            weakSelf?.dataController.saveModel.cityId = city.region_id!
-            weakSelf?.dataController.saveModel.regionId = district.region_id!
+            weakSelf!.dataController.saveModel.provinceId = province.region_id!
+            weakSelf!.dataController.saveModel.cityId = city.region_id!
+            weakSelf!.dataController.saveModel.regionId = district.region_id!
+            weakSelf!.dataController.saveModel.provinceName = province.region_name!
+            weakSelf!.dataController.saveModel.cityName = city.region_name!
+            weakSelf!.dataController.saveModel.regionName = district.region_name!
             
         }
         
