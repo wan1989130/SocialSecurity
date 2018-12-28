@@ -103,6 +103,13 @@ class CaijiSaveModel: BaseModel {
         dbr_sfzhm <- map["dbr_sfzhm"]
         dbr_lxdh <- map["dbr_lxdh"]
         
+        provinceId <- map["provinceId"]
+        provinceName <- map["provinceName"]
+        cityId <- map["cityId"]
+        cityName <- map["cityName"]
+        regionId <- map["regionId"]
+        regionName <- map["regionName"]
+        
         
     }
    
