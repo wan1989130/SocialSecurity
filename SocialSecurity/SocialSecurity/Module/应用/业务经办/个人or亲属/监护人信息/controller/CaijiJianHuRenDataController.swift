@@ -10,7 +10,7 @@ import UIKit
 
 class CaijiJianHuRenDataController: BaseDataController {
 
-    var type = ""//0录入1修改2查看
+    var type = ""//0录入1修改
     var saveModel:CaijiSaveModel!
     var dictionaryModel:DictionaryDataModel!
 }

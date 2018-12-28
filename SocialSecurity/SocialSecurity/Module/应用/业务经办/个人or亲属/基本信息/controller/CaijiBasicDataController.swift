@@ -13,7 +13,7 @@ class CaijiBasicDataController: BaseDataController {
     var dictionaryModel:DictionaryDataModel!
     var cellCount = 0
     var isCan = false
-    var type = ""//0录入1修改2查看
+    var type = ""//0录入1修改
 //    var dataArray:Array<CaijiBasicDisplayModel> = []
     var saveModel = CaijiSaveModel()
     var isCanQueryModel = IsScanQueryDataModel()

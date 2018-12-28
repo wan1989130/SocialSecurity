@@ -11,16 +11,22 @@ import UIKit
 class CamaryViewController: BaseViewController {
 
     var alert:UIAlertController!
-    var dataController:CaijiQiTaDataController!
+    var dataController:CamaryDataController!
     var isWrite = true
     @IBAction func nextClick(_ sender: Any) {
         if checkFun(){
-            let dic:NSMutableDictionary = [
-                "title":self.title,
-                "type":dataController.type,
-                "saveModel":dataController.saveModel
-            ]
-            pushViewController("DaiBanPersonViewController",sender:dic)
+            if title == "亲属代办"{
+                let dic:NSMutableDictionary = [
+                    "title":self.title,
+                    "type":dataController.type,
+                    "saveModel":dataController.saveModel,
+                    "dictionaryModel":dataController.dictionaryModel
+                ]
+                pushViewController("DaiBanPersonViewController",sender:dic)
+            }else{
+                //调接口
+            }
+            
         }
         
         
@@ -48,7 +54,7 @@ extension CamaryViewController{
         
     }
     fileprivate func initData(){
-        dataController = CaijiQiTaDataController(delegate: self)
+        dataController = CamaryDataController(delegate: self)
         if senderParam != nil{
             let dic = senderParam as! NSMutableDictionary
             if dic["title"] != nil{
@@ -60,7 +66,9 @@ extension CamaryViewController{
             if dic["saveModel"] != nil{
                 dataController.saveModel = dic["saveModel"] as! CaijiSaveModel
             }
-            
+            if dic["dictionaryModel"] != nil{
+                dataController.dictionaryModel = dic["dictionaryModel"] as! DictionaryDataModel
+            }
         }
         
         
@@ -112,35 +120,45 @@ extension CamaryViewController{
     //上传图片接口
     fileprivate func uploadPortrait(image:UIImage){
         let imageData:Data  = image.imageWithImageSimple(newSize:CGSize(width: 358, height: 441), maxLength: 50 * 1024)
-        //        let parameter:NSMutableDictionary = [
-        //            "typeFile":"0",
-        //            "work":MyConfig.shared().projectNameBase,
-        //            "transaction":"1",
-        //            "thumbnail":"0",
-        //            "org":currentUser.orgId
-        //        ]
-        //        let imageData:Data = UIImageJPEGRepresentation(portrait, 0.9)! as Data
-        //        dataController.uploadHeadPhoto(imgDataArray:  [imageData], parameter: parameter) { (isSucceed, info) in
-        //            if isSucceed{
-//        self.uploadHeadUrl(portrait: UIImage.init(data: portraitData)!)
-        //
-        //            }
-        //        }
+        let parameter:NSMutableDictionary = [
+            "phone":MyConfig.shared().phone,
+            "remark":"0",
+            "typeFile":"0",
+            "name":dataController.saveModel.zjhm
+        ]
+        weak var weakSelf = self
+        
+        dataController.uploadPhoto(imgDataArray:  [imageData], parameter: parameter) { (isSucceed, info) in
+            if isSucceed{
+                weakSelf?.uploadHeadUrl(portrait:image)
+                print("成功")
+            }else{
+                print("失败")
+            }
+            
+        }
     }
     //上传头像url
     fileprivate func uploadHeadUrl(portrait:UIImage){
-        //        let parameter:NSMutableDictionary = [
-        //            "headUrl":dataController.model.data.count > 0 ? dataController.model.data[0].accessPath : ""
-        //        ]
-        //        dataController.uploadHeadUrl(parameter: parameter) { (isSucceed, info) in
-        //            if isSucceed {
-//        self.photoButton.setBackgroundImage(portrait, for: .normal)
-        //            }else {
-        //
-        //            }
-        //        }
+        let parameter:NSMutableDictionary = [
+            "phone":MyConfig.shared().phone,
+            "imageUrl":dataController.uploadPhotoModel.data.imageUrl,
+            ]
+        weak var weakSelf = self
+        dataController.uploadHeadPhoto(parameter: parameter) { (isSucceed, info) in
+            if weakSelf == nil{return}
+            if isSucceed {
+                weakSelf?.photoButton.setBackgroundImage(portrait, for: .normal)
+            }else {
+                weakSelf?.photoButton.setBackgroundImage(UIImage.init(named: "ic_id_photo"), for: .normal)
+            }
+        }
         
     }
+    
+    
+    
+    
 }
 extension CamaryViewController: UIImagePickerControllerDelegate,UINavigationControllerDelegate{
     //调用系统相册及拍照功能实现方法

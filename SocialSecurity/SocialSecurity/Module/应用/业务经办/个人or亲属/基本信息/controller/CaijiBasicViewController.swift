@@ -294,6 +294,7 @@ extension CaijiBasicViewController:CaijiBasicNextProtocol,CaijiBasicContentSelec
     }
     
     func nextClick() {//下一步
+        
         if checkFun(){
             let dic:NSMutableDictionary = [
                 "title":self.title,
@@ -301,7 +302,12 @@ extension CaijiBasicViewController:CaijiBasicNextProtocol,CaijiBasicContentSelec
                 "saveModel":dataController.saveModel,
                 "dictionaryModel":dataController.dictionaryModel
             ]
-            pushViewController("CaijiJianHuRenViewController",sender:dic)
+            if dataController.saveModel.zjlxName == "户口本" && dataController.saveModel.zjyxq == "长期"{
+                pushViewController("CaijiJianHuRenViewController",sender:dic)
+            }else{
+                pushViewController("CaijiQiTaViewController",sender:dic)
+            }
+            
         }
         
         

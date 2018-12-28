@@ -23,7 +23,8 @@ class CaijiJianHuRenViewController: BaseViewController {
             let dic:NSMutableDictionary = [
                 "title":self.title,
                 "type":dataController.type,
-                "saveModel":dataController.saveModel
+                "saveModel":dataController.saveModel,
+                "dictionaryModel":dataController.dictionaryModel
             ]
             pushViewController("CaijiQiTaViewController",sender:dic)
         }
@@ -112,9 +113,31 @@ extension CaijiJianHuRenViewController:UITextFieldDelegate{
         }
         return true
     }
-//    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-//        
-//    }
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        let model = dataController.saveModel!
+        if textField == jhrzjhmTextField{//监护人证件号码
+            let currentText = textField.text ?? ""
+            let newText = (currentText as NSString).replacingCharacters(in: range, with: string)
+            if newText.characters.count >= 18{
+                jhrzjhmTextField.text = (newText as NSString).substring(to: 18)
+                model.jhrzh = newText
+                return false
+            }else{
+                model.jhrzh = newText
+            }
+        }else if textField == jhrxmTextField{//监护人姓名
+            let currentText = textField.text ?? ""
+            let newText = (currentText as NSString).replacingCharacters(in: range, with: string)
+            if newText.characters.count >= 18{
+                jhrxmTextField.text = (newText as NSString).substring(to: 18)
+                model.jhrxm = newText
+                return false
+            }else{
+                model.jhrxm = newText
+            }
+        }
+        return true
+    }
 }
 extension CaijiJianHuRenViewController{
     func checkFun() -> Bool{

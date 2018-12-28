@@ -50,6 +50,9 @@ extension CaijiQiTaViewController{
             if dic["saveModel"] != nil{
                 dataController.saveModel = dic["saveModel"] as! CaijiSaveModel
             }
+            if dic["dictionaryModel"] != nil{
+                dataController.dictionaryModel = dic["dictionaryModel"] as! DictionaryDataModel
+            }
             
         }
         
@@ -80,28 +83,103 @@ extension CaijiQiTaViewController:UITableViewDelegate,UITableViewDataSource{
     }
 }
 extension CaijiQiTaViewController:CaijiBasicNextProtocol,CaijiQiTaContentSelectProtocol{
-    func ryztClick() {
-        print("人员状态")
+    func ryztClick() {//人员状态
+        weak var weakSelf = self
+        let dic:NSMutableDictionary = [
+            "array":dataController.dictionaryModel.data.ryztMap,
+            "selectIndexId":dataController.saveModel.ryzt
+        ]
+        pushViewController("SelectViewController", sender: dic) { (info) in
+            if weakSelf == nil{return}
+            let dic = info as! NSMutableDictionary
+            let model = dic["model"] as! DictionaryModel
+            weakSelf!.dataController.saveModel.jhrzjlx = model.id
+            weakSelf!.dataController.saveModel.jhrzjlxName = model.name
+            
+        }
+        
     }
     
-    func gjClick() {
-        print("国籍")
+    func gjClick() {//国籍
+
+        weak var weakSelf = self
+        let dic:NSMutableDictionary = [
+            "array":dataController.dictionaryModel.data.gjMap,
+            "selectIndexId":dataController.saveModel.gj
+        ]
+        pushViewController("SelectViewController", sender: dic) { (info) in
+            if weakSelf == nil{return}
+            let dic = info as! NSMutableDictionary
+            let model = dic["model"] as! DictionaryModel
+            weakSelf!.dataController.saveModel.gj = model.id
+            weakSelf!.dataController.saveModel.gjName = model.name
+            
+        }
     }
     
-    func hjxzClick() {
-        print("户籍性质")
+    func hjxzClick() {//户籍性质
+        
+        weak var weakSelf = self
+        let dic:NSMutableDictionary = [
+            "array":dataController.dictionaryModel.data.hjxzMap,
+            "selectIndexId":dataController.saveModel.hjxz
+        ]
+        pushViewController("SelectViewController", sender: dic) { (info) in
+            if weakSelf == nil{return}
+            let dic = info as! NSMutableDictionary
+            let model = dic["model"] as! DictionaryModel
+            weakSelf!.dataController.saveModel.hjxz = model.id
+            weakSelf!.dataController.saveModel.hjxzName = model.name
+            
+        }
     }
     
-    func klmyhClick() {
-        print("户籍性质")
+    func klmyhClick() {//卡联名银行
+        weak var weakSelf = self
+        let dic:NSMutableDictionary = [
+            "array":dataController.dictionaryModel.data.klmyhMap,
+            "selectIndexId":dataController.saveModel.klmyh
+        ]
+        pushViewController("SelectViewController", sender: dic) { (info) in
+            if weakSelf == nil{return}
+            let dic = info as! NSMutableDictionary
+            let model = dic["model"] as! DictionaryModel
+            weakSelf!.dataController.saveModel.klmyh = model.id
+            weakSelf!.dataController.saveModel.klmyhName = model.name
+            
+        }
     }
     
-    func zszyClick() {
-        print("专属职业")
+    func zszyClick() {//专属职业
+        weak var weakSelf = self
+        let dic:NSMutableDictionary = [
+            "array":dataController.dictionaryModel.data.zszyMap,
+            "selectIndexId":dataController.saveModel.zszy
+        ]
+        pushViewController("SelectViewController", sender: dic) { (info) in
+            if weakSelf == nil{return}
+            let dic = info as! NSMutableDictionary
+            let model = dic["model"] as! DictionaryModel
+            weakSelf!.dataController.saveModel.zszy = model.id
+            weakSelf!.dataController.saveModel.zszyName = model.name
+            
+        }
     }
     
-    func zshyClick() {
-        print("专属行业")
+    func zshyClick() {//专属行业
+        weak var weakSelf = self
+        let dic:NSMutableDictionary = [
+            "array":dataController.dictionaryModel.data.zshyMap,
+            "selectIndexId":dataController.saveModel.zshy
+        ]
+        pushViewController("SelectViewController", sender: dic) { (info) in
+            if weakSelf == nil{return}
+            let dic = info as! NSMutableDictionary
+            let model = dic["model"] as! DictionaryModel
+            weakSelf!.dataController.saveModel.zshy = model.id
+            weakSelf!.dataController.saveModel.zshyName = model.name
+            
+        }
     }
     
     func yjqyClick() {//邮寄区域
@@ -121,7 +199,8 @@ extension CaijiQiTaViewController:CaijiBasicNextProtocol,CaijiQiTaContentSelectP
             let dic:NSMutableDictionary = [
                 "title":self.title,
                 "type":dataController.type,
-                "saveModel":dataController.saveModel
+                "saveModel":dataController.saveModel,
+                "dictionaryModel":dataController.dictionaryModel
             ]
             pushViewController("CamaryViewController",sender:dic)
         }

@@ -31,14 +31,21 @@ class CaijiSaveModel: BaseModel {
     var jhrxm = "" //监护人姓名
     
     var ryzt = ""//人员状态
+    var ryztName = ""//
+    
     var gj = ""//国籍
+    var gjName = ""
     var hjxz = ""//户籍性质
+    var hjxzName = ""
     var lxsj = ""//联系手机
     var lxdh = ""//固定电话  ？？？
     var yzbm = ""//邮政编码
     var klmyh = ""//卡联名银行
+    var klmyhName = ""//
     var zszy = ""//专属职业
+    var zszyName = ""//
     var zshy = ""//专属行业
+    var zshyName = ""//
     var yjdz = ""//邮寄地址
     
     var zp = ""//照片路径 ???
@@ -78,13 +85,18 @@ class CaijiSaveModel: BaseModel {
         
         ryzt <- map["ryzt"]
         gj <- map["gj"]
+        gjName <- map["gjName"]
         hjxz <- map["hjxz"]
+        hjxzName <- map["hjxzName"]
         lxsj <- map["lxsj"]
         lxdh <- map["lxdh"]
         yzbm <- map["yzbm"]
         klmyh <- map["klmyh"]
+        klmyhName <- map["klmyhName"]
         zszy <- map["zszy"]
+        zszyName <- map["zszyName"]
         zshy <- map["zshy"]
+        zshyName <- map["zshyName"]
         yjdz <- map["yjdz"]
         zp <- map["zp"]
         dbr_xm <- map["dbr_xm"]
