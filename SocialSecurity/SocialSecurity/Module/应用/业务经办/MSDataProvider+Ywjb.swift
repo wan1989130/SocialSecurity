@@ -42,4 +42,12 @@ extension MSDataProvider {
     class func addOrUpdate(delegate:UIViewController, parameter:NSMutableDictionary, completionBlock:@escaping LHHTTPResultJsonHandler){
         LHHttpDataProvider.postDataForDelegate(delegate, path: "addOrUpdate.do", withParams: parameter, verson: nil, autoAlert: true, completionBlock: completionBlock)
     }
+    // 查看详情
+    class func queryDetail(delegate:UIViewController, parameter:NSMutableDictionary, completionBlock:@escaping LHHTTPResultJsonHandler){
+        LHHttpDataProvider.postDataForDelegate(delegate, path: "queryDetail.do", withParams: parameter, verson: nil, autoAlert: true, completionBlock: completionBlock)
+    }
+    //采集进度查询
+    class func allPeopleQuery(delegate:UIViewController, parameter:NSMutableDictionary, completionBlock:@escaping LHHTTPResultJsonHandler){
+        LHHttpDataProvider.postDataForDelegate(delegate, path: "allPeopleQuery.do", withParams: parameter, verson: nil, autoAlert: true, completionBlock: completionBlock)
+    }
 }

@@ -19,6 +19,7 @@ class SbkProgressViewController: BaseViewController {
         title = "采集进度查询"
         initData()
         initUI()
+        allPeopleQuery()
     }
     
 }
@@ -38,19 +39,82 @@ extension SbkProgressViewController{
 }
 extension SbkProgressViewController:UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return dataController.dataArray.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = SbkProgressTableViewCell.loadCell(tableView)
-        cell.update()
+        cell.update(model: dataController.dataArray[indexPath.row],index: indexPath.row)
         cell.pro = self
         return cell
     }
     
 }
 extension SbkProgressViewController:SbkProgressProtocol{
-    func detailWebviewClick() {
-        let webVc = DetailWebviewViewController()
-        self.navigationController?.pushViewController(webVc, animated: true)
+//    func detailWebviewClick() {
+//        let webVc = DetailWebviewViewController()
+//        self.navigationController?.pushViewController(webVc, animated: true)
+//    }
+    func detailWebviewClick(_ index: Int) {
+        queryDetail(index: index)
     }
+}
+extension SbkProgressViewController{
+    //采集进度查询
+    fileprivate func allPeopleQuery(){
+        
+        let parameter:NSMutableDictionary = [
+            "phone":MyConfig.shared().phone
+        ]
+        weak var weakSelf = self
+        dataController.allPeopleQuery(parameter: parameter) { (isSucceed, info) in
+            if isSucceed {
+                if weakSelf == nil{return}
+                weakSelf!.tableView.reloadData()
+            }else {
+                //TODO
+                
+            }
+        }
+    }
+    
+    //查看详情
+    fileprivate func queryDetail(index:Int){
+        
+        let parameter:NSMutableDictionary = [
+            "phone":MyConfig.shared().phone,
+            "zjhm":dataController.dataArray[index].zhengjianNum
+        ]
+        weak var weakSelf = self
+        dataController.queryDetail(parameter: parameter) { (isSucceed, info) in
+            if isSucceed {
+                if weakSelf == nil{return}
+                weakSelf?.showWebOrShowUpdate(index: index)
+            }else {
+                //TODO
+                
+            }
+        }
+    }
+    func showWebOrShowUpdate(index:Int){
+        if dataController.dataArray[index].status == "0" || dataController.dataArray[index].status == "2"{
+            
+            var tempTitle = ""
+            if self.dataController.dataArray[index].type == "0"{
+                tempTitle = "个人办理"
+            }else{
+                tempTitle = "亲属代办"
+            }
+            let dic:NSMutableDictionary = [
+                "title":tempTitle,
+                "type":"1",
+                "saveModel":dataController.saveModel
+            ]
+            self.pushViewController("CaijiBasicViewController",sender:dic)
+        }else if dataController.dataArray[index].status == "1"{
+            let webVc = DetailWebviewViewController()
+            webVc.saveModel = dataController.saveModel
+            self.navigationController?.pushViewController(webVc, animated: true)
+        }
+    }
+    
 }

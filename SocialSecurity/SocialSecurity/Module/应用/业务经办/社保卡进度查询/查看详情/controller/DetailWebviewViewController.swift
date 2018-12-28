@@ -13,6 +13,7 @@ class DetailWebviewViewController: BaseViewController {
     var progressView = UIProgressView()
     var urlContent = ""
     var titleContent = ""
+    var saveModel:CaijiSaveModel!
     override func viewDidLoad() {
         super.viewDidLoad()
 

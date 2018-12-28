@@ -8,13 +8,17 @@
 
 import UIKit
 protocol SbkProgressProtocol:class {
-    func detailWebviewClick()
+    func detailWebviewClick(_ index:Int)
 }
 class SbkProgressTableViewCell: UITableViewCell {
-
+    var index = -1
+    @IBOutlet weak var xmLabel: UILabel!
+    
+    
+    @IBOutlet weak var sfzhLabel: UILabel!
     var pro:SbkProgressProtocol!
     @IBAction func detailWebviewClick(_ sender: Any) {
-        pro.detailWebviewClick()
+        pro.detailWebviewClick(index)
     }
     @IBOutlet weak var viewHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var statusLabel: UILabel!
@@ -22,10 +26,12 @@ class SbkProgressTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-    func update(){
-        var str = "SbkSbkSbkSbkSbkSbkSbkSbkSbkSbkSbkSbkSbkSbkSbk"
-        statusLabel.text = str
-        let statusLabelSize = str.getSize(withFont: UIFont.systemFont(ofSize: 14), forWidth: ScreenWidth - 16 - 8 - 60 - 8 - 16 - 8 - 4 - 48)
+    func update(model:SbkProgressItemModel,index:Int){
+        self.index = index
+        xmLabel.text = model.name
+        sfzhLabel.text = model.zhengjianNum
+        statusLabel.text = model.statusMsg
+        let statusLabelSize = model.statusMsg.getSize(withFont: UIFont.systemFont(ofSize: 14), forWidth: ScreenWidth - 16 - 8 - 60 - 8 - 16 - 8 - 4 - 48)
         viewHeightConstraint.constant = statusLabelSize.height + 60 + 1
     }
 

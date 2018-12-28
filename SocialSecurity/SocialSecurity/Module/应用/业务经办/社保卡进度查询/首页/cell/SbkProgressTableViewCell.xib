@@ -137,8 +137,10 @@
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
+                <outlet property="sfzhLabel" destination="QuU-tS-B8c" id="dwL-kN-kny"/>
                 <outlet property="statusLabel" destination="cNC-Z7-NMz" id="XMh-TH-17h"/>
                 <outlet property="viewHeightConstraint" destination="ZTj-zU-ofp" id="sDo-Fb-Ir5"/>
+                <outlet property="xmLabel" destination="wwk-43-h96" id="t6Z-2H-JyL"/>
             </connections>
             <point key="canvasLocation" x="176" y="150.67466266866569"/>
         </tableViewCell>

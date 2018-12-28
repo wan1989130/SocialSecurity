@@ -107,3 +107,13 @@ class CaijiSaveModel: BaseModel {
     }
    
 }
+class CaijiSaveDataModel: BaseModel {
+    var data = CaijiSaveModel()
+    override func mapping(map: Map) {
+        super.mapping(map: map)
+        data <- map["data"]
+        
+        
+        
+    }
+}

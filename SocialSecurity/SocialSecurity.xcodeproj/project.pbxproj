@@ -285,7 +285,6 @@
 		E362E4EE21D360FB005E60B9 /* PopupSelectDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E362E4EC21D360FB005E60B9 /* PopupSelectDayView.swift */; };
 		E362E4EF21D360FB005E60B9 /* PopupSelectDayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E362E4ED21D360FB005E60B9 /* PopupSelectDayView.xib */; };
 		E362E4F121D36110005E60B9 /* UIView + Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = E362E4F021D36110005E60B9 /* UIView + Load.swift */; };
-		E362E4F321D3627F005E60B9 /* HSPopupSelectDayView示例代码.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E362E4F221D3627F005E60B9 /* HSPopupSelectDayView示例代码.rtf */; };
 		E362E4F621D365A4005E60B9 /* PhoneType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E362E4F521D365A3005E60B9 /* PhoneType.swift */; };
 		E368099F21CB22C0000FCDC7 /* CaijiBasicDisplayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E368099E21CB22C0000FCDC7 /* CaijiBasicDisplayModel.swift */; };
 		E36809A121CB2376000FCDC7 /* CaijiSaveModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36809A021CB2376000FCDC7 /* CaijiSaveModel.swift */; };
@@ -736,7 +735,6 @@
 		E362E4EC21D360FB005E60B9 /* PopupSelectDayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupSelectDayView.swift; sourceTree = "<group>"; };
 		E362E4ED21D360FB005E60B9 /* PopupSelectDayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopupSelectDayView.xib; sourceTree = "<group>"; };
 		E362E4F021D36110005E60B9 /* UIView + Load.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Load.swift"; sourceTree = "<group>"; };
-		E362E4F221D3627F005E60B9 /* HSPopupSelectDayView示例代码.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "HSPopupSelectDayView示例代码.rtf"; sourceTree = "<group>"; };
 		E362E4F521D365A3005E60B9 /* PhoneType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneType.swift; sourceTree = "<group>"; };
 		E368099E21CB22C0000FCDC7 /* CaijiBasicDisplayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaijiBasicDisplayModel.swift; sourceTree = "<group>"; };
 		E36809A021CB2376000FCDC7 /* CaijiSaveModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaijiSaveModel.swift; sourceTree = "<group>"; };
@@ -1198,7 +1196,6 @@
 		E316118721B7631E00CF09B2 /* 选择日期 */ = {
 			isa = PBXGroup;
 			children = (
-				E362E4F221D3627F005E60B9 /* HSPopupSelectDayView示例代码.rtf */,
 				E362E4EC21D360FB005E60B9 /* PopupSelectDayView.swift */,
 				E362E4ED21D360FB005E60B9 /* PopupSelectDayView.xib */,
 				E36809B921CB92A6000FCDC7 /* SelectChangQiDateView.swift */,
@@ -2880,7 +2877,6 @@
 				E316138D21B7631F00CF09B2 /* WSDatePickerView.xib in Resources */,
 				E33C64F921C9ED3600AEDF4B /* SbkProgressViewController.xib in Resources */,
 				E33C652421CA1D0200AEDF4B /* CaijiBasicSaveTableViewCell.xib in Resources */,
-				E362E4F321D3627F005E60B9 /* HSPopupSelectDayView示例代码.rtf in Resources */,
 				E31613C121B7631F00CF09B2 /* ConfirmLoginPwdTableViewCell.xib in Resources */,
 				E316138221B7631F00CF09B2 /* ShakeView.xib in Resources */,
 				E316139321B7631F00CF09B2 /* 示例代码XHLTagLabelsViewController.rtf in Resources */,
