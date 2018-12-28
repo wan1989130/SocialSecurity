@@ -136,8 +136,8 @@ extension CaijiBasicContentTableViewCell:UITextViewDelegate{
         if textField == xmTextField{//姓名
             let currentText = textField.text ?? ""
             let newText = (currentText as NSString).replacingCharacters(in: range, with: string)
-            if newText.characters.count >= 18{
-                xmTextField.text = (newText as NSString).substring(to: 18)
+            if newText.characters.count >= 15{
+                xmTextField.text = (newText as NSString).substring(to: 15)
                 model.name = newText
                 return false
             }else{
@@ -146,13 +146,13 @@ extension CaijiBasicContentTableViewCell:UITextViewDelegate{
         }else if textField == zjhmTextField{//证件号码
             let currentText = textField.text ?? ""
             let newText = (currentText as NSString).replacingCharacters(in: range, with: string)
-            if newText.characters.count >= 18{
-                zjhmTextField.text = (newText as NSString).substring(to: 18)
+//            if newText.characters.count >= 18{
+//                zjhmTextField.text = (newText as NSString).substring(to: 18)
                 model.zjhm = newText
-                return false
-            }else{
-                model.zjhm = newText
-            }
+//                return false
+//            }else{
+//                model.zjhm = newText
+//            }
         }
         
         
@@ -173,9 +173,9 @@ extension CaijiBasicContentTableViewCell:UITextViewDelegate{
             if !flag{
                 self.tableView.scrollToRow(at: indexPath, at: .bottom, animated: false)
             }
-            if (textView.markedTextRange == nil && textView.text.characters.count >= 50) {
+            if (textView.markedTextRange == nil && textView.text.characters.count >= 100) {
                 if textView.text != nil{
-                    textView.text = (textView.text! as NSString).substring(to: 50)
+                    textView.text = (textView.text! as NSString).substring(to: 100)
                     model.txdz = textView.text
                 }                
             }

@@ -115,8 +115,8 @@ extension DaiBanPersonViewController:UITextFieldDelegate{
         if textField == xmTextField{//姓名
             let currentText = textField.text ?? ""
             let newText = (currentText as NSString).replacingCharacters(in: range, with: string)
-            if newText.characters.count >= 18{
-                xmTextField.text = (newText as NSString).substring(to: 18)
+            if newText.characters.count >= 15{
+                xmTextField.text = (newText as NSString).substring(to: 15)
                 model.dbr_xm = newText
                 return false
             }else{
@@ -135,8 +135,8 @@ extension DaiBanPersonViewController:UITextFieldDelegate{
         }else if textField == lxsjTextField{//代办人联系电话
             let currentText = textField.text ?? ""
             let newText = (currentText as NSString).replacingCharacters(in: range, with: string)
-            if newText.characters.count >= 18{
-                lxsjTextField.text = (newText as NSString).substring(to: 18)
+            if newText.characters.count >= 11{
+                lxsjTextField.text = (newText as NSString).substring(to: 11)
                 model.dbr_lxdh = newText
                 return false
             }else{

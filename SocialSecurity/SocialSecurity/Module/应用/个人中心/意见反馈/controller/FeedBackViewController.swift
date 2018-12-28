@@ -30,7 +30,7 @@ extension FeedBackViewController{
     fileprivate func initUI(){
         self.view.backgroundColor = viewBgColor
         contentTextField.placeholder = "请输入内容"
-        
+        contentTextField.delegate = self
     }
     fileprivate func initData(){
         dataController = FeedBackDataController(delegate: self)
@@ -58,4 +58,18 @@ extension FeedBackViewController{
             }
         }
     }
+}
+extension FeedBackViewController:UITextViewDelegate{
+    func textViewDidChange(_ textView: UITextView) {
+        if (textView.markedTextRange == nil && textView.text.characters.count >= 200) {
+            if textView.text != nil{
+                textView.text = (textView.text! as NSString).substring(to: 200)
+            }
+        }else{
+        }
+        
+        
+        
+    }
+
 }

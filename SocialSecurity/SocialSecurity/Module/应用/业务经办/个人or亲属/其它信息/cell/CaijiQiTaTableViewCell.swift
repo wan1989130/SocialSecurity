@@ -31,7 +31,7 @@ class CaijiQiTaTableViewCell: UITableViewCell {
    
     @IBOutlet weak var yjdzTextView: UIPlaceholderTextView!//邮寄地址
  
-    
+    var model:CaijiSaveModel!
     @IBOutlet weak var waiBgViewHeight: NSLayoutConstraint!
     @IBOutlet weak var yjdzViewHeight: NSLayoutConstraint!
     var tableView:UITableView!
@@ -65,6 +65,7 @@ class CaijiQiTaTableViewCell: UITableViewCell {
     }
 
     func update(tableView:UITableView,model:CaijiSaveModel,isWrite:Bool){
+        self.model = model
 //        csrqTextField.text = model.csrq
 //        zjyxqTextField.text = model.csrq
 //
@@ -135,39 +136,57 @@ extension CaijiQiTaTableViewCell:UITextFieldDelegate{
         }
         return true
     }
-//    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-//        let model = dataController.saveModel!
-//        if textField == jhrzjhmTextField{//监护人证件号码
-//            let currentText = textField.text ?? ""
-//            let newText = (currentText as NSString).replacingCharacters(in: range, with: string)
-//            if newText.characters.count >= 18{
-//                jhrzjhmTextField.text = (newText as NSString).substring(to: 18)
-//                model.jhrzh = newText
-//                return false
-//            }else{
-//                model.jhrzh = newText
-//            }
-//        }else if textField == jhrxmTextField{//监护人姓名
-//            let currentText = textField.text ?? ""
-//            let newText = (currentText as NSString).replacingCharacters(in: range, with: string)
-//            if newText.characters.count >= 18{
-//                jhrxmTextField.text = (newText as NSString).substring(to: 18)
-//                model.jhrxm = newText
-//                return false
-//            }else{
-//                model.jhrxm = newText
-//            }
-//        }
-//        return true
-//    }
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
+        if textField == yzbmTextField{//邮政编码
+            let currentText = textField.text ?? ""
+            let newText = (currentText as NSString).replacingCharacters(in: range, with: string)
+            if newText.characters.count >= 6{
+                yzbmTextField.text = (newText as NSString).substring(to: 6)
+                model.yzbm = newText
+                return false
+            }else{
+                model.jhrzh = newText
+            }
+        }else if textField == lxsjTextField{//联系手机
+            let currentText = textField.text ?? ""
+            let newText = (currentText as NSString).replacingCharacters(in: range, with: string)
+            if newText.characters.count >= 11{
+                lxsjTextField.text = (newText as NSString).substring(to: 11)
+                model.lxsj = newText
+                return false
+            }else{
+                model.jhrxm = newText
+            }
+        }else if textField == gddhTextField{//固定电话
+            let currentText = textField.text ?? ""
+            let newText = (currentText as NSString).replacingCharacters(in: range, with: string)
+            if newText.characters.count >= 20{
+                gddhTextField.text = (newText as NSString).substring(to: 20)
+                model.lxdh = newText
+                return false
+            }else{
+                model.lxdh = newText
+            }
+        }
+        return true
+    }
 }
 extension CaijiQiTaTableViewCell:UITextViewDelegate{
     func textViewDidChange(_ textView: UITextView) {
         
         if textView == (yjdzTextView as UITextView){
+            if (textView.markedTextRange == nil && textView.text.characters.count >= 100) {
+                if textView.text != nil{
+                    textView.text = (textView.text! as NSString).substring(to: 100)
+                    
+                    model.yjdz = textView.text
+                }
+            }else{
+                model.yjdz = textView.text
+            }
             
             var temBounds = textView.bounds
-            
             let constraint = CGSize(width: temBounds.size.width, height: CGFloat.greatestFiniteMagnitude)
             let size = textView.sizeThatFits(constraint)
             temBounds.size = size

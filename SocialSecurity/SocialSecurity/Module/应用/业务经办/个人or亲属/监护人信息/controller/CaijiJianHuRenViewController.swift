@@ -118,18 +118,18 @@ extension CaijiJianHuRenViewController:UITextFieldDelegate{
         if textField == jhrzjhmTextField{//监护人证件号码
             let currentText = textField.text ?? ""
             let newText = (currentText as NSString).replacingCharacters(in: range, with: string)
-            if newText.characters.count >= 18{
-                jhrzjhmTextField.text = (newText as NSString).substring(to: 18)
+//            if newText.characters.count >= 15{
+//                jhrzjhmTextField.text = (newText as NSString).substring(to: 15)
+//                model.jhrzh = newText
+//                return false
+//            }else{
                 model.jhrzh = newText
-                return false
-            }else{
-                model.jhrzh = newText
-            }
+//            }
         }else if textField == jhrxmTextField{//监护人姓名
             let currentText = textField.text ?? ""
             let newText = (currentText as NSString).replacingCharacters(in: range, with: string)
-            if newText.characters.count >= 18{
-                jhrxmTextField.text = (newText as NSString).substring(to: 18)
+            if newText.characters.count >= 15{
+                jhrxmTextField.text = (newText as NSString).substring(to: 15)
                 model.jhrxm = newText
                 return false
             }else{

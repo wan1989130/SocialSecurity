@@ -35,6 +35,7 @@ extension updateNickNameViewController{
     fileprivate func initUI(){
 //        self.view.backgroundColor = UIColor(hexString: "ECF5FE")
         nickTextField.text = MyConfig.shared().userName
+        nickTextField.delegate = self
         
     }
     fileprivate func initData(){
@@ -64,5 +65,20 @@ extension updateNickNameViewController{
                 
             }
         }
+    }
+}
+extension updateNickNameViewController:UITextFieldDelegate{
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
+        let currentText = textField.text ?? ""
+        let newText = (currentText as NSString).replacingCharacters(in: range, with: string)
+        if newText.characters.count >= 25{
+            nickTextField.text = (newText as NSString).substring(to: 25)
+            
+            return false
+            
+        }
+        
+        return true
     }
 }
