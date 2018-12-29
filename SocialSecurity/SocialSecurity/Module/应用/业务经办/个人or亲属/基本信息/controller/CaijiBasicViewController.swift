@@ -27,8 +27,12 @@ class CaijiBasicViewController: BaseViewController {
  
         initData()
         initUI()
-        isCanScanQuery()
+//        isCanScanQuery()
         
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        isCanScanQuery()
     }
     deinit {
         print("基础信息页面销毁")
@@ -406,7 +410,11 @@ extension CaijiBasicViewController{
         dataController.scanQuery(parameter: parameter) { (isSucceed, info) in
             if isSucceed {
                 if weakSelf == nil{return}
-                weakSelf!.getDictionary()
+                if weakSelf!.dataController.dictionaryModel == nil{
+                    weakSelf!.getDictionary()
+                }else{
+                    weakSelf!.tableView.reloadData()
+                }
             }else {
                 //TODO
                 
