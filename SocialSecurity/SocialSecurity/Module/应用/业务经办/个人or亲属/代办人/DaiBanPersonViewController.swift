@@ -71,8 +71,7 @@ extension DaiBanPersonViewController{
             LHAlertView.showTipAlertWithTitle("代办人姓名不能为空")
             return false
         }
-        if model.dbr_sfzhm == ""{
-            LHAlertView.showTipAlertWithTitle("代办人身份证号不能为空")
+        if  !model.zjhm.isLegalIdCard(){
             return false
         }
         if model.dbr_lxdh == ""{
@@ -117,7 +116,7 @@ extension DaiBanPersonViewController:UITextFieldDelegate{
             let newText = (currentText as NSString).replacingCharacters(in: range, with: string)
             if newText.characters.count >= 15{
                 xmTextField.text = (newText as NSString).substring(to: 15)
-                model.dbr_xm = newText
+                model.dbr_xm = xmTextField.text!
                 return false
             }else{
                 model.jhrzh = newText
@@ -127,7 +126,7 @@ extension DaiBanPersonViewController:UITextFieldDelegate{
             let newText = (currentText as NSString).replacingCharacters(in: range, with: string)
             if newText.characters.count >= 18{
                 sfzhTextField.text = (newText as NSString).substring(to: 18)
-                model.dbr_sfzhm = newText
+                model.dbr_sfzhm = sfzhTextField.text!
                 return false
             }else{
                 model.jhrxm = newText
@@ -137,7 +136,7 @@ extension DaiBanPersonViewController:UITextFieldDelegate{
             let newText = (currentText as NSString).replacingCharacters(in: range, with: string)
             if newText.characters.count >= 11{
                 lxsjTextField.text = (newText as NSString).substring(to: 11)
-                model.dbr_lxdh = newText
+                model.dbr_lxdh = lxsjTextField.text!
                 return false
             }else{
                 model.jhrxm = newText

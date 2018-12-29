@@ -354,7 +354,7 @@ extension CaijiBasicViewController{
     func checkFun() -> Bool{
         closeKeyboard()
         let model = dataController.saveModel
-        if model.name == ""{
+        if model.xmStr1 == ""{
             LHAlertView.showTipAlertWithTitle("姓名不能为空")
             return false
         }
@@ -366,10 +366,18 @@ extension CaijiBasicViewController{
             LHAlertView.showTipAlertWithTitle("证件类型不能为空")
             return false
         }
-        if  !model.zjhm.isLegalIdCard(){
-            
-            return false
+        if model.zjlxName == "身份证"{
+            if  !model.zjhm.isLegalIdCard(){
+                
+                return false
+            }
+        }else{
+            if model.zjhm == ""{
+                LHAlertView.showTipAlertWithTitle("证件号码不能为空")
+                return false
+            }
         }
+       
         if model.csrq == ""{
             LHAlertView.showTipAlertWithTitle("出生日期不能为空")
             return false

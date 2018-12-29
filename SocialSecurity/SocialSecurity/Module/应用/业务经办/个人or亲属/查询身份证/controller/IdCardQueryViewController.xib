@@ -44,7 +44,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="imc-UK-cWG">
-                            <rect key="frame" x="61" y="0.0" width="282" height="44"/>
+                            <rect key="frame" x="65" y="0.0" width="278" height="44"/>
                             <nil key="textColor"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
@@ -62,7 +62,7 @@
                         <constraint firstItem="fPy-oh-guk" firstAttribute="leading" secondItem="HQB-cl-M0x" secondAttribute="leading" id="Sh7-YP-FLf"/>
                         <constraint firstAttribute="height" constant="44" id="UDF-D2-l3y"/>
                         <constraint firstItem="g5s-nO-G7x" firstAttribute="leading" secondItem="fPy-oh-guk" secondAttribute="trailing" id="Yu5-Hw-NAF"/>
-                        <constraint firstItem="imc-UK-cWG" firstAttribute="leading" secondItem="g5s-nO-G7x" secondAttribute="trailing" id="o8c-k5-Xag"/>
+                        <constraint firstItem="imc-UK-cWG" firstAttribute="leading" secondItem="g5s-nO-G7x" secondAttribute="trailing" constant="4" id="o8c-k5-Xag"/>
                     </constraints>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">

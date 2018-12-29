@@ -82,9 +82,8 @@ class LHHTTPClient: NSObject {
         let manager = AFHTTPSessionManager()
         
         //header 中加token
-        var token = ""
         if MyConfig.shared().token != ""{
-           manager.requestSerializer.setValue(token, forHTTPHeaderField: "token")
+           manager.requestSerializer.setValue(MyConfig.shared().token, forHTTPHeaderField: "token")
         }
         
         manager.responseSerializer = AFJSONResponseSerializer()

@@ -13,7 +13,7 @@ import ObjectMapper
 
 class CaijiSaveModel: BaseModel {
     //name 姓名
-    var xm = ""
+    var xmStr1 = ""
     var xb = ""
     var xbName = ""
     var zjlx = ""//证件类型
@@ -37,8 +37,8 @@ class CaijiSaveModel: BaseModel {
     var gjName = ""
     var hjxz = ""//户籍性质
     var hjxzName = ""
-    var lxsj = ""//联系手机
-    var lxdh = ""//固定电话  ？？？
+    var lxsjStr1 = ""//联系手机
+    var lxdhStr1 = ""//固定电话  ？？？
     var yzbm = ""//邮政编码
     var klmyh = ""//卡联名银行
     var klmyhName = ""//
@@ -62,11 +62,14 @@ class CaijiSaveModel: BaseModel {
     var cityName = ""
     var regionName = ""
     
-
+    var sh = ""
+    var sfdy = "0"
+    var dwmc = ""
+    
     
     override func mapping(map: Map) {
         super.mapping(map: map)
-        xm <- map["xm"]
+        xmStr1 <- map["xmStr1"]
         xb <- map["xb"]
         xbName <- map["xbName"]
         zjlx <- map["zjlx"]
@@ -88,8 +91,8 @@ class CaijiSaveModel: BaseModel {
         gjName <- map["gjName"]
         hjxz <- map["hjxz"]
         hjxzName <- map["hjxzName"]
-        lxsj <- map["lxsj"]
-        lxdh <- map["lxdh"]
+        lxsjStr1 <- map["lxsjStr1"]
+        lxdhStr1 <- map["lxdhStr1"]
         yzbm <- map["yzbm"]
         klmyh <- map["klmyh"]
         klmyhName <- map["klmyhName"]
@@ -109,6 +112,10 @@ class CaijiSaveModel: BaseModel {
         cityName <- map["cityName"]
         regionId <- map["regionId"]
         regionName <- map["regionName"]
+        
+        sh <- map["sh"]
+        sfdy <- map["sfdy"]
+        dwmc <- map["dwmc"]
         
         
     }

@@ -72,7 +72,7 @@ class CaijiBasicDataController: BaseDataController {
         }
     }
     func updateDictionary(){
-        if type == "1"{//录入取第0个，修改不用动
+        if type == "0"{//录入取第0个，修改不用动
             saveModel.xb = dictionaryModel.data.xbMap[0].id
             saveModel.xbName = dictionaryModel.data.xbMap[0].name
             
@@ -102,6 +102,16 @@ class CaijiBasicDataController: BaseDataController {
             
             saveModel.zshy = dictionaryModel.data.zshyMap[0].id
             saveModel.zshyName = dictionaryModel.data.zshyMap[0].name
+        }else{
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "yyyyMMdd"
+            let temDate = dateFormatter.date(from: saveModel.zjyxq)
+            
+            let dateFormatter2 = DateFormatter()
+            dateFormatter2.dateFormat = "yyyy-MM-dd"
+            let zjyxq = dateFormatter2.string(from: temDate!)
+            saveModel.zjyxq = zjyxq
+            
         }
     }
     

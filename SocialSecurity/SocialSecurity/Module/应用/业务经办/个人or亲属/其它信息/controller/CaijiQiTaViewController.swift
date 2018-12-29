@@ -193,6 +193,7 @@ extension CaijiQiTaViewController:CaijiBasicNextProtocol,CaijiQiTaContentSelectP
             weakSelf!.dataController.saveModel.provinceName = province.region_name!
             weakSelf!.dataController.saveModel.cityName = city.region_name!
             weakSelf!.dataController.saveModel.regionName = district.region_name!
+            weakSelf!.tableView.reloadRows(at: [IndexPath.init(row: 0, section: 0)], with: .none)
             
         }
         
@@ -225,7 +226,7 @@ extension CaijiQiTaViewController:CaijiBasicNextProtocol,CaijiQiTaContentSelectP
             LHAlertView.showTipAlertWithTitle("户籍性质不能为空")
             return false
         }
-        if model.lxsj == ""{
+        if model.lxsjStr1 == ""{
             LHAlertView.showTipAlertWithTitle("联系手机不能为空")
             return false
         }

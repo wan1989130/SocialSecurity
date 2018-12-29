@@ -18,16 +18,16 @@ class SbkProgressDataModel: BaseModel {
 class SbkProgressItemModel:BaseModel{
     //name姓名
     var zhengjianNum = ""
-    var status = ""
+    var status = -1
     var statusMsg = ""
     var remark = ""
     var type = ""//类型0个人办理1亲属代办
     override func mapping(map: Map) {
         super.mapping(map: map)
-        zhengjianNum <- map["zhengjianNum"]
+        zhengjianNum <- map["zjhm"]
         status <- map["status"]
         statusMsg <- map["statusMsg"]
-        remark <- map["remark"]
+        remark <- map["remake"]
         type <- map["type"]
     }
 }

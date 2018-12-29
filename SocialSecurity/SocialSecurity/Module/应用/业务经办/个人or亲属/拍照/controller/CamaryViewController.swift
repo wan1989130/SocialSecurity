@@ -130,37 +130,30 @@ extension CamaryViewController{
         
         dataController.uploadPhoto(imgDataArray:  [imageData], parameter: parameter) { (isSucceed, info) in
             if isSucceed{
-                weakSelf?.uploadHeadUrl(portrait:image)
+                if weakSelf == nil{return}
+                weakSelf!.dataController.saveModel.zp = weakSelf!.dataController.uploadPhotoModel.data.imageUrl
                 print("成功")
             }else{
+                weakSelf?.photoButton.setBackgroundImage(UIImage.init(named: "ic_id_photo"), for: .normal)
                 print("失败")
             }
             
         }
     }
-    //上传头像url
-    fileprivate func uploadHeadUrl(portrait:UIImage){
-        let parameter:NSMutableDictionary = [
-            "phone":MyConfig.shared().phone,
-            "imageUrl":dataController.uploadPhotoModel.data.imageUrl,
-            ]
-        weak var weakSelf = self
-        dataController.uploadHeadPhoto(parameter: parameter) { (isSucceed, info) in
-            if weakSelf == nil{return}
-            if isSucceed {
-                weakSelf?.photoButton.setBackgroundImage(portrait, for: .normal)
-            }else {
-                weakSelf?.photoButton.setBackgroundImage(UIImage.init(named: "ic_id_photo"), for: .normal)
-            }
-        }
-        
-    }
+    
     
     //录入和修改
     fileprivate func addOrUpdate(){
+        if dataController.saveModel.zjyxq != ""{
+            dataController.saveModel.zjyxq = (dataController.saveModel.zjyxq as NSString).replacingOccurrences(of: "-", with: "")
+        }
+        let parameter:NSMutableDictionary = [
+            "phone":MyConfig.shared().phone,
+            "cbInsured":dataController.saveModel.toJSONString(),
+           
+        ]
         
-        let parameterDic = dataController.saveModel.toJSON()
-        let parameter = NSMutableDictionary(dictionary: parameterDic)
+       
         weak var weakSelf = self
         dataController.addOrUpdate(parameter: parameter) { (isSucceed, info) in
             if weakSelf == nil{return}

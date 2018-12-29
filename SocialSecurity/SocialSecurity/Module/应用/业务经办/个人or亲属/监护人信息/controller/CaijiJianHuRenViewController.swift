@@ -130,7 +130,7 @@ extension CaijiJianHuRenViewController:UITextFieldDelegate{
             let newText = (currentText as NSString).replacingCharacters(in: range, with: string)
             if newText.characters.count >= 15{
                 jhrxmTextField.text = (newText as NSString).substring(to: 15)
-                model.jhrxm = newText
+                model.jhrxm = jhrxmTextField.text!
                 return false
             }else{
                 model.jhrxm = newText
@@ -143,10 +143,18 @@ extension CaijiJianHuRenViewController{
     func checkFun() -> Bool{
         closeKeyboard()
         let model = dataController.saveModel!
-        if model.jhrzh == ""{
-            LHAlertView.showTipAlertWithTitle("监护人证件号码不能为空")
-            return false
+        if model.jhrzjlxName == "身份证"{
+            if  !model.zjhm.isLegalIdCard(){
+                
+                return false
+            }
+        }else{
+            if model.zjhm == ""{
+                LHAlertView.showTipAlertWithTitle("监护人证件号码不能为空")
+                return false
+            }
         }
+       
         if model.jhrxm == ""{
             LHAlertView.showTipAlertWithTitle("监护人姓名不能为空")
             return false

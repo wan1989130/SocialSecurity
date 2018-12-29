@@ -66,18 +66,26 @@ class CaijiQiTaTableViewCell: UITableViewCell {
 
     func update(tableView:UITableView,model:CaijiSaveModel,isWrite:Bool){
         self.model = model
-//        csrqTextField.text = model.csrq
-//        zjyxqTextField.text = model.csrq
+        ryztTextField.text = model.ryztName
+        gjTextField.text = model.gjName
+        hjxzTextField.text = model.hjxzName
+        lxsjTextField.text = model.lxsjStr1
+        gddhTextField.text = model.lxdhStr1
+        yzbmTextField.text = model.yzbm
+        klmyhTextField.text = model.klmyhName
+        zszyTextField.text = model.zszyName
+        zshyTextField.text = model.zshyName
+        if model.provinceName == ""{
+            yjqyTextField.text = ""
+        }else{
+            yjqyTextField.text = model.provinceName + "-" + model.cityName + "-" + model.regionName
+        }
+        
+        yjdzTextView.text = model.yjdz
 //
-//
-//        xmTextField.isEnabled = isWrite
-//        xbTextField.isEnabled = isWrite
-//        zjlxTextField.isEnabled = isWrite
-//        zjhmTextField.isEnabled = isWrite
-//        csrqTextField.isEnabled = isWrite
-//        zjyxqTextField.isEnabled = isWrite
-//        mzTextField.isEnabled = isWrite
-//        txdzTextView.isEditable = isWrite
+
+        
+        
         
         
         self.tableView = tableView
@@ -143,7 +151,7 @@ extension CaijiQiTaTableViewCell:UITextFieldDelegate{
             let newText = (currentText as NSString).replacingCharacters(in: range, with: string)
             if newText.characters.count >= 6{
                 yzbmTextField.text = (newText as NSString).substring(to: 6)
-                model.yzbm = newText
+                model.yzbm = yzbmTextField.text!
                 return false
             }else{
                 model.jhrzh = newText
@@ -153,7 +161,7 @@ extension CaijiQiTaTableViewCell:UITextFieldDelegate{
             let newText = (currentText as NSString).replacingCharacters(in: range, with: string)
             if newText.characters.count >= 11{
                 lxsjTextField.text = (newText as NSString).substring(to: 11)
-                model.lxsj = newText
+                model.lxsjStr1 = lxsjTextField.text!
                 return false
             }else{
                 model.jhrxm = newText
@@ -163,10 +171,10 @@ extension CaijiQiTaTableViewCell:UITextFieldDelegate{
             let newText = (currentText as NSString).replacingCharacters(in: range, with: string)
             if newText.characters.count >= 20{
                 gddhTextField.text = (newText as NSString).substring(to: 20)
-                model.lxdh = newText
+                model.lxdhStr1 = yzbmTextField.text!
                 return false
             }else{
-                model.lxdh = newText
+                model.lxdhStr1 = newText
             }
         }
         return true

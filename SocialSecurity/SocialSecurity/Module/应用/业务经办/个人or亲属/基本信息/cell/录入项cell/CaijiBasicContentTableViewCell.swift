@@ -60,7 +60,7 @@ class CaijiBasicContentTableViewCell: UITableViewCell {
     func update(tableView:UITableView,model:CaijiSaveModel,isWrite:Bool,indexPath:IndexPath){
         self.model = model
         self.indexPath = indexPath
-        xmTextField.text = model.name
+        xmTextField.text = model.xmStr1
         xbTextField.text = model.xbName
         zjlxTextField.text = model.zjlxName
         zjhmTextField.text = model.zjhm
@@ -138,10 +138,10 @@ extension CaijiBasicContentTableViewCell:UITextViewDelegate{
             let newText = (currentText as NSString).replacingCharacters(in: range, with: string)
             if newText.characters.count >= 15{
                 xmTextField.text = (newText as NSString).substring(to: 15)
-                model.name = newText
+                model.xmStr1 = xmTextField.text!
                 return false
             }else{
-                model.name = newText
+                model.xmStr1 = newText
             }
         }else if textField == zjhmTextField{//证件号码
             let currentText = textField.text ?? ""
