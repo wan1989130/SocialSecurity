@@ -92,7 +92,8 @@ class LoginViewController: BaseViewController {
     }
     
     func checkFun() -> Bool{
-     
+
+        
         if !userNameTextField.text!.isLegalMobile(){
             return false
         }

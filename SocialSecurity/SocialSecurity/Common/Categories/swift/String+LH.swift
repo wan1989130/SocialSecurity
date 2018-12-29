@@ -38,6 +38,9 @@ extension String {
         }
         return true
     }
+   
+    
+ 
     //验证手机号
     func isLegalIdCard() -> Bool{
         let phone = self
@@ -46,7 +49,7 @@ extension String {
             return false
         }else{
 //            let regex = "/^\\d{6}(18|19|20)+\\d{2}(0[1-9]|1[0-2])(0[1-9]|[12]\\d|3[01])\\d{3}(\\d|X)$/i"
-            let regex = "(^\\d{15}$)|(^\\d{17}([0-9]|X)$)"
+            let regex = "^[1-9]\\d{5}(18|19|([23]\\d))\\d{2}((0[1-9])|(10|11|12))(([0-2][1-9])|10|20|30|31)\\d{3}[0-9X]$"
             let pred = NSPredicate(format: "SELF MATCHES %@", regex)
             let isMatch = pred.evaluate(with: phone)
             if !isMatch {
