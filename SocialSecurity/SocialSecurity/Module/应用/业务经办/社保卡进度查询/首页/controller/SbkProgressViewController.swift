@@ -96,7 +96,7 @@ extension SbkProgressViewController{
         }
     }
     func showWebOrShowUpdate(index:Int){
-        if  dataController.dataArray[index].status == 2{
+        if  dataController.dataArray[index].status == 2 || dataController.dataArray[index].status == 0{
             
             var tempTitle = ""
             if self.dataController.dataArray[index].type == "0"{

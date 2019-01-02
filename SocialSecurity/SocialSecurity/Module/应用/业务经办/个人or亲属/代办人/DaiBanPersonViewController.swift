@@ -119,7 +119,7 @@ extension DaiBanPersonViewController:UITextFieldDelegate{
                 model.dbr_xm = xmTextField.text!
                 return false
             }else{
-                model.jhrzh = newText
+                model.dbr_xm = newText
             }
         }else if textField == sfzhTextField{//代办人身份证号
             let currentText = textField.text ?? ""
@@ -129,7 +129,7 @@ extension DaiBanPersonViewController:UITextFieldDelegate{
                 model.dbr_sfzhm = sfzhTextField.text!
                 return false
             }else{
-                model.jhrxm = newText
+                model.dbr_sfzhm = newText
             }
         }else if textField == lxsjTextField{//代办人联系电话
             let currentText = textField.text ?? ""
@@ -139,7 +139,7 @@ extension DaiBanPersonViewController:UITextFieldDelegate{
                 model.dbr_lxdh = lxsjTextField.text!
                 return false
             }else{
-                model.jhrxm = newText
+                model.dbr_lxdh = newText
             }
         }
         return true

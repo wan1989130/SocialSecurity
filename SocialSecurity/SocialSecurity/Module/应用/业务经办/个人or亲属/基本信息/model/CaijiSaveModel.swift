@@ -20,6 +20,7 @@ class CaijiSaveModel: BaseModel {
     var zjlxName = ""
     var zjhm = ""//证件号码
     var csrq = ""//出生日期
+    var csrqStr = ""//
     var zjyxq = ""//证件有效期
     var mz = ""//民族
     var mzName = ""
@@ -65,6 +66,9 @@ class CaijiSaveModel: BaseModel {
     var sh = ""
     var sfdy = "0"
     var dwmc = ""
+    var createDate = ""
+    var createDate1 = ""
+    var lryId = ""
     
     
     override func mapping(map: Map) {
@@ -76,6 +80,7 @@ class CaijiSaveModel: BaseModel {
         zjlxName <- map["zjlxName"]
         zjhm <- map["zjhm"]
         csrq <- map["csrq"]
+        csrqStr <- map["csrqStr"]
         zjyxq <- map["zjyxq"]
         mz <- map["mz"]
         mzName <- map["mzName"]
@@ -87,6 +92,7 @@ class CaijiSaveModel: BaseModel {
         jhrxm <- map["jhrxm"]
         
         ryzt <- map["ryzt"]
+        ryztName <- map["ryztName"]
         gj <- map["gj"]
         gjName <- map["gjName"]
         hjxz <- map["hjxz"]
@@ -116,6 +122,9 @@ class CaijiSaveModel: BaseModel {
         sh <- map["sh"]
         sfdy <- map["sfdy"]
         dwmc <- map["dwmc"]
+        createDate <- map["createDate"]
+        createDate1 <- map["createDate1"]
+        lryId <- map["lryId"]
         
         
     }
@@ -123,11 +132,13 @@ class CaijiSaveModel: BaseModel {
 }
 class CaijiSaveDataModel: BaseModel {
     var data = CaijiSaveModel()
+    var jsonStr = ""
     override func mapping(map: Map) {
         super.mapping(map: map)
-        data <- map["data"]
-        
-        
+        jsonStr <- map["data"]
+        data = Mapper<CaijiSaveModel>().map(JSONString: jsonStr)!
+//        data = Mapper<CaijiSaveModel>().map(JSONObject: jsonStr)!
+        print("aa = \(data)")
         
     }
 }

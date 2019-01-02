@@ -64,7 +64,7 @@ class CaijiBasicContentTableViewCell: UITableViewCell {
         xbTextField.text = model.xbName
         zjlxTextField.text = model.zjlxName
         zjhmTextField.text = model.zjhm
-        csrqTextField.text = model.csrq
+        csrqTextField.text = model.csrqStr
         zjyxqTextField.text = model.zjyxq
         mzTextField.text = model.mzName
         if model.txdz != ""{

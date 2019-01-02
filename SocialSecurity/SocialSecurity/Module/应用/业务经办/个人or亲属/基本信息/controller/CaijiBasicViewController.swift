@@ -167,6 +167,7 @@ extension CaijiBasicViewController:CaijiBasicIdCardPhotoClickProtoco{
                     weakSelf?.dataController.saveModel.name = temModel!.words_result.nameModel.words
                     weakSelf?.dataController.saveModel.xb = temModel!.words_result.sexModel.words
                     weakSelf?.dataController.saveModel.zjhm = temModel!.words_result.sfzhModel.words
+                    weakSelf?.dataController.saveModel.csrqStr = temModel!.words_result.csrqModel.words
                     weakSelf?.dataController.saveModel.csrq = temModel!.words_result.csrqModel.words
                     weakSelf?.dataController.saveModel.mz = temModel!.words_result.mzModel.words
                     weakSelf?.dataController.saveModel.txdz = temModel!.words_result.zzModel.words
@@ -267,7 +268,7 @@ extension CaijiBasicViewController:CaijiBasicNextProtocol,CaijiBasicContentSelec
         closeKeyboard()
         dateType = "0"
 //        weak var weakSelf = self
-        let dateView = SelectDateView(delegate: self,currentStr:dataController.saveModel.csrq)
+        let dateView = SelectDateView(delegate: self,currentStr:dataController.saveModel.csrqStr)
         dateView.pro = self
         dateView.show()
     }
@@ -341,6 +342,7 @@ extension CaijiBasicViewController:SelectDateDelegate{
     func selectDate(dateString: String) {
         if dateType == "0"{
             dataController.saveModel.csrq = dateString
+            dataController.saveModel.csrqStr = dateString
             reloadTableViewContentCell()
         }else if dateType == "1"{
             dataController.saveModel.zjyxq = dateString

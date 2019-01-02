@@ -69,6 +69,13 @@ extension CamaryViewController{
             if dic["dictionaryModel"] != nil{
                 dataController.dictionaryModel = dic["dictionaryModel"] as! DictionaryDataModel
             }
+            if dataController.type == "2"{
+                let formatter = DateFormatter()
+                formatter.dateFormat = "yyyyMMddHHmmss"
+                let str = "&" + formatter.string(from: Date())
+                photoButton.sd_setBackgroundImage(with: URL.init(string: FileAccessHost + dataController.saveModel.zp + str), for: .normal, completed: nil)
+                
+            }
         }
         
         
