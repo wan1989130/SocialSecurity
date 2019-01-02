@@ -78,6 +78,9 @@ extension IxcjTypeViewController:UICollectionViewDelegate,UICollectionViewDataSo
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if dataController.model == nil{
+            return
+        }
         if indexPath.row <= 1 && isMax {
             LHAlertView.showTipAlertWithTitle("录入次数已达最大限制\(dataController.model.data.maxCount)")
             return

@@ -304,6 +304,7 @@ extension CaijiBasicViewController:CaijiBasicNextProtocol,CaijiBasicContentSelec
     func nextClick() {//下一步
         
         if checkFun(){
+            dataController.saveModel.csrq = dataController.saveModel.csrqStr
             let dic:NSMutableDictionary = [
                 "title":self.title,
                 "type":dataController.type,
