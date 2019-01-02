@@ -58,8 +58,16 @@ extension DaiBanPersonViewController{
                 dataController.dictionaryModel = dic["dictionaryModel"] as! DictionaryDataModel
             }
         }
-        if dataController.type == "2"{
-            isWrite = false
+        if dataController.type == "1"{
+            if dataController.saveModel.dbr_xm != ""{
+                xmTextField.text = dataController.saveModel.dbr_xm
+            }
+            if dataController.saveModel.dbr_sfzhm != ""{
+                sfzhTextField.text = dataController.saveModel.dbr_sfzhm
+            }
+            if dataController.saveModel.dbr_xm != ""{
+                lxsjTextField.text = dataController.saveModel.dbr_lxdh
+            }
         }
         
     }
@@ -88,8 +96,14 @@ extension DaiBanPersonViewController{
     //录入和修改
     fileprivate func addOrUpdate(){
         
-        let parameterDic = dataController.saveModel.toJSON()
-        let parameter = NSMutableDictionary(dictionary: parameterDic)
+        if dataController.saveModel.zjyxq != ""{
+            dataController.saveModel.zjyxq = (dataController.saveModel.zjyxq as NSString).replacingOccurrences(of: "-", with: "")
+        }
+        let parameter:NSMutableDictionary = [
+            "phone":MyConfig.shared().phone,
+            "cbInsured":dataController.saveModel.toJSONString(),
+            
+            ]
         weak var weakSelf = self
         dataController.addOrUpdate(parameter: parameter) { (isSucceed, info) in
             if weakSelf == nil{return}

@@ -69,7 +69,7 @@ extension CamaryViewController{
             if dic["dictionaryModel"] != nil{
                 dataController.dictionaryModel = dic["dictionaryModel"] as! DictionaryDataModel
             }
-            if dataController.type == "2"{
+            if dataController.type == "1"{
                 let formatter = DateFormatter()
                 formatter.dateFormat = "yyyyMMddHHmmss"
                 let str = "&" + formatter.string(from: Date())

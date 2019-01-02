@@ -96,7 +96,7 @@ extension SbkProgressViewController{
         }
     }
     func showWebOrShowUpdate(index:Int){
-        if  dataController.dataArray[index].status == 2 || dataController.dataArray[index].status == 0{
+        if  dataController.dataArray[index].status == 2{
             
             var tempTitle = ""
             if self.dataController.dataArray[index].type == "0"{
@@ -110,6 +110,12 @@ extension SbkProgressViewController{
                 "saveModel":dataController.saveModel
             ]
             self.pushViewController("CaijiBasicViewController",sender:dic)
+        }else if dataController.dataArray[index].status == 0 {
+            let webVc = DetailWebviewViewController()
+            webVc.saveModel = dataController.saveModel
+            webVc.isCanUpdate = true
+            webVc.type = dataController.dataArray[index].type
+            self.navigationController?.pushViewController(webVc, animated: true)
         }else {
             let webVc = DetailWebviewViewController()
             webVc.saveModel = dataController.saveModel

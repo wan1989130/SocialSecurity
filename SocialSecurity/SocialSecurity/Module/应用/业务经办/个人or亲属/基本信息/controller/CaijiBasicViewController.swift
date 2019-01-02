@@ -415,7 +415,8 @@ extension CaijiBasicViewController{
                 if weakSelf!.dataController.dictionaryModel == nil{
                     weakSelf!.getDictionary()
                 }else{
-                    weakSelf!.tableView.reloadData()
+//                    weakSelf!.tableView.reloadData()
+                    weakSelf!.tableView.reloadRows(at: [IndexPath.init(row: 0, section: 0)], with: .none)
                 }
             }else {
                 //TODO

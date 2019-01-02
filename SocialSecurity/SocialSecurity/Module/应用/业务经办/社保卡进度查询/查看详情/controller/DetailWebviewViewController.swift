@@ -9,6 +9,8 @@
 import UIKit
 import WebKit
 class DetailWebviewViewController: BaseViewController {
+    var type = ""//0个人办理1亲属代办
+    var isCanUpdate = false
     var webView = WKWebView()
     var progressView = UIProgressView()
     var urlContent = ""
@@ -20,9 +22,8 @@ class DetailWebviewViewController: BaseViewController {
         URLCache.shared.removeAllCachedResponses()
         initWeb()
     }
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        
+
+    deinit {
         webView.removeObserver(self, forKeyPath: "estimatedProgress")
         progressView.reloadInputViews()
         for item in progressView.subviews{
@@ -30,7 +31,6 @@ class DetailWebviewViewController: BaseViewController {
         }
         //        progressView.removeAllSubviews()
         progressView.removeFromSuperview()
-        
     }
 
    
@@ -81,7 +81,7 @@ extension DetailWebviewViewController:WKNavigationDelegate,WKUIDelegate{
         button.frame = CGRect(x:0, y:0, width:10, height:30)
         button.setImage(UIImage(named:"arrow_back"), for: .normal)
         button.setTitle("返回", for: .normal)
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 12)
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 14)
         button.sizeToFit()
         button.addTarget(self, action: #selector(backItemPressed), for: .touchUpInside)
         let leftBarBtn = UIBarButtonItem(customView: button)
@@ -90,12 +90,17 @@ extension DetailWebviewViewController:WKNavigationDelegate,WKUIDelegate{
                                      action: nil)
         spacer.width = -5;
         self.navigationItem.leftBarButtonItems = [spacer,leftBarBtn]
+        if isCanUpdate{
+            let rightBarButtonItem = UIBarButtonItem(title: "修改", style: .plain, target: self, action: #selector(rightBarButtonClicked(sender:)))
+            self.navigationItem.rightBarButtonItem = rightBarButtonItem
+        }
         
         //        let item = UIBarButtonItem(title: "返回集优化", style: .plain, target: self, action: #selector(backItemPressed))
         //        self.navigationItem.leftBarButtonItem = item
         
         
     }
+   
     
     fileprivate func loadHost(string:String) {
         let path = Bundle.main.path(forResource: string, ofType: "html")
@@ -164,6 +169,20 @@ extension DetailWebviewViewController:WKNavigationDelegate,WKUIDelegate{
         } catch { }
     }
     
+    @objc func rightBarButtonClicked(sender: UIBarButtonItem){
+        var tempTitle = ""
+        if type == "0"{
+            tempTitle = "个人办理"
+        }else{
+            tempTitle = "亲属代办"
+        }
+        let dic:NSMutableDictionary = [
+            "title":tempTitle,
+            "type":"1",
+            "saveModel":saveModel
+        ]
+        self.pushViewController("CaijiBasicViewController",sender:dic)
+    }
     
     @objc func backItemPressed() {
         if webView.canGoBack {
