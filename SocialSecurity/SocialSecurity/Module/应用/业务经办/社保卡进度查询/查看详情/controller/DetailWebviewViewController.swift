@@ -147,7 +147,7 @@ extension DetailWebviewViewController:WKNavigationDelegate,WKUIDelegate{
                 contentStrReplace = (contentStrReplace as NSString).replacingOccurrences(of: "##25", with: saveModel.xmStr1)
                 contentStrReplace = (contentStrReplace as NSString).replacingOccurrences(of: "##26", with: saveModel.zjhm)
                 contentStrReplace = (contentStrReplace as NSString).replacingOccurrences(of: "##27", with: saveModel.createDate1)
-                contentStrReplace = (contentStrReplace as NSString).replacingOccurrences(of: "##28", with: "")
+                contentStrReplace = (contentStrReplace as NSString).replacingOccurrences(of: "##28", with: saveModel.dwmc)
                 contentStrReplace = (contentStrReplace as NSString).replacingOccurrences(of: "##29", with: saveModel.dbr_xm)
                 contentStrReplace = (contentStrReplace as NSString).replacingOccurrences(of: "##30", with: saveModel.dbr_sfzhm)
                 contentStrReplace = (contentStrReplace as NSString).replacingOccurrences(of: "##31", with: saveModel.yjdz)

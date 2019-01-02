@@ -33,7 +33,6 @@ class CaijiSaveModel: BaseModel {
     
     var ryzt = ""//人员状态
     var ryztName = ""//
-    
     var gj = ""//国籍
     var gjName = ""
     var hjxz = ""//户籍性质
