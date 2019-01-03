@@ -33,7 +33,7 @@ extension YwjbViewController{
         tableView.dataSource = self
 //        tableView.estimatedRowHeight = 44
 //        tableView.rowHeight = UITableView.automaticDimension
-        tableView.register("ApplyCollectionTableViewCell")
+//        tableView.register("ApplyCollectionTableViewCell")
         tableView.register("ApplyBannerTableViewCell")
         
     }
@@ -75,7 +75,8 @@ extension YwjbViewController:UITableViewDelegate,UITableViewDataSource{
 //            cell.initCell(model: dataController.bannerModel)
             return cell
         }else{
-            let cell = ApplyCollectionTableViewCell.loadCell(tableView)
+//            let cell = ApplyCollectionTableViewCell.loadCell(tableView)
+                 let cell = Bundle.main.loadNibNamed("ApplyCollectionTableViewCell.loadCell", owner: self, options: nil)?.last as! ApplyCollectionTableViewCell.loadCell
             cell.initCell(delegate: self, dataArray: dataController.toolArray)
             cell.backgroundColor = UIColor.clear
             cell.pro = self
