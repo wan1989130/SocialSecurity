@@ -76,7 +76,7 @@ extension YwjbViewController:UITableViewDelegate,UITableViewDataSource{
             return cell
         }else{
 //            let cell = ApplyCollectionTableViewCell.loadCell(tableView)
-                 let cell = Bundle.main.loadNibNamed("ApplyCollectionTableViewCell.loadCell", owner: self, options: nil)?.last as! ApplyCollectionTableViewCell.loadCell
+                 let cell = Bundle.main.loadNibNamed("ApplyCollectionTableViewCell", owner: self, options: nil)?.last as! ApplyCollectionTableViewCell
             cell.initCell(delegate: self, dataArray: dataController.toolArray)
             cell.backgroundColor = UIColor.clear
             cell.pro = self
