@@ -52,10 +52,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="姓名" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wwk-43-h96">
-                                <rect key="frame" x="76" y="4" width="60" height="20"/>
+                                <rect key="frame" x="76" y="4" width="29" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="KEE-4l-qBJ"/>
-                                    <constraint firstAttribute="width" constant="60" id="R7Q-Lc-2eX"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

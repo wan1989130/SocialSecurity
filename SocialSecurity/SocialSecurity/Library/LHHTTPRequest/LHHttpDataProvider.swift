@@ -65,12 +65,9 @@ class LHHttpDataProvider {
                 if myBaseModel?.code == "100"{//异地登陆
                     LHAlertView.showTipAlertWithTitle((myBaseModel?.msg)!)
                     let config = MyConfig.shared()
-                    
-                    let userNSObjectModel = NSKeyedUnarchiver.unarchiveObject(with: config.userModel) as! UserNSObjectModel
-                    userNSObjectModel.token = ""
-                    config.userModel = NSKeyedArchiver.archivedData(withRootObject: userNSObjectModel)
+                    config.userModel.removeAll()
+                    currentUser = nil
                     config.isLogin = false
-                    MyConfig.shared().isLogin = false
                     let loginVC = LoginViewController(nibName: "LoginViewController", bundle: nil)
                     let navController = BaseNavigationViewController(rootViewController: loginVC)
                     UIApplication.shared.keyWindow?.rootViewController = navController

@@ -21,6 +21,9 @@ class SbkProgressViewController: BaseViewController {
         initUI()
         allPeopleQuery()
     }
+    deinit {
+        print("采集进度查询销毁")
+    }
     
 }
 extension SbkProgressViewController{

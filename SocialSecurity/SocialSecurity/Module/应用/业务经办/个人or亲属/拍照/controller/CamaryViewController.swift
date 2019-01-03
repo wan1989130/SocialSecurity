@@ -13,6 +13,10 @@ class CamaryViewController: BaseViewController {
     var alert:UIAlertController!
     var dataController:CamaryDataController!
     var isWrite = true
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        endLoad()
+    }
     @IBAction func nextClick(_ sender: Any) {
         if checkFun(){
             if title == "亲属代办"{
@@ -69,13 +73,14 @@ extension CamaryViewController{
             if dic["dictionaryModel"] != nil{
                 dataController.dictionaryModel = dic["dictionaryModel"] as! DictionaryDataModel
             }
-            if dataController.type == "1"{
+            if dataController.saveModel.zp != ""{
                 let formatter = DateFormatter()
                 formatter.dateFormat = "yyyyMMddHHmmss"
                 let str = "&" + formatter.string(from: Date())
                 photoButton.sd_setBackgroundImage(with: URL.init(string: FileAccessHost + dataController.saveModel.zp + str), for: .normal, completed: nil)
                 
             }
+            
         }
         
         
@@ -134,7 +139,7 @@ extension CamaryViewController{
             "name":dataController.saveModel.zjhm
         ]
         weak var weakSelf = self
-        
+        beginLoad()
         dataController.uploadPhoto(imgDataArray:  [imageData], parameter: parameter) { (isSucceed, info) in
             if isSucceed{
                 if weakSelf == nil{return}
@@ -144,6 +149,7 @@ extension CamaryViewController{
                 weakSelf?.photoButton.setBackgroundImage(UIImage.init(named: "ic_id_photo"), for: .normal)
                 print("失败")
             }
+            weakSelf?.endLoad()
             
         }
     }

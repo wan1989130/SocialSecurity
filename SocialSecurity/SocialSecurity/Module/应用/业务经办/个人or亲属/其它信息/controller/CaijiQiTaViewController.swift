@@ -254,6 +254,10 @@ extension CaijiQiTaViewController:CaijiBasicNextProtocol,CaijiQiTaContentSelectP
             LHAlertView.showTipAlertWithTitle("邮寄地址不能为空")
             return false
         }
+        if model.yjdz.characters.count < 5{
+            LHAlertView.showTipAlertWithTitle("邮寄地址不能小于5个字")
+            return false
+        }
         return true
     }
     

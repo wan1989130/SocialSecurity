@@ -30,16 +30,18 @@ class ApplyCollectionTableViewCell: UITableViewCell {
         
     }
     func update(model:SelfQueryItemModel){
+//        statusView.isHidden = false
 //        model.status = "2"
 //        model.msg = "a,b"
         if model.status == "0"{
             statusViewHeight.constant = 0
             statusView.removeAllSubviews()
+//            statusView.isHidden = true
         }else if model.status == "1"{
-            if model.msg != ""{
-                let array = model.msg?.components(separatedBy: ",")
-                oneMsgLabel.text = array![0]
-                twoMsgLabel.text = array![1]
+            if model.statusMsg != ""{
+                let array = model.statusMsg.components(separatedBy: "，")
+                oneMsgLabel.text = array[0]
+                twoMsgLabel.text = array[1]
             }
             
             oneLabel.layer.borderColor = UIColor(hexString: "005191")?.cgColor
@@ -54,15 +56,11 @@ class ApplyCollectionTableViewCell: UITableViewCell {
             twoLabel.layer.cornerRadius = 15
             twoLabel.backgroundColor = UIColor.lightGray
             twoLabel.clipsToBounds = true
-            
-            
-            
-            
         }else if model.status == "2"{
-            if model.msg != ""{
-                let array = model.msg?.components(separatedBy: ",")
-                oneMsgLabel.text = array![0]
-                twoMsgLabel.text = array![1]
+            if model.statusMsg != ""{
+                let array = model.statusMsg.components(separatedBy: "，")
+                oneMsgLabel.text = array[0]
+                twoMsgLabel.text = array[1]
             }
             
             oneLabel.layer.borderColor = UIColor(hexString: "005191")?.cgColor
@@ -78,10 +76,10 @@ class ApplyCollectionTableViewCell: UITableViewCell {
             twoLabel.backgroundColor = UIColor.white
             twoLabel.clipsToBounds = true
         }else if model.status == "3"{
-            if model.msg != ""{
-                let array = model.msg?.components(separatedBy: ",")
-                oneMsgLabel.text = array![0]
-                twoMsgLabel.text = array![1]
+            if model.statusMsg != ""{
+                let array = model.statusMsg.components(separatedBy: "，")
+                oneMsgLabel.text = array[0]
+                twoMsgLabel.text = array[1]
             }
             
             oneLabel.layer.borderColor = UIColor(hexString: "005191")?.cgColor

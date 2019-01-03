@@ -65,7 +65,7 @@ class CaijiSaveModel: BaseModel {
     var sh = ""
     var sfdy = "0"
     var dwmc = ""
-    var createDate = ""
+//    var createDate = ""
     var createDate1 = ""
     var lryId = ""
     
@@ -121,7 +121,7 @@ class CaijiSaveModel: BaseModel {
         sh <- map["sh"]
         sfdy <- map["sfdy"]
         dwmc <- map["dwmc"]
-        createDate <- map["createDate"]
+//        createDate <- map["createDate"]
         createDate1 <- map["createDate1"]
         lryId <- map["lryId"]
         
