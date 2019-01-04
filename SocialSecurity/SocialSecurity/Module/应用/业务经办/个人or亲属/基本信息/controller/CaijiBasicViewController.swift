@@ -10,25 +10,22 @@ import UIKit
 import ObjectMapper
 class CaijiBasicViewController: BaseViewController {
 
+    var cellHeightDictionary:NSMutableDictionary = [:]
     var cellHeight:CGFloat = 417
-//    var idCardFrontModel:IdCardFrontModel = IdCardFrontModel()
-//    var idCardBackModel:IdCardFrontModel = IdCardFrontModel()
-   
     var frontVc:UIViewController!
     var dateType = ""//0出生日期1证件有效期
-    
     var csrq = ""
-    @IBOutlet var tableView: UITableView!
     var dataController:CaijiBasicDataController!
     var isWrite = true
+    
+    
+    @IBOutlet var tableView: UITableView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-    
- 
         initData()
         initUI()
 //        isCanScanQuery()
-        
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -37,9 +34,6 @@ class CaijiBasicViewController: BaseViewController {
     deinit {
         print("基础信息页面销毁")
     }
-
-  
-
 }
 extension CaijiBasicViewController{
     fileprivate func initUI(){
@@ -48,11 +42,10 @@ extension CaijiBasicViewController{
         tableView.delegate = self
         tableView.dataSource = self
         tableView.estimatedRowHeight = 40
-//        tableView.rowHeight = UITableView.automaticDimension
+        tableView.rowHeight = UITableView.automaticDimension
         tableView.register("CaijiBasicIdCardTableViewCell")
         tableView.register("CaijiBasicContentTableViewCell")
         tableView.register("CaijiBasicSaveTableViewCell")
-        
     }
     fileprivate func initData(){
         dataController = CaijiBasicDataController(delegate: self)
@@ -67,38 +60,31 @@ extension CaijiBasicViewController{
             if dic["saveModel"] != nil{
                 dataController.saveModel = dic["saveModel"] as! CaijiSaveModel
             }
-            
         }
         if dataController.type == "2"{
             isWrite = false
         }
-        
-        
     }
     func initIdCardOcr(){
         let licenseFile = Bundle.main.path(forResource: "aip", ofType: "license")
         let licenseFileData = NSData(contentsOfFile: licenseFile!) as! Data
 //        let licenseFileData:NSData = try! NSData.init(contentsOfFile: licenseFile!)
-        
         if licenseFileData.count > 0{
              AipOcrService.shard()?.auth(withLicenseFileData: licenseFileData)
         }else{
            print("失败")
-            
         }
     }
-    
-   
-    
 }
 extension CaijiBasicViewController:UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
         return dataController.cellCount
     }
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 0{
-            let cell = CaijiBasicIdCardTableViewCell.loadCell(tableView)
+//            let cell = CaijiBasicIdCardTableViewCell.loadCell(tableView)
+            let cell = Bundle.main.loadNibNamed("CaijiBasicIdCardTableViewCell", owner: self, options: nil)?.last as! CaijiBasicIdCardTableViewCell
             cell.pro = self
 //            dataController.isCan = false
             cell.update(flag: dataController.isCan, isWrite: isWrite)
@@ -106,23 +92,43 @@ extension CaijiBasicViewController:UITableViewDelegate,UITableViewDataSource{
         }else if indexPath.row == 2{
             let cell = CaijiBasicSaveTableViewCell.loadCell(tableView)
             cell.pro = self
+           
             return cell
         }else{
             let cell = CaijiBasicContentTableViewCell.loadCell(tableView)
             cell.pro = self
-           
+            if dataController.type == "1"{
+                cell.zjhmTextField.isEnabled = false
+            }else{
+                cell.zjhmTextField.isEnabled = true
+            }
             cell.update(tableView: tableView, model: dataController.saveModel, isWrite: isWrite,indexPath:indexPath)
             return cell
-            
         }
     }
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if indexPath.row == 1{
-            return cellHeight
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        if cellHeightDictionary.count > 0{
+            if cellHeightDictionary.object(forKey: indexPath) != nil{
+                return cellHeightDictionary.object(forKey: indexPath) as! CGFloat
+            }else{
+                return UITableView.automaticDimension
+            }
+            
         }else{
             return UITableView.automaticDimension
         }
     }
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cellHeightDictionary[indexPath] = cell.frame.size.height
+    }
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        if indexPath.row == 1{
+//            return cellHeight
+//        }else{
+//            return UITableView.automaticDimension
+//        }
+//
+//    }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
     }
@@ -166,7 +172,11 @@ extension CaijiBasicViewController:CaijiBasicIdCardPhotoClickProtoco{
                 if temModel != nil{
                     weakSelf?.dataController.saveModel.name = temModel!.words_result.nameModel.words
                     weakSelf?.dataController.saveModel.xb = temModel!.words_result.sexModel.words
-                    weakSelf?.dataController.saveModel.zjhm = temModel!.words_result.sfzhModel.words
+                    if weakSelf?.dataController.type == "1"{
+                        
+                    }else{
+                        weakSelf?.dataController.saveModel.zjhm = temModel!.words_result.sfzhModel.words
+                    }
                     weakSelf?.dataController.saveModel.csrqStr = temModel!.words_result.csrqModel.words
                     weakSelf?.dataController.saveModel.csrq = temModel!.words_result.csrqModel.words
                     weakSelf?.dataController.saveModel.mz = temModel!.words_result.mzModel.words
@@ -253,6 +263,7 @@ extension CaijiBasicViewController:CaijiBasicNextProtocol,CaijiBasicContentSelec
         ]
         pushViewController("SelectViewController", sender: dic) { (info) in
             if weakSelf == nil{return}
+            
             let dic = info as! NSMutableDictionary
             let model = dic["model"] as! DictionaryModel
             weakSelf!.dataController.saveModel.zjlx = model.id
@@ -311,15 +322,12 @@ extension CaijiBasicViewController:CaijiBasicNextProtocol,CaijiBasicContentSelec
                 "saveModel":dataController.saveModel,
                 "dictionaryModel":dataController.dictionaryModel
             ]
-            if dataController.saveModel.zjlxName == "户口本" && dataController.saveModel.zjyxq == "长期"{
+            if dataController.saveModel.zjlxName == "户口本" && dataController.saveModel.zjyxq == "长期" || dataController.saveModel.zjlxName.contains("身份证") && getCurrentAge() < 16{
                 pushViewController("CaijiJianHuRenViewController",sender:dic)
             }else{
                 pushViewController("CaijiQiTaViewController",sender:dic)
             }
-            
         }
-        
-        
     }
     func xbClick() {
         weak var weakSelf = self
@@ -358,6 +366,46 @@ extension CaijiBasicViewController:SelectDateDelegate{
     }
 }
 extension CaijiBasicViewController{
+    //根据生日计算当前周岁
+    func getCurrentAge() -> Int{
+//        let date = NSDate()
+//        let timeFormatter = DateFormatter()
+//        timeFormatter.dateFormat = "yyyyMMdd"
+//        let curr = timeFormatter.string(from: date as Date) as String
+////        let curr:Int = Int(selectTime)!
+//        let born = (dataController.saveModel.csrq as NSString).replacingOccurrences(of: "-", with: "")
+//        let age = Int((curr as NSString).substring(with: NSRange.init(location: 0, length: 4)))! - Int((born as NSString).substring(with: NSRange.init(location: 0, length: 4)))!
+//        if  age <= 0{
+//            return 0
+//        }
+        
+        //格式化日期
+        
+        let d_formatter = DateFormatter()
+        d_formatter.dateFormat = "yyyy-MM-dd"
+        let birthDay_date = d_formatter.date(from: dataController.saveModel.csrqStr)
+        // 出生日期转换 年月日
+        
+        let birthdayDate = NSCalendar.current.dateComponents([.year,.month,.day], from: birthDay_date!)
+            let brithDateYear  = birthdayDate.year
+            let brithDateDay   = birthdayDate.day
+            let brithDateMonth = birthdayDate.month
+            // 获取系统当前 年月日
+        let currentDate = NSCalendar.current.dateComponents([.year,.month,.day], from: Date())
+            let currentDateYear  = currentDate.year
+            let currentDateDay   = currentDate.day
+            let currentDateMonth = currentDate.month
+            // 计算年龄
+        var iAge = currentDateYear! - brithDateYear! - 1;
+            if ((currentDateMonth! > brithDateMonth!) || (currentDateMonth! == brithDateMonth! && currentDateDay! >= brithDateDay!)) {
+                iAge += 1
+            }
+            return iAge
+  
+        
+        
+        
+    }
     func checkFun() -> Bool{
         closeKeyboard()
         let model = dataController.saveModel
@@ -373,7 +421,7 @@ extension CaijiBasicViewController{
             LHAlertView.showTipAlertWithTitle("证件类型不能为空")
             return false
         }
-        if model.zjlxName == "身份证"{
+        if model.zjlxName.contains("身份证"){
             if  !model.zjhm.isLegalIdCard(){
                 
                 return false
@@ -383,6 +431,10 @@ extension CaijiBasicViewController{
                 LHAlertView.showTipAlertWithTitle("证件号码不能为空")
                 return false
             }
+        }
+        if model.zjhm.count < 12{
+            LHAlertView.showTipAlertWithTitle("证件号码不能小于12位")
+            return false
         }
        
         if model.csrq == ""{

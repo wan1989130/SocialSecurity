@@ -143,7 +143,7 @@ extension CaijiJianHuRenViewController{
     func checkFun() -> Bool{
         closeKeyboard()
         let model = dataController.saveModel!
-        if model.jhrzjlxName == "身份证"{
+        if model.jhrzjlxName.contains("身份证"){
             if  !model.zjhm.isLegalIdCard(){
                 
                 return false

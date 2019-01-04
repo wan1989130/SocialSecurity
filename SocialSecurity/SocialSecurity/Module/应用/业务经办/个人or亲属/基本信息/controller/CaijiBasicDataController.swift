@@ -103,7 +103,7 @@ class CaijiBasicDataController: BaseDataController {
             saveModel.zshy = dictionaryModel.data.zshyMap[0].id
             saveModel.zshyName = dictionaryModel.data.zshyMap[0].name
         }else{
-            if !saveModel.zjyxq.contains("-"){
+            if !saveModel.zjyxq.contains("-") && saveModel.zjyxq != "长期"{
                 let dateFormatter = DateFormatter()
                 dateFormatter.dateFormat = "yyyyMMdd"
                 let temDate = dateFormatter.date(from: saveModel.zjyxq)
