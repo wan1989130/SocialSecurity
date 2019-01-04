@@ -30,8 +30,20 @@ class SbkProgressTableViewCell: UITableViewCell {
         self.index = index
         xmLabel.text = model.name
         sfzhLabel.text = model.zhengjianNum
-        statusLabel.text = model.statusMsg
-        let statusLabelSize = model.statusMsg.getSize(withFont: UIFont.systemFont(ofSize: 14), forWidth: ScreenWidth - 16 - 8 - 60 - 8 - 16 - 8 - 4 - 48)
+        var temStr = ""
+        if model.status == 0{
+            statusLabel.text = model.statusMsg
+            temStr = model.statusMsg
+        }else{
+            statusLabel.text = model.statusMsg + "--" + model.remark
+            temStr = model.statusMsg + "--" + model.remark
+        }
+        if model.status == 0 || model.status == 1{
+            statusLabel.textColor = UIColor(hexString: "99cc00")
+        }else{
+            statusLabel.textColor = UIColor(hexString: "ff4444")
+        }
+        let statusLabelSize = temStr.getSize(withFont: UIFont.systemFont(ofSize: 14), forWidth: ScreenWidth - 16 - 8 - 60 - 8 - 16 - 8 - 4 - 48)
         viewHeightConstraint.constant = statusLabelSize.height + 60 + 1
     }
 

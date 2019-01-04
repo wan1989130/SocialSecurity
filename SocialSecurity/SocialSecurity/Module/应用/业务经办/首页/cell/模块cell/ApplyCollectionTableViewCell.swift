@@ -39,7 +39,7 @@ class ApplyCollectionTableViewCell: UITableViewCell {
 //            statusView.isHidden = true
         }else if model.status == "1"{
             if model.statusMsg != ""{
-                let array = model.statusMsg.components(separatedBy: "，")
+                let array = model.statusMsg.components(separatedBy: ",")
                 oneMsgLabel.text = array[0]
                 twoMsgLabel.text = array[1]
             }
@@ -54,11 +54,11 @@ class ApplyCollectionTableViewCell: UITableViewCell {
             twoLabel.layer.borderColor = UIColor.lightGray.withAlphaComponent(0.5).cgColor
             twoLabel.layer.borderWidth = 2
             twoLabel.layer.cornerRadius = 15
-            twoLabel.backgroundColor = UIColor.lightGray
+            twoLabel.backgroundColor = UIColor(hexString:"aaaaaa")
             twoLabel.clipsToBounds = true
         }else if model.status == "2"{
             if model.statusMsg != ""{
-                let array = model.statusMsg.components(separatedBy: "，")
+                let array = model.statusMsg.components(separatedBy: ",")
                 oneMsgLabel.text = array[0]
                 twoMsgLabel.text = array[1]
             }
@@ -77,7 +77,7 @@ class ApplyCollectionTableViewCell: UITableViewCell {
             twoLabel.clipsToBounds = true
         }else if model.status == "3"{
             if model.statusMsg != ""{
-                let array = model.statusMsg.components(separatedBy: "，")
+                let array = model.statusMsg.components(separatedBy: ",")
                 oneMsgLabel.text = array[0]
                 twoMsgLabel.text = array[1]
             }

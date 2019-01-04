@@ -53,7 +53,7 @@ extension CaijiJianHuRenViewController{
         jhrzjhmTextField.delegate = self
         jhrxmTextField.delegate = self
         
-        jhrzjlxTextField.text = dataController.saveModel.jhrzjlx
+        jhrzjlxTextField.text = dataController.saveModel.jhrzjlxName
         jhrzjhmTextField.text = dataController.saveModel.jhrzh
         jhrxmTextField.text = dataController.saveModel.jhrxm
         

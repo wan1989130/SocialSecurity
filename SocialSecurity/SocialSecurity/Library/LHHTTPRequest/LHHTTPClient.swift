@@ -172,7 +172,7 @@ class LHHTTPClient: NSObject {
         var token = ""
         if MyConfig.shared().token != ""{
 
-            print("token = \(token)")
+            
             LHHTTPClient.manager.requestSerializer.setValue(MyConfig.shared().token, forHTTPHeaderField: "token")
         }
         
