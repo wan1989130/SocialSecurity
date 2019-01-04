@@ -33,8 +33,10 @@ class CaijiBasicContentTableViewCell: UITableViewCell {
     weak var pro:CaijiBasicContentSelectProtocol!
     var indexPath:IndexPath!
     @IBOutlet weak var bgView: UIView!
+  
     override func awakeFromNib() {
         super.awakeFromNib()
+        
         xbTextField.delegate = self
         zjlxTextField.delegate = self
         csrqTextField.delegate = self
@@ -50,11 +52,12 @@ class CaijiBasicContentTableViewCell: UITableViewCell {
         txdzTextView.showsVerticalScrollIndicator = false
         txdzTextView.showsHorizontalScrollIndicator = false
         txdzTextView.placeholder = "请输入通信地址"
-        txdzTextView.textColor = UIColor.darkGray
+//        txdzTextView.textColor = UIColor.darkGray
         
         bgView.clipsToBounds = true
         bgView.layer.borderWidth = 1
         bgView.layer.borderColor = UIColor.black.withAlphaComponent(0.2).cgColor
+        
         
     }
     func update(tableView:UITableView,model:CaijiSaveModel,isWrite:Bool,indexPath:IndexPath){
@@ -72,6 +75,7 @@ class CaijiBasicContentTableViewCell: UITableViewCell {
         }else{
             
         }
+        txdzTextView.placeholder = "请输入通信地址"
         xmTextField.isEnabled = isWrite
         xbTextField.isEnabled = isWrite
         zjlxTextField.isEnabled = isWrite

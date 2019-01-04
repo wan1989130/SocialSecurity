@@ -103,6 +103,7 @@ extension CaijiBasicViewController:UITableViewDelegate,UITableViewDataSource{
                 cell.zjhmTextField.isEnabled = true
             }
             cell.update(tableView: tableView, model: dataController.saveModel, isWrite: isWrite,indexPath:indexPath)
+            
             return cell
         }
     }
@@ -177,7 +178,16 @@ extension CaijiBasicViewController:CaijiBasicIdCardPhotoClickProtoco{
                     }else{
                         weakSelf?.dataController.saveModel.zjhm = temModel!.words_result.sfzhModel.words
                     }
-                    weakSelf?.dataController.saveModel.csrqStr = temModel!.words_result.csrqModel.words
+                    if temModel!.words_result.csrqModel.words != "" && temModel!.words_result.csrqModel.words.count == 8{
+                        let dateFormatter = DateFormatter()
+                        dateFormatter.dateFormat = "yyyyMMdd"
+                        let temDate = dateFormatter.date(from: temModel!.words_result.csrqModel.words)
+                        let dateFormatter2 = DateFormatter()
+                        dateFormatter2.dateFormat = "yyyy-MM-dd"
+                        let csrqStr = dateFormatter2.string(from: temDate!)
+                        weakSelf?.dataController.saveModel.csrqStr = csrqStr
+                    }
+                    
                     weakSelf?.dataController.saveModel.csrq = temModel!.words_result.csrqModel.words
                     weakSelf?.dataController.saveModel.mz = temModel!.words_result.mzModel.words
                     weakSelf?.dataController.saveModel.txdz = temModel!.words_result.zzModel.words

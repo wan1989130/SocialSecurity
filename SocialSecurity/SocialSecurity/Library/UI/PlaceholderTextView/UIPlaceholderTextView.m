@@ -47,6 +47,11 @@
     
     return text;
 }
+-(void)setText:(NSString *)text{
+    super.text = text;
+    //字体颜色
+    [super setTextColor:textColor];
+}
 
 - (void) beginEditing:(NSNotification*) notification {
     if ([super.text isEqualToString:placeholder]) {
@@ -64,5 +69,4 @@
         [super setTextColor:[UIColor lightGrayColor]];
     }
 }
-
 @end
