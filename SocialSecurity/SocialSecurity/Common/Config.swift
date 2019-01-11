@@ -30,7 +30,7 @@ let tabbarHeight = UIDevice.current.isX() == true ? 83 : 49
 let navHeight = UIDevice.current.isX() == true ? 88 : 64
 
 //默认viewcontroller背景色
-let viewBgColor = UIColor(hexString: "EAEFF3")
+let viewBgColor = UIColor(hexString: "ECF5FE")
 
 //存储当前登录用户信息
 var currentUser:UserModel! = UserModel()

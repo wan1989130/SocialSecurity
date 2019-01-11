@@ -13,7 +13,7 @@ class ConnactUsViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor(hexString: "ECF5FE")
+        self.view.backgroundColor = viewBgColor
       title = "联系我们"
         
     }

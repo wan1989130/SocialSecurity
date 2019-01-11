@@ -48,7 +48,7 @@ extension CommonWebViewController:WKNavigationDelegate,WKUIDelegate{
         let wkUserScript = WKUserScript.init(source: jSString , injectionTime: .atDocumentEnd, forMainFrameOnly: true)
         wkWebConfig.userContentController.addUserScript(wkUserScript)
         //        wkWebConfig.userContentController.add(self , name: "AppModel")
-        webView = WKWebView(frame: self.view.bounds, configuration: wkWebConfig)
+        webView = WKWebView(frame: CGRect(x: 0, y: 0, width: ScreenWidth, height: ScreenHeight - CGFloat(tabbarHeight)), configuration: wkWebConfig)
         
         //                webView = WKWebView(frame: self.view.bounds)
         

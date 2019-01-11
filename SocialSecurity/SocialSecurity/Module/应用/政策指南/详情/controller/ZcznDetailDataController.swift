@@ -16,7 +16,7 @@ class ZcznDetailDataController: BaseDataController {
             for i in 0..<20{
                 let model1 = ZcznDetailDataModel()
                 model1.title = "政策指南\(i)"
-                model1.url = "http://www.ccshbx.org.cn/czqyzgjbylbx/273024.jhtml"
+                model1.url = "http://www.baidu.com"
                 dataArray.append(model1)
             }
             

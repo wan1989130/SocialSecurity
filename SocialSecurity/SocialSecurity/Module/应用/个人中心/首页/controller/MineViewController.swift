@@ -24,7 +24,7 @@ class MineViewController: BaseViewController {
 }
 extension MineViewController{
     fileprivate func initUI(){
-        self.view.backgroundColor = UIColor(hexString: "ECF5FE")
+        self.view.backgroundColor = viewBgColor
         
         
         tableView.delegate = self
@@ -42,7 +42,7 @@ extension MineViewController{
 extension MineViewController:UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let view = UIView()
-        view.backgroundColor = UIColor(hexString: "ECF5FE")
+        view.backgroundColor = viewBgColor
         return view
     }
     func numberOfSections(in tableView: UITableView) -> Int {

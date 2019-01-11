@@ -43,7 +43,7 @@ class MineMessageViewController: BaseViewController {
 extension MineMessageViewController{
     fileprivate func initUI(){
         
-        self.view.backgroundColor = UIColor(hexString: "ECF5FE")
+        self.view.backgroundColor = viewBgColor
         headPhotoImageView.layer.borderWidth = 1
         headPhotoImageView.layer.borderColor = UIColor.black.withAlphaComponent(0.2).cgColor
         headPhotoBgView.addGestureRecognizer(UITapGestureRecognizer.init(target: self, action: #selector(headPhotoClick)))
