@@ -108,18 +108,21 @@ extension YwjbViewController:ApplyCollectionIndexClickProtocol{
             pushViewController("IxcjTypeViewController")
         }else if index == 1{
             let webVc = CommonWebViewController()
-            webVc.urlContent = Protocolhtml
+            webVc.urlContent = MyConfig.shared().zhikajinduUrl
             webVc.titleContent = "制卡进度查询"
+            webVc.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(webVc, animated: true)
         }else if index == 2{
             let webVc = CommonWebViewController()
-            webVc.urlContent = Protocolhtml
+            webVc.urlContent = MyConfig.shared().shebaoUrl
             webVc.titleContent = "社保查询"
+            webVc.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(webVc, animated: true)
         }else if index == 3{
             let webVc = CommonWebViewController()
-            webVc.urlContent = Protocolhtml
+            webVc.urlContent = MyConfig.shared().yibaoUrl
             webVc.titleContent = "医保查询"
+            webVc.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(webVc, animated: true)
         }
     }

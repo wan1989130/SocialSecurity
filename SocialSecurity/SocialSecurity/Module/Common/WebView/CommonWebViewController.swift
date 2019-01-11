@@ -43,7 +43,7 @@ extension CommonWebViewController:WKNavigationDelegate,WKUIDelegate{
         title = titleContent
         let wkWebConfig = WKWebViewConfiguration()
         wkWebConfig.preferences.javaScriptEnabled = true
-        
+        wkWebConfig.preferences.minimumFontSize = 8
         let jSString = "var meta = document.createElement('meta')meta.setAttribute('name', 'viewport'); meta.setAttribute('content', 'width=device-width'); document.getElementsByTagName('head')[0].appendChild(meta);"
         let wkUserScript = WKUserScript.init(source: jSString , injectionTime: .atDocumentEnd, forMainFrameOnly: true)
         wkWebConfig.userContentController.addUserScript(wkUserScript)
@@ -55,6 +55,9 @@ extension CommonWebViewController:WKNavigationDelegate,WKUIDelegate{
         webView.navigationDelegate = self
         webView.uiDelegate = self;
         if urlContent != ""{
+            if urlContent.characters.count < 5 || !urlContent.hasPrefix("http"){
+                urlContent = "http://www.baidu.com"
+            }
             let url = URL(string: urlContent)
             let request = URLRequest(url: url!)
             webView.load(request)
@@ -116,6 +119,12 @@ extension CommonWebViewController:WKNavigationDelegate,WKUIDelegate{
             progressView.setProgress(Float(webView.estimatedProgress), animated: true)
             print(webView.estimatedProgress)
         }
+    }
+    func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
+        print("didFail =\(error)")
+    }
+    func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
+        print("didFailProvisionalNavigation =\(error)")
     }
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         
