@@ -81,10 +81,20 @@ extension IxcjTypeViewController:UICollectionViewDelegate,UICollectionViewDataSo
         if dataController.model == nil{
             return
         }
+        if dataController.model.data.nowCount != "0" && !isMax{
+            LHAlertView.showTipAlertWithTitle("您已办理过个人办理，无法再次办理")
+            return
+        }
+        if dataController.model.data.nowCount == "0" && indexPath.row == 1{
+            LHAlertView.showTipAlertWithTitle("请先进行个人办理")
+            return
+        }
+        
         if indexPath.row <= 1 && isMax {
             LHAlertView.showTipAlertWithTitle("录入次数已达最大限制\(dataController.model.data.maxCount)")
             return
         }
+        
         if indexPath.row == 0{
             let dic:NSMutableDictionary = [
                 "title":"个人办理",

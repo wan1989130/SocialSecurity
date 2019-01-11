@@ -142,14 +142,7 @@ extension MineViewController{
  UIApplication.shared.keyWindow?.layer.add(CATransition.animationWithType(.push, direction: .top), forKey: nil)
     }
     func callPhone(){
-        let alertVC :UIAlertController = UIAlertController.init(title:"确定要拨打 \(aboutUsPhone)电话吗?", message:"", preferredStyle: .alert)
-        let falseAA :UIAlertAction = UIAlertAction.init(title:"取消", style: .cancel, handler:nil)
-        let trueAA :UIAlertAction = UIAlertAction.init(title:"确定", style: .default) { (alertAction)in
-            //拨打电话进行报警
-            UIApplication.shared.openURL(URL.init(string:"tel://\(aboutUsPhone)")! )
-        }
-        alertVC.addAction(falseAA)
-        alertVC.addAction(trueAA)
-        self.present(alertVC, animated:true, completion: nil)
+        pushViewController("ConnactUsViewController")
+       
     }
 }

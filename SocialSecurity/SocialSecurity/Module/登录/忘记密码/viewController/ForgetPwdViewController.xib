@@ -24,7 +24,7 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image-fullScreen-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="1hY-WM-bPr">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_register" translatesAutoresizingMaskIntoConstraints="NO" id="1hY-WM-bPr">
                     <rect key="frame" x="157.5" y="80" width="60" height="60"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="60" id="1VX-4U-e3r"/>
@@ -51,7 +51,7 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="AxG-sv-XCU">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="register_infor" translatesAutoresizingMaskIntoConstraints="NO" id="AxG-sv-XCU">
                             <rect key="frame" x="10" y="10" width="20" height="20"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="20" id="Cxq-Da-bYk"/>
@@ -104,7 +104,7 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="XLy-Ut-RPW">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="register_phone" translatesAutoresizingMaskIntoConstraints="NO" id="XLy-Ut-RPW">
                             <rect key="frame" x="10" y="10" width="20" height="20"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="20" id="HNM-Uz-fQX"/>
@@ -164,7 +164,7 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="OUS-bV-Sw1">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="register_pass" translatesAutoresizingMaskIntoConstraints="NO" id="OUS-bV-Sw1">
                             <rect key="frame" x="10" y="10" width="20" height="20"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="20" id="Idf-iX-vUv"/>
@@ -221,7 +221,7 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="6CJ-fB-cv8">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="register_pass" translatesAutoresizingMaskIntoConstraints="NO" id="6CJ-fB-cv8">
                             <rect key="frame" x="10" y="10" width="20" height="20"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="20" id="SZR-69-InS"/>
@@ -282,8 +282,10 @@
         </view>
     </objects>
     <resources>
+        <image name="ic_register" width="100" height="100"/>
         <image name="icon_password_hide" width="24" height="24"/>
-        <image name="image-fullScreen-placeholder" width="1620" height="2880"/>
-        <image name="logo" width="85" height="95"/>
+        <image name="register_infor" width="100" height="100"/>
+        <image name="register_pass" width="100" height="100"/>
+        <image name="register_phone" width="100" height="100"/>
     </resources>
 </document>

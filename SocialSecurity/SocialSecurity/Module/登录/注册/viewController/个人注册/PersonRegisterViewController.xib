@@ -23,7 +23,7 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image-fullScreen-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="Il6-cd-PFB">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_register" translatesAutoresizingMaskIntoConstraints="NO" id="Il6-cd-PFB">
                     <rect key="frame" x="157.5" y="80" width="60" height="60"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="60" id="J2e-ef-1Xv"/>
@@ -50,7 +50,7 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="E1E-q5-hiL">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="register_phone" translatesAutoresizingMaskIntoConstraints="NO" id="E1E-q5-hiL">
                             <rect key="frame" x="10" y="10" width="20" height="20"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="20" id="G8E-Qr-cTI"/>
@@ -92,7 +92,7 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="cie-Ma-HTb">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="register_infor" translatesAutoresizingMaskIntoConstraints="NO" id="cie-Ma-HTb">
                             <rect key="frame" x="10" y="10" width="20" height="20"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="20" id="IgN-bw-PlS"/>
@@ -145,7 +145,7 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="zHV-n9-VRv">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="register_pass" translatesAutoresizingMaskIntoConstraints="NO" id="zHV-n9-VRv">
                             <rect key="frame" x="10" y="10" width="20" height="20"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="20" id="CJG-19-pqN"/>
@@ -180,7 +180,7 @@
                     </constraints>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SV9-BK-XUl">
-                    <rect key="frame" x="24" y="330" width="20" height="20"/>
+                    <rect key="frame" x="34" y="330" width="20" height="20"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="20" id="jYH-vV-YCn"/>
                         <constraint firstAttribute="width" constant="20" id="q5Z-iV-qLI"/>
@@ -191,7 +191,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ddh-Uw-sX5">
-                    <rect key="frame" x="60" y="330" width="74" height="20"/>
+                    <rect key="frame" x="70" y="330" width="74" height="20"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="20" id="uA1-8x-cCe"/>
                     </constraints>
@@ -219,7 +219,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G80-3F-aa0">
-                    <rect key="frame" x="134" y="330" width="99" height="20"/>
+                    <rect key="frame" x="144" y="330" width="99" height="20"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="20" id="nHw-9j-7gQ"/>
                     </constraints>
@@ -237,7 +237,6 @@
                 <constraint firstAttribute="trailing" secondItem="Wlj-77-Hu3" secondAttribute="trailing" constant="24" id="2Ij-2S-HDV"/>
                 <constraint firstItem="Il6-cd-PFB" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="2Nt-Ec-BVk"/>
                 <constraint firstItem="IlK-iP-0si" firstAttribute="leading" secondItem="Wlj-77-Hu3" secondAttribute="leading" id="7YQ-3u-PcN"/>
-                <constraint firstItem="SV9-BK-XUl" firstAttribute="leading" secondItem="Wlj-77-Hu3" secondAttribute="leading" id="8tZ-hz-EQh"/>
                 <constraint firstItem="iCQ-yE-4Qe" firstAttribute="top" secondItem="IlK-iP-0si" secondAttribute="bottom" id="KD2-Ks-xxx"/>
                 <constraint firstItem="Wlj-77-Hu3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="24" id="OKg-7l-VQ0"/>
                 <constraint firstItem="iCQ-yE-4Qe" firstAttribute="trailing" secondItem="Wlj-77-Hu3" secondAttribute="trailing" id="PyI-wa-Jw6"/>
@@ -248,6 +247,7 @@
                 <constraint firstItem="Wlj-77-Hu3" firstAttribute="top" secondItem="Il6-cd-PFB" secondAttribute="bottom" constant="60" id="cQ1-TW-wTv"/>
                 <constraint firstItem="G80-3F-aa0" firstAttribute="leading" secondItem="Ddh-Uw-sX5" secondAttribute="trailing" id="cag-ui-IAu"/>
                 <constraint firstItem="utl-UJ-Nyb" firstAttribute="top" secondItem="SV9-BK-XUl" secondAttribute="bottom" constant="20" id="dce-bw-6Vu"/>
+                <constraint firstItem="SV9-BK-XUl" firstAttribute="leading" secondItem="zHV-n9-VRv" secondAttribute="leading" id="gMu-K8-lJi"/>
                 <constraint firstItem="utl-UJ-Nyb" firstAttribute="leading" secondItem="Wlj-77-Hu3" secondAttribute="leading" id="h7t-it-A5i"/>
                 <constraint firstItem="iCQ-yE-4Qe" firstAttribute="leading" secondItem="Wlj-77-Hu3" secondAttribute="leading" id="hBR-JK-44T"/>
                 <constraint firstItem="utl-UJ-Nyb" firstAttribute="trailing" secondItem="Wlj-77-Hu3" secondAttribute="trailing" id="mRi-ry-1Wp"/>
@@ -259,9 +259,11 @@
         </view>
     </objects>
     <resources>
+        <image name="ic_register" width="100" height="100"/>
         <image name="icon_password_hide" width="24" height="24"/>
-        <image name="image-fullScreen-placeholder" width="1620" height="2880"/>
-        <image name="logo" width="85" height="95"/>
         <image name="main_MutiCheck_On" width="24" height="24"/>
+        <image name="register_infor" width="100" height="100"/>
+        <image name="register_pass" width="100" height="100"/>
+        <image name="register_phone" width="100" height="100"/>
     </resources>
 </document>

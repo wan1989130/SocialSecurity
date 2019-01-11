@@ -15,6 +15,8 @@ class MinePhotoHeaderTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        headPhotoImageView.layer.borderWidth = 1
+        headPhotoImageView.layer.borderColor = UIColor.black.withAlphaComponent(0.2).cgColor
        
     }
     func update(){
@@ -22,7 +24,7 @@ class MinePhotoHeaderTableViewCell: UITableViewCell {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyyMMddHHmmss"
         let str = "&" + formatter.string(from: Date())
-        headPhotoImageView.setImage(url: FileAccessHost + MyConfig.shared().headPhoto + str, placeholder: defaultImage)
+        headPhotoImageView.setImage(url: FileAccessHost + MyConfig.shared().headPhoto + str, placeholder: UIImage.init(named: "ic_head")!)
         phoneLabel.text = MyConfig.shared().phone
     }
 

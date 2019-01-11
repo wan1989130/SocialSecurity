@@ -246,6 +246,8 @@
 		E31EF65021BFDA2700E1C3E4 /* ApplyCollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31EF64E21BFDA2700E1C3E4 /* ApplyCollectionTableViewCell.swift */; };
 		E31EF65221BFDA5A00E1C3E4 /* ApplyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31EF65121BFDA5A00E1C3E4 /* ApplyModel.swift */; };
 		E31EF69721BFF5D700E1C3E4 /* JQRadiusView.m in Sources */ = {isa = PBXBuildFile; fileRef = E31EF69621BFF5D700E1C3E4 /* JQRadiusView.m */; };
+		E31F672521E86CFC0076C957 /* ConnactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31F672321E86CFC0076C957 /* ConnactUsViewController.swift */; };
+		E31F672621E86CFC0076C957 /* ConnactUsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E31F672421E86CFC0076C957 /* ConnactUsViewController.xib */; };
 		E33C64BD21C9D8DB00AEDF4B /* ZcznViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C64BB21C9D8DB00AEDF4B /* ZcznViewController.swift */; };
 		E33C64BE21C9D8DB00AEDF4B /* ZcznViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E33C64BC21C9D8DB00AEDF4B /* ZcznViewController.xib */; };
 		E33C64C021C9D94200AEDF4B /* ZcznDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C64BF21C9D94200AEDF4B /* ZcznDataController.swift */; };
@@ -696,6 +698,8 @@
 		E31EF65121BFDA5A00E1C3E4 /* ApplyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplyModel.swift; sourceTree = "<group>"; };
 		E31EF69521BFF5D700E1C3E4 /* JQRadiusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JQRadiusView.h; sourceTree = "<group>"; };
 		E31EF69621BFF5D700E1C3E4 /* JQRadiusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JQRadiusView.m; sourceTree = "<group>"; };
+		E31F672321E86CFC0076C957 /* ConnactUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnactUsViewController.swift; sourceTree = "<group>"; };
+		E31F672421E86CFC0076C957 /* ConnactUsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConnactUsViewController.xib; sourceTree = "<group>"; };
 		E33C64BB21C9D8DB00AEDF4B /* ZcznViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZcznViewController.swift; sourceTree = "<group>"; };
 		E33C64BC21C9D8DB00AEDF4B /* ZcznViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZcznViewController.xib; sourceTree = "<group>"; };
 		E33C64BF21C9D94200AEDF4B /* ZcznDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZcznDataController.swift; sourceTree = "<group>"; };
@@ -2117,6 +2121,15 @@
 			path = JQRadiusView;
 			sourceTree = "<group>";
 		};
+		E31F671E21E86B6E0076C957 /* 联系我们 */ = {
+			isa = PBXGroup;
+			children = (
+				E31F672321E86CFC0076C957 /* ConnactUsViewController.swift */,
+				E31F672421E86CFC0076C957 /* ConnactUsViewController.xib */,
+			);
+			path = "联系我们";
+			sourceTree = "<group>";
+		};
 		E33C64B821C9D8AC00AEDF4B /* 政策指南 */ = {
 			isa = PBXGroup;
 			children = (
@@ -2447,6 +2460,7 @@
 		E3848B3E21C8CFEA00B9AC27 /* 个人中心 */ = {
 			isa = PBXGroup;
 			children = (
+				E31F671E21E86B6E0076C957 /* 联系我们 */,
 				E3848B6C21C911E400B9AC27 /* 关于我们 */,
 				E3848B6B21C911D900B9AC27 /* 意见反馈 */,
 				E3848B6A21C911D200B9AC27 /* 修改密码 */,
@@ -2870,6 +2884,7 @@
 				E3848B6121C8D7F500B9AC27 /* MineMessageViewController.xib in Resources */,
 				E3848B5021C8D17200B9AC27 /* MinePhotoHeaderTableViewCell.xib in Resources */,
 				E3848B7121C911FE00B9AC27 /* AboutUsViewController.xib in Resources */,
+				E31F672621E86CFC0076C957 /* ConnactUsViewController.xib in Resources */,
 				E31613F621B7631F00CF09B2 /* LanchImageViewController.xib in Resources */,
 				E316137F21B7631F00CF09B2 /* CodeSuccessView.xib in Resources */,
 				E3070FA121BE88A200E33BB1 /* ForgetPwdViewController.xib in Resources */,
@@ -3268,6 +3283,7 @@
 				E3160F7621B761FC00CF09B2 /* AppDelegate.swift in Sources */,
 				E34A66A921CF897A00F92336 /* DaiBanPersonViewController.swift in Sources */,
 				E36809A121CB2376000FCDC7 /* CaijiSaveModel.swift in Sources */,
+				E31F672521E86CFC0076C957 /* ConnactUsViewController.swift in Sources */,
 				E316135421B7631F00CF09B2 /* BRBaseView.m in Sources */,
 				E316139B21B7631F00CF09B2 /* UIView+TYAutoLayout.m in Sources */,
 				E31613C321B7631F00CF09B2 /* BindButtonTableViewCell.swift in Sources */,

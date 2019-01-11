@@ -60,6 +60,8 @@ extension CommonWebViewController:WKNavigationDelegate,WKUIDelegate{
             webView.load(request)
         }else{
             let url = URL(string: "http://www.baidu.com")
+          
+            
             let request = URLRequest(url: url!)
             webView.load(request)
         }

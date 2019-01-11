@@ -78,6 +78,7 @@ extension YwjbViewController:UITableViewDelegate,UITableViewDataSource{
 //            let cell = ApplyCollectionTableViewCell.loadCell(tableView)
             //因为cell中有布局需要隐藏remove，所以不复用
                  let cell = Bundle.main.loadNibNamed("ApplyCollectionTableViewCell", owner: self, options: nil)?.last as! ApplyCollectionTableViewCell
+            cell.selectionStyle = .none
             cell.initCell(delegate: self, dataArray: dataController.toolArray)
             cell.backgroundColor = UIColor.clear
             cell.pro = self
