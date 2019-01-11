@@ -171,12 +171,32 @@ extension CaijiBasicViewController:CaijiBasicIdCardPhotoClickProtoco{
                 let str = self.getJSONStringFromDictionary(dictionary: info as! NSDictionary)
                 let temModel = Mapper<IdCardFrontModel>().map(JSONString: str)
                 if temModel != nil{
-                    weakSelf?.dataController.saveModel.name = temModel!.words_result.nameModel.words
-                    weakSelf?.dataController.saveModel.xb = temModel!.words_result.sexModel.words
+                    weakSelf?.dataController.saveModel.xmStr1 = temModel!.words_result.nameModel.words
+                    
+                    if weakSelf?.dataController.dictionaryModel != nil{
+                    
+                        for item in (weakSelf?.dataController.dictionaryModel.data.xbMap)!{
+                            if item.name == temModel!.words_result.sexModel.words{
+                                weakSelf?.dataController.saveModel.xb = item.id
+                                    weakSelf?.dataController.saveModel.xbName = temModel!.words_result.sexModel.words
+                            }
+                        }
+                    }
+                    
                     if weakSelf?.dataController.type == "1"{
                         
                     }else{
-                        weakSelf?.dataController.saveModel.zjhm = temModel!.words_result.sfzhModel.words
+                        if weakSelf?.dataController.dictionaryModel != nil{
+                            
+                            for item in (weakSelf?.dataController.dictionaryModel.data.zjlxMap)!{
+                                if "身份证" == item.name{
+                                    weakSelf?.dataController.saveModel.zjlx = item.id
+                                    weakSelf?.dataController.saveModel.zjlxName = item.name
+                                    weakSelf?.dataController.saveModel.zjhm = temModel!.words_result.sfzhModel.words
+                                }
+                            }
+                        }
+                        
                     }
                     if temModel!.words_result.csrqModel.words != "" && temModel!.words_result.csrqModel.words.count == 8{
                         let dateFormatter = DateFormatter()
@@ -189,7 +209,16 @@ extension CaijiBasicViewController:CaijiBasicIdCardPhotoClickProtoco{
                     }
                     
                     weakSelf?.dataController.saveModel.csrq = temModel!.words_result.csrqModel.words
-                    weakSelf?.dataController.saveModel.mz = temModel!.words_result.mzModel.words
+                    if weakSelf?.dataController.dictionaryModel != nil{
+                        
+                        for item in (weakSelf?.dataController.dictionaryModel.data.mzMap)!{
+                            if item.name == temModel!.words_result.sfzhModel.words{
+                                weakSelf?.dataController.saveModel.mz = item.id
+                                weakSelf?.dataController.saveModel.mzName = temModel!.words_result.sfzhModel.words
+                            }
+                        }
+                    }
+                    
                     weakSelf?.dataController.saveModel.txdz = temModel!.words_result.zzModel.words
                 }
                 
