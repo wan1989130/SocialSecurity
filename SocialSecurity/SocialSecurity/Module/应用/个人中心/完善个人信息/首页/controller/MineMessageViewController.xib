@@ -46,7 +46,7 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_head_photo" translatesAutoresizingMaskIntoConstraints="NO" id="l5M-MS-9LF">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_head" translatesAutoresizingMaskIntoConstraints="NO" id="l5M-MS-9LF">
                             <rect key="frame" x="299" y="10" width="60" height="60"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="l5M-MS-9LF" secondAttribute="height" multiplier="1:1" id="918-I4-hdu"/>
@@ -125,6 +125,6 @@
         </view>
     </objects>
     <resources>
-        <image name="default_head_photo" width="100" height="100"/>
+        <image name="ic_head" width="256" height="256"/>
     </resources>
 </document>

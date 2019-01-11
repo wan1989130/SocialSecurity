@@ -34,7 +34,8 @@ class MineMessageViewController: BaseViewController {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyyMMddHHmmss"
         let str = "&" + formatter.string(from: Date())
-        headPhotoImageView.setImage(url: FileAccessHost + MyConfig.shared().headPhoto + str, placeholder: defaultImage)
+        headPhotoImageView.setImage(url: FileAccessHost + MyConfig.shared().headPhoto + str, placeholder: UIImage.init(named: "ic_head")!)
+        
     }
   
 
@@ -43,6 +44,8 @@ extension MineMessageViewController{
     fileprivate func initUI(){
         
         self.view.backgroundColor = UIColor(hexString: "ECF5FE")
+        headPhotoImageView.layer.borderWidth = 1
+        headPhotoImageView.layer.borderColor = UIColor.black.withAlphaComponent(0.2).cgColor
         headPhotoBgView.addGestureRecognizer(UITapGestureRecognizer.init(target: self, action: #selector(headPhotoClick)))
         nickBgView.addGestureRecognizer(UITapGestureRecognizer.init(target: self, action: #selector(nickClick)))
         initAlert()
