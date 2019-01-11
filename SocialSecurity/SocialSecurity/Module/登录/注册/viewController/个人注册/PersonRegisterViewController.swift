@@ -135,7 +135,7 @@ extension PersonRegisterViewController{
         ]
         dataController.getCode(parameter: parameter) { (isSucceed, info) in
             if isSucceed {
-                LHAlertView.showTipAlertWithTitle(info as! String)
+               
                 let countDown = TCCountDown()//实例化
                 countDown.getCodeButton = self.getCodeButton
                 countDown.isCounting = true//开启倒计时
