@@ -60,7 +60,7 @@ extension MineViewController:UITableViewDelegate,UITableViewDataSource{
         }else if section == 1{
             return 2
         }else {
-            return 4
+            return 5
         }
     }
     
@@ -89,6 +89,9 @@ extension MineViewController:UITableViewDelegate,UITableViewDataSource{
                 }else if indexPath.row == 3{
                     cell.titleLabel.text = "当前版本：\(appBuildVersion)"
                     cell.imageView?.isHidden = true
+                }else if indexPath.row == 4{
+                    cell.titleLabel.text = "退出登录"
+                    cell.imageView?.isHidden = true
                 }
             }
             return cell
@@ -116,7 +119,13 @@ extension MineViewController:UITableViewDelegate,UITableViewDataSource{
                 }else if indexPath.row == 2{
                     pushViewController("AboutUsViewController")
                 }else if indexPath.row == 3{
-               
+                    
+                }else if indexPath.row == 4{
+                    LHAlertView.showAlertWithTitle("确认退出登陆吗？", msg: "", confirmButtonTitle: "确认", cancelButtonTitle: "取消", completionBlock: {
+                        self.loadLogout()
+                    }) {
+                        
+                    }
                 }
             }
             
@@ -124,7 +133,14 @@ extension MineViewController:UITableViewDelegate,UITableViewDataSource{
     }
 }
 extension MineViewController{
-    
+    //退出登陆接口
+    fileprivate func loadLogout(){
+        let loginVC = LoginViewController(nibName: "LoginViewController", bundle: nil)
+        let navController = BaseNavigationViewController(rootViewController: loginVC)
+        UIApplication.shared.keyWindow?.rootViewController = navController
+        UIApplication.shared.keyWindow?.makeKeyAndVisible()
+ UIApplication.shared.keyWindow?.layer.add(CATransition.animationWithType(.push, direction: .top), forKey: nil)
+    }
     func callPhone(){
         let alertVC :UIAlertController = UIAlertController.init(title:"确定要拨打 \(aboutUsPhone)电话吗?", message:"", preferredStyle: .alert)
         let falseAA :UIAlertAction = UIAlertAction.init(title:"取消", style: .cancel, handler:nil)
