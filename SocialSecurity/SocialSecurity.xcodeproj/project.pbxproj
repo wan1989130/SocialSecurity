@@ -14,6 +14,14 @@
 		E3070FA021BE88A200E33BB1 /* ForgetPwdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3070F9E21BE88A200E33BB1 /* ForgetPwdViewController.swift */; };
 		E3070FA121BE88A200E33BB1 /* ForgetPwdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3070F9F21BE88A200E33BB1 /* ForgetPwdViewController.xib */; };
 		E3070FA321BE88B100E33BB1 /* ForgetPwdDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3070FA221BE88B100E33BB1 /* ForgetPwdDataController.swift */; };
+		E30BB77421EC6F4F0054EFC2 /* PhotoShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30BB77221EC6F4F0054EFC2 /* PhotoShowViewController.swift */; };
+		E30BB77521EC6F4F0054EFC2 /* PhotoShowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E30BB77321EC6F4F0054EFC2 /* PhotoShowViewController.xib */; };
+		E30BB77821EC6F640054EFC2 /* PhotoShowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30BB77621EC6F640054EFC2 /* PhotoShowTableViewCell.swift */; };
+		E30BB77921EC6F640054EFC2 /* PhotoShowTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E30BB77721EC6F640054EFC2 /* PhotoShowTableViewCell.xib */; };
+		E30BB77E21EC73860054EFC2 /* PhotoShowTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30BB77C21EC73860054EFC2 /* PhotoShowTitleTableViewCell.swift */; };
+		E30BB77F21EC73860054EFC2 /* PhotoShowTitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E30BB77D21EC73860054EFC2 /* PhotoShowTitleTableViewCell.xib */; };
+		E30BB78521EC77380054EFC2 /* ZcznChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30BB78321EC77380054EFC2 /* ZcznChildViewController.swift */; };
+		E30BB78621EC77380054EFC2 /* ZcznChildViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E30BB78421EC77380054EFC2 /* ZcznChildViewController.xib */; };
 		E3100BA321D464C2001A38F0 /* SelfQueryDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3100BA221D464C2001A38F0 /* SelfQueryDataModel.swift */; };
 		E3100BA521D472AE001A38F0 /* GetWriteCountDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3100BA421D472AD001A38F0 /* GetWriteCountDataModel.swift */; };
 		E3160F7621B761FC00CF09B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3160F7521B761FC00CF09B2 /* AppDelegate.swift */; };
@@ -254,7 +262,6 @@
 		E33C64C321C9D97000AEDF4B /* ZcznModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C64C221C9D97000AEDF4B /* ZcznModel.swift */; };
 		E33C64C721C9DAEE00AEDF4B /* ZcznCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C64C521C9DAEE00AEDF4B /* ZcznCollectionViewCell.swift */; };
 		E33C64C821C9DAEE00AEDF4B /* ZcznCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E33C64C621C9DAEE00AEDF4B /* ZcznCollectionViewCell.xib */; };
-		E33C64D421C9DE1700AEDF4B /* ZcznDetailDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C64D321C9DE1700AEDF4B /* ZcznDetailDataController.swift */; };
 		E33C64D721C9DE2800AEDF4B /* ZcznDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C64D521C9DE2800AEDF4B /* ZcznDetailViewController.swift */; };
 		E33C64D821C9DE2800AEDF4B /* ZcznDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E33C64D621C9DE2800AEDF4B /* ZcznDetailViewController.xib */; };
 		E33C64DA21C9DE3A00AEDF4B /* ZcznDetailDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C64D921C9DE3A00AEDF4B /* ZcznDetailDataModel.swift */; };
@@ -391,6 +398,14 @@
 		E3070F9E21BE88A200E33BB1 /* ForgetPwdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPwdViewController.swift; sourceTree = "<group>"; };
 		E3070F9F21BE88A200E33BB1 /* ForgetPwdViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgetPwdViewController.xib; sourceTree = "<group>"; };
 		E3070FA221BE88B100E33BB1 /* ForgetPwdDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPwdDataController.swift; sourceTree = "<group>"; };
+		E30BB77221EC6F4F0054EFC2 /* PhotoShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoShowViewController.swift; sourceTree = "<group>"; };
+		E30BB77321EC6F4F0054EFC2 /* PhotoShowViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoShowViewController.xib; sourceTree = "<group>"; };
+		E30BB77621EC6F640054EFC2 /* PhotoShowTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoShowTableViewCell.swift; sourceTree = "<group>"; };
+		E30BB77721EC6F640054EFC2 /* PhotoShowTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoShowTableViewCell.xib; sourceTree = "<group>"; };
+		E30BB77C21EC73860054EFC2 /* PhotoShowTitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoShowTitleTableViewCell.swift; sourceTree = "<group>"; };
+		E30BB77D21EC73860054EFC2 /* PhotoShowTitleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoShowTitleTableViewCell.xib; sourceTree = "<group>"; };
+		E30BB78321EC77380054EFC2 /* ZcznChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZcznChildViewController.swift; sourceTree = "<group>"; };
+		E30BB78421EC77380054EFC2 /* ZcznChildViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZcznChildViewController.xib; sourceTree = "<group>"; };
 		E3100BA221D464C2001A38F0 /* SelfQueryDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfQueryDataModel.swift; sourceTree = "<group>"; };
 		E3100BA421D472AD001A38F0 /* GetWriteCountDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetWriteCountDataModel.swift; sourceTree = "<group>"; };
 		E3160F7221B761FC00CF09B2 /* SocialSecurity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialSecurity.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -706,7 +721,6 @@
 		E33C64C221C9D97000AEDF4B /* ZcznModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZcznModel.swift; sourceTree = "<group>"; };
 		E33C64C521C9DAEE00AEDF4B /* ZcznCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZcznCollectionViewCell.swift; sourceTree = "<group>"; };
 		E33C64C621C9DAEE00AEDF4B /* ZcznCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZcznCollectionViewCell.xib; sourceTree = "<group>"; };
-		E33C64D321C9DE1700AEDF4B /* ZcznDetailDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZcznDetailDataController.swift; sourceTree = "<group>"; };
 		E33C64D521C9DE2800AEDF4B /* ZcznDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZcznDetailViewController.swift; sourceTree = "<group>"; };
 		E33C64D621C9DE2800AEDF4B /* ZcznDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZcznDetailViewController.xib; sourceTree = "<group>"; };
 		E33C64D921C9DE3A00AEDF4B /* ZcznDetailDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZcznDetailDataModel.swift; sourceTree = "<group>"; };
@@ -886,6 +900,60 @@
 				E3070F9F21BE88A200E33BB1 /* ForgetPwdViewController.xib */,
 			);
 			path = viewController;
+			sourceTree = "<group>";
+		};
+		E30BB76B21EC6EDB0054EFC2 /* 图片显示 */ = {
+			isa = PBXGroup;
+			children = (
+				E30BB77121EC6F370054EFC2 /* cell */,
+				E30BB77021EC6F090054EFC2 /* controller */,
+			);
+			path = "图片显示";
+			sourceTree = "<group>";
+		};
+		E30BB77021EC6F090054EFC2 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				E30BB77221EC6F4F0054EFC2 /* PhotoShowViewController.swift */,
+				E30BB77321EC6F4F0054EFC2 /* PhotoShowViewController.xib */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		E30BB77121EC6F370054EFC2 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				E30BB77621EC6F640054EFC2 /* PhotoShowTableViewCell.swift */,
+				E30BB77721EC6F640054EFC2 /* PhotoShowTableViewCell.xib */,
+				E30BB77C21EC73860054EFC2 /* PhotoShowTitleTableViewCell.swift */,
+				E30BB77D21EC73860054EFC2 /* PhotoShowTitleTableViewCell.xib */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		E30BB78021EC76E50054EFC2 /* 子分类 */ = {
+			isa = PBXGroup;
+			children = (
+				E30BB78221EC77070054EFC2 /* cell */,
+				E30BB78121EC76F20054EFC2 /* controller */,
+			);
+			path = "子分类";
+			sourceTree = "<group>";
+		};
+		E30BB78121EC76F20054EFC2 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				E30BB78321EC77380054EFC2 /* ZcznChildViewController.swift */,
+				E30BB78421EC77380054EFC2 /* ZcznChildViewController.xib */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		E30BB78221EC77070054EFC2 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = cell;
 			sourceTree = "<group>";
 		};
 		E3160F6921B761FC00CF09B2 = {
@@ -2133,6 +2201,8 @@
 		E33C64B821C9D8AC00AEDF4B /* 政策指南 */ = {
 			isa = PBXGroup;
 			children = (
+				E30BB78021EC76E50054EFC2 /* 子分类 */,
+				E30BB76B21EC6EDB0054EFC2 /* 图片显示 */,
 				E33C64C921C9DDA100AEDF4B /* 详情 */,
 				E33C64B921C9D8BD00AEDF4B /* 首页 */,
 			);
@@ -2189,7 +2259,6 @@
 		E33C64CA21C9DDB200AEDF4B /* controller */ = {
 			isa = PBXGroup;
 			children = (
-				E33C64D321C9DE1700AEDF4B /* ZcznDetailDataController.swift */,
 				E33C64D521C9DE2800AEDF4B /* ZcznDetailViewController.swift */,
 				E33C64D621C9DE2800AEDF4B /* ZcznDetailViewController.xib */,
 			);
@@ -2867,6 +2936,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E31613EE21B7631F00CF09B2 /* SelectAreaPopupView.xib in Resources */,
+				E30BB77921EC6F640054EFC2 /* PhotoShowTableViewCell.xib in Resources */,
 				E316139421B7631F00CF09B2 /* 示例代码WaterViewController.rtf in Resources */,
 				E3848B7E21C912E900B9AC27 /* UpdatePasswordViewController.xib in Resources */,
 				E316135821B7631F00CF09B2 /* LICENSE in Resources */,
@@ -2888,6 +2958,7 @@
 				E31613F621B7631F00CF09B2 /* LanchImageViewController.xib in Resources */,
 				E316137F21B7631F00CF09B2 /* CodeSuccessView.xib in Resources */,
 				E3070FA121BE88A200E33BB1 /* ForgetPwdViewController.xib in Resources */,
+				E30BB77521EC6F4F0054EFC2 /* PhotoShowViewController.xib in Resources */,
 				E33C64BE21C9D8DB00AEDF4B /* ZcznViewController.xib in Resources */,
 				E316138D21B7631F00CF09B2 /* WSDatePickerView.xib in Resources */,
 				E33C64F921C9ED3600AEDF4B /* SbkProgressViewController.xib in Resources */,
@@ -2896,6 +2967,7 @@
 				E316138221B7631F00CF09B2 /* ShakeView.xib in Resources */,
 				E316139321B7631F00CF09B2 /* 示例代码XHLTagLabelsViewController.rtf in Resources */,
 				E316137E21B7631F00CF09B2 /* QrCodeView.xib in Resources */,
+				E30BB77F21EC73860054EFC2 /* PhotoShowTitleTableViewCell.xib in Resources */,
 				E33C651521CA1B9100AEDF4B /* CaijiBasicViewController.xib in Resources */,
 				E362E4EF21D360FB005E60B9 /* PopupSelectDayView.xib in Resources */,
 				E3848B7921C9127500B9AC27 /* FeedBackViewController.xib in Resources */,
@@ -2911,6 +2983,7 @@
 				E31613CD21B7631F00CF09B2 /* PersonMessageButtonTableViewCell.xib in Resources */,
 				E31613C621B7631F00CF09B2 /* ConfirmLoginSelectStrOrSchoolTableViewCell.xib in Resources */,
 				E3ACE86721CC80E3005EBB02 /* CaijiQiTaViewController.xib in Resources */,
+				E30BB78621EC77380054EFC2 /* ZcznChildViewController.xib in Resources */,
 				E31EF64321BFD92E00E1C3E4 /* ApplyBannerTableViewCell.xib in Resources */,
 				E316135921B7631F00CF09B2 /* README.md in Resources */,
 				E316135621B7631F00CF09B2 /* BRPickerView.bundle in Resources */,
@@ -3089,6 +3162,7 @@
 				E31613FC21B7631F00CF09B2 /* UploadFileDataModel.swift in Sources */,
 				E316139621B7631F00CF09B2 /* TYAlertView.m in Sources */,
 				E31613D221B7631F00CF09B2 /* SelectCompanyTableViewCell.swift in Sources */,
+				E30BB77421EC6F4F0054EFC2 /* PhotoShowViewController.swift in Sources */,
 				E316139E21B7631F00CF09B2 /* TYBaseAnimation.m in Sources */,
 				E31EF69721BFF5D700E1C3E4 /* JQRadiusView.m in Sources */,
 				E36809A721CB5A84000FCDC7 /* CaijiBasicContentTableViewCell.swift in Sources */,
@@ -3108,6 +3182,7 @@
 				E316146F21B7631F00CF09B2 /* NSNumber+LH.m in Sources */,
 				E33C64FE21C9EEB300AEDF4B /* SbkProgressTableViewCell.swift in Sources */,
 				E316145221B7631F00CF09B2 /* BaseClassesModel.swift in Sources */,
+				E30BB77821EC6F640054EFC2 /* PhotoShowTableViewCell.swift in Sources */,
 				E38CA3FB21C0943800455B81 /* ApplyViewControllerCollectionViewCell.swift in Sources */,
 				E316135321B7631F00CF09B2 /* BRDatePickerView.m in Sources */,
 				E31613B721B7631F00CF09B2 /* SBJsonStreamWriterState.m in Sources */,
@@ -3165,6 +3240,7 @@
 				E33C64FB21C9EE9B00AEDF4B /* SbkProgressDataModel.swift in Sources */,
 				E316135221B7631F00CF09B2 /* NSDate+BRPickerView.m in Sources */,
 				E316136A21B7631F00CF09B2 /* HSRightBarButtonItemMenuOverlayView.swift in Sources */,
+				E30BB78521EC77380054EFC2 /* ZcznChildViewController.swift in Sources */,
 				E31613E921B7631F00CF09B2 /* LoginModel.swift in Sources */,
 				E316135721B7631F00CF09B2 /* BRAddressPickerView.m in Sources */,
 				E31613D921B7631F00CF09B2 /* PersonRegisterSuccessDataModel.swift in Sources */,
@@ -3252,6 +3328,7 @@
 				E3848B4A21C8D04200B9AC27 /* MineDataController.swift in Sources */,
 				E3848B4721C8D03000B9AC27 /* MineViewController.swift in Sources */,
 				E31613B021B7631F00CF09B2 /* SBJsonStreamParserAccumulator.m in Sources */,
+				E30BB77E21EC73860054EFC2 /* PhotoShowTitleTableViewCell.swift in Sources */,
 				E31613FA21B7631F00CF09B2 /* CommonWebViewController.swift in Sources */,
 				E316137221B7631F00CF09B2 /* DropListCoverView.swift in Sources */,
 				E316139F21B7631F00CF09B2 /* TYAlertController.m in Sources */,
@@ -3268,7 +3345,6 @@
 				E3848B8021C912FB00B9AC27 /* UpdatePasswordDataController.swift in Sources */,
 				E33C64C721C9DAEE00AEDF4B /* ZcznCollectionViewCell.swift in Sources */,
 				E316146421B7631F00CF09B2 /* String+LH.swift in Sources */,
-				E33C64D421C9DE1700AEDF4B /* ZcznDetailDataController.swift in Sources */,
 				E33C64C021C9D94200AEDF4B /* ZcznDataController.swift in Sources */,
 				E316137B21B7631F00CF09B2 /* CompanyRegisterSuccessView.swift in Sources */,
 				E31613DE21B7631F00CF09B2 /* SelectCompanyDataModel.swift in Sources */,

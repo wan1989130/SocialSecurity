@@ -13,25 +13,30 @@ class ZcznDataController: BaseDataController {
     override init(delegate: UIViewController) {
         super.init(delegate: delegate)
         let model1 = ZcznModel()
-        model1.text = "综合类"
+        model1.text = "社保"
         model1.image = UIImage(named: "logo")
-        let model2 = ZcznModel()
-        model2.text = "城镇职工养老"
-        model2.image = UIImage(named: "logo")
-        let model3 = ZcznModel()
-        model3.text = "城乡居民养老"
-        model3.image = UIImage(named: "logo")
-        let model4 = ZcznModel()
-        model4.text = "失业保险"
-        model4.image = UIImage(named: "logo")
-        let model5 = ZcznModel()
-        model5.text = "机关事业养老保险"
-        model5.image = UIImage(named: "logo")
+        let childModel1 = ZcznModel()
+        childModel1.text = "城镇企业职工基本养老保险"
+        childModel1.image = UIImage.init(named: "logo")
+        let childChildModel1 = ZcznModel()
+        childChildModel1.title = "2018年工资调整"
+        childChildModel1.image = UIImage.init(named: "logo")
+        childChildModel1.imageArray = ["1","2","3","4","5","6","7","8","9"]
+        
+        let childChildModel2 = ZcznModel()
+        childChildModel2.title = "2018年工资调整"
+        childChildModel2.image = UIImage.init(named: "logo")
+        childChildModel2.imageArray = ["1","2","3","4","5","6","7","8","9"]
+        childModel1.childArray.append(childChildModel1)
+        childModel1.childArray.append(childChildModel2)
+        model1.childArray.append(childModel1)
+        
+        
         toolArray.append(model1)
-        toolArray.append(model2)
-        toolArray.append(model3)
-        toolArray.append(model4)
-        toolArray.append(model5)
+//        toolArray.append(model2)
+//        toolArray.append(model3)
+//        toolArray.append(model4)
+//        toolArray.append(model5)
         
     }
 }

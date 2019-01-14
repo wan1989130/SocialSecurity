@@ -11,6 +11,9 @@ import ObjectMapper
 class ZcznModel: BaseModel {
     var text:String! //名称
     var image:UIImage! //图标
+    var childArray = [ZcznModel]()
+    var imageArray:Array<String>!
+    var title = ""
     override init() {
         super.init()
     }

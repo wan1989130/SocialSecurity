@@ -1,17 +1,17 @@
 //
-//  ZcznViewController.swift
+//  ZcznChildViewController.swift
 //  SocialSecurity
 //
-//  Created by 王岩 on 2018/12/19.
-//  Copyright © 2018年 王岩. All rights reserved.
+//  Created by 王岩 on 2019/1/14.
+//  Copyright © 2019年 王岩. All rights reserved.
 //
 
 import UIKit
 
-class ZcznViewController: BaseViewController {
+class ZcznChildViewController: BaseViewController {
 
-    @IBOutlet var collectionView: UICollectionView!
-    var dataController:ZcznDataController!
+    @IBOutlet weak var collectionView: UICollectionView!
+    var model:ZcznModel!
     override func viewDidLoad() {
         super.viewDidLoad()
         initData()
@@ -20,10 +20,8 @@ class ZcznViewController: BaseViewController {
     }
 
 
-    
-
 }
-extension ZcznViewController{
+extension ZcznChildViewController{
     fileprivate func initUI(){
         self.view.backgroundColor = viewBgColor
         let layout = UICollectionViewFlowLayout()
@@ -42,15 +40,17 @@ extension ZcznViewController{
         
     }
     fileprivate func initData(){
-        dataController = ZcznDataController(delegate: self)
+        if senderParam != nil{
+            model = senderParam as! ZcznModel
+        }
     }
 }
-extension ZcznViewController:UICollectionViewDelegate,UICollectionViewDataSource{
+extension ZcznChildViewController:UICollectionViewDelegate,UICollectionViewDataSource{
     //每个区的item个数
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         
-        return dataController.toolArray.count
+        return model.childArray.count
         
     }
     //分区个数
@@ -62,7 +62,7 @@ extension ZcznViewController:UICollectionViewDelegate,UICollectionViewDataSource
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ZcznCollectionViewCell", for: indexPath) as! ZcznCollectionViewCell
-        cell.update(model: dataController.toolArray[indexPath.row])
+        cell.update(model: model.childArray[indexPath.row])
         if indexPath.row > 2{
             cell.topLabel.isHidden = true
         }else{
@@ -76,6 +76,10 @@ extension ZcznViewController:UICollectionViewDelegate,UICollectionViewDataSource
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        pushViewController("ZcznChildViewController",sender:dataController.toolArray[indexPath.row])
+        pushViewController("ZcznDetailViewController",sender:model.childArray[indexPath.row])
     }
+}
+
+extension ZcznChildViewController{
+    
 }

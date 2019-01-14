@@ -10,8 +10,9 @@ import UIKit
 
 class ZcznDetailViewController: BaseViewController {
 
+    var model:ZcznModel!
     @IBOutlet var tableView: UITableView!
-    var dataController:ZcznDetailDataController!
+//    var dataController:ZcznDetailDataController!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -33,25 +34,29 @@ extension ZcznDetailViewController{
         
     }
     fileprivate func initData(){
-        dataController = ZcznDetailDataController(delegate: self)
-        if senderParam != nil && senderParam is Int{
-            dataController.initData(type: senderParam as! Int)  
+//        dataController = ZcznDetailDataController(delegate: self)
+//        if senderParam != nil && senderParam is Int{
+//            dataController.initData(type: senderParam as! Int)  
+//        }
+        if senderParam != nil{
+            model = senderParam as! ZcznModel
         }
     }
 }
 extension ZcznDetailViewController:UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dataController.dataArray.count
+        return model.childArray.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = ZcznDetailTableViewCell.loadCell(tableView)
-        cell.update(model: dataController.dataArray[indexPath.row])
+        cell.update(model: model.childArray[indexPath.row])
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let webVc = CommonWebViewController()
-        webVc.urlContent = dataController.dataArray[indexPath.row].url
-        webVc.titleContent = dataController.dataArray[indexPath.row].title
-        self.navigationController?.pushViewController(webVc, animated: true)
+//        webVc.urlContent = dataController.dataArray[indexPath.row].url
+//        webVc.titleContent = dataController.dataArray[indexPath.row].title
+//        self.navigationController?.pushViewController(webVc, animated: true)
+        pushViewController("PhotoShowViewController",sender:model.childArray[indexPath.row])
     }
 }

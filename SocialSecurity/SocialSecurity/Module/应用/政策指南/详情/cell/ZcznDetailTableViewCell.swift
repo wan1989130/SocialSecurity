@@ -16,7 +16,7 @@ class ZcznDetailTableViewCell: UITableViewCell {
         // Initialization code
     }
 
-    func update(model:ZcznDetailDataModel){
+    func update(model:ZcznModel){
         titleLabel.text = model.title
     }
     class func loadCell(_ tableView:UITableView)-> ZcznDetailTableViewCell{
