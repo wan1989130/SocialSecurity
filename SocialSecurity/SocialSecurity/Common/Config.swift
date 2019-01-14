@@ -83,9 +83,9 @@ let StaticProtocoHtml = "resources/common/user_agreement.html"
 
 
 //测试服务器
-var HostAddress = "http://124.235.218.4:8081/sjcj_web/phoneCon/"
-var FileServerAddress = "http://124.235.218.4:8081/sjcj_web/phoneCon/uploadPhoto.do"// 上传文件
-var FileAccessHost = "http://124.235.218.4:8081/sjcj_web/kssh/getImg.do?cx=" // 显示文件
+var HostAddress = "http://124.235.218.86:8081/sjcj_web/phoneCon/"
+var FileServerAddress = "http://124.235.218.86:8081/sjcj_web/phoneCon/uploadPhoto.do"// 上传文件
+var FileAccessHost = "http://124.235.218.86:8081/sjcj_web/kssh/getImg.do?cx=" // 显示文件
 var DetailImageAccess = "http://139.210.38.75:8020"
 var Protocolhtml = "http://high.huihaiedu.cn/static/resources/user_agreement.html"
 

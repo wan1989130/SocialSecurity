@@ -15,6 +15,7 @@ class IxcjTypeViewController: BaseViewController {
     var dataController:IxcjTypeDataController!
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "社会保障卡信息采集"
         initData()
         initUI()
         loadRequest()
