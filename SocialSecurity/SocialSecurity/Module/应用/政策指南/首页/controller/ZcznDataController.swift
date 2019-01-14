@@ -23,13 +23,19 @@ class ZcznDataController: BaseDataController {
         childChildModel1.image = UIImage.init(named: "logo")
         childChildModel1.imageArray = ["1","2","3","4","5","6","7","8","9"]
         
+     
+        
+        
         let childChildModel2 = ZcznModel()
         childChildModel2.title = "2018年工资调整"
         childChildModel2.image = UIImage.init(named: "logo")
         childChildModel2.imageArray = ["1","2","3","4","5","6","7","8","9"]
         childModel1.childArray.append(childChildModel1)
         childModel1.childArray.append(childChildModel2)
+        
+
         model1.childArray.append(childModel1)
+        
         
         
         toolArray.append(model1)

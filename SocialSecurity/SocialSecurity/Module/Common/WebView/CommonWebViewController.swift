@@ -54,6 +54,7 @@ extension CommonWebViewController:WKNavigationDelegate,WKUIDelegate{
         
         webView.navigationDelegate = self
         webView.uiDelegate = self;
+        
         if urlContent != ""{
             if urlContent.characters.count < 5 || !urlContent.hasPrefix("http"){
                 urlContent = "http://www.baidu.com"
