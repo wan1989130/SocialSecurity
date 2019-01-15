@@ -20,7 +20,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="09N-UZ-Wbk">
-                        <rect key="frame" x="16" y="8" width="35.5" height="27.5"/>
+                        <rect key="frame" x="16" y="8" width="264" height="27.5"/>
                         <constraints>
                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="26" id="wb4-r2-43J"/>
                         </constraints>
@@ -47,6 +47,7 @@
                     </imageView>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="utm-vW-sR4" firstAttribute="leading" secondItem="09N-UZ-Wbk" secondAttribute="trailing" constant="8" id="69h-FI-Bkg"/>
                     <constraint firstAttribute="bottom" secondItem="09N-UZ-Wbk" secondAttribute="bottom" constant="8" id="Afx-VV-teL"/>
                     <constraint firstItem="09N-UZ-Wbk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Bk9-2j-HAK"/>
                     <constraint firstItem="utm-vW-sR4" firstAttribute="centerY" secondItem="09N-UZ-Wbk" secondAttribute="centerY" id="NjH-6h-C1D"/>

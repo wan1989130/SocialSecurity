@@ -53,10 +53,10 @@ extension ZcznDetailViewController:UITableViewDelegate,UITableViewDataSource{
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let webVc = CommonWebViewController()
-//        webVc.urlContent = dataController.dataArray[indexPath.row].url
+        let webVc = ZcznWebViewController()
+        webVc.urlContent = model.childArray[indexPath.row].url
 //        webVc.titleContent = dataController.dataArray[indexPath.row].title
-//        self.navigationController?.pushViewController(webVc, animated: true)
-        pushViewController("PhotoShowViewController",sender:model.childArray[indexPath.row])
+        self.navigationController?.pushViewController(webVc, animated: true)
+//        pushViewController("PhotoShowViewController",sender:model.childArray[indexPath.row])
     }
 }

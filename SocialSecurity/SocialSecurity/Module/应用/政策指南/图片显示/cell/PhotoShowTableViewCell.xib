@@ -20,12 +20,12 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ITC-mM-LF7">
-                        <rect key="frame" x="16" y="0.0" width="288" height="170.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="170.5"/>
                     </imageView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="ITC-mM-LF7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Mmk-eo-EY1"/>
-                    <constraint firstAttribute="trailing" secondItem="ITC-mM-LF7" secondAttribute="trailing" constant="16" id="ZnE-t6-MeL"/>
+                    <constraint firstItem="ITC-mM-LF7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Mmk-eo-EY1"/>
+                    <constraint firstAttribute="trailing" secondItem="ITC-mM-LF7" secondAttribute="trailing" id="ZnE-t6-MeL"/>
                     <constraint firstAttribute="bottom" secondItem="ITC-mM-LF7" secondAttribute="bottom" id="agt-td-Ka0"/>
                     <constraint firstItem="ITC-mM-LF7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="pWb-J7-s4j"/>
                 </constraints>

@@ -10,6 +10,7 @@ import UIKit
 
 class PhotoShowTitleTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var titleName: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

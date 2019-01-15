@@ -96,7 +96,7 @@ extension PersonRegisterViewController{
     }
     fileprivate func initData(){
         dataController = PersonRegisterDataController(delegate: self)
-       
+        
         
     }
 }
