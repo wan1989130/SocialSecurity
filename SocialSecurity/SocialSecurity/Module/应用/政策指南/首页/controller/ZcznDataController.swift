@@ -12,6 +12,18 @@ class ZcznDataController: BaseDataController {
     var toolArray:Array<ZcznModel> = [ZcznModel]()
     override init(delegate: UIViewController) {
         super.init(delegate: delegate)
+      initSb()
+        initYb()
+        
+        
+//        toolArray.append(model1)
+//        toolArray.append(model2)
+//        toolArray.append(model3)
+//        toolArray.append(model4)
+//        toolArray.append(model5)
+        
+    }
+    func initSb(){
         let model1 = ZcznModel()
         model1.text = "社保"
         model1.image = UIImage(named: "logo")
@@ -20,7 +32,7 @@ class ZcznDataController: BaseDataController {
         childModel1.text = "被征地农民养老保险"
         childModel1.image = UIImage.init(named: "logo")
         let childChildModel1 = ZcznModel()
- 
+        
         childChildModel1.title = "长春市人民政府办公厅关于印发长春市统一被征地农民基本养老保险制度实施方案实施细则的通知（2012年11月19日长春市人民政府办公厅 长府办发[2012]44号公布）"
         childChildModel1.url = "sb_11"
         childModel1.childArray.append(childChildModel1)
@@ -125,21 +137,131 @@ class ZcznDataController: BaseDataController {
         childModel6.childArray.append(childChildModel64)
         
         
-    
+        
         model1.childArray.append(childModel1)
         model1.childArray.append(childModel2)
         model1.childArray.append(childModel3)
         model1.childArray.append(childModel4)
         model1.childArray.append(childModel5)
         model1.childArray.append(childModel6)
-        
-        
-        
         toolArray.append(model1)
-//        toolArray.append(model2)
-//        toolArray.append(model3)
-//        toolArray.append(model4)
-//        toolArray.append(model5)
+    }
+    func initYb(){
+        let model1 = ZcznModel()
+        model1.text = "医保"
+        model1.image = UIImage(named: "logo")
+        //第一个
+        let childModel1 = ZcznModel()
+        childModel1.text = "工伤保险"
+        childModel1.image = UIImage.init(named: "logo")
+        let childChildModel1 = ZcznModel()
+        childChildModel1.title = "部分行业企业工伤保险费缴纳办法"
+        childChildModel1.url = "yb_11"
+        childModel1.childArray.append(childChildModel1)
         
+        let childChildModel2 = ZcznModel()
+        childChildModel2.title = "关于调整工伤保险待遇的通知"
+        childChildModel2.url = "yb_12"
+        childModel1.childArray.append(childChildModel2)
+        
+        let childChildModel3 = ZcznModel()
+        childChildModel3.title = "关于进一步做好建筑施工企业农民工参加工伤保险工作的通知"
+        childChildModel3.url = "yb_13"
+        childModel1.childArray.append(childChildModel3)
+        
+        let childChildModel4 = ZcznModel()
+        childChildModel4.title = "吉林省工伤康复管理暂行办法"
+        childChildModel4.url = "yb_14"
+        childModel1.childArray.append(childChildModel4)
+        
+        let childChildModel5 = ZcznModel()
+        childChildModel5.title = "长春市基本医疗、工伤、生育保险待遇支付与审批的管理细则"
+        childChildModel5.url = "yb_15"
+        childModel1.childArray.append(childChildModel5)
+        
+        let childChildModel6 = ZcznModel()
+        childChildModel6.title = "长春市人民政府办公厅关于调整全市工伤职工伤残津贴标准和生活护理费标准的通知"
+        childChildModel6.url = "yb_16"
+        childModel1.childArray.append(childChildModel6)
+        //第二个
+        let childModel2 = ZcznModel()
+        childModel2.text = "居民医疗保险"
+        childModel2.image = UIImage.init(named: "logo")
+        let childChildModel21 = ZcznModel()
+        
+        childChildModel21.title = "关于调整2016年城镇居民基本医疗保险缴费及补助标准的通知"
+        childChildModel21.url = "yb_21"
+        childModel2.childArray.append(childChildModel21)
+        let childChildModel22 = ZcznModel()
+        
+        childChildModel22.title = "关于印发《长春市失能人员医疗照护保险实施办法（试行）》的通知"
+        childChildModel22.url = "sb_22"
+        childModel2.childArray.append(childChildModel22)
+        let childChildModel23 = ZcznModel()
+        
+        childChildModel23.title = "长春市人民政府办公厅关于建立失能人员医疗照护保险制度的意见"
+        childChildModel23.url = "yb_23"
+        childModel2.childArray.append(childChildModel23)
+        
+        //第三个
+        let childModel3 = ZcznModel()
+        childModel3.text = "生育保险"
+        childModel3.image = UIImage.init(named: "logo")
+        let childChildModel31 = ZcznModel()
+        childChildModel31.title = "关于生育保险项目纳入定点医疗机构管理的通知"
+        childChildModel31.url = "yb_31"
+        childModel3.childArray.append(childChildModel31)
+        let childChildModel32 = ZcznModel()
+        childChildModel32.title = "关于育产期女职工围产保健待遇结算的通知"
+        childChildModel32.url = "yb_32"
+        childModel3.childArray.append(childChildModel32)
+        let childChildModel33 = ZcznModel()
+        childChildModel33.title = "长春市人民政府办公厅关于调整和增加城镇职工生育保险有关待遇的通知"
+        childChildModel33.url = "yb_33"
+        childModel3.childArray.append(childChildModel33)
+        let childChildModel34 = ZcznModel()
+        childChildModel34.title = "长春市人民政府办公厅关于调整完善城镇职工和居民基本医疗保险有关政策的通知"
+        childChildModel34.url = "yb_34"
+        childModel3.childArray.append(childChildModel34)
+        let childChildModel35 = ZcznModel()
+        childChildModel35.title = "长春市人民政府办公厅关于实施《吉林省城镇职工生育保险办法》的通知"
+        childChildModel35.url = "yb_35"
+        childModel3.childArray.append(childChildModel35)
+        let childChildModel36 = ZcznModel()
+        childChildModel36.title = "长春市人民政府办公厅关于印发长春市城镇居民生育保险试点实施方案的通知"
+        childChildModel36.url = "yb_36"
+        childModel3.childArray.append(childChildModel36)
+        
+        //第四个
+        let childModel4 = ZcznModel()
+        childModel4.text = "职工医疗保险"
+        childModel4.image = UIImage.init(named: "logo")
+        let childChildModel41 = ZcznModel()
+        childChildModel41.title = "关于印发《长春市失能人员医疗照护保险实施办法（试行）》的通知"
+        childChildModel41.url = "yb_41"
+        childModel4.childArray.append(childChildModel41)
+        let childChildModel42 = ZcznModel()
+        childChildModel42.title = "人力资源社会保障部关于进一步加强基本医疗保险医疗服务监管的意见"
+        childChildModel42.url = "yb_42"
+        childModel4.childArray.append(childChildModel42)
+        let childChildModel43 = ZcznModel()
+        childChildModel43.title = "人力资源社会保障部关于完善基本医疗保险定点医药机构协议管理的指导意见"
+        childChildModel43.url = "yb_43"
+        childModel4.childArray.append(childChildModel43)
+        let childChildModel44 = ZcznModel()
+        childChildModel44.title = "长春市人民政府办公厅关于建立失能人员医疗照护保险制度的意见"
+        childChildModel44.url = "yb_44"
+        childModel4.childArray.append(childChildModel44)
+        
+        
+       
+        
+        
+        model1.childArray.append(childModel1)
+        model1.childArray.append(childModel2)
+        model1.childArray.append(childModel3)
+        model1.childArray.append(childModel4)
+
+        toolArray.append(model1)
     }
 }

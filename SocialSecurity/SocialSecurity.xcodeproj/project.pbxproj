@@ -439,6 +439,89 @@
 		E3D2B90521EDB78F005BA9E9 /* sb_31.html in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B90421EDB78F005BA9E9 /* sb_31.html */; };
 		E3D2B90721EDB9C6005BA9E9 /* sb_21.html in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B90621EDB9C6005BA9E9 /* sb_21.html */; };
 		E3D2B90921EDBA0A005BA9E9 /* sb_22.html in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B90821EDBA0A005BA9E9 /* sb_22.html */; };
+		E3D2B96221EDDA48005BA9E9 /* yb_442.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B90D21EDDA47005BA9E9 /* yb_442.jpg */; };
+		E3D2B96321EDDA48005BA9E9 /* yb_443.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B90E21EDDA47005BA9E9 /* yb_443.jpg */; };
+		E3D2B96421EDDA48005BA9E9 /* yb_441.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B90F21EDDA47005BA9E9 /* yb_441.jpg */; };
+		E3D2B96521EDDA48005BA9E9 /* yb_412.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B91121EDDA47005BA9E9 /* yb_412.jpg */; };
+		E3D2B96621EDDA48005BA9E9 /* yb_413.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B91221EDDA47005BA9E9 /* yb_413.jpg */; };
+		E3D2B96721EDDA48005BA9E9 /* yb_411.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B91321EDDA47005BA9E9 /* yb_411.jpg */; };
+		E3D2B96821EDDA48005BA9E9 /* yb_414.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B91421EDDA47005BA9E9 /* yb_414.jpg */; };
+		E3D2B96921EDDA48005BA9E9 /* yb_415.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B91521EDDA47005BA9E9 /* yb_415.jpg */; };
+		E3D2B96A21EDDA48005BA9E9 /* yb_417.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B91621EDDA47005BA9E9 /* yb_417.jpg */; };
+		E3D2B96B21EDDA48005BA9E9 /* yb_416.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B91721EDDA47005BA9E9 /* yb_416.jpg */; };
+		E3D2B96C21EDDA48005BA9E9 /* yb_433.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B91921EDDA47005BA9E9 /* yb_433.jpg */; };
+		E3D2B96D21EDDA48005BA9E9 /* yb_432.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B91A21EDDA47005BA9E9 /* yb_432.jpg */; };
+		E3D2B96E21EDDA48005BA9E9 /* yb_431.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B91B21EDDA47005BA9E9 /* yb_431.jpg */; };
+		E3D2B96F21EDDA48005BA9E9 /* yb_424.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B91D21EDDA47005BA9E9 /* yb_424.jpg */; };
+		E3D2B97021EDDA48005BA9E9 /* yb_421.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B91E21EDDA47005BA9E9 /* yb_421.jpg */; };
+		E3D2B97121EDDA48005BA9E9 /* yb_422.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B91F21EDDA47005BA9E9 /* yb_422.jpg */; };
+		E3D2B97221EDDA48005BA9E9 /* yb_423.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B92021EDDA47005BA9E9 /* yb_423.jpg */; };
+		E3D2B97321EDDA48005BA9E9 /* yb_157.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B92321EDDA47005BA9E9 /* yb_157.jpg */; };
+		E3D2B97421EDDA48005BA9E9 /* yb_156.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B92421EDDA47005BA9E9 /* yb_156.jpg */; };
+		E3D2B97521EDDA48005BA9E9 /* yb_154.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B92521EDDA47005BA9E9 /* yb_154.jpg */; };
+		E3D2B97621EDDA48005BA9E9 /* yb_155.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B92621EDDA47005BA9E9 /* yb_155.jpg */; };
+		E3D2B97721EDDA48005BA9E9 /* yb_151.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B92721EDDA47005BA9E9 /* yb_151.jpg */; };
+		E3D2B97821EDDA48005BA9E9 /* yb_152.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B92821EDDA47005BA9E9 /* yb_152.jpg */; };
+		E3D2B97921EDDA48005BA9E9 /* yb_153.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B92921EDDA47005BA9E9 /* yb_153.jpg */; };
+		E3D2B97A21EDDA48005BA9E9 /* yb_158.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B92A21EDDA47005BA9E9 /* yb_158.jpg */; };
+		E3D2B97B21EDDA48005BA9E9 /* yb_132.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B92C21EDDA47005BA9E9 /* yb_132.jpg */; };
+		E3D2B97C21EDDA48005BA9E9 /* yb_131.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B92D21EDDA47005BA9E9 /* yb_131.jpg */; };
+		E3D2B97D21EDDA48005BA9E9 /* yb_162.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B92F21EDDA47005BA9E9 /* yb_162.jpg */; };
+		E3D2B97E21EDDA48005BA9E9 /* yb_161.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B93021EDDA47005BA9E9 /* yb_161.jpg */; };
+		E3D2B97F21EDDA48005BA9E9 /* yb_121.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B93221EDDA47005BA9E9 /* yb_121.jpg */; };
+		E3D2B98021EDDA48005BA9E9 /* yb_122.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B93321EDDA47005BA9E9 /* yb_122.jpg */; };
+		E3D2B98121EDDA48005BA9E9 /* yb_111.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B93521EDDA47005BA9E9 /* yb_111.jpg */; };
+		E3D2B98221EDDA48005BA9E9 /* yb_143.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B93721EDDA47005BA9E9 /* yb_143.jpg */; };
+		E3D2B98321EDDA48005BA9E9 /* yb_142.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B93821EDDA47005BA9E9 /* yb_142.jpg */; };
+		E3D2B98421EDDA48005BA9E9 /* yb_141.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B93921EDDA47005BA9E9 /* yb_141.jpg */; };
+		E3D2B98521EDDA48005BA9E9 /* yb_144.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B93A21EDDA47005BA9E9 /* yb_144.jpg */; };
+		E3D2B98621EDDA48005BA9E9 /* yb_212.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B93D21EDDA47005BA9E9 /* yb_212.jpg */; };
+		E3D2B98721EDDA48005BA9E9 /* yb_213.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B93E21EDDA47005BA9E9 /* yb_213.jpg */; };
+		E3D2B98821EDDA48005BA9E9 /* yb_211.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B93F21EDDA47005BA9E9 /* yb_211.jpg */; };
+		E3D2B98921EDDA48005BA9E9 /* yb_233.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B94121EDDA47005BA9E9 /* yb_233.jpg */; };
+		E3D2B98A21EDDA48005BA9E9 /* yb_232.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B94221EDDA47005BA9E9 /* yb_232.jpg */; };
+		E3D2B98B21EDDA48005BA9E9 /* yb_231.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B94321EDDA47005BA9E9 /* yb_231.jpg */; };
+		E3D2B98C21EDDA48005BA9E9 /* yb_221.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B94521EDDA47005BA9E9 /* yb_221.jpg */; };
+		E3D2B98D21EDDA48005BA9E9 /* yb_222.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B94621EDDA47005BA9E9 /* yb_222.jpg */; };
+		E3D2B98E21EDDA48005BA9E9 /* yb_223.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B94721EDDA47005BA9E9 /* yb_223.jpg */; };
+		E3D2B98F21EDDA48005BA9E9 /* yb_226.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B94821EDDA47005BA9E9 /* yb_226.jpg */; };
+		E3D2B99021EDDA48005BA9E9 /* yb_224.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B94921EDDA47005BA9E9 /* yb_224.jpg */; };
+		E3D2B99121EDDA48005BA9E9 /* yb_225.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B94A21EDDA47005BA9E9 /* yb_225.jpg */; };
+		E3D2B99221EDDA48005BA9E9 /* yb_322.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B94D21EDDA47005BA9E9 /* yb_322.jpg */; };
+		E3D2B99321EDDA48005BA9E9 /* yb_321.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B94E21EDDA47005BA9E9 /* yb_321.jpg */; };
+		E3D2B99421EDDA48005BA9E9 /* yb_361.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B95021EDDA47005BA9E9 /* yb_361.jpg */; };
+		E3D2B99521EDDA48005BA9E9 /* yb_363.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B95121EDDA47005BA9E9 /* yb_363.jpg */; };
+		E3D2B99621EDDA48005BA9E9 /* yb_362.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B95221EDDA47005BA9E9 /* yb_362.jpg */; };
+		E3D2B99721EDDA48005BA9E9 /* yb_364.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B95321EDDA47005BA9E9 /* yb_364.jpg */; };
+		E3D2B99821EDDA48005BA9E9 /* yb_352.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B95521EDDA47005BA9E9 /* yb_352.jpg */; };
+		E3D2B99921EDDA48005BA9E9 /* yb_351.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B95621EDDA47005BA9E9 /* yb_351.jpg */; };
+		E3D2B99A21EDDA48005BA9E9 /* yb_331.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B95821EDDA47005BA9E9 /* yb_331.jpg */; };
+		E3D2B99B21EDDA48005BA9E9 /* yb_332.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B95921EDDA47005BA9E9 /* yb_332.jpg */; };
+		E3D2B99C21EDDA48005BA9E9 /* yb_314.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B95B21EDDA47005BA9E9 /* yb_314.jpg */; };
+		E3D2B99D21EDDA48005BA9E9 /* yb_311.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B95C21EDDA47005BA9E9 /* yb_311.jpg */; };
+		E3D2B99E21EDDA48005BA9E9 /* yb_312.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B95D21EDDA47005BA9E9 /* yb_312.jpg */; };
+		E3D2B99F21EDDA48005BA9E9 /* yb_313.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B95E21EDDA47005BA9E9 /* yb_313.jpg */; };
+		E3D2B9A021EDDA48005BA9E9 /* yb_341.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B96021EDDA47005BA9E9 /* yb_341.jpg */; };
+		E3D2B9A121EDDA48005BA9E9 /* yb_342.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B96121EDDA47005BA9E9 /* yb_342.jpg */; };
+		E3D2B9A321EDDABC005BA9E9 /* yb_15.html in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B9A221EDDABC005BA9E9 /* yb_15.html */; };
+		E3D2B9A521EDDAF6005BA9E9 /* yb_13.html in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B9A421EDDAF6005BA9E9 /* yb_13.html */; };
+		E3D2B9A721EDDB21005BA9E9 /* yb_16.html in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B9A621EDDB20005BA9E9 /* yb_16.html */; };
+		E3D2B9A921EDDB66005BA9E9 /* yb_12.html in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B9A821EDDB66005BA9E9 /* yb_12.html */; };
+		E3D2B9AB21EDDB9D005BA9E9 /* yb_11.html in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B9AA21EDDB9D005BA9E9 /* yb_11.html */; };
+		E3D2B9AD21EDDBBF005BA9E9 /* yb_14.html in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B9AC21EDDBBF005BA9E9 /* yb_14.html */; };
+		E3D2B9AF21EDDC04005BA9E9 /* yb_21.html in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B9AE21EDDC04005BA9E9 /* yb_21.html */; };
+		E3D2B9B321EDDC78005BA9E9 /* yb_23.html in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B9B221EDDC78005BA9E9 /* yb_23.html */; };
+		E3D2B9B521EDDC96005BA9E9 /* yb_22.html in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B9B421EDDC95005BA9E9 /* yb_22.html */; };
+		E3D2B9B721EDDCC1005BA9E9 /* yb_32.html in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B9B621EDDCC1005BA9E9 /* yb_32.html */; };
+		E3D2B9B921EDDCD7005BA9E9 /* yb_36.html in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B9B821EDDCD7005BA9E9 /* yb_36.html */; };
+		E3D2B9BB21EDDD06005BA9E9 /* yb_35.html in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B9BA21EDDD06005BA9E9 /* yb_35.html */; };
+		E3D2B9BD21EDDD26005BA9E9 /* yb_33.html in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B9BC21EDDD26005BA9E9 /* yb_33.html */; };
+		E3D2B9BF21EDDD49005BA9E9 /* yb_31.html in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B9BE21EDDD49005BA9E9 /* yb_31.html */; };
+		E3D2B9C121EDDD7B005BA9E9 /* yb_34.html in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B9C021EDDD7B005BA9E9 /* yb_34.html */; };
+		E3D2B9C321EDDDA4005BA9E9 /* yb_44.html in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B9C221EDDDA4005BA9E9 /* yb_44.html */; };
+		E3D2B9C521EDDDD4005BA9E9 /* yb_41.html in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B9C421EDDDD4005BA9E9 /* yb_41.html */; };
+		E3D2B9C721EDDE0E005BA9E9 /* yb_43.html in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B9C621EDDE0E005BA9E9 /* yb_43.html */; };
+		E3D2B9C921EDDE30005BA9E9 /* yb_42.html in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B9C821EDDE30005BA9E9 /* yb_42.html */; };
 		E3DE177621D4FE7F00E4378A /* DictionaryDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DE177521D4FE7F00E4378A /* DictionaryDataModel.swift */; };
 		E3F2D6FD21D0ABD0004E7597 /* IdCardFrontModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F2D6FC21D0ABD0004E7597 /* IdCardFrontModel.swift */; };
 /* End PBXBuildFile section */
@@ -983,6 +1066,89 @@
 		E3D2B90421EDB78F005BA9E9 /* sb_31.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = sb_31.html; sourceTree = "<group>"; };
 		E3D2B90621EDB9C6005BA9E9 /* sb_21.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = sb_21.html; sourceTree = "<group>"; };
 		E3D2B90821EDBA0A005BA9E9 /* sb_22.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = sb_22.html; sourceTree = "<group>"; };
+		E3D2B90D21EDDA47005BA9E9 /* yb_442.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_442.jpg; sourceTree = "<group>"; };
+		E3D2B90E21EDDA47005BA9E9 /* yb_443.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_443.jpg; sourceTree = "<group>"; };
+		E3D2B90F21EDDA47005BA9E9 /* yb_441.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_441.jpg; sourceTree = "<group>"; };
+		E3D2B91121EDDA47005BA9E9 /* yb_412.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_412.jpg; sourceTree = "<group>"; };
+		E3D2B91221EDDA47005BA9E9 /* yb_413.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_413.jpg; sourceTree = "<group>"; };
+		E3D2B91321EDDA47005BA9E9 /* yb_411.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_411.jpg; sourceTree = "<group>"; };
+		E3D2B91421EDDA47005BA9E9 /* yb_414.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_414.jpg; sourceTree = "<group>"; };
+		E3D2B91521EDDA47005BA9E9 /* yb_415.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_415.jpg; sourceTree = "<group>"; };
+		E3D2B91621EDDA47005BA9E9 /* yb_417.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_417.jpg; sourceTree = "<group>"; };
+		E3D2B91721EDDA47005BA9E9 /* yb_416.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_416.jpg; sourceTree = "<group>"; };
+		E3D2B91921EDDA47005BA9E9 /* yb_433.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_433.jpg; sourceTree = "<group>"; };
+		E3D2B91A21EDDA47005BA9E9 /* yb_432.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_432.jpg; sourceTree = "<group>"; };
+		E3D2B91B21EDDA47005BA9E9 /* yb_431.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_431.jpg; sourceTree = "<group>"; };
+		E3D2B91D21EDDA47005BA9E9 /* yb_424.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_424.jpg; sourceTree = "<group>"; };
+		E3D2B91E21EDDA47005BA9E9 /* yb_421.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_421.jpg; sourceTree = "<group>"; };
+		E3D2B91F21EDDA47005BA9E9 /* yb_422.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_422.jpg; sourceTree = "<group>"; };
+		E3D2B92021EDDA47005BA9E9 /* yb_423.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_423.jpg; sourceTree = "<group>"; };
+		E3D2B92321EDDA47005BA9E9 /* yb_157.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_157.jpg; sourceTree = "<group>"; };
+		E3D2B92421EDDA47005BA9E9 /* yb_156.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_156.jpg; sourceTree = "<group>"; };
+		E3D2B92521EDDA47005BA9E9 /* yb_154.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_154.jpg; sourceTree = "<group>"; };
+		E3D2B92621EDDA47005BA9E9 /* yb_155.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_155.jpg; sourceTree = "<group>"; };
+		E3D2B92721EDDA47005BA9E9 /* yb_151.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_151.jpg; sourceTree = "<group>"; };
+		E3D2B92821EDDA47005BA9E9 /* yb_152.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_152.jpg; sourceTree = "<group>"; };
+		E3D2B92921EDDA47005BA9E9 /* yb_153.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_153.jpg; sourceTree = "<group>"; };
+		E3D2B92A21EDDA47005BA9E9 /* yb_158.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_158.jpg; sourceTree = "<group>"; };
+		E3D2B92C21EDDA47005BA9E9 /* yb_132.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_132.jpg; sourceTree = "<group>"; };
+		E3D2B92D21EDDA47005BA9E9 /* yb_131.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_131.jpg; sourceTree = "<group>"; };
+		E3D2B92F21EDDA47005BA9E9 /* yb_162.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_162.jpg; sourceTree = "<group>"; };
+		E3D2B93021EDDA47005BA9E9 /* yb_161.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_161.jpg; sourceTree = "<group>"; };
+		E3D2B93221EDDA47005BA9E9 /* yb_121.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_121.jpg; sourceTree = "<group>"; };
+		E3D2B93321EDDA47005BA9E9 /* yb_122.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_122.jpg; sourceTree = "<group>"; };
+		E3D2B93521EDDA47005BA9E9 /* yb_111.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_111.jpg; sourceTree = "<group>"; };
+		E3D2B93721EDDA47005BA9E9 /* yb_143.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_143.jpg; sourceTree = "<group>"; };
+		E3D2B93821EDDA47005BA9E9 /* yb_142.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_142.jpg; sourceTree = "<group>"; };
+		E3D2B93921EDDA47005BA9E9 /* yb_141.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_141.jpg; sourceTree = "<group>"; };
+		E3D2B93A21EDDA47005BA9E9 /* yb_144.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_144.jpg; sourceTree = "<group>"; };
+		E3D2B93D21EDDA47005BA9E9 /* yb_212.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_212.jpg; sourceTree = "<group>"; };
+		E3D2B93E21EDDA47005BA9E9 /* yb_213.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_213.jpg; sourceTree = "<group>"; };
+		E3D2B93F21EDDA47005BA9E9 /* yb_211.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_211.jpg; sourceTree = "<group>"; };
+		E3D2B94121EDDA47005BA9E9 /* yb_233.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_233.jpg; sourceTree = "<group>"; };
+		E3D2B94221EDDA47005BA9E9 /* yb_232.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_232.jpg; sourceTree = "<group>"; };
+		E3D2B94321EDDA47005BA9E9 /* yb_231.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_231.jpg; sourceTree = "<group>"; };
+		E3D2B94521EDDA47005BA9E9 /* yb_221.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_221.jpg; sourceTree = "<group>"; };
+		E3D2B94621EDDA47005BA9E9 /* yb_222.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_222.jpg; sourceTree = "<group>"; };
+		E3D2B94721EDDA47005BA9E9 /* yb_223.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_223.jpg; sourceTree = "<group>"; };
+		E3D2B94821EDDA47005BA9E9 /* yb_226.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_226.jpg; sourceTree = "<group>"; };
+		E3D2B94921EDDA47005BA9E9 /* yb_224.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_224.jpg; sourceTree = "<group>"; };
+		E3D2B94A21EDDA47005BA9E9 /* yb_225.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_225.jpg; sourceTree = "<group>"; };
+		E3D2B94D21EDDA47005BA9E9 /* yb_322.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_322.jpg; sourceTree = "<group>"; };
+		E3D2B94E21EDDA47005BA9E9 /* yb_321.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_321.jpg; sourceTree = "<group>"; };
+		E3D2B95021EDDA47005BA9E9 /* yb_361.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_361.jpg; sourceTree = "<group>"; };
+		E3D2B95121EDDA47005BA9E9 /* yb_363.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_363.jpg; sourceTree = "<group>"; };
+		E3D2B95221EDDA47005BA9E9 /* yb_362.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_362.jpg; sourceTree = "<group>"; };
+		E3D2B95321EDDA47005BA9E9 /* yb_364.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_364.jpg; sourceTree = "<group>"; };
+		E3D2B95521EDDA47005BA9E9 /* yb_352.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_352.jpg; sourceTree = "<group>"; };
+		E3D2B95621EDDA47005BA9E9 /* yb_351.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_351.jpg; sourceTree = "<group>"; };
+		E3D2B95821EDDA47005BA9E9 /* yb_331.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_331.jpg; sourceTree = "<group>"; };
+		E3D2B95921EDDA47005BA9E9 /* yb_332.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_332.jpg; sourceTree = "<group>"; };
+		E3D2B95B21EDDA47005BA9E9 /* yb_314.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_314.jpg; sourceTree = "<group>"; };
+		E3D2B95C21EDDA47005BA9E9 /* yb_311.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_311.jpg; sourceTree = "<group>"; };
+		E3D2B95D21EDDA47005BA9E9 /* yb_312.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_312.jpg; sourceTree = "<group>"; };
+		E3D2B95E21EDDA47005BA9E9 /* yb_313.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_313.jpg; sourceTree = "<group>"; };
+		E3D2B96021EDDA47005BA9E9 /* yb_341.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_341.jpg; sourceTree = "<group>"; };
+		E3D2B96121EDDA47005BA9E9 /* yb_342.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yb_342.jpg; sourceTree = "<group>"; };
+		E3D2B9A221EDDABC005BA9E9 /* yb_15.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = yb_15.html; sourceTree = "<group>"; };
+		E3D2B9A421EDDAF6005BA9E9 /* yb_13.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = yb_13.html; sourceTree = "<group>"; };
+		E3D2B9A621EDDB20005BA9E9 /* yb_16.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = yb_16.html; sourceTree = "<group>"; };
+		E3D2B9A821EDDB66005BA9E9 /* yb_12.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = yb_12.html; sourceTree = "<group>"; };
+		E3D2B9AA21EDDB9D005BA9E9 /* yb_11.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = yb_11.html; sourceTree = "<group>"; };
+		E3D2B9AC21EDDBBF005BA9E9 /* yb_14.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = yb_14.html; sourceTree = "<group>"; };
+		E3D2B9AE21EDDC04005BA9E9 /* yb_21.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = yb_21.html; sourceTree = "<group>"; };
+		E3D2B9B221EDDC78005BA9E9 /* yb_23.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = yb_23.html; sourceTree = "<group>"; };
+		E3D2B9B421EDDC95005BA9E9 /* yb_22.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = yb_22.html; sourceTree = "<group>"; };
+		E3D2B9B621EDDCC1005BA9E9 /* yb_32.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = yb_32.html; sourceTree = "<group>"; };
+		E3D2B9B821EDDCD7005BA9E9 /* yb_36.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = yb_36.html; sourceTree = "<group>"; };
+		E3D2B9BA21EDDD06005BA9E9 /* yb_35.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = yb_35.html; sourceTree = "<group>"; };
+		E3D2B9BC21EDDD26005BA9E9 /* yb_33.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = yb_33.html; sourceTree = "<group>"; };
+		E3D2B9BE21EDDD49005BA9E9 /* yb_31.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = yb_31.html; sourceTree = "<group>"; };
+		E3D2B9C021EDDD7B005BA9E9 /* yb_34.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = yb_34.html; sourceTree = "<group>"; };
+		E3D2B9C221EDDDA4005BA9E9 /* yb_44.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = yb_44.html; sourceTree = "<group>"; };
+		E3D2B9C421EDDDD4005BA9E9 /* yb_41.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = yb_41.html; path = "SocialSecurity/Module/应用/政策指南/html/医保/职工医疗保险/关于印发《长春市失能人员医疗照护保险实施办法（试行）》的通知/yb_41.html"; sourceTree = SOURCE_ROOT; };
+		E3D2B9C621EDDE0E005BA9E9 /* yb_43.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = yb_43.html; sourceTree = "<group>"; };
+		E3D2B9C821EDDE30005BA9E9 /* yb_42.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = yb_42.html; sourceTree = "<group>"; };
 		E3DE177521D4FE7F00E4378A /* DictionaryDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryDataModel.swift; sourceTree = "<group>"; };
 		E3F2D6FC21D0ABD0004E7597 /* IdCardFrontModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdCardFrontModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -3000,6 +3166,7 @@
 		E3D2B83821EDABBA005BA9E9 /* html */ = {
 			isa = PBXGroup;
 			children = (
+				E3D2B90A21EDDA47005BA9E9 /* 医保 */,
 				E3D2B83921EDABC9005BA9E9 /* 社保 */,
 			);
 			path = html;
@@ -3291,6 +3458,280 @@
 			path = "关于进一步加强企业职工基本养老保险省级统筹行政管理工作的通知";
 			sourceTree = "<group>";
 		};
+		E3D2B90A21EDDA47005BA9E9 /* 医保 */ = {
+			isa = PBXGroup;
+			children = (
+				E3D2B92121EDDA47005BA9E9 /* 工伤保险 */,
+				E3D2B93B21EDDA47005BA9E9 /* 居民医疗保险 */,
+				E3D2B94B21EDDA47005BA9E9 /* 生育保险 */,
+				E3D2B90B21EDDA47005BA9E9 /* 职工医疗保险 */,
+			);
+			path = "医保";
+			sourceTree = "<group>";
+		};
+		E3D2B90B21EDDA47005BA9E9 /* 职工医疗保险 */ = {
+			isa = PBXGroup;
+			children = (
+				E3D2B90C21EDDA47005BA9E9 /* 长春市人民政府办公厅关于建立失能人员医疗照护保险制度的意见 */,
+				E3D2B91021EDDA47005BA9E9 /* 关于印发《长春市失能人员医疗照护保险实施办法（试行）》的通知 */,
+				E3D2B91821EDDA47005BA9E9 /* 人力资源社会保障部关于完善基本医疗保险定点医药机构协议管理的指导意见 */,
+				E3D2B91C21EDDA47005BA9E9 /* 人力资源社会保障部关于进一步加强基本医疗保险医疗服务监管的意见 */,
+			);
+			path = "职工医疗保险";
+			sourceTree = "<group>";
+		};
+		E3D2B90C21EDDA47005BA9E9 /* 长春市人民政府办公厅关于建立失能人员医疗照护保险制度的意见 */ = {
+			isa = PBXGroup;
+			children = (
+				E3D2B9C221EDDDA4005BA9E9 /* yb_44.html */,
+				E3D2B90D21EDDA47005BA9E9 /* yb_442.jpg */,
+				E3D2B90E21EDDA47005BA9E9 /* yb_443.jpg */,
+				E3D2B90F21EDDA47005BA9E9 /* yb_441.jpg */,
+			);
+			path = "长春市人民政府办公厅关于建立失能人员医疗照护保险制度的意见";
+			sourceTree = "<group>";
+		};
+		E3D2B91021EDDA47005BA9E9 /* 关于印发《长春市失能人员医疗照护保险实施办法（试行）》的通知 */ = {
+			isa = PBXGroup;
+			children = (
+				E3D2B9C421EDDDD4005BA9E9 /* yb_41.html */,
+				E3D2B91121EDDA47005BA9E9 /* yb_412.jpg */,
+				E3D2B91221EDDA47005BA9E9 /* yb_413.jpg */,
+				E3D2B91321EDDA47005BA9E9 /* yb_411.jpg */,
+				E3D2B91421EDDA47005BA9E9 /* yb_414.jpg */,
+				E3D2B91521EDDA47005BA9E9 /* yb_415.jpg */,
+				E3D2B91621EDDA47005BA9E9 /* yb_417.jpg */,
+				E3D2B91721EDDA47005BA9E9 /* yb_416.jpg */,
+			);
+			path = "关于印发《长春市失能人员医疗照护保险实施办法（试行）》的通知";
+			sourceTree = "<group>";
+		};
+		E3D2B91821EDDA47005BA9E9 /* 人力资源社会保障部关于完善基本医疗保险定点医药机构协议管理的指导意见 */ = {
+			isa = PBXGroup;
+			children = (
+				E3D2B9C621EDDE0E005BA9E9 /* yb_43.html */,
+				E3D2B91921EDDA47005BA9E9 /* yb_433.jpg */,
+				E3D2B91A21EDDA47005BA9E9 /* yb_432.jpg */,
+				E3D2B91B21EDDA47005BA9E9 /* yb_431.jpg */,
+			);
+			path = "人力资源社会保障部关于完善基本医疗保险定点医药机构协议管理的指导意见";
+			sourceTree = "<group>";
+		};
+		E3D2B91C21EDDA47005BA9E9 /* 人力资源社会保障部关于进一步加强基本医疗保险医疗服务监管的意见 */ = {
+			isa = PBXGroup;
+			children = (
+				E3D2B9C821EDDE30005BA9E9 /* yb_42.html */,
+				E3D2B91D21EDDA47005BA9E9 /* yb_424.jpg */,
+				E3D2B91E21EDDA47005BA9E9 /* yb_421.jpg */,
+				E3D2B91F21EDDA47005BA9E9 /* yb_422.jpg */,
+				E3D2B92021EDDA47005BA9E9 /* yb_423.jpg */,
+			);
+			path = "人力资源社会保障部关于进一步加强基本医疗保险医疗服务监管的意见";
+			sourceTree = "<group>";
+		};
+		E3D2B92121EDDA47005BA9E9 /* 工伤保险 */ = {
+			isa = PBXGroup;
+			children = (
+				E3D2B92221EDDA47005BA9E9 /* 长春市基本医疗、工伤、生育保险待遇支付与审批的管理细则 */,
+				E3D2B92B21EDDA47005BA9E9 /* 关于调整工伤保险待遇的通知 */,
+				E3D2B92E21EDDA47005BA9E9 /* 长春市人民政府办公厅关于调整全市工伤职工伤残津贴标准和生活护理费标准的通知 */,
+				E3D2B93121EDDA47005BA9E9 /* 关于进一步做好建筑施工企业农民工参加工伤保险工作的通知 */,
+				E3D2B93421EDDA47005BA9E9 /* 部分行业企业工伤保险费缴纳办法 */,
+				E3D2B93621EDDA47005BA9E9 /* 吉林省工伤康复管理暂行办法 */,
+			);
+			path = "工伤保险";
+			sourceTree = "<group>";
+		};
+		E3D2B92221EDDA47005BA9E9 /* 长春市基本医疗、工伤、生育保险待遇支付与审批的管理细则 */ = {
+			isa = PBXGroup;
+			children = (
+				E3D2B9A221EDDABC005BA9E9 /* yb_15.html */,
+				E3D2B92321EDDA47005BA9E9 /* yb_157.jpg */,
+				E3D2B92421EDDA47005BA9E9 /* yb_156.jpg */,
+				E3D2B92521EDDA47005BA9E9 /* yb_154.jpg */,
+				E3D2B92621EDDA47005BA9E9 /* yb_155.jpg */,
+				E3D2B92721EDDA47005BA9E9 /* yb_151.jpg */,
+				E3D2B92821EDDA47005BA9E9 /* yb_152.jpg */,
+				E3D2B92921EDDA47005BA9E9 /* yb_153.jpg */,
+				E3D2B92A21EDDA47005BA9E9 /* yb_158.jpg */,
+			);
+			path = "长春市基本医疗、工伤、生育保险待遇支付与审批的管理细则";
+			sourceTree = "<group>";
+		};
+		E3D2B92B21EDDA47005BA9E9 /* 关于调整工伤保险待遇的通知 */ = {
+			isa = PBXGroup;
+			children = (
+				E3D2B9A421EDDAF6005BA9E9 /* yb_13.html */,
+				E3D2B92C21EDDA47005BA9E9 /* yb_132.jpg */,
+				E3D2B92D21EDDA47005BA9E9 /* yb_131.jpg */,
+			);
+			path = "关于调整工伤保险待遇的通知";
+			sourceTree = "<group>";
+		};
+		E3D2B92E21EDDA47005BA9E9 /* 长春市人民政府办公厅关于调整全市工伤职工伤残津贴标准和生活护理费标准的通知 */ = {
+			isa = PBXGroup;
+			children = (
+				E3D2B9A621EDDB20005BA9E9 /* yb_16.html */,
+				E3D2B92F21EDDA47005BA9E9 /* yb_162.jpg */,
+				E3D2B93021EDDA47005BA9E9 /* yb_161.jpg */,
+			);
+			path = "长春市人民政府办公厅关于调整全市工伤职工伤残津贴标准和生活护理费标准的通知";
+			sourceTree = "<group>";
+		};
+		E3D2B93121EDDA47005BA9E9 /* 关于进一步做好建筑施工企业农民工参加工伤保险工作的通知 */ = {
+			isa = PBXGroup;
+			children = (
+				E3D2B9A821EDDB66005BA9E9 /* yb_12.html */,
+				E3D2B93221EDDA47005BA9E9 /* yb_121.jpg */,
+				E3D2B93321EDDA47005BA9E9 /* yb_122.jpg */,
+			);
+			path = "关于进一步做好建筑施工企业农民工参加工伤保险工作的通知";
+			sourceTree = "<group>";
+		};
+		E3D2B93421EDDA47005BA9E9 /* 部分行业企业工伤保险费缴纳办法 */ = {
+			isa = PBXGroup;
+			children = (
+				E3D2B9AA21EDDB9D005BA9E9 /* yb_11.html */,
+				E3D2B93521EDDA47005BA9E9 /* yb_111.jpg */,
+			);
+			path = "部分行业企业工伤保险费缴纳办法";
+			sourceTree = "<group>";
+		};
+		E3D2B93621EDDA47005BA9E9 /* 吉林省工伤康复管理暂行办法 */ = {
+			isa = PBXGroup;
+			children = (
+				E3D2B9AC21EDDBBF005BA9E9 /* yb_14.html */,
+				E3D2B93721EDDA47005BA9E9 /* yb_143.jpg */,
+				E3D2B93821EDDA47005BA9E9 /* yb_142.jpg */,
+				E3D2B93921EDDA47005BA9E9 /* yb_141.jpg */,
+				E3D2B93A21EDDA47005BA9E9 /* yb_144.jpg */,
+			);
+			path = "吉林省工伤康复管理暂行办法";
+			sourceTree = "<group>";
+		};
+		E3D2B93B21EDDA47005BA9E9 /* 居民医疗保险 */ = {
+			isa = PBXGroup;
+			children = (
+				E3D2B93C21EDDA47005BA9E9 /* 关于调整2016年城镇居民基本医疗保险缴费及补助标准的通知 */,
+				E3D2B94021EDDA47005BA9E9 /* 长春市人民政府办公厅关于建立失能人员医疗照护保险制度的意见 */,
+				E3D2B94421EDDA47005BA9E9 /* 关于印发《长春市失能人员医疗照护保险实施办法（试行）》的通知 */,
+			);
+			path = "居民医疗保险";
+			sourceTree = "<group>";
+		};
+		E3D2B93C21EDDA47005BA9E9 /* 关于调整2016年城镇居民基本医疗保险缴费及补助标准的通知 */ = {
+			isa = PBXGroup;
+			children = (
+				E3D2B9AE21EDDC04005BA9E9 /* yb_21.html */,
+				E3D2B93D21EDDA47005BA9E9 /* yb_212.jpg */,
+				E3D2B93E21EDDA47005BA9E9 /* yb_213.jpg */,
+				E3D2B93F21EDDA47005BA9E9 /* yb_211.jpg */,
+			);
+			path = "关于调整2016年城镇居民基本医疗保险缴费及补助标准的通知";
+			sourceTree = "<group>";
+		};
+		E3D2B94021EDDA47005BA9E9 /* 长春市人民政府办公厅关于建立失能人员医疗照护保险制度的意见 */ = {
+			isa = PBXGroup;
+			children = (
+				E3D2B9B221EDDC78005BA9E9 /* yb_23.html */,
+				E3D2B94121EDDA47005BA9E9 /* yb_233.jpg */,
+				E3D2B94221EDDA47005BA9E9 /* yb_232.jpg */,
+				E3D2B94321EDDA47005BA9E9 /* yb_231.jpg */,
+			);
+			path = "长春市人民政府办公厅关于建立失能人员医疗照护保险制度的意见";
+			sourceTree = "<group>";
+		};
+		E3D2B94421EDDA47005BA9E9 /* 关于印发《长春市失能人员医疗照护保险实施办法（试行）》的通知 */ = {
+			isa = PBXGroup;
+			children = (
+				E3D2B9B421EDDC95005BA9E9 /* yb_22.html */,
+				E3D2B94521EDDA47005BA9E9 /* yb_221.jpg */,
+				E3D2B94621EDDA47005BA9E9 /* yb_222.jpg */,
+				E3D2B94721EDDA47005BA9E9 /* yb_223.jpg */,
+				E3D2B94821EDDA47005BA9E9 /* yb_226.jpg */,
+				E3D2B94921EDDA47005BA9E9 /* yb_224.jpg */,
+				E3D2B94A21EDDA47005BA9E9 /* yb_225.jpg */,
+			);
+			path = "关于印发《长春市失能人员医疗照护保险实施办法（试行）》的通知";
+			sourceTree = "<group>";
+		};
+		E3D2B94B21EDDA47005BA9E9 /* 生育保险 */ = {
+			isa = PBXGroup;
+			children = (
+				E3D2B94C21EDDA47005BA9E9 /* 关于育产期女职工围产保健待遇结算的通知 */,
+				E3D2B94F21EDDA47005BA9E9 /* 长春市人民政府办公厅关于印发长春市城镇居民生育保险试点实施方案的通知 */,
+				E3D2B95421EDDA47005BA9E9 /* 长春市人民政府办公厅关于调整完善城镇职工和居民基本医疗保险有关政策的通知 */,
+				E3D2B95721EDDA47005BA9E9 /* 长春市人民政府办公厅关于实施《吉林省城镇职工生育保险办法》的通知 */,
+				E3D2B95A21EDDA47005BA9E9 /* 关于生育保险项目纳入定点医疗机构管理的通知 */,
+				E3D2B95F21EDDA47005BA9E9 /* 长春市人民政府办公厅关于调整和增加城镇职工生育保险有关待遇的通知 */,
+			);
+			path = "生育保险";
+			sourceTree = "<group>";
+		};
+		E3D2B94C21EDDA47005BA9E9 /* 关于育产期女职工围产保健待遇结算的通知 */ = {
+			isa = PBXGroup;
+			children = (
+				E3D2B9B621EDDCC1005BA9E9 /* yb_32.html */,
+				E3D2B94D21EDDA47005BA9E9 /* yb_322.jpg */,
+				E3D2B94E21EDDA47005BA9E9 /* yb_321.jpg */,
+			);
+			path = "关于育产期女职工围产保健待遇结算的通知";
+			sourceTree = "<group>";
+		};
+		E3D2B94F21EDDA47005BA9E9 /* 长春市人民政府办公厅关于印发长春市城镇居民生育保险试点实施方案的通知 */ = {
+			isa = PBXGroup;
+			children = (
+				E3D2B9B821EDDCD7005BA9E9 /* yb_36.html */,
+				E3D2B95021EDDA47005BA9E9 /* yb_361.jpg */,
+				E3D2B95121EDDA47005BA9E9 /* yb_363.jpg */,
+				E3D2B95221EDDA47005BA9E9 /* yb_362.jpg */,
+				E3D2B95321EDDA47005BA9E9 /* yb_364.jpg */,
+			);
+			path = "长春市人民政府办公厅关于印发长春市城镇居民生育保险试点实施方案的通知";
+			sourceTree = "<group>";
+		};
+		E3D2B95421EDDA47005BA9E9 /* 长春市人民政府办公厅关于调整完善城镇职工和居民基本医疗保险有关政策的通知 */ = {
+			isa = PBXGroup;
+			children = (
+				E3D2B9BA21EDDD06005BA9E9 /* yb_35.html */,
+				E3D2B95521EDDA47005BA9E9 /* yb_352.jpg */,
+				E3D2B95621EDDA47005BA9E9 /* yb_351.jpg */,
+			);
+			path = "长春市人民政府办公厅关于调整完善城镇职工和居民基本医疗保险有关政策的通知";
+			sourceTree = "<group>";
+		};
+		E3D2B95721EDDA47005BA9E9 /* 长春市人民政府办公厅关于实施《吉林省城镇职工生育保险办法》的通知 */ = {
+			isa = PBXGroup;
+			children = (
+				E3D2B9BC21EDDD26005BA9E9 /* yb_33.html */,
+				E3D2B95821EDDA47005BA9E9 /* yb_331.jpg */,
+				E3D2B95921EDDA47005BA9E9 /* yb_332.jpg */,
+			);
+			path = "长春市人民政府办公厅关于实施《吉林省城镇职工生育保险办法》的通知";
+			sourceTree = "<group>";
+		};
+		E3D2B95A21EDDA47005BA9E9 /* 关于生育保险项目纳入定点医疗机构管理的通知 */ = {
+			isa = PBXGroup;
+			children = (
+				E3D2B9BE21EDDD49005BA9E9 /* yb_31.html */,
+				E3D2B95B21EDDA47005BA9E9 /* yb_314.jpg */,
+				E3D2B95C21EDDA47005BA9E9 /* yb_311.jpg */,
+				E3D2B95D21EDDA47005BA9E9 /* yb_312.jpg */,
+				E3D2B95E21EDDA47005BA9E9 /* yb_313.jpg */,
+			);
+			path = "关于生育保险项目纳入定点医疗机构管理的通知";
+			sourceTree = "<group>";
+		};
+		E3D2B95F21EDDA47005BA9E9 /* 长春市人民政府办公厅关于调整和增加城镇职工生育保险有关待遇的通知 */ = {
+			isa = PBXGroup;
+			children = (
+				E3D2B9C021EDDD7B005BA9E9 /* yb_34.html */,
+				E3D2B96021EDDA47005BA9E9 /* yb_341.jpg */,
+				E3D2B96121EDDA47005BA9E9 /* yb_342.jpg */,
+			);
+			path = "长春市人民政府办公厅关于调整和增加城镇职工生育保险有关待遇的通知";
+			sourceTree = "<group>";
+		};
 		E3DE177421D4FE6700E4378A /* 国标项 */ = {
 			isa = PBXGroup;
 			children = (
@@ -3408,19 +3849,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3D2B8EF21EDB4B2005BA9E9 /* sb_64.html in Resources */,
+				E3D2B99821EDDA48005BA9E9 /* yb_352.jpg in Resources */,
+				E3D2B99121EDDA48005BA9E9 /* yb_225.jpg in Resources */,
+				E3D2B99921EDDA48005BA9E9 /* yb_351.jpg in Resources */,
 				E31613EE21B7631F00CF09B2 /* SelectAreaPopupView.xib in Resources */,
 				E30BB77921EC6F640054EFC2 /* PhotoShowTableViewCell.xib in Resources */,
+				E3D2B98721EDDA48005BA9E9 /* yb_213.jpg in Resources */,
 				E316139421B7631F00CF09B2 /* 示例代码WaterViewController.rtf in Resources */,
 				E3D2B8F521EDB631005BA9E9 /* sb_54.html in Resources */,
+				E3D2B96C21EDDA48005BA9E9 /* yb_433.jpg in Resources */,
 				E3848B7E21C912E900B9AC27 /* UpdatePasswordViewController.xib in Resources */,
 				E3D2B8EB21EDB42D005BA9E9 /* sb_62.html in Resources */,
 				E3D2B8B321EDABC9005BA9E9 /* sb_515.jpg in Resources */,
+				E3D2B99721EDDA48005BA9E9 /* yb_364.jpg in Resources */,
+				E3D2B9BF21EDDD49005BA9E9 /* yb_31.html in Resources */,
 				E3D2B89A21EDABC9005BA9E9 /* sb_632.jpg in Resources */,
 				E3D2B8AC21EDABC9005BA9E9 /* sb_529.jpg in Resources */,
 				E316135821B7631F00CF09B2 /* LICENSE in Resources */,
+				E3D2B98921EDDA48005BA9E9 /* yb_233.jpg in Resources */,
+				E3D2B98121EDDA48005BA9E9 /* yb_111.jpg in Resources */,
 				E3D2B8C121EDABC9005BA9E9 /* sb_234.jpg in Resources */,
+				E3D2B97A21EDDA48005BA9E9 /* yb_158.jpg in Resources */,
 				E36809B521CB745F000FCDC7 /* SelectViewController.xib in Resources */,
 				E3D2B8A821EDABC9005BA9E9 /* sb_523.jpg in Resources */,
+				E3D2B97421EDDA48005BA9E9 /* yb_156.jpg in Resources */,
 				E3D2B8B521EDABC9005BA9E9 /* sb_516.jpg in Resources */,
 				E3160F8021B761FE00CF09B2 /* LaunchScreen.storyboard in Resources */,
 				E31613D321B7631F00CF09B2 /* CompanyRegisterPhotoTableViewCell.xib in Resources */,
@@ -3431,6 +3883,10 @@
 				E316136121B7631F00CF09B2 /* LRSwitchStudentView.xib in Resources */,
 				E3D2B8C721EDABC9005BA9E9 /* sb_211.jpg in Resources */,
 				E3B68D5A21CBB9AA0048F377 /* CaijiJianHuRenViewController.xib in Resources */,
+				E3D2B97121EDDA48005BA9E9 /* yb_422.jpg in Resources */,
+				E3D2B9A021EDDA48005BA9E9 /* yb_341.jpg in Resources */,
+				E3D2B97521EDDA48005BA9E9 /* yb_154.jpg in Resources */,
+				E3D2B98E21EDDA48005BA9E9 /* yb_223.jpg in Resources */,
 				E3D2B8CE21EDABC9005BA9E9 /* sb_332.jpg in Resources */,
 				E3D2B8F721EDB659005BA9E9 /* sb_53.html in Resources */,
 				E31613A121B7631F00CF09B2 /* HSPopupSelectDayView示例代码.rtf in Resources */,
@@ -3439,55 +3895,83 @@
 				E3D2B8F121EDB4E6005BA9E9 /* sb_61.html in Resources */,
 				E3D2B8D021EDABC9005BA9E9 /* sb_3314.jpg in Resources */,
 				E33C64D821C9DE2800AEDF4B /* ZcznDetailViewController.xib in Resources */,
+				E3D2B96E21EDDA48005BA9E9 /* yb_431.jpg in Resources */,
 				E3D2B8C621EDABC9005BA9E9 /* sb_222.jpg in Resources */,
 				E3848B6121C8D7F500B9AC27 /* MineMessageViewController.xib in Resources */,
 				E3848B5021C8D17200B9AC27 /* MinePhotoHeaderTableViewCell.xib in Resources */,
+				E3D2B97921EDDA48005BA9E9 /* yb_153.jpg in Resources */,
 				E3848B7121C911FE00B9AC27 /* AboutUsViewController.xib in Resources */,
+				E3D2B9B921EDDCD7005BA9E9 /* yb_36.html in Resources */,
 				E31F672621E86CFC0076C957 /* ConnactUsViewController.xib in Resources */,
 				E31613F621B7631F00CF09B2 /* LanchImageViewController.xib in Resources */,
 				E316137F21B7631F00CF09B2 /* CodeSuccessView.xib in Resources */,
+				E3D2B97221EDDA48005BA9E9 /* yb_423.jpg in Resources */,
 				E3070FA121BE88A200E33BB1 /* ForgetPwdViewController.xib in Resources */,
+				E3D2B97621EDDA48005BA9E9 /* yb_155.jpg in Resources */,
 				E30BB77521EC6F4F0054EFC2 /* PhotoShowViewController.xib in Resources */,
 				E3D2B90721EDB9C6005BA9E9 /* sb_21.html in Resources */,
+				E3D2B96721EDDA48005BA9E9 /* yb_411.jpg in Resources */,
 				E33C64BE21C9D8DB00AEDF4B /* ZcznViewController.xib in Resources */,
+				E3D2B97321EDDA48005BA9E9 /* yb_157.jpg in Resources */,
 				E3D2B8DD21EDAC0F005BA9E9 /* sb_11.html in Resources */,
 				E316138D21B7631F00CF09B2 /* WSDatePickerView.xib in Resources */,
+				E3D2B98421EDDA48005BA9E9 /* yb_141.jpg in Resources */,
+				E3D2B98321EDDA48005BA9E9 /* yb_142.jpg in Resources */,
 				E33C64F921C9ED3600AEDF4B /* SbkProgressViewController.xib in Resources */,
 				E3D2B8D621EDABC9005BA9E9 /* sb_314.jpg in Resources */,
+				E3D2B96921EDDA48005BA9E9 /* yb_415.jpg in Resources */,
 				E33C652421CA1D0200AEDF4B /* CaijiBasicSaveTableViewCell.xib in Resources */,
+				E3D2B98F21EDDA48005BA9E9 /* yb_226.jpg in Resources */,
 				E3D2B8FB21EDB6B6005BA9E9 /* sb_42.html in Resources */,
 				E3D2B8F921EDB683005BA9E9 /* sb_51.html in Resources */,
+				E3D2B99221EDDA48005BA9E9 /* yb_322.jpg in Resources */,
 				E31613C121B7631F00CF09B2 /* ConfirmLoginPwdTableViewCell.xib in Resources */,
 				E316138221B7631F00CF09B2 /* ShakeView.xib in Resources */,
+				E3D2B97B21EDDA48005BA9E9 /* yb_132.jpg in Resources */,
+				E3D2B97721EDDA48005BA9E9 /* yb_151.jpg in Resources */,
+				E3D2B9A321EDDABC005BA9E9 /* yb_15.html in Resources */,
 				E3D2B8D721EDABC9005BA9E9 /* sb_315.jpg in Resources */,
 				E3D2B8BC21EDABC9005BA9E9 /* sb_431.jpg in Resources */,
+				E3D2B9A521EDDAF6005BA9E9 /* yb_13.html in Resources */,
 				E316139321B7631F00CF09B2 /* 示例代码XHLTagLabelsViewController.rtf in Resources */,
 				E3D2B8BB21EDABC9005BA9E9 /* sb_412.jpg in Resources */,
 				E3D2B8BF21EDABC9005BA9E9 /* sb_434.jpg in Resources */,
 				E316137E21B7631F00CF09B2 /* QrCodeView.xib in Resources */,
 				E30BB77F21EC73860054EFC2 /* PhotoShowTitleTableViewCell.xib in Resources */,
 				E33C651521CA1B9100AEDF4B /* CaijiBasicViewController.xib in Resources */,
+				E3D2B99D21EDDA48005BA9E9 /* yb_311.jpg in Resources */,
+				E3D2B96421EDDA48005BA9E9 /* yb_441.jpg in Resources */,
 				E362E4EF21D360FB005E60B9 /* PopupSelectDayView.xib in Resources */,
 				E3D2B8E121EDB14B005BA9E9 /* sb_23.html in Resources */,
 				E3D2B8B221EDABC9005BA9E9 /* sb_514.jpg in Resources */,
+				E3D2B97821EDDA48005BA9E9 /* yb_152.jpg in Resources */,
+				E3D2B9C321EDDDA4005BA9E9 /* yb_44.html in Resources */,
 				E3848B7921C9127500B9AC27 /* FeedBackViewController.xib in Resources */,
 				E31613C721B7631F00CF09B2 /* BindAccountShowSchoolTableViewCell.xib in Resources */,
 				E3D2B8C321EDABC9005BA9E9 /* sb_233.jpg in Resources */,
 				E3D2B8A921EDABC9005BA9E9 /* sb_5211.jpg in Resources */,
+				E3D2B97D21EDDA48005BA9E9 /* yb_162.jpg in Resources */,
 				E3D2B8A021EDABC9005BA9E9 /* sb_612.jpg in Resources */,
 				E3D2B89921EDABC9005BA9E9 /* sb_622.jpg in Resources */,
 				E3D2B8A721EDABC9005BA9E9 /* sb_522.jpg in Resources */,
+				E3D2B99621EDDA48005BA9E9 /* yb_362.jpg in Resources */,
+				E3D2B9A121EDDA48005BA9E9 /* yb_342.jpg in Resources */,
 				E3160F7D21B761FE00CF09B2 /* Assets.xcassets in Resources */,
 				E36809A821CB5A84000FCDC7 /* CaijiBasicContentTableViewCell.xib in Resources */,
+				E3D2B9B321EDDC78005BA9E9 /* yb_23.html in Resources */,
 				E3D2B89D21EDABC9005BA9E9 /* sb_642.jpg in Resources */,
 				E3ACE87321CCAAED005EBB02 /* CamaryViewController.xib in Resources */,
 				E316138A21B7631F00CF09B2 /* NoDataView.xib in Resources */,
+				E3D2B9B721EDDCC1005BA9E9 /* yb_32.html in Resources */,
 				E316137121B7631F00CF09B2 /* DropListTableViewCell.xib in Resources */,
 				E3D2B8D421EDABC9005BA9E9 /* sb_339.jpg in Resources */,
+				E3D2B99B21EDDA48005BA9E9 /* yb_332.jpg in Resources */,
+				E3D2B96321EDDA48005BA9E9 /* yb_443.jpg in Resources */,
 				E3D2B8D321EDABC9005BA9E9 /* sb_3310.jpg in Resources */,
 				E316137921B7631F00CF09B2 /* area.json in Resources */,
 				E33C64E621C9E88100AEDF4B /* IxcjTypeViewController.xib in Resources */,
 				E33C651C21CA1CD800AEDF4B /* CaijiBasicIdCardTableViewCell.xib in Resources */,
+				E3D2B9AF21EDDC04005BA9E9 /* yb_21.html in Resources */,
 				E3D2B8CA21EDABC9005BA9E9 /* sb_334.jpg in Resources */,
 				E31613CD21B7631F00CF09B2 /* PersonMessageButtonTableViewCell.xib in Resources */,
 				E3D2B8C421EDABC9005BA9E9 /* sb_232.jpg in Resources */,
@@ -3495,32 +3979,53 @@
 				E3D2B8FF21EDB6FA005BA9E9 /* sb_43.html in Resources */,
 				E3D2B8CD21EDABC9005BA9E9 /* sb_333.jpg in Resources */,
 				E31613C621B7631F00CF09B2 /* ConfirmLoginSelectStrOrSchoolTableViewCell.xib in Resources */,
+				E3D2B9AD21EDDBBF005BA9E9 /* yb_14.html in Resources */,
 				E3ACE86721CC80E3005EBB02 /* CaijiQiTaViewController.xib in Resources */,
+				E3D2B98B21EDDA48005BA9E9 /* yb_231.jpg in Resources */,
 				E3D2B8DA21EDABC9005BA9E9 /* sb_313.jpg in Resources */,
+				E3D2B9C121EDDD7B005BA9E9 /* yb_34.html in Resources */,
+				E3D2B96F21EDDA48005BA9E9 /* yb_424.jpg in Resources */,
+				E3D2B99321EDDA48005BA9E9 /* yb_321.jpg in Resources */,
 				E3D2B8BD21EDABC9005BA9E9 /* sb_433.jpg in Resources */,
 				E30BB78621EC77380054EFC2 /* ZcznChildViewController.xib in Resources */,
+				E3D2B9B521EDDC96005BA9E9 /* yb_22.html in Resources */,
+				E3D2B9C921EDDE30005BA9E9 /* yb_42.html in Resources */,
+				E3D2B98A21EDDA48005BA9E9 /* yb_232.jpg in Resources */,
 				E3D2B90321EDB745005BA9E9 /* sb_33.html in Resources */,
 				E3D2B8AF21EDABC9005BA9E9 /* sb_512.jpg in Resources */,
+				E3D2B9C521EDDDD4005BA9E9 /* yb_41.html in Resources */,
 				E3D2B90121EDB728005BA9E9 /* sb_32.html in Resources */,
 				E31EF64321BFD92E00E1C3E4 /* ApplyBannerTableViewCell.xib in Resources */,
 				E3D2B90921EDBA0A005BA9E9 /* sb_22.html in Resources */,
 				E3D2B8D521EDABC9005BA9E9 /* sb_338.jpg in Resources */,
+				E3D2B99E21EDDA48005BA9E9 /* yb_312.jpg in Resources */,
 				E316135921B7631F00CF09B2 /* README.md in Resources */,
+				E3D2B9BB21EDDD06005BA9E9 /* yb_35.html in Resources */,
+				E3D2B99021EDDA48005BA9E9 /* yb_224.jpg in Resources */,
 				E316135621B7631F00CF09B2 /* BRPickerView.bundle in Resources */,
 				E3D2B8C021EDABC9005BA9E9 /* sb_235.jpg in Resources */,
 				E3D2B89B21EDABC9005BA9E9 /* sb_631.jpg in Resources */,
+				E3D2B99C21EDDA48005BA9E9 /* yb_314.jpg in Resources */,
+				E3D2B98C21EDDA48005BA9E9 /* yb_221.jpg in Resources */,
 				E3D2B8CF21EDABC9005BA9E9 /* sb_331.jpg in Resources */,
+				E3D2B97021EDDA48005BA9E9 /* yb_421.jpg in Resources */,
 				E3D2B8C521EDABC9005BA9E9 /* sb_221.jpg in Resources */,
+				E3D2B98021EDDA48005BA9E9 /* yb_122.jpg in Resources */,
 				E3D2B8ED21EDB463005BA9E9 /* sb_63.html in Resources */,
+				E3D2B96A21EDDA48005BA9E9 /* yb_417.jpg in Resources */,
+				E3D2B98821EDDA48005BA9E9 /* yb_211.jpg in Resources */,
 				E31613BB21B7631F00CF09B2 /* db.sql in Resources */,
+				E3D2B9AB21EDDB9D005BA9E9 /* yb_11.html in Resources */,
 				E31613CC21B7631F00CF09B2 /* PersonMessageTipTableViewCell.xib in Resources */,
 				E3D2B8B121EDABC9005BA9E9 /* sb_511.jpg in Resources */,
 				E31613C421B7631F00CF09B2 /* BindButtonTableViewCell.xib in Resources */,
 				E3D2B8FD21EDB6DE005BA9E9 /* sb_41.html in Resources */,
 				E3D2B89721EDABC9005BA9E9 /* sb_621.jpg in Resources */,
 				E3D2B89E21EDABC9005BA9E9 /* sb_641.jpg in Resources */,
+				E3D2B97F21EDDA48005BA9E9 /* yb_121.jpg in Resources */,
 				E31613D121B7631F00CF09B2 /* SelectCompanyTableViewCell.xib in Resources */,
 				E3D2B8A421EDABC9005BA9E9 /* sb_524.jpg in Resources */,
+				E3D2B97E21EDDA48005BA9E9 /* yb_161.jpg in Resources */,
 				E3D2B8A521EDABC9005BA9E9 /* sb_525.jpg in Resources */,
 				E3ACE86B21CC80F7005EBB02 /* CaijiQiTaTableViewCell.xib in Resources */,
 				E33C650B21CA180C00AEDF4B /* IdCardQueryViewController.xib in Resources */,
@@ -3538,10 +4043,19 @@
 				E3D2B8F321EDB57D005BA9E9 /* sb_52.html in Resources */,
 				E3D2B8AA21EDABC9005BA9E9 /* sb_5210.jpg in Resources */,
 				E3848B6921C8DA0700B9AC27 /* updateNickNameViewController.xib in Resources */,
+				E3D2B96D21EDDA48005BA9E9 /* yb_432.jpg in Resources */,
+				E3D2B98221EDDA48005BA9E9 /* yb_143.jpg in Resources */,
+				E3D2B97C21EDDA48005BA9E9 /* yb_131.jpg in Resources */,
 				E31613A321B7631F00CF09B2 /* MenuView示例代码.rtf in Resources */,
+				E3D2B98621EDDA48005BA9E9 /* yb_212.jpg in Resources */,
+				E3D2B9A921EDDB66005BA9E9 /* yb_12.html in Resources */,
+				E3D2B9A721EDDB21005BA9E9 /* yb_16.html in Resources */,
 				E38CA3FC21C0943800455B81 /* ApplyViewControllerCollectionViewCell.xib in Resources */,
+				E3D2B98521EDDA48005BA9E9 /* yb_144.jpg in Resources */,
+				E3D2B98D21EDDA48005BA9E9 /* yb_222.jpg in Resources */,
 				E3D2B8BE21EDABC9005BA9E9 /* sb_432.jpg in Resources */,
 				E33C64C821C9DAEE00AEDF4B /* ZcznCollectionViewCell.xib in Resources */,
+				E3D2B96B21EDDA48005BA9E9 /* yb_416.jpg in Resources */,
 				E3D2B8B021EDABC9005BA9E9 /* sb_513.jpg in Resources */,
 				E3160F7B21B761FC00CF09B2 /* Main.storyboard in Resources */,
 				E3D2B8B721EDABC9005BA9E9 /* sb_422.jpg in Resources */,
@@ -3552,19 +4066,26 @@
 				E31613CA21B7631F00CF09B2 /* PersonMessageInputTableViewCell.xib in Resources */,
 				E34A66AA21CF897A00F92336 /* DaiBanPersonViewController.xib in Resources */,
 				E3D2B8D921EDABC9005BA9E9 /* sb_312.jpg in Resources */,
+				E3D2B9C721EDDE0E005BA9E9 /* yb_43.html in Resources */,
 				E31613F421B7631F00CF09B2 /* LoginViewController.xib in Resources */,
 				E316135F21B7631F00CF09B2 /* SKPhotoBrowser.bundle in Resources */,
+				E3D2B96221EDDA48005BA9E9 /* yb_442.jpg in Resources */,
 				E3D2B8B621EDABC9005BA9E9 /* sb_111.png in Resources */,
 				E3D2B8AE21EDABC9005BA9E9 /* sb_531.jpg in Resources */,
 				E31613CF21B7631F00CF09B2 /* PersonMessagePhotoTableViewCell.xib in Resources */,
+				E3D2B96521EDDA48005BA9E9 /* yb_412.jpg in Resources */,
 				E31613D821B7631F00CF09B2 /* CompanyRegisterInputTableViewCell.xib in Resources */,
 				E3D2B8D121EDABC9005BA9E9 /* sb_3313.jpg in Resources */,
 				E3D2B8B421EDABC9005BA9E9 /* sb_517.jpg in Resources */,
 				E31613F121B7631F00CF09B2 /* SelectAreaPopupViewTableViewCell.xib in Resources */,
+				E3D2B99521EDDA48005BA9E9 /* yb_363.jpg in Resources */,
 				E3D2B8AB21EDABC9005BA9E9 /* sb_528.jpg in Resources */,
 				E3D2B8A621EDABC9005BA9E9 /* sb_521.jpg in Resources */,
+				E3D2B9BD21EDDD26005BA9E9 /* yb_33.html in Resources */,
 				E3D2B8A321EDABC9005BA9E9 /* sb_526.jpg in Resources */,
+				E3D2B99421EDDA48005BA9E9 /* yb_361.jpg in Resources */,
 				E316137D21B7631F00CF09B2 /* CompanyRegisterSuccessView.xib in Resources */,
+				E3D2B99A21EDDA48005BA9E9 /* yb_331.jpg in Resources */,
 				E3D2B8C921EDABC9005BA9E9 /* sb_335.jpg in Resources */,
 				E36809B121CB73BF000FCDC7 /* SelectTableViewCell.xib in Resources */,
 				E3D2B8B921EDABC9005BA9E9 /* sb_421.jpg in Resources */,
@@ -3574,10 +4095,13 @@
 				E300D06621CF14EC00F1A52B /* index.html in Resources */,
 				E31613E421B7631F00CF09B2 /* PersonRegisterViewController.xib in Resources */,
 				E31EF64F21BFDA2700E1C3E4 /* ApplyCollectionTableViewCell.xib in Resources */,
+				E3D2B96821EDDA48005BA9E9 /* yb_414.jpg in Resources */,
+				E3D2B99F21EDDA48005BA9E9 /* yb_313.jpg in Resources */,
 				E3D2B8CC21EDABC9005BA9E9 /* sb_337.jpg in Resources */,
 				E31613A221B7631F00CF09B2 /* HSPopupSelectDayView.xib in Resources */,
 				E3D2B8CB21EDABC9005BA9E9 /* sb_336.jpg in Resources */,
 				E33C64FF21C9EEB300AEDF4B /* SbkProgressTableViewCell.xib in Resources */,
+				E3D2B96621EDDA48005BA9E9 /* yb_413.jpg in Resources */,
 				E3D2B8C221EDABC9005BA9E9 /* sb_231.jpg in Resources */,
 				E3D2B8C821EDABC9005BA9E9 /* sb_321.png in Resources */,
 			);
