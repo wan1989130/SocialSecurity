@@ -30,17 +30,17 @@ class ZcznDataController: BaseDataController {
         childModel2.image = UIImage.init(named: "logo")
         let childChildModel21 = ZcznModel()
         
-        childChildModel21.title = "吉林省关于建立城乡居民基本养老保险待遇确定和基础养老金正常调整机制的实施意见"
+        childChildModel21.title = "吉林省关于调整城乡居民基本养老保险基础养老金标准、个人缴费标准的通知"
         childChildModel21.url = "sb_21"
         childModel2.childArray.append(childChildModel21)
         let childChildModel22 = ZcznModel()
         
-        childChildModel21.title = "吉林省关于调整城乡居民基本养老保险基础养老金标准、个人缴费标准的通知"
+        childChildModel22.title = "吉林省关于建立城乡居民基本养老保险待遇确定和基础养老金正常调整机制的实施意见"
         childChildModel22.url = "sb_22"
         childModel2.childArray.append(childChildModel22)
         let childChildModel23 = ZcznModel()
         
-        childChildModel21.title = "长春市人民政府关于印发长春市统一城乡居民基本养老保险实施方案的通知（长府发[2014]19 号）"
+        childChildModel23.title = "长春市人民政府关于印发长春市统一城乡居民基本养老保险实施方案的通知（长府发[2014]19 号）"
         childChildModel23.url = "sb_23"
         childModel2.childArray.append(childChildModel23)
         
