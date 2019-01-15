@@ -26,7 +26,7 @@ class ZcznDataController: BaseDataController {
     func initSb(){
         let model1 = ZcznModel()
         model1.text = "社保"
-        model1.image = UIImage(named: "logo")
+        model1.image = UIImage(named: "sbcx")
         //第一个
         let childModel1 = ZcznModel()
         childModel1.text = "被征地农民养老保险"
@@ -149,7 +149,7 @@ class ZcznDataController: BaseDataController {
     func initYb(){
         let model1 = ZcznModel()
         model1.text = "医保"
-        model1.image = UIImage(named: "logo")
+        model1.image = UIImage(named: "ybcx")
         //第一个
         let childModel1 = ZcznModel()
         childModel1.text = "工伤保险"

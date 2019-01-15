@@ -39,7 +39,8 @@ class ApplyBannerTableViewCell: UITableViewCell {
     }
     fileprivate func initCycleScrollView(){
         let cycleScrollView = SDCycleScrollView(frame: CGRect.zero, delegate: nil, placeholderImage: UIImage.loadImage("cycleScrollViewPlaceholder"))!
-        cycleScrollView.imageURLStringsGroup = dataArray
+//        cycleScrollView.imageURLStringsGroup = dataArray
+        cycleScrollView.localizationImageNamesGroup = dataArray
         cycleScrollView.autoScrollTimeInterval = 5
         cycleScrollView.drawInView(cycleScrollViewContainer)
         cycleScrollView.bannerImageViewContentMode = .scaleToFill
