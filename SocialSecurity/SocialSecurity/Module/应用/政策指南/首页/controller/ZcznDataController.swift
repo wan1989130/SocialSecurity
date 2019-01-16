@@ -26,11 +26,11 @@ class ZcznDataController: BaseDataController {
     func initSb(){
         let model1 = ZcznModel()
         model1.text = "社保"
-        model1.image = UIImage(named: "sbcx")
+        model1.image = UIImage(named: "zczn_sb")
         //第一个
         let childModel1 = ZcznModel()
         childModel1.text = "被征地农民养老保险"
-        childModel1.image = UIImage.init(named: "logo")
+        childModel1.image = UIImage.init(named: "bzd")
         let childChildModel1 = ZcznModel()
         
         childChildModel1.title = "长春市人民政府办公厅关于印发长春市统一被征地农民基本养老保险制度实施方案实施细则的通知（2012年11月19日长春市人民政府办公厅 长府办发[2012]44号公布）"
@@ -39,7 +39,7 @@ class ZcznDataController: BaseDataController {
         //第二个
         let childModel2 = ZcznModel()
         childModel2.text = "城乡居民养老保险"
-        childModel2.image = UIImage.init(named: "logo")
+        childModel2.image = UIImage.init(named: "cxjm")
         let childChildModel21 = ZcznModel()
         
         childChildModel21.title = "吉林省关于调整城乡居民基本养老保险基础养老金标准、个人缴费标准的通知"
@@ -59,7 +59,7 @@ class ZcznDataController: BaseDataController {
         //第三个
         let childModel3 = ZcznModel()
         childModel3.text = "城镇企业职工基本养老保险"
-        childModel3.image = UIImage.init(named: "logo")
+        childModel3.image = UIImage.init(named: "qyzg")
         let childChildModel31 = ZcznModel()
         
         childChildModel31.title = "关于进一步加强企业职工基本养老保险省级统筹行政管理工作的通知"
@@ -79,7 +79,7 @@ class ZcznDataController: BaseDataController {
         //第四个
         let childModel4 = ZcznModel()
         childModel4.text = "机关事业单位养老保险"
-        childModel4.image = UIImage.init(named: "logo")
+        childModel4.image = UIImage.init(named: "jgsy")
         let childChildModel41 = ZcznModel()
         childChildModel41.title = "人力资源社会保障部办公厅关于印发《机关事业单位基本养老保险关系和职业年金转移接续经办规程（暂行）》的通知"
         childChildModel41.url = "sb_41"
@@ -97,7 +97,7 @@ class ZcznDataController: BaseDataController {
         //第五个
         let childModel5 = ZcznModel()
         childModel5.text = "失业保险"
-        childModel5.image = UIImage.init(named: "logo")
+        childModel5.image = UIImage.init(named: "sybx")
         let childChildModel51 = ZcznModel()
         childChildModel51.title = "关于失业保险支持参保职工提升职业技能有关问题的补充通知"
         childChildModel51.url = "sb_51"
@@ -118,7 +118,7 @@ class ZcznDataController: BaseDataController {
         //第六个
         let childModel6 = ZcznModel()
         childModel6.text = "其他"
-        childModel6.image = UIImage.init(named: "logo")
+        childModel6.image = UIImage.init(named: "qt")
         let childChildModel61 = ZcznModel()
         childChildModel61.title = "关于领取失业保险金人员参加职工基本医疗保险有关问题的通知"
         childChildModel61.url = "sb_61"
@@ -149,11 +149,11 @@ class ZcznDataController: BaseDataController {
     func initYb(){
         let model1 = ZcznModel()
         model1.text = "医保"
-        model1.image = UIImage(named: "ybcx")
+        model1.image = UIImage(named: "zczn_yb")
         //第一个
         let childModel1 = ZcznModel()
         childModel1.text = "工伤保险"
-        childModel1.image = UIImage.init(named: "logo")
+        childModel1.image = UIImage.init(named: "gsbx")
         let childChildModel1 = ZcznModel()
         childChildModel1.title = "部分行业企业工伤保险费缴纳办法"
         childChildModel1.url = "yb_11"
@@ -186,7 +186,7 @@ class ZcznDataController: BaseDataController {
         //第二个
         let childModel2 = ZcznModel()
         childModel2.text = "居民医疗保险"
-        childModel2.image = UIImage.init(named: "logo")
+        childModel2.image = UIImage.init(named: "jmyl")
         let childChildModel21 = ZcznModel()
         
         childChildModel21.title = "关于调整2016年城镇居民基本医疗保险缴费及补助标准的通知"
@@ -206,7 +206,7 @@ class ZcznDataController: BaseDataController {
         //第三个
         let childModel3 = ZcznModel()
         childModel3.text = "生育保险"
-        childModel3.image = UIImage.init(named: "logo")
+        childModel3.image = UIImage.init(named: "sybx")
         let childChildModel31 = ZcznModel()
         childChildModel31.title = "关于生育保险项目纳入定点医疗机构管理的通知"
         childChildModel31.url = "yb_31"
@@ -235,7 +235,7 @@ class ZcznDataController: BaseDataController {
         //第四个
         let childModel4 = ZcznModel()
         childModel4.text = "职工医疗保险"
-        childModel4.image = UIImage.init(named: "logo")
+        childModel4.image = UIImage.init(named: "zgyl")
         let childChildModel41 = ZcznModel()
         childChildModel41.title = "关于印发《长春市失能人员医疗照护保险实施办法（试行）》的通知"
         childChildModel41.url = "yb_41"
