@@ -24,11 +24,11 @@ class ZcznCollectionViewCell: UICollectionViewCell {
     }
     func update(model:ZcznModel){
         nameLabel.text = model.text
-        iconImageView.image = UIImage(named: "default_head_photo")
+        iconImageView.image = model.image
     }
     func updateType(model:ZcznModel){
         nameLabel.text = model.text
-        iconImageView.image = UIImage(named: "default_head_photo")
+        iconImageView.image = model.image
     }
 
 

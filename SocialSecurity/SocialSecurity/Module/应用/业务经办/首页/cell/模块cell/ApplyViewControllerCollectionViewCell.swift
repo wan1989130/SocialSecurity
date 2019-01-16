@@ -24,7 +24,7 @@ class ApplyViewControllerCollectionViewCell: UICollectionViewCell {
     }
     func update(model:ApplyToolModel){
         nameLabel.text = model.text
-        iconImageView.image = UIImage(named: "default_head_photo")
+        iconImageView.image = model.image
     }
 
 
