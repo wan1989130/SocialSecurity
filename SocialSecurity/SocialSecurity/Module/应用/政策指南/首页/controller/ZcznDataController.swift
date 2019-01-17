@@ -153,7 +153,7 @@ class ZcznDataController: BaseDataController {
         //第一个
         let childModel1 = ZcznModel()
         childModel1.text = "工伤保险"
-        childModel1.image = UIImage.init(named: "gsbx")
+        childModel1.image = UIImage.init(named: "gs")
         let childChildModel1 = ZcznModel()
         childChildModel1.title = "部分行业企业工伤保险费缴纳办法"
         childChildModel1.url = "yb_11"
