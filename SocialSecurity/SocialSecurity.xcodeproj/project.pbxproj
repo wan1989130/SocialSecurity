@@ -305,6 +305,7 @@
 		E36809B421CB745F000FCDC7 /* SelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36809B221CB745F000FCDC7 /* SelectViewController.swift */; };
 		E36809B521CB745F000FCDC7 /* SelectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E36809B321CB745F000FCDC7 /* SelectViewController.xib */; };
 		E36809BA21CB92A6000FCDC7 /* SelectChangQiDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36809B921CB92A6000FCDC7 /* SelectChangQiDateView.swift */; };
+		E368C08B21F1534200C728AE /* PersonHelpWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E368C08A21F1534200C728AE /* PersonHelpWebViewController.swift */; };
 		E3848B4021C8D00100B9AC27 /* MSDataProvider+Grzx.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3848B3F21C8D00100B9AC27 /* MSDataProvider+Grzx.swift */; };
 		E3848B4721C8D03000B9AC27 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3848B4521C8D03000B9AC27 /* MineViewController.swift */; };
 		E3848B4821C8D03000B9AC27 /* MineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3848B4621C8D03000B9AC27 /* MineViewController.xib */; };
@@ -935,6 +936,7 @@
 		E36809B221CB745F000FCDC7 /* SelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewController.swift; sourceTree = "<group>"; };
 		E36809B321CB745F000FCDC7 /* SelectViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectViewController.xib; sourceTree = "<group>"; };
 		E36809B921CB92A6000FCDC7 /* SelectChangQiDateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectChangQiDateView.swift; sourceTree = "<group>"; };
+		E368C08A21F1534200C728AE /* PersonHelpWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonHelpWebViewController.swift; sourceTree = "<group>"; };
 		E3848B3F21C8D00100B9AC27 /* MSDataProvider+Grzx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MSDataProvider+Grzx.swift"; sourceTree = "<group>"; };
 		E3848B4521C8D03000B9AC27 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		E3848B4621C8D03000B9AC27 /* MineViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MineViewController.xib; sourceTree = "<group>"; };
@@ -2710,6 +2712,7 @@
 		E33C650221CA179A00AEDF4B /* 个人or亲属 */ = {
 			isa = PBXGroup;
 			children = (
+				E368C08021F025E400C728AE /* 帮助 */,
 				E34A66A421CF893300F92336 /* 代办人 */,
 				E3ACE86C21CCAA6A005EBB02 /* 拍照 */,
 				E3ACE85F21CC809F005EBB02 /* 其它信息 */,
@@ -2868,6 +2871,22 @@
 			children = (
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		E368C08021F025E400C728AE /* 帮助 */ = {
+			isa = PBXGroup;
+			children = (
+				E368C08821F1531900C728AE /* controller */,
+			);
+			path = "帮助";
+			sourceTree = "<group>";
+		};
+		E368C08821F1531900C728AE /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				E368C08A21F1534200C728AE /* PersonHelpWebViewController.swift */,
+			);
+			path = controller;
 			sourceTree = "<group>";
 		};
 		E3848B3E21C8CFEA00B9AC27 /* 个人中心 */ = {
@@ -4438,6 +4457,7 @@
 				E362E4F121D36110005E60B9 /* UIView + Load.swift in Sources */,
 				E33C64DA21C9DE3A00AEDF4B /* ZcznDetailDataModel.swift in Sources */,
 				E3848B5321C8D17C00B9AC27 /* MineTableViewCell.swift in Sources */,
+				E368C08B21F1534200C728AE /* PersonHelpWebViewController.swift in Sources */,
 				E36809B421CB745F000FCDC7 /* SelectViewController.swift in Sources */,
 				E31613AC21B7631F00CF09B2 /* Logistics.xcdatamodeld in Sources */,
 				E3160F7621B761FC00CF09B2 /* AppDelegate.swift in Sources */,

@@ -36,6 +36,8 @@ extension IdCardQueryViewController{
         self.view.backgroundColor = viewBgColor
         idBgView.layer.borderColor = UIColor.black.withAlphaComponent(0.2).cgColor
         idBgView.layer.borderWidth = 1
+        let rightBarButtonItem = UIBarButtonItem(title: "帮助", style: .plain, target: self, action: #selector(rightBarButtonClicked(sender:)))
+        self.navigationItem.rightBarButtonItem = rightBarButtonItem
         
     }
     fileprivate func initData(){
@@ -50,6 +52,16 @@ extension IdCardQueryViewController{
             }
             
         }
+    }
+    @objc func rightBarButtonClicked(sender: UIBarButtonItem){
+        let vc = PersonHelpWebViewController()
+        if self.title == "个人办理"{
+            vc.urlContent = "grbl"
+        }else{
+            vc.urlContent = "qsdb"
+        }
+         vc.titleContent = "操作指南"
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 extension IdCardQueryViewController{
