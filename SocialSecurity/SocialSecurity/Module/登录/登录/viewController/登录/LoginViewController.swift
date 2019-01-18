@@ -69,6 +69,8 @@ class LoginViewController: BaseViewController {
     }
     
     @IBAction func loginButtonClicked(_ sender: UIButton) {
+//                self.showMainTab()
+//        return
         closeKeyboard()
 
         if !checkFun(){
