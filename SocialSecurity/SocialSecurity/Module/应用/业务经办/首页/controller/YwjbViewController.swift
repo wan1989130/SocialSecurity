@@ -114,17 +114,19 @@ extension YwjbViewController:ApplyCollectionIndexClickProtocol{
             webVc.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(webVc, animated: true)
         }else if index == 2{
-            let webVc = CommonWebViewController()
-            webVc.urlContent = MyConfig.shared().shebaoUrl
-            webVc.titleContent = "社保查询"
-            webVc.hidesBottomBarWhenPushed = true
-            self.navigationController?.pushViewController(webVc, animated: true)
+            LHAlertView.showTipAlertWithTitle("调试中")
+//            let webVc = CommonWebViewController()
+//            webVc.urlContent = MyConfig.shared().shebaoUrl
+//            webVc.titleContent = "社保查询"
+//            webVc.hidesBottomBarWhenPushed = true
+//            self.navigationController?.pushViewController(webVc, animated: true)
         }else if index == 3{
-            let webVc = CommonWebViewController()
-            webVc.urlContent = MyConfig.shared().yibaoUrl
-            webVc.titleContent = "医保查询"
-            webVc.hidesBottomBarWhenPushed = true
-            self.navigationController?.pushViewController(webVc, animated: true)
+            LHAlertView.showTipAlertWithTitle("调试中")
+//            let webVc = CommonWebViewController()
+//            webVc.urlContent = MyConfig.shared().yibaoUrl
+//            webVc.titleContent = "医保查询"
+//            webVc.hidesBottomBarWhenPushed = true
+//            self.navigationController?.pushViewController(webVc, animated: true)
         }
     }
 }
