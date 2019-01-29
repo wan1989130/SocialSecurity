@@ -53,6 +53,10 @@ extension CaijiBasicViewController{
             let dic = senderParam as! NSMutableDictionary
             if dic["title"] != nil{
                 title = dic["title"] as! String
+                if title == "个人办理" && dataController.type == "0"{
+                    
+                    dataController.saveModel.lxsjStr1 = MyConfig.shared().phone
+                }
             }
             if dic["type"] != nil{
                 dataController.type = dic["type"] as! String
@@ -64,6 +68,7 @@ extension CaijiBasicViewController{
         if dataController.type == "2"{
             isWrite = false
         }
+        
     }
     func initIdCardOcr(){
         let licenseFile = Bundle.main.path(forResource: "aip", ofType: "license")
@@ -141,7 +146,7 @@ extension CaijiBasicViewController:CaijiBasicIdCardPhotoClickProtoco{
         if type == .zheng{
             let vc = AipCaptureCardVC.viewController(with: .idCardFont) { (image) in
                 AipOcrService.shard()?.detectIdCardFront(from: image, withOptions: nil, successHandler: { (info) in
-                    weakSelf?.success(info:info,type:0)
+                    weakSelf?.success(info:info,type:0,image:image)
                 }, failHandler: { (error) in
                     weakSelf?.dismiss(animated: true, completion: nil)
                     print("error = \(error.debugDescription)")
@@ -153,7 +158,7 @@ extension CaijiBasicViewController:CaijiBasicIdCardPhotoClickProtoco{
             
             let vc = AipCaptureCardVC.viewController(with: .idCardBack) { (image) in
                 AipOcrService.shard()?.detectIdCardBack(from: image, withOptions: nil, successHandler: { (info) in
-                    weakSelf?.success(info:info,type:1)
+                    weakSelf?.success(info:info,type:1,image: image)
                 }, failHandler: { (error) in
                     weakSelf?.dismiss(animated: true, completion: nil)
                     print("error = \(error.debugDescription)")
@@ -162,12 +167,18 @@ extension CaijiBasicViewController:CaijiBasicIdCardPhotoClickProtoco{
             self.present(vc!, animated: true, completion: nil)
         }
     }
-    func success(info:Any,type:Int){
+    func success(info:Any,type:Int,image:UIImage?){
         
         weak var weakSelf = self
         if type == 0{
             OperationQueue.main.addOperation {
+                if weakSelf == nil{
+                    return
+                }
                 weakSelf?.scanCountQuery()
+                if image != nil{
+                    UIImageWriteToSavedPhotosAlbum(image!, self, #selector(weakSelf?.didFinishSaving(image:error:contextInfo:)), nil)
+                }
                 let str = self.getJSONStringFromDictionary(dictionary: info as! NSDictionary)
                 let temModel = Mapper<IdCardFrontModel>().map(JSONString: str)
                 if temModel != nil{
@@ -232,7 +243,13 @@ extension CaijiBasicViewController:CaijiBasicIdCardPhotoClickProtoco{
             }
         }else{
             OperationQueue.main.addOperation {
+                if weakSelf == nil{
+                    return
+                }
                 weakSelf?.scanCountQuery()
+                if image != nil{
+                    UIImageWriteToSavedPhotosAlbum(image!, self, #selector(weakSelf?.didFinishSaving(image:error:contextInfo:)), nil)
+                }
                 let str = self.getJSONStringFromDictionary(dictionary: info as! NSDictionary)
                 let temModel = Mapper<IdCardFrontModel>().map(JSONString: str)
                 if temModel != nil{
@@ -269,6 +286,10 @@ extension CaijiBasicViewController:CaijiBasicIdCardPhotoClickProtoco{
             weakSelf?.dismiss(animated: true, completion: nil)
         }
         
+    }
+    @objc func didFinishSaving(image:UIImage,error:Error,contextInfo:AnyObject){
+//        print("保存截屏成功")
+
     }
     /**
      字典转换为JSONString

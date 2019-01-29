@@ -53,6 +53,7 @@ extension YwjbViewController{
                 
             }else {
                 //TODO
+                weakSelf?.tableView.reloadRows(at: [IndexPath.init(row: 0, section: 1)], with: .none)
                 
             }
         }
@@ -85,6 +86,13 @@ extension YwjbViewController:UITableViewDelegate,UITableViewDataSource{
             cell.pro = self
             if dataController.model != nil{
                 cell.update(model: dataController.model.data)
+            }
+            if dataController.selfQueryIsSuccess{
+                cell.statusViewHeight.constant = 60
+            
+            }else{
+                cell.statusView.removeAllSubviews()
+                cell.statusViewHeight.constant = 0
             }
             
 //            cell.statusView.removeAllSubviews()

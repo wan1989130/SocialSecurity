@@ -25,7 +25,7 @@ extension AppDelegate {
     
     //根据应用版本及登录状态跳转至相应页面
     func performToTargetVCAccordingToVersionAndLoginStatus(){
-        performToLoginViewController()
+//        performToLoginViewController()
         
         
 //        let deviceUUID = UIDevice.current.identifierForVendor?.uuid
@@ -46,21 +46,15 @@ extension AppDelegate {
 //        else{
 //                                performToLoginViewController()
 ////                  performToMainViewController()
-////            if MyConfig.shared().userModel.count > 0{
-////                let userNSObjectModel = NSKeyedUnarchiver.unarchiveObject(with: MyConfig.shared().userModel) as! UserNSObjectModel
-////                if MyConfig.shared().isLogin && userNSObjectModel.token != ""{
-////                    currentUser = userNSObjectModel.toAnyObject()
-////                    //如果登录过,并且本地有用户登录信息,跳转至首页
-////                    performToMainViewController()
-////                }
-////                else{
-////                    //未登录过,跳转至登录页
-////                    performToLoginViewController()
-////                }
-////            }else{
-////                //未登录过,跳转至登录页
-////                performToLoginViewController()
-////            }
+            if MyConfig.shared().token != ""{
+               
+                    //如果登录过,并且本地有用户登录信息,跳转至首页
+                    performToMainViewController()
+              
+            }else{
+                //未登录过,跳转至登录页
+                performToLoginViewController()
+            }
 //
 //        }
     }
@@ -102,11 +96,7 @@ extension AppDelegate {
     
     //跳转至首页
     func performToMainViewController(){
-        //获取currentUser
-        if MyConfig.shared().isLogin{
-            getCurrentUser()
-        }
-       
+        
         let tabbarVC = BaseTabBarViewController()
         
         window?.rootViewController = tabbarVC

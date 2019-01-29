@@ -80,8 +80,12 @@ class CaijiQiTaTableViewCell: UITableViewCell {
         }else{
             yjqyTextField.text = model.provinceName + "-" + model.cityName + "-" + model.regionName
         }
+        if model.yjdz == ""{
+            yjdzTextView.placeholder = "请输入通信地址"
+        }else{
+            yjdzTextView.text = model.yjdz
+        }
         
-        yjdzTextView.text = model.yjdz
 //
 
         

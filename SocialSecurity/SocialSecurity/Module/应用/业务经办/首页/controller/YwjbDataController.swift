@@ -10,6 +10,7 @@ import UIKit
 import ObjectMapper
 class YwjbDataController: BaseDataController {
 
+    var selfQueryIsSuccess = false
     var model:SelfQueryDataModel!
     var toolArray:Array<ApplyToolModel> = [ApplyToolModel]()
     override init(delegate: UIViewController) {
@@ -38,6 +39,7 @@ class YwjbDataController: BaseDataController {
             if isSuccess{
                 let model = Mapper<SelfQueryDataModel>().map(JSONObject: result)
                 if model != nil{
+                    self.selfQueryIsSuccess = true
                     self.model = model
                     completionBlock(true, nil)
                 }else{

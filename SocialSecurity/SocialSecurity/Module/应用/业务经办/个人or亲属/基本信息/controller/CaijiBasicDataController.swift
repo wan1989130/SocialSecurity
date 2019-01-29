@@ -73,6 +73,8 @@ class CaijiBasicDataController: BaseDataController {
     }
     func updateDictionary(){
         if type == "0"{//录入取第0个，修改不用动
+       
+            saveModel.yzbm = "130000"
             saveModel.xb = dictionaryModel.data.xbMap[0].id
             saveModel.xbName = dictionaryModel.data.xbMap[0].name
             
