@@ -50,17 +50,20 @@ extension CaijiBasicViewController{
     fileprivate func initData(){
         dataController = CaijiBasicDataController(delegate: self)
         if senderParam != nil{
+            
+            
             let dic = senderParam as! NSMutableDictionary
-            if dic["title"] != nil{
-                title = dic["title"] as! String
-                if title == "个人办理" && dataController.type == "0"{
-                    
-                    dataController.saveModel.lxsjStr1 = MyConfig.shared().phone
-                }
-            }
             if dic["type"] != nil{
                 dataController.type = dic["type"] as! String
             }
+            if dic["title"] != nil{
+                title = dic["title"] as! String
+//                if title == "个人办理" && dataController.type == "0"{
+//
+//                    dataController.saveModel.lxsjStr1 = MyConfig.shared().phone
+//                }
+            }
+            
             if dic["saveModel"] != nil{
                 dataController.saveModel = dic["saveModel"] as! CaijiSaveModel
             }

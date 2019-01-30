@@ -75,7 +75,6 @@
 		E316137621B7631F00CF09B2 /* MSCommentEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E316119E21B7631E00CF09B2 /* MSCommentEditView.swift */; };
 		E316137721B7631F00CF09B2 /* String+CZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31611A021B7631E00CF09B2 /* String+CZ.swift */; };
 		E316137821B7631F00CF09B2 /* AddressSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31611A121B7631E00CF09B2 /* AddressSelectView.swift */; };
-		E316137921B7631F00CF09B2 /* area.json in Resources */ = {isa = PBXBuildFile; fileRef = E31611A221B7631E00CF09B2 /* area.json */; };
 		E316137A21B7631F00CF09B2 /* UIImage+CZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31611A321B7631E00CF09B2 /* UIImage+CZ.swift */; };
 		E316137B21B7631F00CF09B2 /* CompanyRegisterSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31611A521B7631E00CF09B2 /* CompanyRegisterSuccessView.swift */; };
 		E316137C21B7631F00CF09B2 /* CodeSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31611A621B7631E00CF09B2 /* CodeSuccessView.swift */; };
@@ -256,6 +255,7 @@
 		E31EF69721BFF5D700E1C3E4 /* JQRadiusView.m in Sources */ = {isa = PBXBuildFile; fileRef = E31EF69621BFF5D700E1C3E4 /* JQRadiusView.m */; };
 		E31F672521E86CFC0076C957 /* ConnactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31F672321E86CFC0076C957 /* ConnactUsViewController.swift */; };
 		E31F672621E86CFC0076C957 /* ConnactUsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E31F672421E86CFC0076C957 /* ConnactUsViewController.xib */; };
+		E33BBFD9220133B200DFC3AC /* area.json in Resources */ = {isa = PBXBuildFile; fileRef = E33BBFD8220133B100DFC3AC /* area.json */; };
 		E33C64BD21C9D8DB00AEDF4B /* ZcznViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C64BB21C9D8DB00AEDF4B /* ZcznViewController.swift */; };
 		E33C64BE21C9D8DB00AEDF4B /* ZcznViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E33C64BC21C9D8DB00AEDF4B /* ZcznViewController.xib */; };
 		E33C64C021C9D94200AEDF4B /* ZcznDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33C64BF21C9D94200AEDF4B /* ZcznDataController.swift */; };
@@ -695,7 +695,6 @@
 		E316119E21B7631E00CF09B2 /* MSCommentEditView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSCommentEditView.swift; sourceTree = "<group>"; };
 		E31611A021B7631E00CF09B2 /* String+CZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+CZ.swift"; sourceTree = "<group>"; };
 		E31611A121B7631E00CF09B2 /* AddressSelectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressSelectView.swift; sourceTree = "<group>"; };
-		E31611A221B7631E00CF09B2 /* area.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = area.json; sourceTree = "<group>"; };
 		E31611A321B7631E00CF09B2 /* UIImage+CZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+CZ.swift"; sourceTree = "<group>"; };
 		E31611A521B7631E00CF09B2 /* CompanyRegisterSuccessView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyRegisterSuccessView.swift; sourceTree = "<group>"; };
 		E31611A621B7631E00CF09B2 /* CodeSuccessView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeSuccessView.swift; sourceTree = "<group>"; };
@@ -929,6 +928,7 @@
 		E31EF69621BFF5D700E1C3E4 /* JQRadiusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JQRadiusView.m; sourceTree = "<group>"; };
 		E31F672321E86CFC0076C957 /* ConnactUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnactUsViewController.swift; sourceTree = "<group>"; };
 		E31F672421E86CFC0076C957 /* ConnactUsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConnactUsViewController.xib; sourceTree = "<group>"; };
+		E33BBFD8220133B100DFC3AC /* area.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = area.json; sourceTree = "<group>"; };
 		E33C64BB21C9D8DB00AEDF4B /* ZcznViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZcznViewController.swift; sourceTree = "<group>"; };
 		E33C64BC21C9D8DB00AEDF4B /* ZcznViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZcznViewController.xib; sourceTree = "<group>"; };
 		E33C64BF21C9D94200AEDF4B /* ZcznDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZcznDataController.swift; sourceTree = "<group>"; };
@@ -1766,9 +1766,9 @@
 		E316119F21B7631E00CF09B2 /* 选择地址 */ = {
 			isa = PBXGroup;
 			children = (
+				E33BBFD8220133B100DFC3AC /* area.json */,
 				E31611A021B7631E00CF09B2 /* String+CZ.swift */,
 				E31611A121B7631E00CF09B2 /* AddressSelectView.swift */,
-				E31611A221B7631E00CF09B2 /* area.json */,
 				E31611A321B7631E00CF09B2 /* UIImage+CZ.swift */,
 			);
 			path = "选择地址";
@@ -4057,6 +4057,7 @@
 				E3ED739321F1AE23005B8910 /* db_image016.jpg in Resources */,
 				E3D2B8A121EDABC9005BA9E9 /* sb_611.jpg in Resources */,
 				E33C64DE21C9DE5A00AEDF4B /* ZcznDetailTableViewCell.xib in Resources */,
+				E33BBFD9220133B200DFC3AC /* area.json in Resources */,
 				E316136121B7631F00CF09B2 /* LRSwitchStudentView.xib in Resources */,
 				E3D2B8C721EDABC9005BA9E9 /* sb_211.jpg in Resources */,
 				E3B68D5A21CBB9AA0048F377 /* CaijiJianHuRenViewController.xib in Resources */,
@@ -4156,7 +4157,6 @@
 				E3D2B99B21EDDA48005BA9E9 /* yb_332.jpg in Resources */,
 				E3D2B96321EDDA48005BA9E9 /* yb_443.jpg in Resources */,
 				E3D2B8D321EDABC9005BA9E9 /* sb_3310.jpg in Resources */,
-				E316137921B7631F00CF09B2 /* area.json in Resources */,
 				E33C64E621C9E88100AEDF4B /* IxcjTypeViewController.xib in Resources */,
 				E33C651C21CA1CD800AEDF4B /* CaijiBasicIdCardTableViewCell.xib in Resources */,
 				E3ED736221F1ACCC005B8910 /* image008.png in Resources */,
