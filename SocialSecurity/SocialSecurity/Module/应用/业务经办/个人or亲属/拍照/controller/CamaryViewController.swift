@@ -219,15 +219,21 @@ extension CamaryViewController: UIImagePickerControllerDelegate,UINavigationCont
             
                 let (a,r,g,b) = photoButton.pickColor(at: item)!
                 // 判断不能有透明，色值在200以上，rgb三个值上下浮动在10以内
-                if a != 255 || r < 200 || g < 200 || b < 200 ||
-                    ((r - b) > 10 || (b - r) > 10) ||
-                    ((r - g) > 10 || (g - r) > 10) ||
-                    ((g - b) > 10 || (b - g) > 10) {
-                    LHAlertView.showTipAlertWithTitle("图片背景不是白色")
-                    photoButton.setBackgroundImage(UIImage.init(named: "ic_id_photo"), for: .normal)
-                    
-                    return false
-                }
+//            if a != 255 || r < 200 || g < 200 || b < 200 ||
+//                ((r - b) > 10 || (b - r) > 10) ||
+//                ((r - g) > 10 || (g - r) > 10) ||
+//                ((g - b) > 10 || (b - g) > 10) {
+//                LHAlertView.showTipAlertWithTitle("图片背景不是白色")
+//                photoButton.setBackgroundImage(UIImage.init(named: "ic_id_photo"), for: .normal)
+//
+//                return false
+//            }
+            if r < 230 || g < 230 || b < 230  {
+                LHAlertView.showTipAlertWithTitle("图片背景不是白色")
+                photoButton.setBackgroundImage(UIImage.init(named: "ic_id_photo"), for: .normal)
+                
+                return false
+            }
         }
         return true
     }

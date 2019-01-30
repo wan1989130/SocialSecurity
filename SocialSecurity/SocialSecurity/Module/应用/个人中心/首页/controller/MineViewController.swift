@@ -135,8 +135,7 @@ extension MineViewController:UITableViewDelegate,UITableViewDataSource{
 extension MineViewController{
     //退出登陆接口
     fileprivate func loadLogout(){
-        MyConfig.shared().phone == ""
-        MyConfig.shared().token == ""
+        MyConfig.shared().token = ""
         let loginVC = LoginViewController(nibName: "LoginViewController", bundle: nil)
         let navController = BaseNavigationViewController(rootViewController: loginVC)
         UIApplication.shared.keyWindow?.rootViewController = navController
