@@ -82,7 +82,7 @@ extension IxcjTypeViewController:UICollectionViewDelegate,UICollectionViewDataSo
         if dataController.model == nil{
             return
         }
-        if indexPath.row == 0 && dataController.model.data.nowCount == "1"{
+        if indexPath.row == 0 && dataController.model.data.nowCount != "0"{
             LHAlertView.showTipAlertWithTitle("您已办理过个人办理，无法再次办理")
             return
         }
