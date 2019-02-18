@@ -56,6 +56,13 @@ extension YwjbViewController{
                 weakSelf?.tableView.reloadRows(at: [IndexPath.init(row: 0, section: 1)], with: .none)
                 
             }
+            weakSelf?.getUrls()
+        }
+    }
+    fileprivate func getUrls(){
+        let parameter:NSMutableDictionary = ["phone":MyConfig.shared().phone]
+        dataController.getUrls(parameter: parameter) { (isSucceed, info) in
+           
         }
     }
   
@@ -84,16 +91,18 @@ extension YwjbViewController:UITableViewDelegate,UITableViewDataSource{
             cell.initCell(delegate: self, dataArray: dataController.toolArray)
             cell.backgroundColor = UIColor.clear
             cell.pro = self
-            if dataController.model != nil{
-                cell.update(model: dataController.model.data)
-            }
+            //接口获取失败的话不显示
             if dataController.selfQueryIsSuccess{
                 cell.statusViewHeight.constant = 60
-            
+                
             }else{
                 cell.statusView.removeAllSubviews()
                 cell.statusViewHeight.constant = 0
             }
+            if dataController.model != nil{
+                cell.update(model: dataController.model.data)
+            }
+            
             
 //            cell.statusView.removeAllSubviews()
 //           cell.statusViewHeight.constant = 0

@@ -201,13 +201,19 @@ extension CaijiQiTaViewController:CaijiBasicNextProtocol,CaijiQiTaContentSelectP
     
     func nextClick() {//下一步
         if checkFun(){
+            
             let dic:NSMutableDictionary = [
                 "title":self.title,
                 "type":dataController.type,
                 "saveModel":dataController.saveModel,
                 "dictionaryModel":dataController.dictionaryModel
             ]
-            pushViewController("CamaryViewController",sender:dic)
+            if title == "亲属代办"{
+                pushViewController("DaiBanPersonViewController",sender:dic)
+            }else{
+                addOrUpdate()
+            }
+            
         }
         
     }
@@ -261,4 +267,37 @@ extension CaijiQiTaViewController:CaijiBasicNextProtocol,CaijiQiTaContentSelectP
         return true
     }
     
+}
+extension CaijiQiTaViewController{
+    //录入和修改
+    fileprivate func addOrUpdate(){
+        if dataController.saveModel.zjyxq != ""{
+            dataController.saveModel.zjyxq = (dataController.saveModel.zjyxq as NSString).replacingOccurrences(of: "-", with: "")
+        }
+        let parameter:NSMutableDictionary = [
+            "phone":MyConfig.shared().phone,
+            "cbInsured":dataController.saveModel.toJSONString(),
+            
+            ]
+        
+        
+        weak var weakSelf = self
+        dataController.addOrUpdate(parameter: parameter) { (isSucceed, info) in
+            if weakSelf == nil{return}
+            if isSucceed {
+                weakSelf!.returnMain()
+            }else {
+                
+            }
+        }
+        
+    }
+    
+    func returnMain(){
+        for vc in (self.navigationController?.viewControllers)!{
+            if vc is YwjbViewController{
+                self.navigationController?.popToViewController(vc, animated: true)
+            }
+        }
+    }
 }

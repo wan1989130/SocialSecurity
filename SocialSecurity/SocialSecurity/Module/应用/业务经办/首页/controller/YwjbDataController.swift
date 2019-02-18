@@ -10,6 +10,7 @@ import UIKit
 import ObjectMapper
 class YwjbDataController: BaseDataController {
 
+    var getUrlsDataModel:GetUrlsDataModel!
     var selfQueryIsSuccess = false
     var model:SelfQueryDataModel!
     var toolArray:Array<ApplyToolModel> = [ApplyToolModel]()
@@ -41,6 +42,26 @@ class YwjbDataController: BaseDataController {
                 if model != nil{
                     self.selfQueryIsSuccess = true
                     self.model = model
+                    completionBlock(true, nil)
+                }else{
+                    completionBlock(false, nil)
+                }
+            }else{
+                completionBlock(false, nil)
+            }
+            
+        }
+        
+    }
+    
+    func getUrls(parameter:NSMutableDictionary,completionBlock:@escaping RequestCompleteBlock){
+        MSDataProvider.getUrls(delegate: self.delegate!, parameter: parameter) { (isSuccess,result) in
+            if isSuccess{
+                let model = Mapper<GetUrlsDataModel>().map(JSONObject: result)
+                if model != nil{
+                    MyConfig.shared().shebaoUrl = model!.data.shebaoUrl
+                    MyConfig.shared().zhikajinduUrl = model!.data.zhikajinduUrl
+                    MyConfig.shared().yibaoUrl = model!.data.yibaoUrl
                     completionBlock(true, nil)
                 }else{
                     completionBlock(false, nil)

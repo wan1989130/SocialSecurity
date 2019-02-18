@@ -19,17 +19,22 @@ class CamaryViewController: BaseViewController {
     }
     @IBAction func nextClick(_ sender: Any) {
         if checkFun(){
-            if title == "亲属代办"{
+//            if title == "亲属代办"{
                 let dic:NSMutableDictionary = [
                     "title":self.title,
                     "type":dataController.type,
                     "saveModel":dataController.saveModel,
                     "dictionaryModel":dataController.dictionaryModel
                 ]
-                pushViewController("DaiBanPersonViewController",sender:dic)
-            }else{
-                addOrUpdate()
-            }
+//                pushViewController("DaiBanPersonViewController",sender:dic)
+                if dataController.saveModel.zjlxName == "户口本" && dataController.saveModel.zjyxq == "长期" || dataController.saveModel.zjlxName.contains("身份证") && getCurrentAge() < 16{
+                    pushViewController("CaijiJianHuRenViewController",sender:dic)
+                }else{
+                    pushViewController("CaijiQiTaViewController",sender:dic)
+                }
+//            }else{
+//                addOrUpdate()
+//            }
             
         }
         
@@ -278,5 +283,47 @@ extension CamaryViewController{
         }
         
         return true
+    }
+    
+    
+    //根据生日计算当前周岁
+    func getCurrentAge() -> Int{
+        //        let date = NSDate()
+        //        let timeFormatter = DateFormatter()
+        //        timeFormatter.dateFormat = "yyyyMMdd"
+        //        let curr = timeFormatter.string(from: date as Date) as String
+        ////        let curr:Int = Int(selectTime)!
+        //        let born = (dataController.saveModel.csrq as NSString).replacingOccurrences(of: "-", with: "")
+        //        let age = Int((curr as NSString).substring(with: NSRange.init(location: 0, length: 4)))! - Int((born as NSString).substring(with: NSRange.init(location: 0, length: 4)))!
+        //        if  age <= 0{
+        //            return 0
+        //        }
+        
+        //格式化日期
+        
+        let d_formatter = DateFormatter()
+        d_formatter.dateFormat = "yyyy-MM-dd"
+        let birthDay_date = d_formatter.date(from: dataController.saveModel.csrqStr)
+        // 出生日期转换 年月日
+        
+        let birthdayDate = NSCalendar.current.dateComponents([.year,.month,.day], from: birthDay_date!)
+        let brithDateYear  = birthdayDate.year
+        let brithDateDay   = birthdayDate.day
+        let brithDateMonth = birthdayDate.month
+        // 获取系统当前 年月日
+        let currentDate = NSCalendar.current.dateComponents([.year,.month,.day], from: Date())
+        let currentDateYear  = currentDate.year
+        let currentDateDay   = currentDate.day
+        let currentDateMonth = currentDate.month
+        // 计算年龄
+        var iAge = currentDateYear! - brithDateYear! - 1;
+        if ((currentDateMonth! > brithDateMonth!) || (currentDateMonth! == brithDateMonth! && currentDateDay! >= brithDateDay!)) {
+            iAge += 1
+        }
+        return iAge
+        
+        
+        
+        
     }
 }

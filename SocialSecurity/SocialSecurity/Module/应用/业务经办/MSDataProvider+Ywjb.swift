@@ -50,4 +50,8 @@ extension MSDataProvider {
     class func allPeopleQuery(delegate:UIViewController, parameter:NSMutableDictionary, completionBlock:@escaping LHHTTPResultJsonHandler){
         LHHttpDataProvider.postDataForDelegate(delegate, path: "allPeopleQuery.do", withParams: parameter, verson: nil, autoAlert: true, completionBlock: completionBlock)
     }
+    //获取社保医保制卡进度网址
+    class func getUrls(delegate:UIViewController, parameter:NSMutableDictionary, completionBlock:@escaping LHHTTPResultJsonHandler){
+        LHHttpDataProvider.postDataForDelegate(delegate, path: "getUrls.do", withParams: parameter, verson: nil, autoAlert: true, completionBlock: completionBlock)
+    }
 }

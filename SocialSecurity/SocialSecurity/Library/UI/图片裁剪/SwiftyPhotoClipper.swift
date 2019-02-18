@@ -31,7 +31,7 @@ class SwiftyPhotoClipper: UIViewController {
     var imgView:UIImageView?
     
     var img:UIImage?
-    let scrollview = UIScrollView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height - 50))
+    let scrollview = UIScrollView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))
     
     var maxScale:CGFloat = 3.0
     var minScale:CGFloat = 1.0
@@ -106,7 +106,6 @@ extension SwiftyPhotoClipper{
             imgView.frame.size = CGSize(width: HEIGHT, height: imgView.bounds.width / imgView.bounds.height * HEIGHT)
             imgView.center = scrollview.center
         }
-        
         view.addSubview(scrollview)
         scrollview.addSubview(imgView)
         
@@ -114,7 +113,9 @@ extension SwiftyPhotoClipper{
         let bottomInsert = (HEIGHT - imgView.frame.size.height)/2
         
         scrollview.contentSize = CGSize(width: WIDTH, height: HEIGHT + imgView.frame.height / 2)
+//        scrollview.contentSize = CGSize(width: WIDTH, height: HEIGHT)
         scrollview.contentInset = UIEdgeInsets(top: topInsert, left: 0, bottom: -bottomInsert, right: 0)
+        
         
         // 隐藏导航条
         scrollview.showsHorizontalScrollIndicator = false
@@ -126,17 +127,17 @@ extension SwiftyPhotoClipper{
         
         // 设置按钮
         
-        let cancelBtn = UIButton(frame: CGRect(x: 10, y: HEIGHT - 50, width: 100, height: 40))
+        let cancelBtn = UIButton(frame: CGRect(x: 10, y: HEIGHT - 50, width: 100, height: 50))
         cancelBtn.setTitle("取消", for: .normal)
         cancelBtn.addTarget(nil, action: #selector(cancelBtnIsClicked), for: .touchUpInside)
-        cancelBtn.setTitleColor(UIColor.black, for: .normal)
+//        cancelBtn.setTitleColor(UIColor.black, for: .normal)
         view.addSubview(cancelBtn)
         
-        let okBtn = UIButton(frame: CGRect(x: WIDTH - 110, y: HEIGHT - 50, width: 100, height: 40))
+        let okBtn = UIButton(frame: CGRect(x: WIDTH - 110, y: HEIGHT - 50, width: 100, height: 50))
         okBtn.contentMode = .right
         okBtn.setTitle("选取", for: .normal)
         okBtn.addTarget(nil, action: #selector(okBtnIsClicked), for: .touchUpInside)
-        okBtn.setTitleColor(UIColor.black, for: .normal)
+//        okBtn.setTitleColor(UIColor.black, for: .normal)
         view.addSubview(okBtn)
         
         
@@ -176,15 +177,14 @@ extension SwiftyPhotoClipper{
     
     /// 绘制选择框
     fileprivate func drawTheRect(){
-        
-        
         // 获取上下文 size表示图片大小 false表示透明 0表示自动适配屏幕大小
         UIGraphicsBeginImageContextWithOptions(UIScreen.main.bounds.size, false, 0)
         
         let context = UIGraphicsGetCurrentContext()
         context?.setFillColor(UIColor.init(red: 0, green: 0, blue: 0, alpha: 0.5).cgColor)
+//        context?.setFillColor(UIColor.red.cgColor)
 //        context?.fill(UIScreen.main.bounds)
-        context?.fill(CGRect(x: 0, y: 0, width: WIDTH, height: HEIGHT - 50))
+        context?.fill(CGRect(x: 0, y: 0, width: WIDTH, height: HEIGHT ))
         context?.addRect(CGRect(x: WIDTH < 358 ? 0 : (WIDTH - 358)/2, y: (HEIGHT - selectHeight)/2, width: selectWidth , height: selectHeight))
         context?.setBlendMode(.clear)
         context?.fillPath()
@@ -230,6 +230,7 @@ extension SwiftyPhotoClipper:UIScrollViewDelegate{
         let topInsert = (imgView.frame.size.height - selectHeight)/2
         let bottomInsert = (HEIGHT - imgView.frame.size.height)/2
         scrollview.contentSize = CGSize(width: imgView.frame.width, height: HEIGHT + imgView.frame.height / 2)
+//        scrollview.contentSize = CGSize(width: imgView.frame.width, height: HEIGHT)
         scrollview.contentInset = UIEdgeInsets(top: topInsert, left: 0, bottom: -bottomInsert, right: 0)
         
     }

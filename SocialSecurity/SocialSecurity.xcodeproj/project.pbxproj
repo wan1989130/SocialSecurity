@@ -352,6 +352,7 @@
 		E3B68D5921CBB9AA0048F377 /* CaijiJianHuRenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B68D5721CBB9AA0048F377 /* CaijiJianHuRenViewController.swift */; };
 		E3B68D5A21CBB9AA0048F377 /* CaijiJianHuRenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3B68D5821CBB9AA0048F377 /* CaijiJianHuRenViewController.xib */; };
 		E3B68D5C21CBB9B80048F377 /* CaijiJianHuRenDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B68D5B21CBB9B80048F377 /* CaijiJianHuRenDataController.swift */; };
+		E3C9C3FB221A72CC00A2F2D3 /* GetUrlsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C9C3FA221A72CC00A2F2D3 /* GetUrlsDataModel.swift */; };
 		E3D2B89721EDABC9005BA9E9 /* sb_621.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B83C21EDABC9005BA9E9 /* sb_621.jpg */; };
 		E3D2B89821EDABC9005BA9E9 /* sb_623.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B83D21EDABC9005BA9E9 /* sb_623.jpg */; };
 		E3D2B89921EDABC9005BA9E9 /* sb_622.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B83E21EDABC9005BA9E9 /* sb_622.jpg */; };
@@ -1022,6 +1023,7 @@
 		E3B68D5721CBB9AA0048F377 /* CaijiJianHuRenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaijiJianHuRenViewController.swift; sourceTree = "<group>"; };
 		E3B68D5821CBB9AA0048F377 /* CaijiJianHuRenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CaijiJianHuRenViewController.xib; sourceTree = "<group>"; };
 		E3B68D5B21CBB9B80048F377 /* CaijiJianHuRenDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaijiJianHuRenDataController.swift; sourceTree = "<group>"; };
+		E3C9C3FA221A72CC00A2F2D3 /* GetUrlsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUrlsDataModel.swift; sourceTree = "<group>"; };
 		E3D2B83C21EDABC9005BA9E9 /* sb_621.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sb_621.jpg; sourceTree = "<group>"; };
 		E3D2B83D21EDABC9005BA9E9 /* sb_623.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sb_623.jpg; sourceTree = "<group>"; };
 		E3D2B83E21EDABC9005BA9E9 /* sb_622.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sb_622.jpg; sourceTree = "<group>"; };
@@ -2584,6 +2586,7 @@
 			children = (
 				E31EF65121BFDA5A00E1C3E4 /* ApplyModel.swift */,
 				E3100BA221D464C2001A38F0 /* SelfQueryDataModel.swift */,
+				E3C9C3FA221A72CC00A2F2D3 /* GetUrlsDataModel.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -4522,6 +4525,7 @@
 				E316138021B7631F00CF09B2 /* QrCodeView.swift in Sources */,
 				E33C651421CA1B9100AEDF4B /* CaijiBasicViewController.swift in Sources */,
 				E316139021B7631F00CF09B2 /* UIView+Extension.m in Sources */,
+				E3C9C3FB221A72CC00A2F2D3 /* GetUrlsDataModel.swift in Sources */,
 				E316137821B7631F00CF09B2 /* AddressSelectView.swift in Sources */,
 				E33C64E521C9E88100AEDF4B /* IxcjTypeViewController.swift in Sources */,
 				E316137021B7631F00CF09B2 /* DropListTableViewCell.swift in Sources */,

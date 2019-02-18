@@ -385,11 +385,8 @@ extension CaijiBasicViewController:CaijiBasicNextProtocol,CaijiBasicContentSelec
                 "saveModel":dataController.saveModel,
                 "dictionaryModel":dataController.dictionaryModel
             ]
-            if dataController.saveModel.zjlxName == "户口本" && dataController.saveModel.zjyxq == "长期" || dataController.saveModel.zjlxName.contains("身份证") && getCurrentAge() < 16{
-                pushViewController("CaijiJianHuRenViewController",sender:dic)
-            }else{
-                pushViewController("CaijiQiTaViewController",sender:dic)
-            }
+            pushViewController("CamaryViewController",sender:dic)
+            
         }
     }
     func xbClick() {
