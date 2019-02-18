@@ -48,7 +48,8 @@ extension CommonWebViewController:WKNavigationDelegate,WKUIDelegate{
         
         //                webView = WKWebView(frame: self.view.bounds)
         
-     
+        webView.navigationDelegate = self
+        webView.uiDelegate = self
         
         if urlContent != ""{
             if urlContent.characters.count < 5 || !urlContent.hasPrefix("http"){
@@ -69,8 +70,7 @@ extension CommonWebViewController:WKNavigationDelegate,WKUIDelegate{
             return
         }
         
-        webView.navigationDelegate = self
-        webView.uiDelegate = self
+ 
         //加载本地url
         //        let url = Bundle.main.url(forResource: "test", withExtension: "html")
         //        webView.load(URLRequest(url:url!))
@@ -121,6 +121,14 @@ extension CommonWebViewController:WKNavigationDelegate,WKUIDelegate{
             print(webView.estimatedProgress)
         }
     }
+    //服务器请求跳转的时候调用
+    func webView(_ webView: WKWebView, didReceiveServerRedirectForProvisionalNavigation navigation: WKNavigation!) {
+        print(#function)
+    }
+    //开始加载
+    func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
+        print(#function)
+    }
     func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
         print("didFail =\(error)")
     }
@@ -136,9 +144,14 @@ extension CommonWebViewController:WKNavigationDelegate,WKUIDelegate{
         print("error =\(error)")
     }
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+//        decisionHandler(.allow)
         let url = navigationAction.request.url
         let scheme = url?.scheme
-        guard let schemeStr = scheme else { return  }
+        guard let schemeStr = scheme else {
+            decisionHandler(.allow)
+            return
+            
+        }
         if schemeStr == "tel" {
             //iOS10 改为此函数
             if #available(iOS 10.0, *) {
@@ -148,6 +161,9 @@ extension CommonWebViewController:WKNavigationDelegate,WKUIDelegate{
                 // Fallback on earlier versions
             }
         }
+        decisionHandler(.allow)
+    }
+    func webView(_ webView: WKWebView, decidePolicyFor navigationResponse: WKNavigationResponse, decisionHandler: @escaping (WKNavigationResponsePolicy) -> Void) {
         decisionHandler(.allow)
     }
 
