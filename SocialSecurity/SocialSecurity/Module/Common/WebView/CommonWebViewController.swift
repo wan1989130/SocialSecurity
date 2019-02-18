@@ -13,7 +13,7 @@ class CommonWebViewController: BaseViewController,UIWebViewDelegate {
     var progressView = UIProgressView()
     var urlContent = ""
     var titleContent = ""
-    
+    var isSuccess = false//判断是否需要移除通知
     override func viewDidLoad() {
         super.viewDidLoad()
         //        initData()
@@ -24,17 +24,13 @@ class CommonWebViewController: BaseViewController,UIWebViewDelegate {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        
-        webView.removeObserver(self, forKeyPath: "estimatedProgress")
+        if isSuccess{
+              webView.removeObserver(self, forKeyPath: "estimatedProgress")
+        }
         progressView.reloadInputViews()
         progressView.removeAllSubviews()
         progressView.removeFromSuperview()
-        
     }
-    
-    
-    
-    
 }
 extension CommonWebViewController:WKNavigationDelegate,WKUIDelegate{
    
@@ -52,14 +48,15 @@ extension CommonWebViewController:WKNavigationDelegate,WKUIDelegate{
         
         //                webView = WKWebView(frame: self.view.bounds)
         
-        webView.navigationDelegate = self
-        webView.uiDelegate = self;
+     
         
         if urlContent != ""{
             if urlContent.characters.count < 5 || !urlContent.hasPrefix("http"){
 //                urlContent = "http://www.baidu.com"
-                return 
+                return
             }
+        
+            
             let url = URL(string: urlContent)
             let request = URLRequest(url: url!)
             webView.load(request)
@@ -69,9 +66,11 @@ extension CommonWebViewController:WKNavigationDelegate,WKUIDelegate{
 //
 //            let request = URLRequest(url: url!)
 //            webView.load(request)
+            return
         }
         
-        
+        webView.navigationDelegate = self
+        webView.uiDelegate = self
         //加载本地url
         //        let url = Bundle.main.url(forResource: "test", withExtension: "html")
         //        webView.load(URLRequest(url:url!))
@@ -80,7 +79,7 @@ extension CommonWebViewController:WKNavigationDelegate,WKUIDelegate{
         self.view.addSubview(webView)
         
         webView.addObserver(self, forKeyPath: "estimatedProgress", options: .new, context: nil)
-        
+        isSuccess = true
         progressView = UIProgressView(frame: CGRect(x: 0, y: 44-2, width: UIScreen.main.bounds.size.width, height: 2))
         progressView.trackTintColor = UIColor.white
         progressView.progressTintColor = UIColor.orange
@@ -151,5 +150,6 @@ extension CommonWebViewController:WKNavigationDelegate,WKUIDelegate{
         }
         decisionHandler(.allow)
     }
+
 }
 
