@@ -16,6 +16,7 @@ class YwjbViewController: BaseViewController {
         super.viewDidLoad()
         initData()
         initUI()
+        getUrls()
         
     }
     override func viewWillAppear(_ animated: Bool) {
@@ -56,7 +57,6 @@ extension YwjbViewController{
                 weakSelf?.tableView.reloadRows(at: [IndexPath.init(row: 0, section: 1)], with: .none)
                 
             }
-            weakSelf?.getUrls()
         }
     }
     fileprivate func getUrls(){

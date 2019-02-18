@@ -57,17 +57,18 @@ extension CommonWebViewController:WKNavigationDelegate,WKUIDelegate{
         
         if urlContent != ""{
             if urlContent.characters.count < 5 || !urlContent.hasPrefix("http"){
-                urlContent = "http://www.baidu.com"
+//                urlContent = "http://www.baidu.com"
+                return 
             }
             let url = URL(string: urlContent)
             let request = URLRequest(url: url!)
             webView.load(request)
         }else{
-            let url = URL(string: "http://www.baidu.com")
-          
-            
-            let request = URLRequest(url: url!)
-            webView.load(request)
+//            let url = URL(string: "http://www.baidu.com")
+//
+//
+//            let request = URLRequest(url: url!)
+//            webView.load(request)
         }
         
         
