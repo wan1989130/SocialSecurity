@@ -37,6 +37,9 @@ class DaiBanPersonViewController: BaseViewController {
 extension DaiBanPersonViewController{
     fileprivate func initUI(){
         self.view.backgroundColor = viewBgColor
+        bgView.clipsToBounds = true
+        bgView.layer.borderWidth = 1
+        bgView.layer.borderColor = UIColor.black.withAlphaComponent(0.2).cgColor
         xmTextField.delegate = self
         sfzhTextField.delegate = self
         lxsjTextField.delegate = self
