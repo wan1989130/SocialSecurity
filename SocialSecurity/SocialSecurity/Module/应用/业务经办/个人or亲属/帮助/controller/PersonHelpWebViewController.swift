@@ -23,14 +23,12 @@ class PersonHelpWebViewController: BaseViewController,UIWebViewDelegate {
     }
     
     
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        
+
+    deinit {
         webView.removeObserver(self, forKeyPath: "estimatedProgress")
         progressView.reloadInputViews()
         progressView.removeAllSubviews()
         progressView.removeFromSuperview()
-        
     }
 }
 extension PersonHelpWebViewController:WKNavigationDelegate,WKUIDelegate{
