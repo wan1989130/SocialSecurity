@@ -15,7 +15,7 @@ let ScreenHeight:CGFloat = UIScreen.main.bounds.size.height
 
 
 //程序相关
-let MyAppID:String = "1402329643" //appId 1402329643
+let MyAppID:String = "1455087490" //appId
 let ProductId:String = "a131be5242a311e8b50500505694781a"//
 let GetAreaServerClientIdentifier = "GetAreaServerClientIdentifier"
 
@@ -83,11 +83,16 @@ let StaticProtocoHtml = "resources/common/user_agreement.html"
 
 
 //测试服务器
-var HostAddress = "http://124.235.218.193:8081/sjcj_web/phoneCon/"
-var FileServerAddress = "http://124.235.218.193:8081/sjcj_web/phoneCon/uploadPhoto.do"// 上传文件
-var FileAccessHost = "http://124.235.218.193:8081/sjcj_web/kssh/getImg.do?cx=" // 显示文件
-var DetailImageAccess = "http://139.210.38.75:8020"
-var Protocolhtml = "http://124.235.218.193:8081/sjcj_web/phoneCon/toAgreement.do"
+//var HostAddress = "http://124.235.218.193:8081/sjcj_web/phoneCon/"
+//var FileServerAddress = "http://124.235.218.193:8081/sjcj_web/phoneCon/uploadPhoto.do"// 上传文件
+//var FileAccessHost = "http://124.235.218.193:8081/sjcj_web/kssh/getImg.do?cx=" // 显示文件
+//var Protocolhtml = "http://124.235.218.193:8081/sjcj_web/phoneCon/toAgreement.do"
+
+//正式服务器
+var HostAddress = "http://218.27.84.59:8080/sjcj_web/phoneCon/"
+var FileServerAddress = "http://218.27.84.59:8080/sjcj_web/phoneCon/uploadPhoto.do"// 上传文件
+var FileAccessHost = "http://218.27.84.59:8080/sjcj_web/kssh/getImg.do?cx=" // 显示文件
+var Protocolhtml = "http://218.27.84.59:8080/sjcj_web/phoneCon/toAgreement.do"
 
 
 

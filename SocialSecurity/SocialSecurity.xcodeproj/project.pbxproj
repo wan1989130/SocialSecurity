@@ -4870,8 +4870,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZN9FP4NC8P;
+				DEVELOPMENT_TEAM = 2MFHQ7V75Z;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -4887,12 +4888,13 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/SocialSecurity/Library/UI/CafToMp3",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = cn.net.zongheng.SocialSecurity;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zongheng.SocialBaozhangCaiji2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SocialSecurity/SocialSecurity-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Debug;
@@ -4903,8 +4905,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZN9FP4NC8P;
+				DEVELOPMENT_TEAM = 2MFHQ7V75Z;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -4920,11 +4923,12 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/SocialSecurity/Library/UI/CafToMp3",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = cn.net.zongheng.SocialSecurity;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zongheng.SocialBaozhangCaiji2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SocialSecurity/SocialSecurity-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Release;
