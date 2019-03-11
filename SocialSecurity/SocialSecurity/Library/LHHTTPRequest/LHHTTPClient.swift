@@ -88,6 +88,8 @@ class LHHTTPClient: NSObject {
         
         manager.responseSerializer = AFJSONResponseSerializer()
         
+        manager.responseSerializer.acceptableContentTypes = NSSet(objects: "application/json","text/html","text/xml","text/plain", "text/json", "text/javascript") as? Set<String>
+        
 //                manager.responseSerializer = AFHTTPResponseSerializer()
         manager.requestSerializer.timeoutInterval = 40
         manager.post(basePath, parameters: parameters, constructingBodyWith: { (formData) in

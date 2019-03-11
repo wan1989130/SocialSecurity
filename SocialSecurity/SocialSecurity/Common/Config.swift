@@ -83,16 +83,22 @@ let StaticProtocoHtml = "resources/common/user_agreement.html"
 
 
 //测试服务器
-//var HostAddress = "http://124.235.218.193:8081/sjcj_web/phoneCon/"
-//var FileServerAddress = "http://124.235.218.193:8081/sjcj_web/phoneCon/uploadPhoto.do"// 上传文件
-//var FileAccessHost = "http://124.235.218.193:8081/sjcj_web/kssh/getImg.do?cx=" // 显示文件
-//var Protocolhtml = "http://124.235.218.193:8081/sjcj_web/phoneCon/toAgreement.do"
+//var HostAddress = "http://36.49.50.134:8081/sjcj_web/phoneCon/"
+//var FileServerAddress = "http://36.49.50.134:8081/sjcj_web/phoneCon/uploadPhoto.do"// 上传文件
+//var FileAccessHost = "http://36.49.50.134:8081/sjcj_web/kssh/getImg.do?cx=" // 显示文件
+//var Protocolhtml = "http://36.49.50.134:8081/sjcj_web/phoneCon/toAgreement.do"
 
 //正式服务器
-var HostAddress = "http://218.27.84.59:8080/sjcj_web/phoneCon/"
-var FileServerAddress = "http://218.27.84.59:8080/sjcj_web/phoneCon/uploadPhoto.do"// 上传文件
-var FileAccessHost = "http://218.27.84.59:8080/sjcj_web/kssh/getImg.do?cx=" // 显示文件
-var Protocolhtml = "http://218.27.84.59:8080/sjcj_web/phoneCon/toAgreement.do"
+//var HostAddress = "http://218.27.84.59:8080/sjcj_web/phoneCon/"
+//var FileServerAddress = "http://218.27.84.59:8080/sjcj_web/phoneCon/uploadPhoto.do"// 上传文件
+//var FileAccessHost = "http://218.27.84.59:8080/sjcj_web/kssh/getImg.do?cx=" // 显示文件
+//var Protocolhtml = "http://218.27.84.59:8080/sjcj_web/phoneCon/toAgreement.do"
+
+//正式服务器
+var HostAddress = "http://218.27.84.59:18085/sjcj_web/phoneCon/"
+var FileServerAddress = "http://218.27.84.59:18085/sjcj_web/phoneCon/uploadPhoto.do"// 上传文件
+var FileAccessHost = "http://218.27.84.59:18085/sjcj_web/kssh/getImg.do?cx=" // 显示文件
+var Protocolhtml = "http://218.27.84.59:18085/sjcj_web/phoneCon/toAgreement.do"
 
 
 
