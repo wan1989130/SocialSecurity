@@ -233,7 +233,7 @@ extension CamaryViewController: UIImagePickerControllerDelegate,UINavigationCont
 //
 //                return false
 //            }
-            if r < 230 || g < 230 || b < 230  {
+            if r < 100 || g < 100 || b < 100  {
                 LHAlertView.showTipAlertWithTitle("图片背景不是白色")
                 photoButton.setBackgroundImage(UIImage.init(named: "ic_id_photo"), for: .normal)
                 
