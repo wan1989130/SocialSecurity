@@ -338,7 +338,6 @@
 		E34A66A621CF896B00F92336 /* DaiBanPersonDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34A66A521CF896B00F92336 /* DaiBanPersonDataController.swift */; };
 		E34A66A921CF897A00F92336 /* DaiBanPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34A66A721CF897A00F92336 /* DaiBanPersonViewController.swift */; };
 		E34A66AA21CF897A00F92336 /* DaiBanPersonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E34A66A821CF897A00F92336 /* DaiBanPersonViewController.xib */; };
-		E35B8E5F21D0C61F00D48DF5 /* aip.license in Resources */ = {isa = PBXBuildFile; fileRef = E35B8E5E21D0C61F00D48DF5 /* aip.license */; };
 		E362E4EE21D360FB005E60B9 /* PopupSelectDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E362E4EC21D360FB005E60B9 /* PopupSelectDayView.swift */; };
 		E362E4EF21D360FB005E60B9 /* PopupSelectDayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E362E4ED21D360FB005E60B9 /* PopupSelectDayView.xib */; };
 		E362E4F121D36110005E60B9 /* UIView + Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = E362E4F021D36110005E60B9 /* UIView + Load.swift */; };
@@ -573,6 +572,7 @@
 		E3D2B9C721EDDE0E005BA9E9 /* yb_43.html in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B9C621EDDE0E005BA9E9 /* yb_43.html */; };
 		E3D2B9C921EDDE30005BA9E9 /* yb_42.html in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B9C821EDDE30005BA9E9 /* yb_42.html */; };
 		E3DE177621D4FE7F00E4378A /* DictionaryDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DE177521D4FE7F00E4378A /* DictionaryDataModel.swift */; };
+		E3E655A9224B236600B0A1D9 /* aip.license in Resources */ = {isa = PBXBuildFile; fileRef = E3E655A8224B236600B0A1D9 /* aip.license */; };
 		E3F2D6FD21D0ABD0004E7597 /* IdCardFrontModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F2D6FC21D0ABD0004E7597 /* IdCardFrontModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -1018,7 +1018,6 @@
 		E34A66A521CF896B00F92336 /* DaiBanPersonDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaiBanPersonDataController.swift; sourceTree = "<group>"; };
 		E34A66A721CF897A00F92336 /* DaiBanPersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaiBanPersonViewController.swift; sourceTree = "<group>"; };
 		E34A66A821CF897A00F92336 /* DaiBanPersonViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DaiBanPersonViewController.xib; sourceTree = "<group>"; };
-		E35B8E5E21D0C61F00D48DF5 /* aip.license */ = {isa = PBXFileReference; lastKnownFileType = file; path = aip.license; sourceTree = "<group>"; };
 		E362E4EC21D360FB005E60B9 /* PopupSelectDayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupSelectDayView.swift; sourceTree = "<group>"; };
 		E362E4ED21D360FB005E60B9 /* PopupSelectDayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopupSelectDayView.xib; sourceTree = "<group>"; };
 		E362E4F021D36110005E60B9 /* UIView + Load.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Load.swift"; sourceTree = "<group>"; };
@@ -1250,6 +1249,7 @@
 		E3D2B9C621EDDE0E005BA9E9 /* yb_43.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = yb_43.html; sourceTree = "<group>"; };
 		E3D2B9C821EDDE30005BA9E9 /* yb_42.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = yb_42.html; sourceTree = "<group>"; };
 		E3DE177521D4FE7F00E4378A /* DictionaryDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryDataModel.swift; sourceTree = "<group>"; };
+		E3E655A8224B236600B0A1D9 /* aip.license */ = {isa = PBXFileReference; lastKnownFileType = file; path = aip.license; sourceTree = "<group>"; };
 		E3F2D6FC21D0ABD0004E7597 /* IdCardFrontModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdCardFrontModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -2468,7 +2468,7 @@
 		E316132121B7631F00CF09B2 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				E35B8E5E21D0C61F00D48DF5 /* aip.license */,
+				E3E655A8224B236600B0A1D9 /* aip.license */,
 				E316132221B7631F00CF09B2 /* MSDataProvider+Common.swift */,
 				E316132321B7631F00CF09B2 /* Config.swift */,
 				E316132421B7631F00CF09B2 /* MyConfig.swift */,
@@ -4140,6 +4140,7 @@
 				E3D2B9A321EDDABC005BA9E9 /* yb_15.html in Resources */,
 				E3D2B8D721EDABC9005BA9E9 /* sb_315.jpg in Resources */,
 				E3D2B8BC21EDABC9005BA9E9 /* sb_431.jpg in Resources */,
+				E3E655A9224B236600B0A1D9 /* aip.license in Resources */,
 				E3D2B9A521EDDAF6005BA9E9 /* yb_13.html in Resources */,
 				E316139321B7631F00CF09B2 /* 示例代码XHLTagLabelsViewController.rtf in Resources */,
 				E3D2B8BB21EDABC9005BA9E9 /* sb_412.jpg in Resources */,
@@ -4258,7 +4259,6 @@
 				E316138C21B7631F00CF09B2 /* PublishSourceHeaderView.xib in Resources */,
 				E3D2B8DB21EDABC9005BA9E9 /* sb_311.jpg in Resources */,
 				E3D2B8D821EDABC9005BA9E9 /* sb_316.jpg in Resources */,
-				E35B8E5F21D0C61F00D48DF5 /* aip.license in Resources */,
 				E31EF63E21BFD81800E1C3E4 /* YwjbViewController.xib in Resources */,
 				E316135D21B7631F00CF09B2 /* PoPSelectListView.xib in Resources */,
 				E3D2B8D221EDABC9005BA9E9 /* sb_3312.jpg in Resources */,
