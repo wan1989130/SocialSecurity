@@ -2,10 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>请求获取您的地理位置信息</string>
-	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>请求访问您的相册，用来保存图片</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>zh_CN</string>
 	<key>CFBundleDisplayName</key>
@@ -23,7 +19,7 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1.0.0</string>
 	<key>CFBundleVersion</key>
-	<string>1.0.0</string>
+	<string>1.0.0.1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>
@@ -33,6 +29,10 @@
 	</dict>
 	<key>NSCameraUsageDescription</key>
 	<string>请求访问您的相机，进行上传</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>请求获取您的地理位置信息</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>请求访问您的相册，用来保存图片</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>请求访问您的相册，进行拍照</string>
 	<key>UILaunchStoryboardName</key>
