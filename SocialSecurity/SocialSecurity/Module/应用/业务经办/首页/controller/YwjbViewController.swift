@@ -131,14 +131,14 @@ extension YwjbViewController:ApplyCollectionIndexClickProtocol{
             webVc.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(webVc, animated: true)
         }else if index == 2{
-            LHAlertView.showTipAlertWithTitle("调试中")
+            LHAlertView.showTipAlertWithTitle("暂未开放，敬请期待")
 //            let webVc = CommonWebViewController()
 //            webVc.urlContent = MyConfig.shared().shebaoUrl
 //            webVc.titleContent = "社保查询"
 //            webVc.hidesBottomBarWhenPushed = true
 //            self.navigationController?.pushViewController(webVc, animated: true)
         }else if index == 3{
-            LHAlertView.showTipAlertWithTitle("调试中")
+            LHAlertView.showTipAlertWithTitle("暂未开放，敬请期待")
 //            let webVc = CommonWebViewController()
 //            webVc.urlContent = MyConfig.shared().yibaoUrl
 //            webVc.titleContent = "医保查询"
