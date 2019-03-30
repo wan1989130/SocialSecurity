@@ -30,8 +30,8 @@ class YwjbDataController: BaseDataController {
         model4.image = UIImage(named: "ybcx")
         toolArray.append(model1)
         toolArray.append(model2)
-        toolArray.append(model3)
-        toolArray.append(model4)
+//        toolArray.append(model3)
+//        toolArray.append(model4)
         
     }
     

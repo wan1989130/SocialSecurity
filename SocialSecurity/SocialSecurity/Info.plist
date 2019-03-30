@@ -34,7 +34,7 @@
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>社保卡采集需要使用您的相册以便保存拍照图片</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>社保卡采集需要拍照采集头像是否允许打开相册</string>
+	<string>社保卡采集需要拍照采集头像是否允许打开相册以便选取图片</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
