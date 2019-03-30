@@ -21,10 +21,15 @@ class LHHttpDataProvider {
         else{
             client = LHHTTPClient.sharedClientWithIdentifier(clientIdentifier!)
         }
-        client.POSTFILE( data: data,parameters:params) { (requestSucceed, response, error) in
+        
+        client.POSTFILE( data: data,parameters:params,delegate:delegate) { (requestSucceed, response, error) in
             let vc = delegate as? BaseViewController
-            vc?.endLoad()
             
+            if delegate != nil && delegate!.isKind(of: UIViewController.self){
+                let vc = delegate as! UIViewController
+                UIView.hideProgressHUB(vc.view)
+                print("aaaadfile = \(vc)")
+            }
             if delegate != nil && delegate!.isKind(of: UIViewController.self){
                 let vc = delegate as! UIViewController
                 UIView.hideProgressHUB(vc.view)
@@ -118,12 +123,13 @@ class LHHttpDataProvider {
         
         
         
-        client.POST(path, parameters: params, verson: verson,autoAlert:autoAlert) { (requestSucceed, response, error) -> Void in
+        client.POST(path, parameters: params, verson: verson,autoAlert:autoAlert,delegate:delegate) { (requestSucceed, response, error) -> Void in
             let vc = delegate as? BaseViewController
             vc?.endLoad()
             if delegate != nil && delegate!.isKind(of: UIViewController.self){
                 let vc = delegate as! UIViewController
                 UIView.hideProgressHUB(vc.view)
+                print("aaaad = \(vc)")
             }
             
             //请求异常时处理方式
@@ -215,7 +221,7 @@ extension LHHttpDataProvider{
         else{
             client = LHHTTPClient.sharedClientWithIdentifier(clientIdentifier!)
         }
-        client.GET(path, parameters: params, verson: verson,autoAlert:autoAlert) { (requestSucceed, response, error) -> Void in
+        client.GET(path, parameters: params, verson: verson,autoAlert:autoAlert,delegate:delegate) { (requestSucceed, response, error) -> Void in
                 let vc = delegate as? BaseViewController
                 vc?.endLoad()
                 

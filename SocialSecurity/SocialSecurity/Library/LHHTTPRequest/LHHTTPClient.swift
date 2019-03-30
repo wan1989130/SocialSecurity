@@ -32,7 +32,7 @@ class LHHTTPClient: NSObject {
         return base
     }
   
-    func showHud(){
+    func showHud(vc:UIViewController){
 //        LHHTTPClient.hud = MBProgressHUD.showAdded(to: UIApplication.shared.keyWindow!, animated: true)
 //        if currentViewController() is InformationMessageViewController{
 //            currentVc = currentViewController()!.children[0]
@@ -40,8 +40,8 @@ class LHHTTPClient: NSObject {
 //            LHHTTPClient.hud.label.text = "数据加载中"
 //        }else{
             currentVc = currentViewController()!
-  
-            LHHTTPClient.hud = MBProgressHUD.showAdded(to: currentVc.view!, animated: true)
+        print("aaaab = \(vc)")
+            LHHTTPClient.hud = MBProgressHUD.showAdded(to: vc.view!, animated: true)
             
             LHHTTPClient.hud.label.text = "数据加载中"
 //        }
@@ -67,10 +67,13 @@ class LHHTTPClient: NSObject {
         return client as! LHHTTPClient
     }
     
-    func POSTFILE( data:Array<Data>, parameters:NSDictionary?,completionBlock:@escaping LHResponseHandler){
+    func POSTFILE( data:Array<Data>, parameters:NSDictionary?,delegate:AnyObject?,completionBlock:@escaping LHResponseHandler){
         var hideVc:UIViewController?
-        
-            showHud()
+        if delegate != nil && delegate!.isKind(of: UIViewController.self){
+            let vc = delegate as! UIViewController
+            
+          showHud(vc: vc)
+        }
         
         
         
@@ -134,9 +137,13 @@ class LHHTTPClient: NSObject {
 
     }
     
-    func POST(_ path:String, parameters:NSDictionary?, verson:String?,autoAlert:Bool, completionBlock:@escaping LHResponseHandler){
+    func POST(_ path:String, parameters:NSDictionary?, verson:String?,autoAlert:Bool,delegate:AnyObject?, completionBlock:@escaping LHResponseHandler){
         if autoAlert{
-                showHud()
+            if delegate != nil && delegate!.isKind(of: UIViewController.self){
+                let vc = delegate as! UIViewController
+                
+                showHud(vc: vc)
+            }
         }
         let result = self.getJSONStringFromDictionary(dictionary: parameters as! NSDictionary)
         print("请求参数json = \(result)")
@@ -212,11 +219,15 @@ class LHHTTPClient: NSObject {
         
     }
     
-    func GET(_ path:String, parameters:NSDictionary?, verson:String?,autoAlert:Bool, completionBlock:@escaping LHResponseHandler){
+    func GET(_ path:String, parameters:NSDictionary?, verson:String?,autoAlert:Bool,delegate:AnyObject?,completionBlock:@escaping LHResponseHandler){
         var hideVc:UIViewController?
         if autoAlert{
             
-            showHud()
+            if delegate != nil && delegate!.isKind(of: UIViewController.self){
+                let vc = delegate as! UIViewController
+                
+                showHud(vc: vc)
+            }
             
         }
         //将固定的地址与接口名拼接在一起
