@@ -32,11 +32,11 @@ extension YwjbViewController{
         self.automaticallyAdjustsScrollViewInsets = false
         tableView.delegate = self
         tableView.dataSource = self
-//        tableView.estimatedRowHeight = 44
-//        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 44
+        tableView.rowHeight = UITableView.automaticDimension
 //        tableView.register("ApplyCollectionTableViewCell")
         tableView.register("ApplyBannerTableViewCell")
-        
+        tableView.register("ApplyTipTableViewCell")
     }
     fileprivate func initData(){
         dataController = YwjbDataController(delegate: self)
@@ -70,7 +70,7 @@ extension YwjbViewController{
 
 extension YwjbViewController:UITableViewDelegate,UITableViewDataSource{
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return 3
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
@@ -83,7 +83,7 @@ extension YwjbViewController:UITableViewDelegate,UITableViewDataSource{
                         cell.initCell(dataArray: arr)
 //            cell.initCell(model: dataController.bannerModel)
             return cell
-        }else{
+        }else if indexPath.section == 1{
 //            let cell = ApplyCollectionTableViewCell.loadCell(tableView)
             //因为cell中有布局需要隐藏remove，所以不复用
                  let cell = Bundle.main.loadNibNamed("ApplyCollectionTableViewCell", owner: self, options: nil)?.last as! ApplyCollectionTableViewCell
@@ -107,15 +107,26 @@ extension YwjbViewController:UITableViewDelegate,UITableViewDataSource{
 //            cell.statusView.removeAllSubviews()
 //           cell.statusViewHeight.constant = 0
             return cell
+        }else{
+            let cell = ApplyTipTableViewCell.loadCell(tableView)
+            return cell
         }
         
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.section == 0{
             return ScreenWidth * 480 / 1080
-        }else {
-            let height = ((ScreenWidth) / 3) * CGFloat(ceil(Double((4)) / 3))
-            return height + 60 + 0.01
+        }else if indexPath.section == 1{
+            let height = ((ScreenWidth) / 3) * CGFloat(ceil(Double((2)) / 3))
+//            return height  + 0.01 + 60
+            if dataController.selfQueryIsSuccess && dataController.model.data.status != "0"{
+                return height  + 0.01 + 60
+            }else{
+               return height  + 0.01
+            }
+            
+        }else{
+            return UITableView.automaticDimension
         }
         
     }

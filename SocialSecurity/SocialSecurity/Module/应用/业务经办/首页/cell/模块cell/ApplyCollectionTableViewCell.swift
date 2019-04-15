@@ -168,6 +168,13 @@ extension ApplyCollectionTableViewCell:UICollectionViewDelegate,UICollectionView
         }else{
             cell.leftLabel.isHidden = false
         }
+        if indexPath.row == 1{
+            cell.nameLabel.font = UIFont.systemFont(ofSize: 16)
+            cell.nameLabel.textColor = UIColor.red
+        }else{
+            cell.nameLabel.font = UIFont.systemFont(ofSize: 13)
+            cell.nameLabel.textColor = UIColor(hexString: "555555")
+        }
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

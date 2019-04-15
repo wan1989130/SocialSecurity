@@ -385,6 +385,8 @@
 		E388497921D4ABD0007BCA23 /* IsScanQueryDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E388497821D4ABD0007BCA23 /* IsScanQueryDataModel.swift */; };
 		E38CA3FB21C0943800455B81 /* ApplyViewControllerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38CA3F921C0943800455B81 /* ApplyViewControllerCollectionViewCell.swift */; };
 		E38CA3FC21C0943800455B81 /* ApplyViewControllerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E38CA3FA21C0943800455B81 /* ApplyViewControllerCollectionViewCell.xib */; };
+		E3988FA022647AB000E44FD5 /* ApplyTipTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3988F9E22647AB000E44FD5 /* ApplyTipTableViewCell.swift */; };
+		E3988FA122647AB000E44FD5 /* ApplyTipTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3988F9F22647AB000E44FD5 /* ApplyTipTableViewCell.xib */; };
 		E3ACE86321CC80D3005EBB02 /* CaijiQiTaDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ACE86221CC80D3005EBB02 /* CaijiQiTaDataController.swift */; };
 		E3ACE86621CC80E3005EBB02 /* CaijiQiTaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ACE86421CC80E3005EBB02 /* CaijiQiTaViewController.swift */; };
 		E3ACE86721CC80E3005EBB02 /* CaijiQiTaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3ACE86521CC80E3005EBB02 /* CaijiQiTaViewController.xib */; };
@@ -1062,6 +1064,8 @@
 		E388497821D4ABD0007BCA23 /* IsScanQueryDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsScanQueryDataModel.swift; sourceTree = "<group>"; };
 		E38CA3F921C0943800455B81 /* ApplyViewControllerCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplyViewControllerCollectionViewCell.swift; sourceTree = "<group>"; };
 		E38CA3FA21C0943800455B81 /* ApplyViewControllerCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ApplyViewControllerCollectionViewCell.xib; sourceTree = "<group>"; };
+		E3988F9E22647AB000E44FD5 /* ApplyTipTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyTipTableViewCell.swift; sourceTree = "<group>"; };
+		E3988F9F22647AB000E44FD5 /* ApplyTipTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ApplyTipTableViewCell.xib; sourceTree = "<group>"; };
 		E3ACE86221CC80D3005EBB02 /* CaijiQiTaDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaijiQiTaDataController.swift; sourceTree = "<group>"; };
 		E3ACE86421CC80E3005EBB02 /* CaijiQiTaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaijiQiTaViewController.swift; sourceTree = "<group>"; };
 		E3ACE86521CC80E3005EBB02 /* CaijiQiTaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CaijiQiTaViewController.xib; sourceTree = "<group>"; };
@@ -2619,6 +2623,8 @@
 				E38CA3FA21C0943800455B81 /* ApplyViewControllerCollectionViewCell.xib */,
 				E31EF64E21BFDA2700E1C3E4 /* ApplyCollectionTableViewCell.swift */,
 				E31EF64D21BFDA2700E1C3E4 /* ApplyCollectionTableViewCell.xib */,
+				E3988F9E22647AB000E44FD5 /* ApplyTipTableViewCell.swift */,
+				E3988F9F22647AB000E44FD5 /* ApplyTipTableViewCell.xib */,
 			);
 			path = "模块cell";
 			sourceTree = "<group>";
@@ -4223,6 +4229,7 @@
 				E3D2B99E21EDDA48005BA9E9 /* yb_312.jpg in Resources */,
 				E316135921B7631F00CF09B2 /* README.md in Resources */,
 				E3D2B9BB21EDDD06005BA9E9 /* yb_35.html in Resources */,
+				E3988FA122647AB000E44FD5 /* ApplyTipTableViewCell.xib in Resources */,
 				E3D2B99021EDDA48005BA9E9 /* yb_224.jpg in Resources */,
 				E316135621B7631F00CF09B2 /* BRPickerView.bundle in Resources */,
 				E3D2B8C021EDABC9005BA9E9 /* sb_235.jpg in Resources */,
@@ -4673,6 +4680,7 @@
 				E31613DE21B7631F00CF09B2 /* SelectCompanyDataModel.swift in Sources */,
 				E316147221B7631F00CF09B2 /* NSMutableDictionary+LH.m in Sources */,
 				E31613F921B7631F00CF09B2 /* MSDataProvider+CommonSutdents.swift in Sources */,
+				E3988FA022647AB000E44FD5 /* ApplyTipTableViewCell.swift in Sources */,
 				E31613F221B7631F00CF09B2 /* LanchImageViewController.swift in Sources */,
 				E362E4F121D36110005E60B9 /* UIView + Load.swift in Sources */,
 				E33C64DA21C9DE3A00AEDF4B /* ZcznDetailDataModel.swift in Sources */,
