@@ -125,7 +125,7 @@ extension ApplyCollectionTableViewCell{
     fileprivate func initUI(){
         
         let layout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize(width:(ScreenWidth)/3,height:(ScreenWidth)/3)
+        layout.itemSize = CGSize(width:(ScreenWidth)/2,height:(ScreenWidth)/2)
         //列间距,行间距,偏移
         layout.minimumInteritemSpacing = 0
         layout.minimumLineSpacing = 0
@@ -163,7 +163,7 @@ extension ApplyCollectionTableViewCell:UICollectionViewDelegate,UICollectionView
         }else{
             cell.topLabel.isHidden = false
         }
-        if indexPath.row % 3 > 0{
+        if indexPath.row % 2 > 0{
             cell.leftLabel.isHidden = true
         }else{
             cell.leftLabel.isHidden = false

@@ -28,7 +28,7 @@ class LHHttpDataProvider {
             if delegate != nil && delegate!.isKind(of: UIViewController.self){
                 let vc = delegate as! UIViewController
                 UIView.hideProgressHUB(vc.view)
-                print("aaaadfile = \(vc)")
+//                print("aaaadfile = \(vc)")
             }
             if delegate != nil && delegate!.isKind(of: UIViewController.self){
                 let vc = delegate as! UIViewController
@@ -129,7 +129,7 @@ class LHHttpDataProvider {
             if delegate != nil && delegate!.isKind(of: UIViewController.self){
                 let vc = delegate as! UIViewController
                 UIView.hideProgressHUB(vc.view)
-                print("aaaad = \(vc)")
+//                print("aaaad = \(vc)")
             }
             
             //请求异常时处理方式

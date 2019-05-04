@@ -16,7 +16,7 @@ class BaseTabBarViewController: UITabBarController {
         addChildViewController(firstVC, title: "业务经办", image: "nav1_normal", selectedImage: "nav1_hover")
         
         //综合查询
-        let secondVC = ZcznViewController(nibName: "ZcznViewController", bundle: nil)
+        let secondVC = ZcznChildViewController(nibName: "ZcznChildViewController", bundle: nil)
         addChildViewController(secondVC, title: "政策指南", image: "nav2_normal", selectedImage: "nav2_hover")
         
         //通讯录

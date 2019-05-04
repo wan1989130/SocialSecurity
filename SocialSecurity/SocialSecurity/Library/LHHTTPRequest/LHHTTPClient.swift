@@ -40,7 +40,7 @@ class LHHTTPClient: NSObject {
 //            LHHTTPClient.hud.label.text = "数据加载中"
 //        }else{
             currentVc = currentViewController()!
-        print("aaaab = \(vc)")
+//        print("aaaab = \(vc)")
             LHHTTPClient.hud = MBProgressHUD.showAdded(to: vc.view!, animated: true)
             
             LHHTTPClient.hud.label.text = "数据加载中"

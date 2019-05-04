@@ -7,12 +7,21 @@
 //
 
 import UIKit
-
+@objc protocol ApplyTipTableViewCellClickProtocol:NSObjectProtocol {
+    func ZhiKaClick()
+}
 class ApplyTipTableViewCell: UITableViewCell {
 
+    weak var pro:ApplyTipTableViewCellClickProtocol!
+    @IBOutlet weak var zhiKaImageView: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+       
+       zhiKaImageView.isUserInteractionEnabled = true
+        zhiKaImageView.addGestureRecognizer(UITapGestureRecognizer.init(target: self, action: #selector(click)))
+    }
+    @objc func click(){
+        pro.ZhiKaClick()
     }
 
     class func loadCell(_ tableView:UITableView)-> ApplyTipTableViewCell{

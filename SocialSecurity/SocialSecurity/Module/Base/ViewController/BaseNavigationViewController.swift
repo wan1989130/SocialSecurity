@@ -59,5 +59,7 @@ class BaseNavigationViewController: UINavigationController,UINavigationControlle
     //    func back(){
     //        popViewController(animated: true)
     //    }
-    
+    override var preferredStatusBarStyle: UIStatusBarStyle{
+        return .lightContent
+    }
 }

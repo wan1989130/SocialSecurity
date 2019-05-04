@@ -153,7 +153,7 @@ extension BaseViewController{
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        print("aaaac = \(self.view.viewController())")
+//        print("aaaac = \(self.view.viewController())")
         MBProgressHUD.hide(for: self.view, animated: true)
 //        if LHHTTPClient.manager.tasks.count > 0{
 //            for task in LHHTTPClient.manager.tasks{

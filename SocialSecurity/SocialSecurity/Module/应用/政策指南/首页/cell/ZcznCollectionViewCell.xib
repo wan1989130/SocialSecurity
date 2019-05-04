@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -19,20 +19,19 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="ciO-50-LBr">
-                        <rect key="frame" x="25" y="12.5" width="50" height="50"/>
+                        <rect key="frame" x="30" y="17.5" width="40" height="40"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="50" id="EB3-1g-ANx"/>
-                            <constraint firstAttribute="height" constant="50" id="L2t-jw-E9O"/>
+                            <constraint firstAttribute="width" constant="40" id="EB3-1g-ANx"/>
                             <constraint firstAttribute="width" secondItem="ciO-50-LBr" secondAttribute="height" multiplier="1:1" id="WVr-rT-9ZH"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1zL-bR-CpN">
-                        <rect key="frame" x="1" y="66.5" width="98" height="20"/>
+                        <rect key="frame" x="9" y="61.5" width="82" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="38A-mU-QPd"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="textColor" red="0.40784313725490196" green="0.40784313725490196" blue="0.40784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCa-2l-0yT">
@@ -83,7 +82,7 @@
                 <constraint firstItem="ciO-50-LBr" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" constant="-12.5" id="2Pv-Ln-v0H"/>
                 <constraint firstAttribute="trailing" secondItem="c14-Zj-Cde" secondAttribute="trailing" id="7k5-eH-Hn4"/>
                 <constraint firstItem="c14-Zj-Cde" firstAttribute="top" secondItem="cU2-Pq-lge" secondAttribute="bottom" id="7t1-r5-1B0"/>
-                <constraint firstItem="c14-Zj-Cde" firstAttribute="leading" secondItem="1zL-bR-CpN" secondAttribute="trailing" id="DUU-xH-ELm"/>
+                <constraint firstItem="c14-Zj-Cde" firstAttribute="leading" secondItem="1zL-bR-CpN" secondAttribute="trailing" constant="8" id="DUU-xH-ELm"/>
                 <constraint firstAttribute="bottom" secondItem="eCa-2l-0yT" secondAttribute="bottom" id="MQm-Kb-w3a"/>
                 <constraint firstItem="1zL-bR-CpN" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="OpB-1i-EQ5"/>
                 <constraint firstItem="Ma4-te-rDd" firstAttribute="top" secondItem="cU2-Pq-lge" secondAttribute="bottom" id="XLO-Yy-GCi"/>
@@ -92,7 +91,7 @@
                 <constraint firstItem="ciO-50-LBr" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="hCt-Mk-RTw"/>
                 <constraint firstItem="Ma4-te-rDd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="l0J-k3-Wc9"/>
                 <constraint firstItem="cU2-Pq-lge" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="pqu-k8-xYY"/>
-                <constraint firstItem="1zL-bR-CpN" firstAttribute="leading" secondItem="Ma4-te-rDd" secondAttribute="trailing" id="vJI-v1-BUG"/>
+                <constraint firstItem="1zL-bR-CpN" firstAttribute="leading" secondItem="Ma4-te-rDd" secondAttribute="trailing" constant="8" id="vJI-v1-BUG"/>
                 <constraint firstItem="cU2-Pq-lge" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="wA8-GW-8rB"/>
                 <constraint firstItem="1zL-bR-CpN" firstAttribute="top" secondItem="ciO-50-LBr" secondAttribute="bottom" constant="4" id="wFr-UI-Cd7"/>
                 <constraint firstItem="eCa-2l-0yT" firstAttribute="top" secondItem="Ma4-te-rDd" secondAttribute="bottom" id="xCI-le-QXg"/>
@@ -111,6 +110,6 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="logo" width="85" height="95"/>
+        <image name="logo" width="85" height="95.5"/>
     </resources>
 </document>

@@ -573,6 +573,9 @@
 		E3D2B9C521EDDDD4005BA9E9 /* yb_41.html in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B9C421EDDDD4005BA9E9 /* yb_41.html */; };
 		E3D2B9C721EDDE0E005BA9E9 /* yb_43.html in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B9C621EDDE0E005BA9E9 /* yb_43.html */; };
 		E3D2B9C921EDDE30005BA9E9 /* yb_42.html in Resources */ = {isa = PBXBuildFile; fileRef = E3D2B9C821EDDE30005BA9E9 /* yb_42.html */; };
+		E3D3960D227DBE0400585040 /* ZcznChildDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D3960C227DBE0400585040 /* ZcznChildDataController.swift */; };
+		E3D39610227DC0AE00585040 /* ZcznChildTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D3960E227DC0AE00585040 /* ZcznChildTableViewCell.swift */; };
+		E3D39611227DC0AE00585040 /* ZcznChildTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3D3960F227DC0AE00585040 /* ZcznChildTableViewCell.xib */; };
 		E3DE177621D4FE7F00E4378A /* DictionaryDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DE177521D4FE7F00E4378A /* DictionaryDataModel.swift */; };
 		E3E655A9224B236600B0A1D9 /* aip.license in Resources */ = {isa = PBXBuildFile; fileRef = E3E655A8224B236600B0A1D9 /* aip.license */; };
 		E3F2D6FD21D0ABD0004E7597 /* IdCardFrontModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F2D6FC21D0ABD0004E7597 /* IdCardFrontModel.swift */; };
@@ -1252,6 +1255,9 @@
 		E3D2B9C421EDDDD4005BA9E9 /* yb_41.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = yb_41.html; path = "SocialSecurity/Module/应用/政策指南/html/医保/职工医疗保险/关于印发《长春市失能人员医疗照护保险实施办法（试行）》的通知/yb_41.html"; sourceTree = SOURCE_ROOT; };
 		E3D2B9C621EDDE0E005BA9E9 /* yb_43.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = yb_43.html; sourceTree = "<group>"; };
 		E3D2B9C821EDDE30005BA9E9 /* yb_42.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = yb_42.html; sourceTree = "<group>"; };
+		E3D3960C227DBE0400585040 /* ZcznChildDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZcznChildDataController.swift; sourceTree = "<group>"; };
+		E3D3960E227DC0AE00585040 /* ZcznChildTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZcznChildTableViewCell.swift; sourceTree = "<group>"; };
+		E3D3960F227DC0AE00585040 /* ZcznChildTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZcznChildTableViewCell.xib; sourceTree = "<group>"; };
 		E3DE177521D4FE7F00E4378A /* DictionaryDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryDataModel.swift; sourceTree = "<group>"; };
 		E3E655A8224B236600B0A1D9 /* aip.license */ = {isa = PBXFileReference; lastKnownFileType = file; path = aip.license; sourceTree = "<group>"; };
 		E3F2D6FC21D0ABD0004E7597 /* IdCardFrontModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdCardFrontModel.swift; sourceTree = "<group>"; };
@@ -1389,6 +1395,7 @@
 		E30BB78121EC76F20054EFC2 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				E3D3960C227DBE0400585040 /* ZcznChildDataController.swift */,
 				E30BB78321EC77380054EFC2 /* ZcznChildViewController.swift */,
 				E30BB78421EC77380054EFC2 /* ZcznChildViewController.xib */,
 			);
@@ -1398,6 +1405,8 @@
 		E30BB78221EC77070054EFC2 /* cell */ = {
 			isa = PBXGroup;
 			children = (
+				E3D3960E227DC0AE00585040 /* ZcznChildTableViewCell.swift */,
+				E3D3960F227DC0AE00585040 /* ZcznChildTableViewCell.xib */,
 			);
 			path = cell;
 			sourceTree = "<group>";
@@ -4065,6 +4074,7 @@
 				E3D2B89A21EDABC9005BA9E9 /* sb_632.jpg in Resources */,
 				E3D2B8AC21EDABC9005BA9E9 /* sb_529.jpg in Resources */,
 				E316135821B7631F00CF09B2 /* LICENSE in Resources */,
+				E3D39611227DC0AE00585040 /* ZcznChildTableViewCell.xib in Resources */,
 				E3D2B98921EDDA48005BA9E9 /* yb_233.jpg in Resources */,
 				E3D2B98121EDDA48005BA9E9 /* yb_111.jpg in Resources */,
 				E3D2B8C121EDABC9005BA9E9 /* sb_234.jpg in Resources */,
@@ -4451,6 +4461,7 @@
 				E31613E021B7631F00CF09B2 /* CompanyRegisterSuccessDataModel.swift in Sources */,
 				E316138F21B7631F00CF09B2 /* NSDate+Extension.m in Sources */,
 				E31613DA21B7631F00CF09B2 /* PersonMessageMode.swift in Sources */,
+				E3D39610227DC0AE00585040 /* ZcznChildTableViewCell.swift in Sources */,
 				E33C64F821C9ED3600AEDF4B /* SbkProgressViewController.swift in Sources */,
 				E316137421B7631F00CF09B2 /* DropListTitleView.swift in Sources */,
 				E31613F021B7631F00CF09B2 /* SelectAreaPopupViewTableViewCell.swift in Sources */,
@@ -4543,6 +4554,7 @@
 				E31613BC21B7631F00CF09B2 /* FMDBHelper.swift in Sources */,
 				E362E4F621D365A4005E60B9 /* PhoneType.swift in Sources */,
 				E3ACE86A21CC80F7005EBB02 /* CaijiQiTaTableViewCell.swift in Sources */,
+				E3D3960D227DBE0400585040 /* ZcznChildDataController.swift in Sources */,
 				E31613D621B7631F00CF09B2 /* CompanyRegisterPhotoTableViewCell.swift in Sources */,
 				E316145C21B7631F00CF09B2 /* MSPlistController.swift in Sources */,
 				E31613A421B7631F00CF09B2 /* MenuView.swift in Sources */,

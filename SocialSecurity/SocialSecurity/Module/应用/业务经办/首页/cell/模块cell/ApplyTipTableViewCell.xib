@@ -12,39 +12,80 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="116" id="KGk-i7-Jjw" customClass="ApplyTipTableViewCell" customModule="SocialSecurity" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="116"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="181" id="KGk-i7-Jjw" customClass="ApplyTipTableViewCell" customModule="SocialSecurity" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="181"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="115.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="180.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="温馨提示" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mkz-WE-u14">
-                        <rect key="frame" x="8" y="8" width="65.5" height="19.5"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="温馨提示:先点击&quot;制卡进度查询&quot;，如无信息再到&quot;社会保障卡信息采集&quot;办理采集业务" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ySX-cZ-HcJ">
+                        <rect key="frame" x="16" y="102" width="288" height="31.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="先点击&quot;制卡进度查询&quot;，如无信息再到&quot;社会保障卡信息采集&quot;办理采集业务" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ySX-cZ-HcJ">
-                        <rect key="frame" x="8" y="31.5" width="304" height="38.5"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                        <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="制卡进度查询" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="elf-lk-tz2">
+                        <rect key="frame" x="114" y="8" width="92" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.31764705882352939" blue="0.56862745098039214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_addpic" translatesAutoresizingMaskIntoConstraints="NO" id="3og-ds-ZUN">
+                        <rect key="frame" x="130" y="34" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="41O-ox-mki"/>
+                            <constraint firstAttribute="height" constant="60" id="4iX-Kc-5Vm"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbZ-MP-HnE">
+                        <rect key="frame" x="56" y="63.5" width="50" height="1"/>
+                        <color key="backgroundColor" red="0.0" green="0.31764705882352939" blue="0.56862745098039214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="f04-N0-gwQ"/>
+                            <constraint firstAttribute="height" constant="1" id="svb-g3-tmJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8m6-dv-LYO">
+                        <rect key="frame" x="214" y="63.5" width="50" height="1"/>
+                        <color key="backgroundColor" red="0.0" green="0.31764705882352939" blue="0.56862745098039214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="I7C-oQ-QoG"/>
+                            <constraint firstAttribute="height" constant="1" id="fN5-Zm-4i5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstItem="ySX-cZ-HcJ" firstAttribute="top" secondItem="mkz-WE-u14" secondAttribute="bottom" constant="4" id="1IN-pP-Z2M"/>
-                    <constraint firstItem="mkz-WE-u14" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="2cf-kM-9eM"/>
-                    <constraint firstItem="mkz-WE-u14" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="NhC-yQ-UcP"/>
-                    <constraint firstItem="ySX-cZ-HcJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="V9M-5P-7wf"/>
+                    <constraint firstItem="3og-ds-ZUN" firstAttribute="top" secondItem="elf-lk-tz2" secondAttribute="bottom" constant="8" id="Blt-zr-1KQ"/>
+                    <constraint firstItem="elf-lk-tz2" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="FoJ-sO-jBO"/>
+                    <constraint firstItem="ySX-cZ-HcJ" firstAttribute="top" secondItem="3og-ds-ZUN" secondAttribute="bottom" constant="8" id="GBH-gb-mlh"/>
+                    <constraint firstItem="lbZ-MP-HnE" firstAttribute="centerY" secondItem="3og-ds-ZUN" secondAttribute="centerY" id="Moe-ZF-XhE"/>
+                    <constraint firstAttribute="trailing" secondItem="ySX-cZ-HcJ" secondAttribute="trailing" constant="16" id="Mq4-OQ-Zee"/>
+                    <constraint firstItem="3og-ds-ZUN" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="PzP-Ad-yFm"/>
+                    <constraint firstItem="elf-lk-tz2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="VHL-W2-Rs1"/>
+                    <constraint firstItem="8m6-dv-LYO" firstAttribute="leading" secondItem="3og-ds-ZUN" secondAttribute="trailing" constant="24" id="b8E-sI-uxN"/>
+                    <constraint firstItem="ySX-cZ-HcJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="itv-ec-4Ga"/>
                     <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ySX-cZ-HcJ" secondAttribute="bottom" constant="8" id="rIj-CC-Qxj"/>
-                    <constraint firstAttribute="trailing" secondItem="ySX-cZ-HcJ" secondAttribute="trailing" constant="8" id="vhP-aW-FaA"/>
+                    <constraint firstItem="3og-ds-ZUN" firstAttribute="leading" secondItem="lbZ-MP-HnE" secondAttribute="trailing" constant="24" id="wGY-nx-VnC"/>
+                    <constraint firstItem="8m6-dv-LYO" firstAttribute="centerY" secondItem="3og-ds-ZUN" secondAttribute="centerY" id="zyE-YA-Hl8"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
-            <point key="canvasLocation" x="137.68115942028987" y="109.82142857142857"/>
+            <connections>
+                <outlet property="zhiKaImageView" destination="3og-ds-ZUN" id="U84-0X-8SE"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="131.58482142857142"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="icon_addpic" width="44.5" height="44.5"/>
+    </resources>
 </document>

@@ -140,7 +140,9 @@ extension LoginViewController{
    
 }
 extension LoginViewController{
-   
+    override var prefersStatusBarHidden: Bool{
+        return true
+    }
    
     
 }
